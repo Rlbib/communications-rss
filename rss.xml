@@ -3,8 +3,8 @@
 <channel>
   <title>Communications</title>
   <link>https://grist.numerique.gouv.fr</link>
-  <description>Flux RSS généré depuis la vue Com de Grist avec Catégories et Dates de Fin</description>
-  <lastBuildDate>Fri, 05 Jun 2026 10:24:12 +0000</lastBuildDate>
+  <description>Flux RSS généré depuis la vue Com de Grist avec Catégories et Heures fusionnées</description>
+  <lastBuildDate>Fri, 05 Jun 2026 10:37:37 +0000</lastBuildDate>
   <item>
     <title>Pourquoi encore penser ? A l'heure de l'intelligence artificielle</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=10872</link>
@@ -1010,7 +1010,7 @@ Partenariat avec le Fonds patrimonial et la Maison de la magie</description>
     <title>La CLE des mots</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">86</guid>
-    <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 09 Jan 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 09 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1021,7 +1021,7 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <title>Le Coin des gameurs </title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">87</guid>
-    <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 03 Jun 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 03 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -1032,7 +1032,7 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <title>Aiguilles et compagnie</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">88</guid>
-    <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 07 Jan 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 07 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix
@@ -1043,7 +1043,7 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <title>Conférence Musique Classique avec Clément GUILLOT (directeur du Conservatoire à Rayonnement Départemental de Blois/Agglopolys)</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">89</guid>
-    <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 09 Jan 2026 18:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Fri, 09 Jan 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -1057,7 +1057,7 @@ En trois conférences, Clément Guillot, vous propose de balayer l'histoire du b
     <title>Les Lectures du Samedi</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">91</guid>
-    <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 10 Jan 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 10 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland</description>
@@ -1066,7 +1066,7 @@ En trois conférences, Clément Guillot, vous propose de balayer l'histoire du b
     <title>Club MANGA</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">92</guid>
-    <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 10 Jan 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 10 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -1077,7 +1077,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Petites lectures et comptines</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">93</guid>
-    <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 14 Jan 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 14 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1088,7 +1088,7 @@ Venez partager un moment parentalité autour des lectures pour les tout-petits. 
     <title>Atelier loisirs créatifs</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">94</guid>
-    <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 14 Jan 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 14 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1112,7 +1112,7 @@ Autour des maquettes de la médiathèque Rose-Valland et du château de Rilly-su
     <title>Les Bons clics - Créer un bon mot de passe</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">96</guid>
-    <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 16 Jan 2026 14:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Fri, 16 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -1123,7 +1123,7 @@ Posséder un mot de passe sécurisé est indispensable pour naviguer dans l'univ
     <title>Le Coin des gameurs</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">97</guid>
-    <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 17 Jan 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 17 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -1134,7 +1134,7 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <title>Découverte des échecs</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">98</guid>
-    <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 17 Jan 2026 10:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 17 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1145,7 +1145,7 @@ Le club d’Échecs de Veuzain-sur-Loire s’installe à la médiathèque pour j
     <title>Laissez-vous conter - spécial Graine de lecteur 2026</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">99</guid>
-    <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 21 Jan 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 21 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse
@@ -1156,7 +1156,7 @@ Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans. En ja
     <title>Raconte thé cinéma</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">100</guid>
-    <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Thu, 22 Jan 2026 11:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Thu, 22 Jan 2026 00:00:00 +0000</endDate>
     <description>Espace Quinière - Rosa Parks
@@ -1167,7 +1167,7 @@ Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale a
     <title>Conférence Musique Classique avec Clément GUILLOT (directeur du Conservatoire à Rayonnement Départemental de Blois/Agglopolys) [Le ballet classique : une histoire de la danse dans la musique classique]</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">101</guid>
-    <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 23 Jan 2026 18:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Fri, 23 Jan 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -1182,7 +1182,7 @@ En trois conférences, Clément Guillot, vous propose de balayer l'histoire du b
     <title>La CLE des mots</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">102</guid>
-    <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 23 Jan 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 23 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1193,7 +1193,7 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <title>Conférence Musique Classique avec Clément GUILLOT (directeur du Conservatoire à Rayonnement Départemental de Blois/Agglopolys) [Le ballet classique : une histoire de la danse dans la musique classique]</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">103</guid>
-    <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 30 Jan 2026 18:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Fri, 30 Jan 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -1208,7 +1208,7 @@ En trois conférences, Clément Guillot, vous propose de balayer l'histoire du b
     <title>Club MANGA</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">104</guid>
-    <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 31 Jan 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 31 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo,  blois
@@ -1219,7 +1219,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Aiguilles et compagnie</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">105</guid>
-    <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 31 Jan 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 31 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1231,7 +1231,7 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <title>Le Coin des gameurs </title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">106</guid>
-    <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 31 Jan 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 31 Jan 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -1242,7 +1242,7 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <title>Atelier d'écriture animé par Audrey Pleynet</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">107</guid>
-    <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 31 Jan 2026 14:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 31 Jan 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbe-Grégoire, espace Adultes
@@ -1255,7 +1255,7 @@ Audrey Pleynet, romancière et nouvelliste (prix Utopiales 2023) , vous propose 
 ]</title>
     <link>https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/66/60/81/18943123.jpg</link>
     <guid isPermaLink="false">108</guid>
-    <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 31 Jan 2026 19:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sat, 31 Jan 2026 00:00:00 +0000</endDate>
     <description>Cinéma les Lobis
@@ -1270,7 +1270,7 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <title>L'Île aux chiens</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">109</guid>
-    <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sun, 01 Feb 2026 16:15:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Thu, 01 Jan 2026 00:00:00 +0000</endDate>
     <description>Cinéma les Lobis</description>
@@ -1279,7 +1279,7 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <title> Triple dose de jeux vidéo</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">110</guid>
-    <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 04 Feb 2026 14:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 04 Feb 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo</description>
@@ -1288,7 +1288,7 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <title>Conférence musicale</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">111</guid>
-    <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 06 Feb 2026 18:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Fri, 06 Feb 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty</description>
@@ -1297,7 +1297,7 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <title>Double dose effondrements</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">112</guid>
-    <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 06 Feb 2026 20:45:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Fri, 06 Feb 2026 00:00:00 +0000</endDate>
     <description>Cinéma les Lobis</description>
@@ -1306,7 +1306,7 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <title>Découverte d'univers futuristes à 360°</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">113</guid>
-    <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 07 Feb 2026 14:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 07 Feb 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo</description>
@@ -1315,7 +1315,7 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <title>Double dose déraillement </title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">114</guid>
-    <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 07 Feb 2026 19:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sat, 07 Feb 2026 00:00:00 +0000</endDate>
     <description>Cinéma les Lobis</description>
@@ -1324,7 +1324,7 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <title>Soleil Vert - Clôture du festival</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">115</guid>
-    <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sun, 08 Feb 2026 16:15:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sun, 08 Feb 2026 00:00:00 +0000</endDate>
     <description>Cinéma les Lobis</description>
@@ -1346,7 +1346,7 @@ Contes, musiques, documentaires et histoires à composer : des heures de plaisir
     <title>Aiguilles &amp; cie</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">124</guid>
-    <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 04 Mar 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 04 Mar 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -1357,7 +1357,7 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <title>Hola Frida (de Karine Vézina, André Kadi (2025))</title>
     <link>https://new.express.adobe.com/id/urn:aaid:sc:EU:7765521b-3de6-4269-9a0f-373e3c21765c?invite=true&amp;accept=true%3Fpreload%3Dsharesheet&amp;promoid=Z2G1FQKR&amp;mv=other</link>
     <guid isPermaLink="false">125</guid>
-    <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 11 Mar 2026 14:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 11 Mar 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Auditorium
@@ -1368,7 +1368,7 @@ C’est l’histoire d’une petite fille différente. Son monde, c’est Coyoac
     <title>Les ressources en ligne des bibliothèques d'Agglopolys</title>
     <link>https://new.express.adobe.com/id/urn:aaid:sc:EU:fdd0bcb6-8f27-4f38-b79c-4b0cfb50590e?invite=true&amp;accept=true%3Fpreload%3Dsharesheet&amp;promoid=Z2G1FQKR&amp;mv=other</link>
     <guid isPermaLink="false">126</guid>
-    <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 14 Mar 2026 14:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Sat, 14 Mar 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Auditorium
@@ -1379,7 +1379,7 @@ Venez découvrir les pépites des bibliothèques d'Agglopolys ! Le site web perm
     <title>Coin des gameurs</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">127</guid>
-    <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 14 Mar 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 14 Mar 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -1390,7 +1390,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Vente de livres désherbés</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">128</guid>
-    <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 04 Feb 2026 10:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 07 Feb 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbe-Grégoire, Espace Julien-Angelier
@@ -1407,7 +1407,7 @@ Profitez de prix mini (0,50 € ou 1 €) sur des livres jeunesse, adultes et pa
     <title>TRIO  LO'JO</title>
     <link>https://new.express.adobe.com/id/urn:aaid:sc:EU:6767167d-dfe7-4e2b-a22d-713ea079847a?invite=true&amp;accept=true%3Fpreload%3Dsharesheet&amp;promoid=Z2G1FQKR&amp;mv=other</link>
     <guid isPermaLink="false">129</guid>
-    <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 20 Mar 2026 18:30:00 +0000</pubDate>
     <category>Concert</category>
     <endDate>Fri, 20 Mar 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbe-Grégoire, espace Adultes
@@ -1421,7 +1421,7 @@ Le Trio Lo'jo réunit les voix de Nadia, Yamina Nid el Mourid et Denis Péan, «
     <title>1 livre entre 4 jeux</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=6418</link>
     <guid isPermaLink="false">131</guid>
-    <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 24 Apr 2026 15:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Fri, 24 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix
@@ -1432,7 +1432,7 @@ Le Trio Lo'jo réunit les voix de Nadia, Yamina Nid el Mourid et Denis Péan, «
     <title>Coin des gameurs</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=8087</link>
     <guid isPermaLink="false">132</guid>
-    <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 11 Apr 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 11 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -1443,7 +1443,7 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10788</link>
     <guid isPermaLink="false">133</guid>
-    <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 18 Apr 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 18 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -1466,7 +1466,7 @@ Grâce à des applications sur tablette, coloriez un dessin et regardez-le s’a
     <title>1 smartphone 1 question</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=8196</link>
     <guid isPermaLink="false">135</guid>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 01 Apr 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -1477,7 +1477,7 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <title>Thé Coups de cœur</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10567</link>
     <guid isPermaLink="false">136</guid>
-    <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 11 Apr 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 11 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -1488,7 +1488,7 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <title>Les Lectures du Samedi</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">137</guid>
-    <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 04 Mar 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 04 Mar 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1499,7 +1499,7 @@ Chaque mois, venez écouter des histoires en famille avec vos enfants de 0 à 6 
     <title>Petites lectures et comptines</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">138</guid>
-    <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 08 Apr 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 08 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1510,7 +1510,7 @@ Venez partager un moment parentalité autour des lectures pour les tout-petits. 
     <title>Les Lectures du samedi</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=8155</link>
     <guid isPermaLink="false">139</guid>
-    <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 04 Apr 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 04 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1521,7 +1521,7 @@ Chaque mois, venez écouter des histoires en famille avec vos enfants de 0 à 6 
     <title>Aiguilles et compagnie</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/ermes/administration/basicimagedownload.ashx?repositoryId=1&amp;itemId=11183</link>
     <guid isPermaLink="false">140</guid>
-    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 25 Apr 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 25 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1532,7 +1532,7 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <title>Club lecteurs avec les bénévoles de la médiathèque Rose-Valland</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">141</guid>
-    <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 18 Apr 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 18 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1543,7 +1543,7 @@ Envie de partager vos coups de coeurs lecture ? Envie de découvrir de nouveaux 
     <title>Découverte des échecs avec Les Roqueurs d'Onzain</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10481</link>
     <guid isPermaLink="false">142</guid>
-    <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 18 Apr 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 18 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1554,7 +1554,7 @@ Le club d’Échecs de Veuzain-sur-Loire s’installe à la médiathèque pour j
     <title>La CLE des mots - Le Club Ludique d'Ecriture de Veuzain</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10479</link>
     <guid isPermaLink="false">143</guid>
-    <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 15 May 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 15 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1565,7 +1565,7 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <title>Atelier loisirs créatifs</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10823</link>
     <guid isPermaLink="false">144</guid>
-    <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 15 Apr 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 15 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1576,7 +1576,7 @@ On bricole, on invente, on fabrique, on bidouille à la médiathèque ! L'esprit
     <title>Club de maquettisme</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11185</link>
     <guid isPermaLink="false">145</guid>
-    <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 11 Apr 2026 14:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 11 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1587,7 +1587,7 @@ Bricoleur chevronné ou débutant, venez participer à la création d'une maquet
     <title>Le Club des créatures mystérieuses</title>
     <link>https://new.express.adobe.com/id/urn:aaid:sc:EU:f6148f61-72df-5cf1-96c8-b6e6f7f1dff5?invite=true&amp;accept=true&amp;promoid=Z2G1FQKR&amp;mv=other</link>
     <guid isPermaLink="false">146</guid>
-    <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 08 Apr 2026 14:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Wed, 08 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix
@@ -1598,7 +1598,7 @@ Pars à l’aventure ! D’étranges et mystérieuses créatures auraient été 
     <title>John ZORN vu par Guillaume Kosmicki &amp; Mathieu Amalric</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11101</link>
     <guid isPermaLink="false">147</guid>
-    <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 11 Apr 2026 15:30:00 +0000</pubDate>
     <category>Conférence &amp; Projections Cinéma</category>
     <endDate>Sat, 11 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium, Blois
@@ -1609,7 +1609,7 @@ Auteur d'une œuvre dense et pléthorique, le New-Yorkais John Zorn est depuis p
     <title>Aiguilles &amp; cie : spécial Pois</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11107</link>
     <guid isPermaLink="false">148</guid>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 01 Apr 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 01 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -1620,7 +1620,7 @@ Auteur d'une œuvre dense et pléthorique, le New-Yorkais John Zorn est depuis p
     <title>Game over</title>
     <link>https://new.express.adobe.com/id/urn:aaid:sc:EU:a33d652d-3735-43ed-a2ea-117193cc167a?invite=true&amp;accept=true%3Fpreload%3Dsharesheet&amp;promoid=Z2G1FQKR&amp;mv=other</link>
     <guid isPermaLink="false">149</guid>
-    <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 15 Apr 2026 14:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Wed, 15 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Auditorium
@@ -1631,7 +1631,7 @@ Sur console (PS5 ou Switch 2) et grand écran, venez vous mesurer à d’autres 
     <title>Les Bons clics : découvrir France Connect et l'Identité Numérique</title>
     <link>https://www.cdad-aveyron.fr/wp-content/uploads/2021/06/FC_800x430_1.jpg</link>
     <guid isPermaLink="false">150</guid>
-    <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 17 Apr 2026 15:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Fri, 17 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -1642,7 +1642,7 @@ Vous avez déjà vu le logo France Connect mais vous ne savez pas ce que c'est ?
     <title>Aiguilles &amp; Cie : donnez une seconde vie à vos vêtements !</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11107</link>
     <guid isPermaLink="false">151</guid>
-    <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Thu, 23 Apr 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Thu, 23 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -1653,7 +1653,7 @@ Redonnez vie à votre dressing avec Aiguilles &amp; Cie ! En partenariat avec le
     <title>"Compositrices, l'histoire oubliée de la musique"</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11180</link>
     <guid isPermaLink="false">153</guid>
-    <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 30 May 2026 16:00:00 +0000</pubDate>
     <category>Conférence - Musique Classique</category>
     <endDate>Sat, 30 May 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -1666,7 +1666,7 @@ Par Guillaume Kosmicki musicologue et écrivain spécialisé dans l’histoire d
     <title>Dessin manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11105</link>
     <guid isPermaLink="false">154</guid>
-    <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Thu, 16 Apr 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Thu, 16 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
@@ -1677,7 +1677,7 @@ Réalise un personnage de manga avec des feutres Posca (copyright) et Promarker 
     <title>Atelier découverte de l'art traditionnel ukrainien : le Petrykivka</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11099</link>
     <guid isPermaLink="false">155</guid>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 01 Apr 2026 15:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -1688,7 +1688,7 @@ Découvrez l’art traditionnel ukrainien Petrykivka, inscrit au patrimoine cult
     <title>Atelier découverte de l'art traditionnel ukrainien : le Petrykivka</title>
     <link>https://new.express.adobe.com/id/urn:aaid:sc:EU:4b174afc-6e17-5524-8698-4d4c33d4050d?invite=true&amp;accept=true&amp;promoid=Z2G1FQKR&amp;mv=other</link>
     <guid isPermaLink="false">156</guid>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 01 Apr 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1707,7 +1707,7 @@ Matériel fourni.</description>
     <title>Créez à la manière de Yayoi Kusama ; une œuvre collective dont vous êtes "le pois" de départ</title>
     <link>https://new.express.adobe.com/id/urn:aaid:sc:EU:65c40e36-08d8-5775-9846-1aaf00979cd8?invite=true&amp;accept=true&amp;promoid=Z2G1FQKR&amp;mv=other</link>
     <guid isPermaLink="false">157</guid>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 01 Apr 2026 14:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix
@@ -1720,7 +1720,7 @@ Du 1er avril au  30 juin, des pois vous attendront ! Vous passez un petit temps 
     <title>Samedi c'est BD</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11186</link>
     <guid isPermaLink="false">158</guid>
-    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 25 Apr 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 25 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbe-Grégoire, espace Adultes
@@ -1731,7 +1731,7 @@ Créatrices ou sujet de bande-dessinées, les artistes féminines peuplent le 9e
     <title>Midi-Curieux : les femmes dans l'art à travers le roman</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10887</link>
     <guid isPermaLink="false">159</guid>
-    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 29 Apr 2026 12:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 29 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbe-Grégoire, Espace Julien-Angelier
@@ -1753,7 +1753,7 @@ Description à venir + visuels (en attente prestataire) </description>
     <title>Rencontre avec les artistes de l'artothèque de Blois</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11136</link>
     <guid isPermaLink="false">161</guid>
-    <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 11 Apr 2026 10:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 11 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1766,7 +1766,7 @@ Exposition visible jusqu'au 2 mai 2026</description>
     <title>A quoi pense Madame Manet (sur son canapé bleu)</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11102</link>
     <guid isPermaLink="false">162</guid>
-    <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 24 Apr 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Fri, 24 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -1778,7 +1778,7 @@ Exposition visible jusqu'au 2 mai 2026</description>
     <title>Troc de plantes</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11137</link>
     <guid isPermaLink="false">163</guid>
-    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 25 Apr 2026 10:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 25 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -1789,7 +1789,7 @@ Donnez une seconde vie à vos plantes et graines surnuméraire. Partagez, échan
     <title>Sarah Bernhardt, la divine</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11103</link>
     <guid isPermaLink="false">164</guid>
-    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 29 Apr 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 29 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -1800,7 +1800,7 @@ Paris, 1896. Sarah Bernhardt est au sommet de sa gloire. Icône de son époque e
     <title>Tournoi Just dance 100% féminin</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11182</link>
     <guid isPermaLink="false">165</guid>
-    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 20 May 2026 14:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Wed, 20 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Auditorium
@@ -1830,7 +1830,7 @@ Prête à enflammer le dancefloor ? Rejoins notre tournoi Just Dance 100% fémin
 </title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">168</guid>
-    <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 03 Jun 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
@@ -1846,7 +1846,7 @@ Inscription conseillée
     <title>« Kusama : Infinity » de Heather Lenz</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">169</guid>
-    <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Thu, 04 Jun 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Thu, 04 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Auditorium
@@ -1857,7 +1857,7 @@ Yayoi Kusama est née dans une famille conservatrice de la campagne japonaise et
     <title>Troc de plantes et de graines</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11175</link>
     <guid isPermaLink="false">170</guid>
-    <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 23 May 2026 10:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 23 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix
@@ -1868,7 +1868,7 @@ Amateurs et amoureux des végétaux, venez échanger avec nous vos boutures et v
     <title>"Big eyes" de Tim Burton</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">171</guid>
-    <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Thu, 18 Jun 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Thu, 18 Jun 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -1880,7 +1880,7 @@ La projection sera suivie d'un échange l'artiste plasticienne Svetlina Petrova.
     <title>Game over</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">172</guid>
-    <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 27 May 2026 14:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Wed, 27 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Auditorium
@@ -1891,7 +1891,7 @@ Sur console (PS5 ou Switch 2) et grand écran, venez vous mesurer à d’autres 
     <title>Les Bons clics - Le compte Ameli</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11173</link>
     <guid isPermaLink="false">174</guid>
-    <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Tue, 12 May 2026 15:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Tue, 12 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -1902,7 +1902,7 @@ Cet atelier vous présentera les fonctionnalités du site Ameli et vous permettr
     <title>Les Bons clics - Le B.A-BA de l'IA</title>
     <link>même visuel utilisé en février</link>
     <guid isPermaLink="false">175</guid>
-    <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 12 Jun 2026 15:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Fri, 12 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -1913,7 +1913,7 @@ Venez vous familiariser avec les principes et le fonctionnement de l'IA au trave
     <title>Vivaces</title>
     <link>https://www.desrondsdanslo.com/images/Vivaces/extrait2.jpg</link>
     <guid isPermaLink="false">176</guid>
-    <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 30 May 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 30 May 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbe-Grégoire, espace Adultes
@@ -1935,7 +1935,7 @@ Atelier Fanzine en présence de Lucile et Pauline Torregrossa, auteure et illust
     <title>Planètes musicales</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">178</guid>
-    <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 30 May 2026 11:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 30 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -1946,7 +1946,7 @@ Atelier Fanzine en présence de Lucile et Pauline Torregrossa, auteure et illust
     <title>Raconte Thé Cinéma</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10131</link>
     <guid isPermaLink="false">179</guid>
-    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 25 Apr 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 25 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo
@@ -1957,7 +1957,7 @@ Atelier Fanzine en présence de Lucile et Pauline Torregrossa, auteure et illust
     <title>Atelier "Big eyes"</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">180</guid>
-    <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 24 Jun 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 24 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
@@ -1968,7 +1968,7 @@ Créez une petite toile à la manière de Margaret Keane dont l'histoire a inspi
     <title>Exposition "Vivaces"</title>
     <link>https://www.desrondsdanslo.com/images/Vivaces/Couv750.jpg</link>
     <guid isPermaLink="false">181</guid>
-    <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Tue, 05 May 2026 13:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbe-Grégoire, Hall d’accueil
@@ -1979,7 +1979,7 @@ Exposition des inspirations et dessins originaux de Lucile et Pauline Torregross
     <title>Atelier créez un fanzine antidote</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">182</guid>
-    <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 13 Jun 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 13 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
@@ -2009,7 +2009,7 @@ les doudous !</title>
     <title>Découverte numérique : codage avec Lightbot</title>
     <link>https://www.banq.qc.ca/sites/default/files/815e0b52-637b-489b-991c-cd1fd7de39d9.jpg</link>
     <guid isPermaLink="false">185</guid>
-    <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 10 Jun 2026 15:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Wed, 10 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -2021,7 +2021,7 @@ Lightbot est un jeu de logique : un casse-tête dont le fonctionnement est basé
 </title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">186</guid>
-    <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 24 Jun 2026 15:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Fri, 24 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2033,7 +2033,7 @@ Imagine et dessine ton propre super-héros : à toi de choisir ses pouvoirs, son
     <title> Bestiaire encyclopédique avec Adrien Vermont</title>
     <link>https://new.express.adobe.com/id/urn:aaid:sc:EU:adc5b093-9f2c-4177-84d6-418c44c8755a?invite=true&amp;accept=true%3Fpreload%3Dsharesheet&amp;promoid=Z2G1FQKR&amp;mv=other</link>
     <guid isPermaLink="false">187</guid>
-    <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 21 Mar 2026 10:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 21 Mar 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix</description>
@@ -2042,7 +2042,7 @@ Imagine et dessine ton propre super-héros : à toi de choisir ses pouvoirs, son
     <title>Aiguilles &amp; cie</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=11107</link>
     <guid isPermaLink="false">188</guid>
-    <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 06 May 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 06 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -2053,7 +2053,7 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <title>Aiguilles &amp; cie</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">189</guid>
-    <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 03 Jun 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -2064,7 +2064,7 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10788</link>
     <guid isPermaLink="false">190</guid>
-    <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 23 May 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 23 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -2075,7 +2075,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">191</guid>
-    <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 13 Jun 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 13 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -2086,7 +2086,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">192</guid>
-    <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 27 Jun 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 27 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -2097,7 +2097,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Thé Coups de cœur</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">193</guid>
-    <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 30 May 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 30 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -2108,7 +2108,7 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <title>Coin des gameurs</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=6129</link>
     <guid isPermaLink="false">194</guid>
-    <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 23 May 2026 10:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Sat, 23 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -2119,7 +2119,7 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <title>Coin des gameurs</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">195</guid>
-    <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 06 Jun 2026 10:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Sat, 06 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -2130,7 +2130,7 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <title>Coin des gameurs</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">196</guid>
-    <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 20 Jun 2026 10:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Sat, 20 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -2141,7 +2141,7 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <title>Game over</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">197</guid>
-    <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 17 Jun 2026 14:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Wed, 17 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Auditorium
@@ -2152,7 +2152,7 @@ Sur console (PS5 ou Switch 2) et grand écran, venez vous mesurer à d’autres 
     <title>1 smartphone 1 question</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=8196</link>
     <guid isPermaLink="false">198</guid>
-    <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 27 May 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 27 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -2163,7 +2163,7 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <title>1 smartphone 1 question</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">199</guid>
-    <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 10 Jun 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 10 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -2174,7 +2174,7 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <title>1 smartphone 1 question</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">200</guid>
-    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 23 Sep 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 23 Sep 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -2185,7 +2185,7 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">201</guid>
-    <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 25 Mar 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 25 Mar 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2196,7 +2196,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=9362</link>
     <guid isPermaLink="false">202</guid>
-    <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 08 Apr 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 08 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2207,7 +2207,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">203</guid>
-    <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 22 Apr 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 22 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2218,7 +2218,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">204</guid>
-    <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 13 May 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 13 May 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2229,7 +2229,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">205</guid>
-    <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 27 May 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 27 May 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2240,7 +2240,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Mon quart d'heure avec Plume</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">206</guid>
-    <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 16 May 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 16 May 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2251,7 +2251,7 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <title>1, 2, 3... Il était une fois</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=9121</link>
     <guid isPermaLink="false">207</guid>
-    <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 04 Apr 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 04 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2262,7 +2262,7 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <title>Mon quart d'heure avec Plume</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10765</link>
     <guid isPermaLink="false">208</guid>
-    <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 18 Apr 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 18 Apr 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2273,7 +2273,7 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <title>1, 2, 3... Il était une fois</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">209</guid>
-    <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 14 Mar 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 14 Mar 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2284,7 +2284,7 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <title>1, 2, 3... Il était une fois</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">210</guid>
-    <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 23 May 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 23 May 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2295,7 +2295,7 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <title>1, 2, 3... Il était une fois</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">211</guid>
-    <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 13 Jun 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 13 Jun 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2306,7 +2306,7 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <title>Laissez-vous conter</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">213</guid>
-    <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 27 May 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 27 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse
@@ -2317,7 +2317,7 @@ Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans</descr
     <title>Laissez-vous conter</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">214</guid>
-    <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 17 Jun 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 17 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse
@@ -2328,7 +2328,7 @@ Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans</descr
     <title>Henriette et Rosette, Amour et charcuterie</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11179</link>
     <guid isPermaLink="false">215</guid>
-    <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 29 May 2026 18:00:00 +0000</pubDate>
     <category>Concert</category>
     <endDate>Fri, 29 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -2340,7 +2340,7 @@ Henriette, du Mans, et Rosette, de Lyon, deux chanteuses gouailleuse, amoureuses
 </title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">216</guid>
-    <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 03 Jun 2026 15:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -2367,7 +2367,7 @@ Les grands artistes ont déployé toute une palette de techniques pour exprimer 
     <title>L'espionne aux tableaux, Rose Valland face au pillage nazi, de Brigitte Chevet, 52 min 2021, France</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">218</guid>
-    <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 06 Jun 2026 16:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sat, 06 Jun 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -2378,7 +2378,7 @@ Attachée de conservation au musée du Jeu de Paume pendant l’Occupation, Rose
     <title>Casa Susanna</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11177</link>
     <guid isPermaLink="false">219</guid>
-    <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 22 May 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Fri, 22 May 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -2389,7 +2389,7 @@ Dans les années 50 et 60, au fin fond de la campagne américaine, une petite ma
     <title>Les crevettes pailletées</title>
     <link>https://ifsuede.com/wp-content/uploads/2023/03/2.jpg</link>
     <guid isPermaLink="false">220</guid>
-    <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 20 May 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 20 May 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -2400,7 +2400,7 @@ Après avoir tenu des propos homophobes, Mathias Le Goff, vice-champion du monde
     <title>Lectures transformées - des garçons et des filles</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">221</guid>
-    <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 17 Jun 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 17 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -2411,7 +2411,7 @@ Une fille, c’est rose et c’est doux. Un garçon, c’est fort et ça ne pleu
     <title>Coin des gameurs</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=6129</link>
     <guid isPermaLink="false">222</guid>
-    <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 25 Apr 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 25 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -2422,7 +2422,7 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <title>Ciné d'été : En fanfare</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">223</guid>
-    <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 05 Aug 2026 18:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 05 Aug 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -2441,7 +2441,7 @@ du destin. Jimmy se prend alors à rêver d’une autre vie.</description>
     <title>Ciné d'été : Charade</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">224</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 19 Aug 2026 18:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 19 Aug 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -2452,7 +2452,7 @@ Aux sports d’hiver, une Américaine tombe amoureuse d’un séduisant célibat
     <title>Ciné d'été : L'Aventura</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">225</guid>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 26 Aug 2026 18:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 26 Aug 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
@@ -2464,7 +2464,7 @@ Les vacances d’été. Sardaigne, Italie. Un (road) trip en famille. Claudine, 
 </title>
     <link>https://fredericmarais.com/didgeridoo/</link>
     <guid isPermaLink="false">226</guid>
-    <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 03 Jun 2026 15:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2490,7 +2490,7 @@ Federico Appel est un auteur, illustrateur et traducteur italien. Il a illustré
     <title>1, 2, 3... Il était une fois</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">229</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 12 Sep 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 12 Sep 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2501,7 +2501,7 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <title>1, 2, 3... Il était une fois</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">230</guid>
-    <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 03 Oct 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 03 Oct 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2512,7 +2512,7 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <title>1, 2, 3... Il était une fois</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">231</guid>
-    <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 07 Nov 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 07 Nov 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2523,7 +2523,7 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <title>1, 2, 3... Il était une fois</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">232</guid>
-    <pubDate>Sat, 12 Dec 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 12 Dec 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 12 Dec 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2534,7 +2534,7 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">233</guid>
-    <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 22 Jul 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 22 Jul 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2545,7 +2545,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">234</guid>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 26 Aug 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 26 Aug 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2556,7 +2556,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">235</guid>
-    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 02 Sep 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 02 Sep 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2567,7 +2567,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">236</guid>
-    <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 16 Sep 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 16 Sep 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2578,7 +2578,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">237</guid>
-    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 30 Sep 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 30 Sep 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2589,7 +2589,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">238</guid>
-    <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 28 Oct 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 28 Oct 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2600,7 +2600,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">239</guid>
-    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 04 Nov 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 04 Nov 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2611,7 +2611,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">240</guid>
-    <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 18 Nov 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 18 Nov 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2622,7 +2622,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">241</guid>
-    <pubDate>Wed, 02 Dec 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 02 Dec 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 02 Dec 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2633,7 +2633,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Je lis avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">242</guid>
-    <pubDate>Wed, 16 Dec 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 16 Dec 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 16 Dec 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -2644,7 +2644,7 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <title>Mon quart d'heure avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">243</guid>
-    <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 25 Jul 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 25 Jul 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2655,7 +2655,7 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <title>Mon quart d'heure avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">244</guid>
-    <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 05 Sep 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 05 Sep 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2666,7 +2666,7 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <title>Mon quart d'heure avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">245</guid>
-    <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 03 Oct 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 03 Oct 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2677,7 +2677,7 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <title>Mon quart d'heure avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">246</guid>
-    <pubDate>Sat, 28 Nov 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 28 Nov 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 28 Nov 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2688,7 +2688,7 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <title>Mon quart d'heure avec Plume</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">247</guid>
-    <pubDate>Sat, 12 Dec 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 12 Dec 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 12 Dec 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
@@ -2699,7 +2699,7 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <title>Rencontre-débat sur la sélection 2026</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11181</link>
     <guid isPermaLink="false">248</guid>
-    <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Thu, 28 May 2026 18:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Thu, 28 May 2026 00:00:00 +0000</endDate>
     <description>IUT, Amphithéâtre n°1
@@ -2710,7 +2710,7 @@ Les six titres sont évoqués tour à tour à l’occasion de deux soirées. Des
     <title>Remise du prix 2026</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">249</guid>
-    <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 12 Jun 2026 17:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Fri, 12 Jun 2026 00:00:00 +0000</endDate>
     <description>Halle aux Grains
@@ -2721,7 +2721,7 @@ Depuis mars, les romans sélectionnés font l’objet des lectures, débats, éc
     <title>1 smartphone 1 question</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=8196</link>
     <guid isPermaLink="false">250</guid>
-    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 29 Apr 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 29 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -2733,7 +2733,7 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
 </title>
     <link>L:\Bibliotheques\JEUNESSE\COMMUN\PHOTOS ANIMATIONS\DLE 2025\com DLE 2026.jpg</link>
     <guid isPermaLink="false">251</guid>
-    <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 08 Jul 2026 09:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 08 Jul 2026 00:00:00 +0000</endDate>
     <description>Jardin de l'Évêché
@@ -2755,7 +2755,7 @@ Mercredi 8 juillet – Jardins de l'Évêch&amp;#xE9;*(en cas de pluie : bibliot
 </title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">252</guid>
-    <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 03 Jul 2026 09:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Fri, 03 Jul 2026 00:00:00 +0000</endDate>
     <description>Jardin de la Crèche de Blois Vienne
@@ -2775,7 +2775,7 @@ Mercredi 8 juillet – Jardins de l'Évêch&amp;#xE9;*(en cas de pluie : bibliot
     <title>Conférence : La bibliothèque de Blois de 1939 à 1945 : un havre de paix pendant la guerre ? </title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">253</guid>
-    <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 19 Sep 2026 14:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 19 Sep 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, Fonds patrimonial
@@ -2806,7 +2806,7 @@ Vernissage de l'exposition le 12 mai 2026 à 18h</description>
 </title>
     <link>L:\Bibliotheques\JEUNESSE\COMMUN\PHOTOS ANIMATIONS\DLE 2025\com DLE 2026.jpg</link>
     <guid isPermaLink="false">255</guid>
-    <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Thu, 02 Jul 2026 09:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Thu, 02 Jul 2026 00:00:00 +0000</endDate>
     <description>Jardin de la Médiathèque Maurice-Genevoix
@@ -2826,7 +2826,7 @@ Mercredi 8 juillet – Jardins de l'Évêch&amp;#xE9;*(en cas de pluie : bibliot
     <title>La CLE des mots - Le Club Ludique d'Ecriture de Veuzain</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10479</link>
     <guid isPermaLink="false">256</guid>
-    <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 03 Apr 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 03 Apr 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -2837,7 +2837,7 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <title>La CLE des mots - Le Club Ludique d'Ecriture de Veuzain</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10479</link>
     <guid isPermaLink="false">257</guid>
-    <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 29 May 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 29 May 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -2848,7 +2848,7 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <title>La CLE des mots - Le Club Ludique d'Ecriture de Veuzain</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10479</link>
     <guid isPermaLink="false">258</guid>
-    <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 12 Jun 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 12 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -2859,7 +2859,7 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <title>La CLE des mots - Le Club Ludique d'Ecriture de Veuzain</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&amp;itemId=10479</link>
     <guid isPermaLink="false">259</guid>
-    <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 26 Jun 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 26 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Rose-Valland
@@ -2870,7 +2870,7 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <title>Mode Vacances : activé ! Smoothie party</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">260</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 01 Jul 2026 16:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Jul 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
@@ -2881,7 +2881,7 @@ Choisis tes fruits et tes ingrédients, mixe, et installe-toi dans le jardin pou
     <title>Mode Vacances : activé ! Création d'un tote bag</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">261</guid>
-    <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Tue, 07 Jul 2026 14:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Tue, 07 Jul 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -2893,7 +2893,7 @@ Viens créer ton tote bag d'été en compagnie de Jade du Bar à couture ! Dessi
     <title>Mode Vacances : activé ! Atelier "diamond painting" sur livre</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">262</guid>
-    <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 08 Jul 2026 14:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 08 Jul 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -2905,7 +2905,7 @@ Tu as un livre préféré ou un qui mérite une seconde vie ? Apporte-le et cust
     <title>Mode Vacances : activé ! Atelier bracelet diamonds</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">263</guid>
-    <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Thu, 09 Jul 2026 14:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Thu, 09 Jul 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
@@ -2917,7 +2917,7 @@ Pose, assemble, crée ! Dans cet atelier, on place une à une de petites résine
     <title>Mode Vacances : activé ! Lectures au jardin</title>
     <link>https://pixabay.com/photos/reading-plant-nature-leaf-garden-3355230/</link>
     <guid isPermaLink="false">264</guid>
-    <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 10 Jul 2026 14:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Fri, 10 Jul 2026 00:00:00 +0000</endDate>
     <description>Jardin de la Médiathèque Maurice-Genevoix
@@ -2928,7 +2928,7 @@ Moment détente en plein air avec les lectures au jardin : histoires racontées 
     <title>Médiathèque Hors les murs</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">265</guid>
-    <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 05 Aug 2026 16:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 05 Aug 2026 00:00:00 +0000</endDate>
     <description>Lac de la Pinçonnière
@@ -2939,7 +2939,7 @@ Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière
     <title>Médiathèque Hors les murs</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">266</guid>
-    <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 12 Aug 2026 16:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 12 Aug 2026 00:00:00 +0000</endDate>
     <description>Lac de la Pinçonnière
@@ -2950,7 +2950,7 @@ Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière
     <title>Médiathèque Hors les murs</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">267</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 19 Aug 2026 16:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 19 Aug 2026 00:00:00 +0000</endDate>
     <description>Lac de la Pinçonnière
@@ -2961,7 +2961,7 @@ Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière
     <title>Médiathèque hors les murs</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">268</guid>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 26 Aug 2026 16:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 26 Aug 2026 00:00:00 +0000</endDate>
     <description>Lac de la Pinçonnière
@@ -2972,7 +2972,7 @@ Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière
     <title>Visite insolite de la médiathèque Maurice-Genevoix</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">269</guid>
-    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 29 Jul 2026 11:00:00 +0000</pubDate>
     <category>Visite des bibliothèques</category>
     <endDate>Wed, 29 Jul 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix
@@ -2983,7 +2983,7 @@ Plongez dans les coulisses interdites de votre médiathèque ! Entre anecdotes h
     <title>Visite insolite de la médiathèque Maurice-Genevoix</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">270</guid>
-    <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Tue, 21 Jul 2026 11:00:00 +0000</pubDate>
     <category>Visite des bibliothèques</category>
     <endDate>Tue, 21 Jul 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix
@@ -2995,7 +2995,7 @@ Plongez dans les coulisses interdites de votre médiathèque ! Entre anecdotes h
 </title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">271</guid>
-    <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Thu, 09 Jul 2026 13:30:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Thu, 27 Aug 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo
@@ -3006,7 +3006,7 @@ Vous avez envie d'une immersion en station spatiale ? De combattre des zombies o
     <title>Les Instants FIGAS — Concert</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">272</guid>
-    <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 15 Jul 2026 18:00:00 +0000</pubDate>
     <category>Concert</category>
     <endDate>Wed, 15 Jul 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse
@@ -3032,7 +3032,7 @@ Festival International FIGAS — 17 au 19 juillet 2026, Blois</description>
     <title>Atelier création BD – Super-héros</title>
     <link>https://www.partir-en-livre.fr/partirenlivre/les-ressources-de-ledition-2026</link>
     <guid isPermaLink="false">274</guid>
-    <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 01 Jul 2026 15:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Jul 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
@@ -3044,7 +3044,7 @@ Imagine et dessine ton propre super-héros : à toi de choisir ses pouvoirs, son
     <title>Raconte Thé Cinéma</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">275</guid>
-    <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+    <pubDate>Thu, 28 May 2026 11:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Thu, 28 May 2026 00:00:00 +0000</endDate>
     <description>Espace Quinière - Rosa Parks
@@ -3055,7 +3055,7 @@ Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale a
     <title>Raconte Thé Cinéma</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">276</guid>
-    <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 20 Jun 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 20 Jun 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo
@@ -3066,7 +3066,7 @@ Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale a
     <title>**ApiDays — Extraction de miel avec le Syndicat des Apiculteurs de Loir-et-Cher**</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">278</guid>
-    <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 13 Jun 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 13 Jun 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
@@ -3084,7 +3084,7 @@ Entrée libre
 </title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">279</guid>
-    <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 13 Jun 2026 15:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 13 Jun 2026 00:00:00 +0000</endDate>
     <description>Bibliothèque Abbé-Grégoire - Antichambre
@@ -3103,7 +3103,7 @@ Inscription conseillée
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">280</guid>
-    <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 05 Sep 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 05 Sep 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -3114,7 +3114,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">281</guid>
-    <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 12 Sep 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 12 Sep 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -3125,7 +3125,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">282</guid>
-    <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 10 Oct 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 10 Oct 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -3136,7 +3136,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">283</guid>
-    <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 21 Oct 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 21 Oct 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -3147,7 +3147,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">284</guid>
-    <pubDate>Sat, 21 Nov 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 21 Nov 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 21 Nov 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -3158,7 +3158,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">285</guid>
-    <pubDate>Sat, 28 Nov 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 28 Nov 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 28 Nov 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -3169,7 +3169,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">286</guid>
-    <pubDate>Sat, 05 Dec 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 05 Dec 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 05 Dec 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -3180,7 +3180,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Club manga</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">287</guid>
-    <pubDate>Sat, 19 Dec 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 19 Dec 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 19 Dec 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
@@ -3191,7 +3191,7 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <title>Thé Coups de cœur</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">288</guid>
-    <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 19 Sep 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 19 Sep 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -3202,7 +3202,7 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <title>Thé Coups de cœur</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">289</guid>
-    <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 10 Oct 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 10 Oct 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -3213,7 +3213,7 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <title>Thé Coups de cœur</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">290</guid>
-    <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 07 Nov 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 07 Nov 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -3224,7 +3224,7 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <title>Thé Coups de cœur</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">291</guid>
-    <pubDate>Sat, 12 Dec 2026 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 12 Dec 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 12 Dec 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
@@ -3235,7 +3235,7 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <title>1 smartphone 1 question</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">292</guid>
-    <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 24 Jun 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 24 Jun 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
@@ -3246,7 +3246,7 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <title>1 smartphone 1 question</title>
     <link>https://grist.numerique.gouv.fr</link>
     <guid isPermaLink="false">293</guid>
-    <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 09 Sep 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 09 Sep 2026 00:00:00 +0000</endDate>
     <description>Médiathèque Maurice-Genevoix, ETNA
