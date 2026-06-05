@@ -3,6 +3,7 @@ import requests
 import xml.sax.saxutils as sx
 import dateutil.parser
 import datetime
+import re
 
 # ==========================================
 # CONFIGURATION
@@ -15,49 +16,63 @@ GRIST_API_URL = f"https://grist.numerique.gouv.fr/api/docs/{DOC_ID}/tables/{TABL
 
 SITE_TITLE = "Communications"
 SITE_LINK = "https://grist.numerique.gouv.fr"
-SITE_DESC = "Flux RSS généré depuis la vue Com de Grist avec Catégories et Dates de Fin"
+SITE_DESC = "Flux RSS généré depuis la vue Com de Grist avec Catégories et Heures fusionnées"
 # ==========================================
 
-def iso_to_rfc2822(val, fallback_to_now=True):
-    """Convertit de manière ultra-robuste une date Grist (timestamp ou texte) au format RFC2822."""
-    if not val:
+def iso_to_rfc2822(date_val, time_val=None, fallback_to_now=True):
+    """Convertit une date Grist et une heure optionnelle au format standard RFC2822 pour le RSS."""
+    if not date_val:
         return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000") if fallback_to_now else ""
     
     # Cas 1 : Si Grist renvoie un timestamp numérique (int ou float)
-    if isinstance(val, (int, float)):
+    dt = None
+    if isinstance(date_val, (int, float)):
         try:
             # Grist renvoie parfois en millisecondes, on s'adapte
-            if val > 100000000000: 
-                val = val / 1000.0
-            dt = datetime.datetime.fromtimestamp(val, datetime.timezone.utc)
-            return dt.strftime("%a, %d %b %Y %H:%M:%S %z")
+            if date_val > 100000000000: 
+                date_val = date_val / 1000.0
+            dt = datetime.datetime.fromtimestamp(date_val, datetime.timezone.utc)
         except Exception:
             pass
-            
-    val_str = str(val).strip()
-    
-    # Cas 2 : Si le timestamp est stocké sous forme de texte numérique
-    if val_str.replace('.', '', 1).isdigit():
-        try:
-            ts = float(val_str)
-            if ts > 100000000000:
-                ts = ts / 1000.0
-            dt = datetime.datetime.fromtimestamp(ts, datetime.timezone.utc)
-            return dt.strftime("%a, %d %b %Y %H:%M:%S %z")
-        except Exception:
-            pass
-
-    # Cas 3 : Parsing flexible de chaînes textuelles (ISO, YYYY-MM-DD, etc.)
-    try:
-        dt = dateutil.parser.parse(val_str)
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=datetime.timezone.utc)
-        return dt.strftime("%a, %d %b %Y %H:%M:%S %z")
-    except Exception:
-        pass
+    else:
+        val_str = str(date_val).strip()
+        
+        # Cas 2 : Si le timestamp est stocké sous forme de texte numérique
+        if val_str.replace('.', '', 1).isdigit():
+            try:
+                ts = float(val_str)
+                if ts > 100000000000:
+                    ts = ts / 1000.0
+                dt = datetime.datetime.fromtimestamp(ts, datetime.timezone.utc)
+            except Exception:
+                pass
+        else:
+            # Cas 3 : Parsing de chaînes textuelles (ISO, YYYY-MM-DD, etc.)
+            try:
+                dt = dateutil.parser.parse(val_str)
+            except Exception:
+                pass
         
     # Repli de secours
-    return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000") if fallback_to_now else ""
+    if dt is None:
+        return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000") if fallback_to_now else ""
+            
+    # ADAPTATION : Fusion de l'heure séparée si elle est fournie
+    if time_val:
+        time_str = str(time_val).strip()
+        # Cherche un format HHhMM, HH:MM, HHh, etc.
+        match = re.search(r'(\d{1,2})[h:](\d{2})?', time_str, re.IGNORECASE)
+        if match:
+            hours = int(match.group(1))
+            minutes = int(match.group(2)) if match.group(2) else 0
+            try:
+                dt = dt.replace(hour=hours, minute=minutes, second=0)
+            except Exception:
+                pass
+                
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=datetime.timezone.utc)
+    return dt.strftime("%a, %d %b %Y %H:%M:%S %z")
 
 def fetch_rows():
     """Récupère publiquement les lignes du document Grist."""
@@ -100,7 +115,7 @@ def build_items(rows):
         loc = get_field(r, "Localisation") or get_field(r, "localisation") or ""
         guid = r.get("id") or get_field(r, "id") or link
         
-        # 1. ADAPTATION : Recherche multicritère de la Catégorie / Type d'animation
+        # 1. Recherche de la Catégorie / Type d'animation
         categorie = "Animation"
         champs_categories_possibles = ["Categorie", "categorie", "Type", "type", "Rubrique", "rubrique", "Genre", "genre"]
         for champ in champs_categories_possibles:
@@ -109,7 +124,7 @@ def build_items(rows):
                 categorie = str(valeur_trouvee).strip()
                 break
 
-        # 2. ADAPTATION : Recherche multicritère de la colonne Date de début dans votre tableau Grist
+        # 2. Recherche de la colonne de Date de début
         date_debut = ""
         champs_dates_possibles = [
             "Date_Debut", "Date_debut", "date_debut", 
@@ -121,13 +136,34 @@ def build_items(rows):
                 date_debut = valeur_trouvee
                 break
 
-        # 3. ADAPTATION : Recherche de la colonne Date de fin
+        # 3. Recherche de la colonne de Date de fin
         date_fin = ""
         champs_fin_possibles = ["Date_Fin", "Date_fin", "date_fin", "Date de fin", "End Date", "Date_fin_evenement"]
         for champ in champs_fin_possibles:
             valeur_trouvee = get_field(r, champ)
             if valeur_trouvee:
                 date_fin = valeur_trouvee
+                break
+
+        # 4. ADAPTATION : Recherche d'une colonne d'heure séparée pour le début
+        heure_debut = ""
+        champs_heures_possibles = [
+            "Heure", "heure", "Heure_Debut", "heure_debut", 
+            "Heure_debut", "Horaire", "horaire", "Heure de début"
+        ]
+        for champ in champs_heures_possibles:
+            valeur_trouvee = get_field(r, champ)
+            if valeur_trouvee:
+                heure_debut = valeur_trouvee
+                break
+
+        # 5. ADAPTATION : Recherche d'une colonne d'heure séparée pour la fin
+        heure_fin = ""
+        champs_heures_fin_possibles = ["Heure_Fin", "heure_fin", "Heure_fin", "Heure de fin", "Heure de fin d'événement"]
+        for champ in champs_heures_fin_possibles:
+            valeur_trouvee = get_field(r, champ)
+            if valeur_trouvee:
+                heure_fin = valeur_trouvee
                 break
         
         # Mise en forme de la localisation et de la description
@@ -136,12 +172,11 @@ def build_items(rows):
         if ville: meta.append(ville)
         
         full_desc = (", ".join(meta) + "\n\n" + desc) if desc else ", ".join(meta)
-        pub_rfc = iso_to_rfc2822(date_debut)
         
-        # Formatage de la date de fin (sans fallback sur 'now' si vide)
-        pub_fin_rfc = iso_to_rfc2822(date_fin, fallback_to_now=False) if date_fin else ""
+        # Fusion intelligente de la date et de l'heure
+        pub_rfc = iso_to_rfc2822(date_debut, heure_debut)
+        pub_fin_rfc = iso_to_rfc2822(date_fin, heure_fin, fallback_to_now=False) if date_fin else ""
         
-        # Génération de la balise XML avec notre catégorie et notre balise personnalisée d'endDate
         items.append(f"""  <item>
     <title>{sx.escape(str(titre))}</title>
     <link>{sx.escape(str(link))}</link>
@@ -172,7 +207,7 @@ def main():
     
     with open("rss.xml", "w", encoding="utf-8") as f:
         f.write(rss)
-    print("Le fichier rss.xml a été généré avec succès avec gestion des catégories et des dates de fin.")
+    print("Le fichier rss.xml a été généré avec succès avec fusion des heures.")
 
 if __name__ == "__main__":
     main()
