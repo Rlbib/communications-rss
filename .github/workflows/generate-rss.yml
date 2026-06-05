@@ -22,11 +22,6 @@ jobs:
       - name: Install deps
         run: pip install requests python-dateutil
 
-      - name: Generate RSS
-        env:
-          GRIST_API_KEY: ${{ secrets.GRIST_API_KEY }}
-        run: python scripts/generate_rss.py
-
       - name: Commit and push gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -34,7 +29,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Vérifie si la branche gh-pages existe, sinon la crée
+          # 1. Sauvegarde temporairement le script Python
+          mkdir -p /tmp/scripts
+          cp scripts/generate_rss.py /tmp/scripts/
+          
+          # 2. Bascule sur la branche gh-pages (et la crée de zéro si elle n'existe pas encore)
           if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
             git checkout gh-pages
             git pull origin gh-pages
@@ -43,10 +42,15 @@ jobs:
             git rm -rf .
           fi
           
-          # Récupère le fichier généré depuis le dossier temporaire ou le commit précédent
-          git checkout main -- scripts/
+          # 3. Restaure le script dans cette branche et génère le fichier rss.xml
+          mkdir -p scripts
+          cp /tmp/scripts/generate_rss.py scripts/
           python scripts/generate_rss.py
           
-          git add rss.xml
+          # 4. Crée le fichier magique .nojekyll pour désactiver les filtres de GitHub Pages
+          touch .nojekyll
+          
+          # 5. Enregistre et publie uniquement le flux RSS et le fichier .nojekyll
+          git add rss.xml .nojekyll
           git commit -m "Update rss.xml from Grist: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
           git push origin gh-pages
