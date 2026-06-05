@@ -18,24 +18,52 @@ SITE_LINK = "https://grist.numerique.gouv.fr"
 SITE_DESC = "Flux RSS généré depuis la vue Com de Grist"
 # ==========================================
 
-def iso_to_rfc2822(iso):
-    """Convertit une date ISO de Grist au format standardisé RFC2822 pour le RSS."""
+def iso_to_rfc2822(val):
+    """Convertit de manière ultra-robuste une date Grist (timestamp ou texte) au format RFC2822."""
+    if not val:
+        return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
+    
+    # Cas 1 : Si Grist renvoie un timestamp numérique (int ou float)
+    if isinstance(val, (int, float)):
+        try:
+            # Grist renvoie parfois en millisecondes, on s'adapte
+            if val > 100000000000: 
+                val = val / 1000.0
+            dt = datetime.datetime.fromtimestamp(val, datetime.timezone.utc)
+            return dt.strftime("%a, %d %b %Y %H:%M:%S %z")
+        except Exception:
+            pass
+            
+    val_str = str(val).strip()
+    
+    # Cas 2 : Si le timestamp est stocké sous forme de texte numérique
+    if val_str.replace('.', '', 1).isdigit():
+        try:
+            ts = float(val_str)
+            if ts > 100000000000:
+                ts = ts / 1000.0
+            dt = datetime.datetime.fromtimestamp(ts, datetime.timezone.utc)
+            return dt.strftime("%a, %d %b %Y %H:%M:%S %z")
+        except Exception:
+            pass
+
+    # Cas 3 : Parsing flexible de chaînes textuelles (ISO, YYYY-MM-DD, etc.)
     try:
-        dt = dateutil.parser.isoparse(iso)
+        dt = dateutil.parser.parse(val_str)
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=datetime.timezone.utc)
         return dt.strftime("%a, %d %b %Y %H:%M:%S %z")
     except Exception:
-        # En cas d'erreur de parsing, retourne la date et l'heure actuelle
-        return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
+        pass
+        
+    # Repli de secours sur l'heure actuelle si tout échoue
+    return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
 
 def fetch_rows():
     """Récupère publiquement les lignes du document Grist."""
     print(f"Tentative d'accès public à l'API : {GRIST_API_URL}")
     
-    # Appel anonyme sans token d'autorisation requis
     resp = requests.get(GRIST_API_URL)
-    
     if resp.status_code != 200:
         print(f"Erreur de l'API Grist ({resp.status_code}) : {resp.text}")
         raise SystemExit(f"Le serveur Grist a renvoyé une erreur. Vérifiez le TABLE_ID '{TABLE_ID}'.")
@@ -74,11 +102,11 @@ def build_items(rows):
         loc = get_field(r, "Localisation") or get_field(r, "localisation") or ""
         guid = r.get("id") or get_field(r, "id") or link
         
-        # ADAPTATION INTELLIGENTE : Recherche multicritère de la colonne Date dans Grist
+        # Recherche multicritère de la colonne Date dans votre tableau Grist
         date_debut = ""
         champs_dates_possibles = [
             "Date_Debut", "Date_debut", "date_debut", 
-            "Date", "date", "Date de début", "Start Date"
+            "Date", "date", "Date de début", "Start Date", "date_evenement"
         ]
         
         for champ in champs_dates_possibles:
@@ -93,7 +121,7 @@ def build_items(rows):
         if ville: meta.append(ville)
         
         full_desc = (", ".join(meta) + "\n\n" + desc) if desc else ", ".join(meta)
-        pub_rfc = iso_to_rfc2822(date_debut) if date_debut else datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
+        pub_rfc = iso_to_rfc2822(date_debut)
         
         items.append(f"""  <item>
     <title>{sx.escape(str(titre))}</title>
