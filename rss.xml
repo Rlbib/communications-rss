@@ -4,7 +4,7 @@
   <title>Communications</title>
   <link>https://grist.numerique.gouv.fr</link>
   <description>Flux RSS généré depuis la vue Com de Grist avec Catégories, Heures, Durées et Publics Cibles</description>
-  <lastBuildDate>Fri, 05 Jun 2026 10:43:28 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 05 Jun 2026 17:24:26 +0000</lastBuildDate>
   <item>
     <title>Pourquoi encore penser ? A l'heure de l'intelligence artificielle</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=10872</link>
@@ -2893,9 +2893,9 @@ Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans</descr
     <title>Laissez-vous conter</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
     <guid isPermaLink="false">214</guid>
-    <pubDate>Wed, 17 Jun 2026 10:30:00 +0000</pubDate>
+    <pubDate>Wed, 23 Sep 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
-    <endDate>Wed, 17 Jun 2026 00:00:00 +0000</endDate>
+    <endDate>Wed, 23 Sep 2026 00:00:00 +0000</endDate>
     <duration>30 min</duration>
     <targetAudience>A partir de 3 ans</targetAudience>
     <eventTime>10h30</eventTime>
@@ -4062,6 +4062,90 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? Ce rendez-vous vous permettra de prendre en main votre écran. Par rdv de 20 min., les mercredis matin. Inscription obligatoire au 02 54 51 33 22 en précisant la demande.</description>
+  </item>
+  <item>
+    <title>Atelier de conversation</title>
+    <link>https://grist.numerique.gouv.fr</link>
+    <guid isPermaLink="false">294</guid>
+    <pubDate>Fri, 04 Dec 2026 10:30:00 +0000</pubDate>
+    <category>Atelier</category>
+    <endDate>Fri, 04 Dec 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h30</eventTime>
+    <description>Médiathèque Maurice-Genevoix, ETNA
+
+Vous apprenez le français ? Venez partager un moment convivial en discutant sur des sujets variés. La médiathèque Maurice-Genevoix vous propose d’améliorer votre français, de vous sentir plus à l’aise à l’oral et de découvrir ses collections ainsi que les services qu’elle propose.</description>
+  </item>
+  <item>
+    <title>Atelier de conversation</title>
+    <link>https://grist.numerique.gouv.fr</link>
+    <guid isPermaLink="false">295</guid>
+    <pubDate>Fri, 04 Sep 2026 10:30:00 +0000</pubDate>
+    <category>Atelier</category>
+    <endDate>Fri, 04 Sep 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h30</eventTime>
+    <description>Médiathèque Maurice-Genevoix, ETNA
+
+Vous apprenez le français ? Venez partager un moment convivial en discutant sur des sujets variés. La médiathèque Maurice-Genevoix vous propose d’améliorer votre français, de vous sentir plus à l’aise à l’oral et de découvrir ses collections ainsi que les services qu’elle propose.</description>
+  </item>
+  <item>
+    <title>Atelier de conversation</title>
+    <link>https://grist.numerique.gouv.fr</link>
+    <guid isPermaLink="false">296</guid>
+    <pubDate>Fri, 02 Oct 2026 10:30:00 +0000</pubDate>
+    <category>Atelier</category>
+    <endDate>Fri, 02 Oct 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h30</eventTime>
+    <description>Médiathèque Maurice-Genevoix, ETNA
+
+Vous apprenez le français ? Venez partager un moment convivial en discutant sur des sujets variés. La médiathèque Maurice-Genevoix vous propose d’améliorer votre français, de vous sentir plus à l’aise à l’oral et de découvrir ses collections ainsi que les services qu’elle propose.</description>
+  </item>
+  <item>
+    <title>Atelier de conversation</title>
+    <link>https://grist.numerique.gouv.fr</link>
+    <guid isPermaLink="false">297</guid>
+    <pubDate>Fri, 06 Nov 2026 10:30:00 +0000</pubDate>
+    <category>Atelier</category>
+    <endDate>Fri, 06 Nov 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h30</eventTime>
+    <description>Médiathèque Maurice-Genevoix, ETNA
+
+Vous apprenez le français ? Venez partager un moment convivial en discutant sur des sujets variés. La médiathèque Maurice-Genevoix vous propose d’améliorer votre français, de vous sentir plus à l’aise à l’oral et de découvrir ses collections ainsi que les services qu’elle propose.</description>
+  </item>
+  <item>
+    <title>Laissez-vous conter</title>
+    <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
+    <guid isPermaLink="false">298</guid>
+    <pubDate>Wed, 17 Jun 2026 10:30:00 +0000</pubDate>
+    <category>Lecture spectacle</category>
+    <endDate>Wed, 17 Jun 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>A partir de 3 ans</targetAudience>
+    <eventTime>10h30</eventTime>
+    <description>Médiathèque Maurice-Genevoix, espace Jeunesse
+
+Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans</description>
+  </item>
+  <item>
+    <title>Laissez-vous conter</title>
+    <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&amp;itemId=11184</link>
+    <guid isPermaLink="false">299</guid>
+    <pubDate>Wed, 18 Nov 2026 10:30:00 +0000</pubDate>
+    <category>Lecture spectacle</category>
+    <endDate>Wed, 18 Nov 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>A partir de 3 ans</targetAudience>
+    <eventTime>10h30</eventTime>
+    <description>Médiathèque Maurice-Genevoix, espace Jeunesse
+
+Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans</description>
   </item>
 </channel>
 </rss>
