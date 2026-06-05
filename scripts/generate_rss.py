@@ -10,8 +10,8 @@ import datetime
 DOC_ID = "9yLQzULqduhD"
 TABLE_ID = "Com" 
 
-# On interroge l'API publique directement
-GRIST_API_URL = f"https://grist.numerique.gouv.fr/api/docs/{DOC_ID}/tables/{TABLE_ID}/data"
+# On interroge l'API publique officielle des enregistrements (/records)
+GRIST_API_URL = f"https://grist.numerique.gouv.fr/api/docs/{DOC_ID}/tables/{TABLE_ID}/records"
 
 SITE_TITLE = "Communications"
 SITE_LINK = "https://grist.numerique.gouv.fr"
