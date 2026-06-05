@@ -16,7 +16,7 @@ GRIST_API_URL = f"https://grist.numerique.gouv.fr/api/docs/{DOC_ID}/tables/{TABL
 
 SITE_TITLE = "Communications"
 SITE_LINK = "https://grist.numerique.gouv.fr"
-SITE_DESC = "Flux RSS généré depuis la vue Com de Grist avec Catégories et Heures fusionnées"
+SITE_DESC = "Flux RSS généré depuis la vue Com de Grist avec Catégories, Heures, Durées et Publics Cibles"
 # ==========================================
 
 def iso_to_rfc2822(date_val, time_val=None, fallback_to_now=True):
@@ -57,7 +57,7 @@ def iso_to_rfc2822(date_val, time_val=None, fallback_to_now=True):
     if dt is None:
         return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000") if fallback_to_now else ""
             
-    # ADAPTATION : Fusion de l'heure séparée si elle est fournie
+    # Fusion de l'heure séparée si elle est fournie (ex: "14h" ou "16:30")
     if time_val:
         time_str = str(time_val).strip()
         # Cherche un format HHhMM, HH:MM, HHh, etc.
@@ -145,7 +145,7 @@ def build_items(rows):
                 date_fin = valeur_trouvee
                 break
 
-        # 4. ADAPTATION : Recherche d'une colonne d'heure séparée pour le début
+        # 4. Extraction de l'Heure
         heure_debut = ""
         champs_heures_possibles = [
             "Heure", "heure", "Heure_Debut", "heure_debut", 
@@ -157,13 +157,25 @@ def build_items(rows):
                 heure_debut = valeur_trouvee
                 break
 
-        # 5. ADAPTATION : Recherche d'une colonne d'heure séparée pour la fin
-        heure_fin = ""
-        champs_heures_fin_possibles = ["Heure_Fin", "heure_fin", "Heure_fin", "Heure de fin", "Heure de fin d'événement"]
-        for champ in champs_heures_fin_possibles:
+        # 5. Extraction de la Durée (Duree)
+        duree = ""
+        champs_duree_possibles = ["Duree", "duree", "Durée", "durée", "Duration", "duration"]
+        for champ in champs_duree_possibles:
             valeur_trouvee = get_field(r, champ)
             if valeur_trouvee:
-                heure_fin = valeur_trouvee
+                duree = valeur_trouvee
+                break
+
+        # 6. Extraction du Public cible (Public_cible)
+        public_cible = ""
+        champs_public_possibles = [
+            "Public_cible", "public_cible", "Public", "public", 
+            "Public_Cible", "Target", "target", "Public Cible", "Public cible"
+        ]
+        for champ in champs_public_possibles:
+            valeur_trouvee = get_field(r, champ)
+            if valeur_trouvee:
+                public_cible = valeur_trouvee
                 break
         
         # Mise en forme de la localisation et de la description
@@ -173,9 +185,14 @@ def build_items(rows):
         
         full_desc = (", ".join(meta) + "\n\n" + desc) if desc else ", ".join(meta)
         
-        # Fusion intelligente de la date et de l'heure
+        # Fusion de la date de début et de l'heure récupérée
         pub_rfc = iso_to_rfc2822(date_debut, heure_debut)
-        pub_fin_rfc = iso_to_rfc2822(date_fin, heure_fin, fallback_to_now=False) if date_fin else ""
+        pub_fin_rfc = iso_to_rfc2822(date_fin, fallback_to_now=False) if date_fin else ""
+        
+        # Échappement propre pour insertion XML sécurisée
+        xml_duree = sx.escape(str(duree)) if duree else ""
+        xml_public = sx.escape(str(public_cible)) if public_cible else ""
+        xml_heure_brute = sx.escape(str(heure_debut)) if heure_debut else ""
         
         items.append(f"""  <item>
     <title>{sx.escape(str(titre))}</title>
@@ -184,6 +201,9 @@ def build_items(rows):
     <pubDate>{pub_rfc}</pubDate>
     <category>{sx.escape(str(categorie))}</category>
     <endDate>{sx.escape(str(pub_fin_rfc))}</endDate>
+    <duration>{xml_duree}</duration>
+    <targetAudience>{xml_public}</targetAudience>
+    <eventTime>{xml_heure_brute}</eventTime>
     <description>{sx.escape(str(full_desc))}</description>
   </item>""")
           
@@ -207,7 +227,7 @@ def main():
     
     with open("rss.xml", "w", encoding="utf-8") as f:
         f.write(rss)
-    print("Le fichier rss.xml a été généré avec succès avec fusion des heures.")
+    print("Le fichier rss.xml a été généré avec succès avec l'ensemble des métadonnées enrichies.")
 
 if __name__ == "__main__":
     main()
