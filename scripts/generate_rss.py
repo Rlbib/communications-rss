@@ -5,12 +5,16 @@ import dateutil.parser
 import datetime
 
 # ==========================================
-# CONFIGURATION - À PERSONNALISER
+# CONFIGURATION
 # ==========================================
-# Remplace {DOC_ID} et {TABLE_ID} par tes vraies valeurs Grist
-GRIST_API_URL = "https://grist.numerique.gouv.fr/api/docs/9yLQzULqduhD/tables/Com/data"
+# Identifiants extraits de ton URL Grist officielle
+DOC_ID = "9yLQzULqduhD"
+TABLE_ID = "Com"  # Si l'erreur persiste après, on testera "Table_pour_agenda_Portail"
+
+GRIST_API_URL = f"https://grist.numerique.gouv.fr/api/docs/{DOC_ID}/tables/{TABLE_ID}/data"
+
 SITE_TITLE = "Communications"
-SITE_LINK = "https://votre-site.example" # Mets l'adresse de ton site si tu en as un
+SITE_LINK = "https://grist.numerique.gouv.fr"
 SITE_DESC = "Flux RSS généré depuis la vue Com de Grist"
 # ==========================================
 
@@ -29,8 +33,14 @@ def fetch_rows():
         raise SystemExit("Erreur : La clé GRIST_API_KEY est manquante dans les secrets GitHub.")
     
     headers = {"Authorization": f"Bearer {api_key}"}
+    print(f"Tentative d'accès à l'API : {GRIST_API_URL}")
+    
     resp = requests.get(GRIST_API_URL, headers=headers)
-    resp.raise_for_status()
+    
+    if resp.status_code != 200:
+        print(f"Erreur de l'API Grist ({resp.status_code}) : {resp.text}")
+        raise SystemExit(f"Le serveur Grist a renvoyé une erreur. Vérifie ton TABLE_ID ou ta clé API.")
+        
     return resp.json()
 
 def get_field(rec, name):
@@ -42,9 +52,20 @@ def get_field(rec, name):
 
 def build_items(rows):
     items = []
-    candidates = rows.get("records") if isinstance(rows, dict) and "records" in rows else rows
+    
+    # Gestion propre du format de réponse Grist
+    if isinstance(rows, dict) and "records" in rows:
+        candidates = rows["records"]
+    elif isinstance(rows, list):
+        candidates = rows
+    else:
+        print(f"Format de données inattendu reçu de Grist : {rows}")
+        return ""
     
     for r in (candidates or []):
+        if not isinstance(r, dict):
+            continue  # Évite le plantage si la ligne n'est pas un dictionnaire
+            
         titre = get_field(r, "Titre") or "Sans titre"
         link = get_field(r, "Lien_vers_affiche") or get_field(r, "URL_de_l_image") or SITE_LINK
         desc = get_field(r, "Description") or ""
