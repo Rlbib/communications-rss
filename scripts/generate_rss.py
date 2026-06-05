@@ -7,10 +7,10 @@ import datetime
 # ==========================================
 # CONFIGURATION
 # ==========================================
-# Identifiants extraits de ton URL Grist officielle
 DOC_ID = "9yLQzULqduhD"
-TABLE_ID = "Com"  # Si l'erreur persiste après, on testera "Table_pour_agenda_Portail"
+TABLE_ID = "Com" 
 
+# On interroge l'API publique directement
 GRIST_API_URL = f"https://grist.numerique.gouv.fr/api/docs/{DOC_ID}/tables/{TABLE_ID}/data"
 
 SITE_TITLE = "Communications"
@@ -28,18 +28,14 @@ def iso_to_rfc2822(iso):
         return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
 
 def fetch_rows():
-    api_key = os.environ.get("GRIST_API_KEY")
-    if not api_key:
-        raise SystemExit("Erreur : La clé GRIST_API_KEY est manquante dans les secrets GitHub.")
+    print(f"Tentative d'accès public à l'API : {GRIST_API_URL}")
     
-    headers = {"Authorization": f"Bearer {api_key}"}
-    print(f"Tentative d'accès à l'API : {GRIST_API_URL}")
-    
-    resp = requests.get(GRIST_API_URL, headers=headers)
+    # Appel anonyme, sans header d'autorisation !
+    resp = requests.get(GRIST_API_URL)
     
     if resp.status_code != 200:
         print(f"Erreur de l'API Grist ({resp.status_code}) : {resp.text}")
-        raise SystemExit(f"Le serveur Grist a renvoyé une erreur. Vérifie ton TABLE_ID ou ta clé API.")
+        raise SystemExit(f"Le serveur Grist a renvoyé une erreur. Vérifie si le TABLE_ID '{TABLE_ID}' est correct.")
         
     return resp.json()
 
@@ -53,7 +49,6 @@ def get_field(rec, name):
 def build_items(rows):
     items = []
     
-    # Gestion propre du format de réponse Grist
     if isinstance(rows, dict) and "records" in rows:
         candidates = rows["records"]
     elif isinstance(rows, list):
@@ -64,7 +59,7 @@ def build_items(rows):
     
     for r in (candidates or []):
         if not isinstance(r, dict):
-            continue  # Évite le plantage si la ligne n'est pas un dictionnaire
+            continue
             
         titre = get_field(r, "Titre") or "Sans titre"
         link = get_field(r, "Lien_vers_affiche") or get_field(r, "URL_de_l_image") or SITE_LINK
@@ -109,7 +104,7 @@ def main():
     
     with open("rss.xml", "w", encoding="utf-8") as f:
         f.write(rss)
-    print("Le fichier rss.xml a été généré avec succès.")
+    print("Le fichier rss.xml a été généré avec succès en mode public.")
 
 if __name__ == "__main__":
     main()
