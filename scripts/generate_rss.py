@@ -15,13 +15,13 @@ GRIST_API_URL = f"https://grist.numerique.gouv.fr/api/docs/{DOC_ID}/tables/{TABL
 
 SITE_TITLE = "Communications"
 SITE_LINK = "https://grist.numerique.gouv.fr"
-SITE_DESC = "Flux RSS généré depuis la vue Com de Grist"
+SITE_DESC = "Flux RSS généré depuis la vue Com de Grist avec Catégories et Dates de Fin"
 # ==========================================
 
-def iso_to_rfc2822(val):
+def iso_to_rfc2822(val, fallback_to_now=True):
     """Convertit de manière ultra-robuste une date Grist (timestamp ou texte) au format RFC2822."""
     if not val:
-        return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
+        return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000") if fallback_to_now else ""
     
     # Cas 1 : Si Grist renvoie un timestamp numérique (int ou float)
     if isinstance(val, (int, float)):
@@ -56,18 +56,16 @@ def iso_to_rfc2822(val):
     except Exception:
         pass
         
-    # Repli de secours sur l'heure actuelle si tout échoue
-    return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
+    # Repli de secours
+    return datetime.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000") if fallback_to_now else ""
 
 def fetch_rows():
     """Récupère publiquement les lignes du document Grist."""
     print(f"Tentative d'accès public à l'API : {GRIST_API_URL}")
-    
     resp = requests.get(GRIST_API_URL)
     if resp.status_code != 200:
         print(f"Erreur de l'API Grist ({resp.status_code}) : {resp.text}")
         raise SystemExit(f"Le serveur Grist a renvoyé une erreur. Vérifiez le TABLE_ID '{TABLE_ID}'.")
-        
     return resp.json()
 
 def get_field(rec, name):
@@ -102,17 +100,34 @@ def build_items(rows):
         loc = get_field(r, "Localisation") or get_field(r, "localisation") or ""
         guid = r.get("id") or get_field(r, "id") or link
         
-        # Recherche multicritère de la colonne Date dans votre tableau Grist
+        # 1. ADAPTATION : Recherche multicritère de la Catégorie / Type d'animation
+        categorie = "Animation"
+        champs_categories_possibles = ["Categorie", "categorie", "Type", "type", "Rubrique", "rubrique", "Genre", "genre"]
+        for champ in champs_categories_possibles:
+            valeur_trouvee = get_field(r, champ)
+            if valeur_trouvee:
+                categorie = str(valeur_trouvee).strip()
+                break
+
+        # 2. ADAPTATION : Recherche multicritère de la colonne Date de début dans votre tableau Grist
         date_debut = ""
         champs_dates_possibles = [
             "Date_Debut", "Date_debut", "date_debut", 
             "Date", "date", "Date de début", "Start Date", "date_evenement"
         ]
-        
         for champ in champs_dates_possibles:
             valeur_trouvee = get_field(r, champ)
             if valeur_trouvee:
                 date_debut = valeur_trouvee
+                break
+
+        # 3. ADAPTATION : Recherche de la colonne Date de fin
+        date_fin = ""
+        champs_fin_possibles = ["Date_Fin", "Date_fin", "date_fin", "Date de fin", "End Date", "Date_fin_evenement"]
+        for champ in champs_fin_possibles:
+            valeur_trouvee = get_field(r, champ)
+            if valeur_trouvee:
+                date_fin = valeur_trouvee
                 break
         
         # Mise en forme de la localisation et de la description
@@ -123,11 +138,17 @@ def build_items(rows):
         full_desc = (", ".join(meta) + "\n\n" + desc) if desc else ", ".join(meta)
         pub_rfc = iso_to_rfc2822(date_debut)
         
+        # Formatage de la date de fin (sans fallback sur 'now' si vide)
+        pub_fin_rfc = iso_to_rfc2822(date_fin, fallback_to_now=False) if date_fin else ""
+        
+        # Génération de la balise XML avec notre catégorie et notre balise personnalisée d'endDate
         items.append(f"""  <item>
     <title>{sx.escape(str(titre))}</title>
     <link>{sx.escape(str(link))}</link>
     <guid isPermaLink="false">{sx.escape(str(guid))}</guid>
     <pubDate>{pub_rfc}</pubDate>
+    <category>{sx.escape(str(categorie))}</category>
+    <endDate>{sx.escape(str(pub_fin_rfc))}</endDate>
     <description>{sx.escape(str(full_desc))}</description>
   </item>""")
           
@@ -151,7 +172,7 @@ def main():
     
     with open("rss.xml", "w", encoding="utf-8") as f:
         f.write(rss)
-    print("Le fichier rss.xml a été généré avec succès en mode public.")
+    print("Le fichier rss.xml a été généré avec succès avec gestion des catégories et des dates de fin.")
 
 if __name__ == "__main__":
     main()
