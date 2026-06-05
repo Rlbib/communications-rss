@@ -3,8 +3,8 @@
 <channel>
   <title>Communications</title>
   <link>https://grist.numerique.gouv.fr</link>
-  <description>Flux RSS généré depuis la vue Com de Grist avec Catégories et Heures fusionnées</description>
-  <lastBuildDate>Fri, 05 Jun 2026 10:37:37 +0000</lastBuildDate>
+  <description>Flux RSS généré depuis la vue Com de Grist avec Catégories, Heures, Durées et Publics Cibles</description>
+  <lastBuildDate>Fri, 05 Jun 2026 10:43:28 +0000</lastBuildDate>
   <item>
     <title>Pourquoi encore penser ? A l'heure de l'intelligence artificielle</title>
     <link>https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&amp;itemId=10872</link>
@@ -12,6 +12,9 @@
     <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Tue, 04 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium, 41000 Blois
 
 Luc Jabon s'est intéressé à notre faculté de penser, aujourd’hui confrontée à l’énorme puissance de calcul de l’intelligence artificielle. Dans ce monde de machines superintelligentes qui nous guette, quelle place, quel avenir auront encore le fait de penser par soi-même ?
@@ -27,6 +30,9 @@ Nombre de places limité, réservation conseillée</description>
     <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Sat, 10 Jan 2026 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbe-Grégoire, Espace Julien-Angelier, 41000 Blois
 
 L’exposition présente des planches issues de la Revue 303, offrant une redécouverte de la Loire à travers des récits graphiques mêlant imaginaires, réflexions et témoignages. Les auteurs et les autrices livrent leur vision du fleuve.
@@ -43,6 +49,9 @@ Présentation du projet et visite commentée de l’exposition par Gwen de Bonne
     <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Sat, 10 Jan 2026 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, 41000 Blois
 
 Exposition avec Nepeta Liu, Ruei-Yi, Evergreen Yeh, Uj Chen, Ray He, Pei-hsiu Chen, Stellina &amp; Ho Hsueh-YiCommissariat Jean Chen.  L’île a connu des grands changements au fil de son histoire et la bande dessinée taïwanaise a une longue histoire. Telles sont les caractéristiques et la force de la bande dessinée taïwanaise. C'est ainsi que la BD taïwanaise en est venue à se distinguer par un style propre au sein du monde de la bande dessinée asiatique.
@@ -60,6 +69,9 @@ Illustration © Evergreen/Ville de Blois</description>
     <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 05 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Espace Adultes, 41000 Blois
 
 Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez pas comment on fait ? Vous voulez apprendre de nouvelles mailles au tricot ? Vous voulez passer un moment agréable autour d'un goûter en discutant chiffons ? Amenez vos aiguilles, travaux, dés et patrons ! Rendez-vous pour partager votre temps et vos connaissances avec les autres usagers de la médiathèque.</description>
@@ -71,6 +83,9 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 05 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty, 41000 Blois
 
 Bastien a 20 ans et milite depuis cinq ans dans le principal parti d’extrême-droite. Quand débute la campagne présidentielle, il est invité par son supérieur à s’engager davantage. Initié à l’art d’endosser le costume des politiciens, il se prend à rêver d’une carrière, mais de vieux démons ressurgissent. Film documentaire de Mathias Théry et Étienne Chaillou, 2024 - 97 min
@@ -86,6 +101,9 @@ Nombre de places limité, réservation conseillée</description>
     <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 07 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque de Veuzain-sur-Loire/Agglopolys, 41150 Veuzain-sur-Loire
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathèque de Veuzain. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager !</description>
@@ -97,6 +115,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
     <category>Concert</category>
     <endDate>Fri, 07 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo, 41000 Blois
 
 Vos émissions de radio fêtent leurs 10 ans
@@ -112,6 +133,9 @@ En partenariat avec Studio Zef</description>
     <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 08 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque de Veuzain-sur-Loire/Agglopolys, 41150 Veuzain-sur-Loire
 
 Chaque mois, venez écouter des histoires en famille avec vos enfants de 0 à 6 ans ! Nouveautés, albums, livres cartonnés, lectures à thèmes... et plus encore. Un rendez-vous convivial et familial à ne pas manquer.</description>
@@ -123,6 +147,9 @@ Chaque mois, venez écouter des histoires en famille avec vos enfants de 0 à 6 
     <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 08 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA, 41000 Blois
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !</description>
@@ -134,6 +161,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Wed, 12 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium, 41000 Blois
 
 Sur console (PS3, PS4, Wii U) et grand écran, venez vous mesurer à d’autres joueurs en incarnant un pilote de course automobile, le capitaine d’une équipe de football, un aventurier ou un super héros !</description>
@@ -145,6 +175,9 @@ Sur console (PS3, PS4, Wii U) et grand écran, venez vous mesurer à d’autres 
     <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 12 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse, 41000 Blois
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente-bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -156,6 +189,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 12 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty, 41000 Blois
 
 Yintah ( qui signifie "terre") , est un long métrage documentant le combat de la Première Nation Wet'suwet'en pour sa souveraineté. Tourné sur plus de dix ans au Canada, le film suit Howilhkat Freda Huson et Sleydo' Molly Wickham alors que leur nation réoccupe ses terres ancestrales pour les protéger contre plusieurs des plus grandes sociétés d'énergie fossile du monde. 
@@ -173,6 +209,9 @@ Nombre de places limité, réservation conseillée</description>
     <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 12 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque de Veuzain-sur-Loire/Agglopolys, 41150 Veuzain-sur-Loire
 
 Venez partager un moment parentalité autour des lectures pour les tout-petits. En partenariat avec le Relais Petite Enfance de Veuzain-sur-Loire.</description>
@@ -184,6 +223,9 @@ Venez partager un moment parentalité autour des lectures pour les tout-petits. 
     <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 15 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Espace Adultes, 41000 Blois
 
 Installés confortablement autour d’un café ou d’un thé, nous prendrons le temps d’échanger sur les livres qui nous ont plu. Chacun pourra repartir avec le coup de cœur d’un autre. Nous vous attendons !</description>
@@ -195,6 +237,9 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sat, 15 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque de Veuzain-sur-Loire/Agglopolys, 41150 Veuzain-sur-Loire
 
 Il était une fois l’histoire d’un chêne, vieux de 210 ans, devenu un pilier en son royaume. Ce film d’aventure spectaculaire rassemble un casting hors du commun : écureuils, balanins, geais, fourmis, mulots… Une ode poétique à la vie où la nature est seule à s’exprimer. 
@@ -208,6 +253,9 @@ De Laurent Charbonnier et Michel Seydoux, France, 2020, 80 min</description>
     <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 15 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse, 41000 Blois
 
 Vous cherchez de belles lectures pour les enfants ? Chaque mois, les bibliothécaires partagent leurs albums jeunesse préférés. </description>
@@ -219,6 +267,9 @@ Vous cherchez de belles lectures pour les enfants ? Chaque mois, les bibliothéc
     <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 15 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo, 41000 Blois
 
 Le rendez-vous mensuel des passionnés !
@@ -233,6 +284,9 @@ dans cet univers, ce club est fait pour toi.</description>
     <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Wed, 19 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse, 41000 Blois
 
 Viens participer à notre tournoi Fifa 2023 sur PlayStation et mène ton équipe préférée vers la victoire !Tout niveau accepté. </description>
@@ -244,6 +298,9 @@ Viens participer à notre tournoi Fifa 2023 sur PlayStation et mène ton équipe
     <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 19 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty, 41000 Blois
 
 Comment bien soigner dans une institution malade ? Dans un hôpital de la région parisienne, le Dr. Abdel–Kader, psychiatre de liaison, navigue des Urgences au service de réanimation, de patients atteints de troubles mentaux à ceux qu’une maladie chronique retient alités. En dépit des impératifs de rendement et du manque de moyens, il s’efforce d’apaiser leurs maux. 
@@ -259,6 +316,9 @@ Nombre de places limité, réservation conseillée</description>
     <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Wed, 19 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo, 41000 Blois
 
 Venez en famille ou entre amis, dansez sur les tubes de votre choix. Attention ! ça va groover !</description>
@@ -270,6 +330,9 @@ Venez en famille ou entre amis, dansez sur les tubes de votre choix. Attention !
     <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 19 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque de Veuzain-sur-Loire/Agglopolys, 41150 Veuzain-sur-Loire
 
 On invente, on fabrique, on bidouille à la médiathèque ! L'esprit créatif est invité et les petits doigts mobilisés ! Chaque mois une réalisation différente est proposée aux petits et aux grands. Tenue adaptée à prévoir et parents bienvenus !</description>
@@ -281,6 +344,9 @@ On invente, on fabrique, on bidouille à la médiathèque ! L'esprit créatif es
     <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Thu, 20 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty, 41000 Blois
 
 Souvent considérés à tort comme des récits enfantins, les contes qui furent réunis par le recueil des « Mille et Une Nuits », Charles Perrault, les frères Grimm, Andersen… trouvent leur origine dans la littérature orale et les grandes mythologies. 
@@ -294,6 +360,9 @@ Avec Marc Soleranski, un rendez-vous proposée par l’Université du Temps Libr
     <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Thu, 20 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Espace Quinière - Rosa Parks, 41000 Blois
 
 Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale  autour d'un thé ou d'un café,  pour discuter librement de l'actualité, débattre et partager vos coups de cœur.</description>
@@ -305,6 +374,9 @@ Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale  
     <pubDate>Fri, 21 Nov 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 21 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque de Veuzain-sur-Loire/Agglopolys, 41150 Veuzain-sur-Loire
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathèque de Veuzain. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager !</description>
@@ -316,6 +388,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 22 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbe-Grégoire, espace Adultes, 41000 Blois
 
 Depuis 1975, l’activité de Rodolphe ne s’est jamais réduite. A ce jour, il a publié plus de trois-cents albums dont près d’une cinquantaine de séries, de nombreux « one shot » et pléthore de récits complets parus dans les principales revues de bandes dessinées. A l'occasion de la publication de ses mémoires, un demi-siècle de bandes dessinées sera évoqué à travers de nombreuses anecdotes. 
@@ -329,6 +404,9 @@ Carte blanche aux éditions PLG</description>
     <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 22 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty, 41000 Blois
 
 En quoi la bande dessinée taïwanaise reflète-t-elle l’identité culturelle et les mutations sociales de Taïwan ? Modérateur Laurent Mélikian agent littéraire chez PLeaSe Comics.
@@ -344,6 +422,9 @@ Illustration © Li-Chin Lin</description>
     <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 22 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty, 41000 Blois
 
 Lancée en 1988, cette collection des éditions Le Lombard a pour ambition de proposer des albums d’auteurs et d’autrices, en one-shot avec une grande liberté artistique. Rencontre proposée par l’ACBD.
@@ -357,6 +438,9 @@ Avec Franck Biancarelli, Philippe Xavier, auteurs et Gauthier Van Meerbeeck, dir
     <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 22 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse, 41000 Blois
 
 Lecture à deux voix par les bibliothécaires : « Le loup en slip s'arrache »  
@@ -375,6 +459,9 @@ En partenariat avec bd BOUM, Maison de la BD, Ville de Blois, Dargaud</descripti
     <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 22 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque de Veuzain-sur-Loire/Agglopolys, 41150 Veuzain-sur-Loire
 
 Le club d'échec de Veuzain-sur-Loire s'installe à la médiathèque ! Venez les rencontrer, et jouer entre passionnés. Il y aura toujours un moment pour celles et ceux qui souhaitent apprendre à jouer.</description>
@@ -386,6 +473,9 @@ Le club d'échec de Veuzain-sur-Loire s'installe à la médiathèque ! Venez les
     <pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 22 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41000 Blois
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au coin des gameurs !</description>
@@ -397,6 +487,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sun, 23 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty, 41000 Blois
 
 Ce classique du roman d’aventures, illustré par Lorenzo Mattotti, est aussi la matrice d’un genre plus politique, le conte philosophique. Jonathan Swift condamne les persécutions et dresse la satire de l’intolérance religieuse de l’Angleterre du XVIIIe siècle. 
@@ -410,6 +503,9 @@ Lecture projetée d’Annie Huet</description>
     <pubDate>Wed, 26 Nov 2025 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 26 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, 41000 Blois
 
 Chaque année, la Ville de Blois offre un moment exceptionnel aux personnes fragilisées en organisant son réveillon festif et solidaire au Château.Venez participer à notre atelier créatif ! Fabriquons ensemble les décorations qui illumineront ce grand événement.
@@ -423,6 +519,9 @@ Nombre de places limité, réservation conseillée</description>
     <pubDate>Wed, 26 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 26 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse, 41000 Blois
 
 Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans. Nouveautés, albums coups de cœur, livres cartonnés, lectures à thèmes... et plus encore. Un rendez-vous convivial et familial à ne pas manquer.</description>
@@ -434,6 +533,9 @@ Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans. Nouve
     <pubDate>Wed, 26 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 26 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse, 41000 Blois
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et sa référente-bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -445,6 +547,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et sa référe
     <pubDate>Wed, 26 Nov 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 26 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty, 41000 Blois
 
 Ce portrait filmé de la femme peintre Apolonia Sokol, de sa formation artistique à sa confrontation avec le marché de l'art, est une épopée intime et sinueuse. En miroir, ce sont aussi les destins d’Oksana Shachko, l’une des fondatrices des Femen, et de la réalisatrice, qui se dessinent. Une sororité à trois faces, à l’épreuve du monde d’aujourd’hui. 
@@ -460,6 +565,9 @@ Nombre de places limité, réservation conseillée</description>
     <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Fri, 28 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbe-Grégoire, espace Adultes, 41000 Blois
 
 Lecture d'extraits de textes d' Emmanuelle Guattari, Philippe Lançon, Maylis de Kerangal, Martin Winckler... sur le soin, la santé et la médecine, en écho avec le spectacle « Urgences » à la Halle aux grains.
@@ -474,6 +582,9 @@ Nombre de places limité, réservation conseillée</description>
     <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 29 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse, 41000 Blois
 
 A petites foulées, Léon pavane sur scène. Une mirifique fête se prépare et il y a fort à faire : un costume à enfiler, papi et mamie à inviter, une galette à cuisiner… Mais où est son noeud papillon ? On croisera du beau monde, des rires et du vent qui décoiffe. Avec une bonne dose de malice, Léon saute à pieds joints dans les livres de Julia Chausson et nous éclabousse avec humour. Un drôle d’oiseau quand même ce Léon ! 
@@ -489,6 +600,9 @@ Nombre de places limité, réservation conseillée</description>
     <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 29 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 Les lecteurs du comité de sélection du Prix du Noir de l'Histoire présentent leurs coups de cœurs de ces dernières années. Un moment à partager autour de la littérature noire, pour tous les amateurs de mystères.</description>
@@ -500,6 +614,9 @@ Les lecteurs du comité de sélection du Prix du Noir de l'Histoire présentent 
     <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 29 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo, 41000 Blois
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -511,6 +628,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 29 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque de Veuzain-sur-Loire/Agglopolys, 41150 Veuzain-sur-Loire
 
 Vous avez des talents en crochet, tricot ou couture à partager, ou l'envie d'apprendre ou de découvrir de nouvelles mailles ? Venez passer un moment convivial autour d'un goûter, discuter et échanger vos astuces avec d'autres passionnés. Amenez vos aiguilles, travaux, dés et patrons !
@@ -523,6 +643,9 @@ Vous avez des talents en crochet, tricot ou couture à partager, ou l'envie d'ap
     <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 29 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse, 41000 Blois
 
 Viens partager un moment privilégié en tête-à-tête avec Plume.
@@ -538,6 +661,9 @@ Réservation au 02 54 56 27 51</description>
     <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 08 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque de Veuzain-sur-Loire/Agglopolys, 41150 Veuzain-sur-Loire
 
 La romancière Emmanuelle Favier propose de marcher dans les pas de Rose Valland, résistante méconnue qui a risqué sa vie durant l'Occupation pour protéger le patrimoine artistique français, et a consacré son existence à la récupération des biens spoliés par les nazis. Un regard d'écrivaine sur l'histoire de la spoliation et sur ce personnage aussi impénétrable que fascinant.
@@ -552,6 +678,9 @@ Dans le cadre du baptème de la médiathèque Veuzain/Agglopolys baptisée Rose-
     <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 15 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse, 41000 Blois
 
 Atelier animé par Soulaymane Tadlaoui, jeune illustrateur marocain passionné d’histoire, en résidence à la Maison de la bd.</description>
@@ -563,6 +692,9 @@ Atelier animé par Soulaymane Tadlaoui, jeune illustrateur marocain passionné d
     <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 12 Nov 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque de Veuzain-sur-Loire/Agglopolys, 41000 Blois
 
 Atelier animé par Soulaymane Tadlaoui, jeune illustrateur marocain passionné d’histoire, en résidence à la Maison de la bd.</description>
@@ -575,6 +707,9 @@ Atelier animé par Soulaymane Tadlaoui, jeune illustrateur marocain passionné d
     <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 03 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Espace Adultes, 41000 Blois
 
 Vous avez des talents en crochet, tricot ou couture à partager, ou l'envie d'apprendre ou de découvrir de nouvelles mailles ? Venez passer un moment convivial autour d'un goûter, discuter et échanger vos astuces avec d'autres passionnés. 
@@ -590,6 +725,9 @@ Amenez vos aiguilles, travaux, dés et patrons !
     <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 03 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente, 41000 Blois
 
 Initiez-vous aux arts de la magie avec Arnaud Dalaine, magicien professionnel,  et apprenez des tours simples pour éblouir vos proches !
@@ -603,6 +741,9 @@ Réservation conseillée (12 places)</description>
     <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Wed, 03 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Salle des Granges de Veuzain-sur-Loire, 41150 Veuzain-sur-Loire
 
 La médiathèque Rose-Valland, et l'association des donneurs de sang bénévoles du secteur d'Onzain vous donnent rendez-vous pour une collecte solidaire et littéraire.
@@ -619,6 +760,9 @@ Si vous le pouvez, donnez.</description>
     <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 05 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager !</description>
@@ -630,6 +774,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs. Dans une joyeus
     <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 06 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo, 41000 Blois
 
 Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale  autour d'un thé ou d'un café,  pour discuter librement de l'actualité, débattre  et partager vos coups de cœur.</description>
@@ -641,6 +788,9 @@ Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale  
     <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 20 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA, 41000 Blois
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au coin des gameurs ! </description>
@@ -653,6 +803,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 20 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41000 Blois
 
 Vous avez des talents en crochet, tricot ou couture à partager, ou l'envie d'apprendre ou de découvrir de nouvelles mailles ? Venez passer un moment convivial autour d'un goûter, discuter et échanger vos astuces avec d'autres passionnés. 
@@ -667,6 +820,9 @@ Amenez vos aiguilles, travaux, dés et patrons !
     <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 20 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 Le club d'échecs de Veuzain-sur-Loire s'installe à la médiathèque ! Venez les rencontrer, et jouer entre passionnés. Il y aura toujours un moment pour celles et ceux qui souhaitent apprendre à jouer.</description>
@@ -678,6 +834,9 @@ Le club d'échecs de Veuzain-sur-Loire s'installe à la médiathèque ! Venez le
     <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Fri, 19 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente, 41000 Blois
 
 Les bibliothécaires Jeunesse vous proposent lectures et comptines ! Quand le vent souffle et que le froid se fait sentir, il est temps de se réunir autour d’histoires qui enchantent l’hiver et font patienter jusqu’à Noël. 
@@ -690,6 +849,9 @@ Les bibliothécaires Jeunesse vous proposent lectures et comptines ! Quand le ve
     <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 19 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager !</description>
@@ -701,6 +863,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs. Dans une joyeus
     <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Wed, 17 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo, 41000 Blois
 
 Courses de bolides.Venez affronter d'autres joueurs sur les circuits infernaux de Mario Kart sur switch. En famille ou entre amis de 7 à 99 ans. Réservation conseillée
@@ -713,6 +878,9 @@ Courses de bolides.Venez affronter d'autres joueurs sur les circuits infernaux d
     <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 17 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 On invente, on fabrique, on bidouille à la médiathèque ! L'esprit créatif est invité et les petits doigts mobilisés ! Chaque mois une réalisation différente est proposée aux petits et aux grands. Tenue adaptée à prévoir et parents bienvenus !</description>
@@ -724,6 +892,9 @@ On invente, on fabrique, on bidouille à la médiathèque ! L'esprit créatif es
     <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 17 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium, 41000 Blois
 
 Découvrez la jeunesse de Willy Wonka, l’extraordinaire inventeur, magicien et chocolatier de l’univers féérique de Charlie et la chocolaterie de Roald Dahl, dans le film Wonka. Timothée Chalamet incarne ce jeune homme débordant d’idées et déterminé à changer le monde… avec gourmandise ! Cette œuvre haute en couleur, mêlant émotion et humour, prouve que, dans la vie, les rêves peuvent devenir réalité – surtout si on a la chance de rencontrer Willy Wonka.
@@ -741,6 +912,9 @@ La projection sera précédée d'une animation gourmande autour du chocolat. </d
     <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 17 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente, 41000 Blois
 
 Embarquez pour une aventure gourmande en créant vos tablettes de chocolat , avec une recette secrète de la médiathèque. 
@@ -756,6 +930,9 @@ L'atelier sera suivi d'une projection du film Wonka, de Paul King. </description
     <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sat, 13 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty, 41000 Blois
 
 Redécouvrez ce classique d'Alexandre Dumas connu dans le monde entier ! Victime d’un complot, le jeune Edmond Dantès est arrêté le jour de son mariage pour un crime qu’il n’a pas commis. Après quatorze ans de détention au château d’If, il parvient à s’évader. Devenu immensément riche, il revient sous l’identité du comte de Monte-Cristo pour se venger des trois hommes qui l’ont trahi. 
@@ -771,6 +948,9 @@ Réservation conseillée (100 places)</description>
     <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 13 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo, 41000 Blois
 
 À partir d'extraits audio et vidéo, venez échanger sur des trouvailles musicales d'hier et d'aujourd'hui. Malgré le déclin de l'industrie du disque, les productions éditées par les artistes eux-mêmes et les micro-labels se multiplient à travers le monde. Et depuis des décennies, quantité de genres musicaux font leur apparition. 
@@ -783,6 +963,9 @@ Réservation conseillée (100 places)</description>
     <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Fri, 12 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 Ding ! Dang ! Dong ! Dans une ambiance festive et conviviale, venez (re)découvrir en famille un classique de la littérature de Noël. Une lecture théâtralisée proposée par l'équipe des bénévoles de la médiathèque de Veuzain. 
@@ -796,6 +979,9 @@ Ding ! Dang ! Dong ! Dans une ambiance festive et conviviale, venez (re)découvr
     <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 10 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse, 41000 Blois
 
 Cette année, Noël devrait être parfait ! Sauf qu’avec Shaun et son troupeau d’amis rien ne se passe jamais comme prévu… Les joyeux préparatifs se transforment rapidement en une mission quasi impossible : entre les guirlandes tyroliennes, les paquets cadeaux surprises et les enfants pas vraiment sages, ça ne va pas être une mince affaire de réunir tout le monde autour du sapin. 
@@ -814,6 +1000,9 @@ Réservation conseillée (30 places)
     <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 10 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 Viens partager un moment privilégié en tête-à-tête avec Plume.
@@ -828,6 +1017,9 @@ Réservation au 02 54 56 27 51</description>
     <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 10 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente-bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -839,6 +1031,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 10 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Espace Adultes, 41000 Blois
 
 Installés confortablement autour d’un café ou d’un thé, nous prendrons le temps d’échanger sur les livres qui nous ont plu. Chacun pourra repartir avec le coup de cœur d’un autre. Nous vous attendons !</description>
@@ -850,6 +1045,9 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 06 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse, 41000 Blois
 
 Vous cherchez de belles lectures pour les enfants ? Chaque mois, les bibliothécaires partagent leurs albums jeunesse préférés. </description>
@@ -861,6 +1059,9 @@ Vous cherchez de belles lectures pour les enfants ? Chaque mois, les bibliothéc
     <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 06 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 Chaque mois, venez écouter des histoires en famille avec vos enfants de 0 à 6 ans ! Nouveautés, albums, livres cartonnés, lectures à thèmes... et plus encore. Un rendez-vous convivial et familial à ne pas manquer.</description>
@@ -872,6 +1073,9 @@ Chaque mois, venez écouter des histoires en famille avec vos enfants de 0 à 6 
     <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 06 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA, 41000 Blois
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au coin des gameurs ! </description>
@@ -883,6 +1087,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Sat, 03 Jan 2026 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 Le froid peut aussi représenter chaleur humaine et célébrations conviviales. De
@@ -898,6 +1105,9 @@ Les illustrations, riches et colorées nous font vivre et revivre ces moments
     <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sat, 06 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium, 41000 Blois
 
 Dans le Paris de la Belle Époque, en compagnie d’un jeune livreur en triporteur, la petite kanak Dilili mène une enquête sur des enlèvements mystérieux de fillettes. Elle rencontre des hommes et des femmes extraordinaires, qui lui donnent des indices. Elle découvre sous terre des méchants très particuliers, les Mâles-Maîtres. Les deux amis lutteront avec entrain pour une vie active dans la lumière et le vivre-ensemble…
@@ -913,6 +1123,9 @@ Film d'animation de Michel Ocelot, France, 2018</description>
     <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 10 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Maison de Bégon, 41000 Blois
 
 Retrouvez vos bibliothécaires, Nolwenn et Céline à la Maison de Bégon pour un atelier de fabrication de cartes magiques. De nombreuses animations seront également proposées par les partenaires pour toute la famille. 
@@ -926,6 +1139,9 @@ Gratuit.
     <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 13 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, 41000 Blois
 
 Le stand-up, c'est l'art de faire rire : seul(e) face au public, vous partagez votre humour, vos histoires, votre vision du monde pour créer un moment de complicité et de rires.
@@ -949,6 +1165,9 @@ Pour en savoir plus sur Veufla : https://www.instagram.com/veufla
     <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
     <category>Spectacle</category>
     <endDate>Sat, 13 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, 41000 Blois
 
 La médiathèque Maurice-Genevoix ouvre son comedy club !
@@ -976,6 +1195,9 @@ Réservez vite, les places partent plus vite qu’une bonne vanne !</description
     <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Fri, 31 Jan 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbe-Grégoire, Espace Julien-Angelier</description>
   </item>
   <item>
@@ -985,6 +1207,9 @@ Réservez vite, les places partent plus vite qu’une bonne vanne !</description
     <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sat, 06 Dec 2025 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland, 41150 Veuzain-sur-Loire
 
 Il était une fois un chien parisien, naïf et passionné appelé Chien Pourri. Avec Chaplapla, son fidèle compagnon de gouttière, Chien Pourri arpente les rues de Paris la truffe au vent. Peu importe les catastrophes qu’il provoque, Chien Pourri retombe toujours sur ses pattes ! Tant et si bien que les autres chiens commencent à trouver ça louche. La folle aventure de Chien Pourri et ses amis pour faire découvrir la poésie de Paris aux tout-petits !
@@ -999,6 +1224,9 @@ France, 2020 - 60 min</description>
     <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Sat, 17 Oct 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Bibliothèque Abbe-Grégoire, Espace Julien-Angelier
 
 1855, Eadweard Muybridge, un jeune anglais qui ne s'intéresse pas particulièrement aux chevaux émigre en Californie. Passionné par un procédé technique qui en est à ses débuts, la photographie, il va rapidement devenir un des plus célèbres photographes de son époque. Aidé par l'homme le plus riche des États-Unis, il va réussir un exploit inédit : fixer sur pellicule la course d'un cheval au galop. Bien avant Edison et les frères lumières, Muybridge est le premier homme à dompter le mouvement et à projeter un film. Guy Delisle tire le portrait d'un pionnier du cinéma, injustement oublié par l'histoire.
@@ -1013,6 +1241,9 @@ Partenariat avec le Fonds patrimonial et la Maison de la magie</description>
     <pubDate>Fri, 09 Jan 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 09 Jan 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience></targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Rose-Valland
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathèque de Veuzain. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager ! </description>
@@ -1024,6 +1255,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <pubDate>Wed, 03 Jun 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 03 Jan 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience></targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs ! </description>
@@ -1035,6 +1269,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Wed, 07 Jan 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 07 Jan 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Médiathèque Maurice-Genevoix
 
 Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez pas comment on fait ? Vous voulez apprendre de nouvelles mailles au tricot ? Vous voulez passer un moment agréable autour d'un goûter en discutant chiffons ? Amenez vos aiguilles, travaux, dés et patrons ! Rendez-vous pour partager votre temps et vos connaissances avec les autres usagers de la médiathèque. </description>
@@ -1046,6 +1283,9 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <pubDate>Fri, 09 Jan 2026 18:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Fri, 09 Jan 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Le ballet a su être source d'inspiration pour de nombreux compositeurs, et ce sur de nombreuses périodes.
@@ -1060,6 +1300,9 @@ En trois conférences, Clément Guillot, vous propose de balayer l'histoire du b
     <pubDate>Sat, 10 Jan 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 10 Jan 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>Jeunesse</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Rose-Valland</description>
   </item>
   <item>
@@ -1069,6 +1312,9 @@ En trois conférences, Clément Guillot, vous propose de balayer l'histoire du b
     <pubDate>Sat, 10 Jan 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 10 Jan 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Jeunesse</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -1080,6 +1326,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Wed, 14 Jan 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 14 Jan 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>Jeunesse</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Rose-Valland
 
 Venez partager un moment parentalité autour des lectures pour les tout-petits. En partenariat avec le Relais Petite Enfance de Veuzain-sur-Loire.</description>
@@ -1091,6 +1340,9 @@ Venez partager un moment parentalité autour des lectures pour les tout-petits. 
     <pubDate>Wed, 14 Jan 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 14 Jan 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>Jeunesse</targetAudience>
+    <eventTime>14h30</eventTime>
     <description>Médiathèque Rose-Valland
 
 On bricole, on invente, on fabrique, on bidouille à la médiathèque ! L'esprit créatif est invité et les petits doigts mobilisés pour un moment inventif ! Chaque mois une réalisation différente est proposée aux petits et aux grands. Tenue adaptée à prévoir et parents bienvenus !</description>
@@ -1102,6 +1354,9 @@ On bricole, on invente, on fabrique, on bidouille à la médiathèque ! L'esprit
     <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Sat, 14 Feb 2026 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland
 
 Le maquettisme est un art de l'imitation et de la précision. Quels outils et matériaux peut-on utiliser ? Comment fonctionnent les systèmes d'échelle ? Comment construire ses plans avant de se lancer ? 
@@ -1115,6 +1370,9 @@ Autour des maquettes de la médiathèque Rose-Valland et du château de Rilly-su
     <pubDate>Fri, 16 Jan 2026 14:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Fri, 16 Jan 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Adulte</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Posséder un mot de passe sécurisé est indispensable pour naviguer dans l'univers numérique. Cet atelier vous apprendra les bonnes pratiques pour vous créer un mot de passe solide et fiable.</description>
@@ -1126,6 +1384,9 @@ Posséder un mot de passe sécurisé est indispensable pour naviguer dans l'univ
     <pubDate>Sat, 17 Jan 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 17 Jan 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Jeunesse</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs ! </description>
@@ -1137,6 +1398,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Sat, 17 Jan 2026 10:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 17 Jan 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Adulte</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Rose-Valland
 
 Le club d’Échecs de Veuzain-sur-Loire s’installe à la médiathèque pour jouer aux échecs.</description>
@@ -1148,6 +1412,9 @@ Le club d’Échecs de Veuzain-sur-Loire s’installe à la médiathèque pour j
     <pubDate>Wed, 21 Jan 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 21 Jan 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>Jeunesse</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse
 
 Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans. En janvier, on part dans l'espace avec le festival Graine de lecteur !</description>
@@ -1159,6 +1426,9 @@ Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans. En ja
     <pubDate>Thu, 22 Jan 2026 11:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Thu, 22 Jan 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>Adulte</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Espace Quinière - Rosa Parks
 
 Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale autour d'un thé ou d'un café, pour discuter librement de l'actualité, débattre et partager vos coups de cœur.</description>
@@ -1170,6 +1440,9 @@ Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale a
     <pubDate>Fri, 23 Jan 2026 18:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Fri, 23 Jan 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Le ballet a su être source d'inspiration pour de nombreux compositeurs, et ce sur de nombreuses périodes.
@@ -1185,6 +1458,9 @@ En trois conférences, Clément Guillot, vous propose de balayer l'histoire du b
     <pubDate>Fri, 23 Jan 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 23 Jan 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Rose-Valland
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathèque de Veuzain. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager ! </description>
@@ -1196,6 +1472,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <pubDate>Fri, 30 Jan 2026 18:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Fri, 30 Jan 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Le ballet a su être source d'inspiration pour de nombreux compositeurs, et ce sur de nombreuses périodes.
@@ -1211,6 +1490,9 @@ En trois conférences, Clément Guillot, vous propose de balayer l'histoire du b
     <pubDate>Sat, 31 Jan 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 31 Jan 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Jeunesse</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo,  blois
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -1222,6 +1504,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 31 Jan 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 31 Jan 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Médiathèque Rose-Valland
 
 Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez pas comment on fait ? Vous voulez apprendre de nouvelles mailles au tricot ? Vous voulez passer un moment agréable autour d'un goûter en discutant chiffons ? Amenez vos aiguilles, travaux, dés et patrons ! Rendez-vous pour partager votre temps et vos connaissances avec les autres usagers de la médiathèque. 
@@ -1234,6 +1519,9 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <pubDate>Sat, 31 Jan 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 31 Jan 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Jeunesse</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs ! </description>
@@ -1245,6 +1533,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Sat, 31 Jan 2026 14:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 31 Jan 2026 00:00:00 +0000</endDate>
+    <duration>4h</duration>
+    <targetAudience>Adulte</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Bibliothèque Abbe-Grégoire, espace Adultes
 
 Audrey Pleynet, romancière et nouvelliste (prix Utopiales 2023) , vous propose un atelier d'écriture autour de l'univers de la science fiction.</description>
@@ -1258,6 +1549,9 @@ Audrey Pleynet, romancière et nouvelliste (prix Utopiales 2023) , vous propose 
     <pubDate>Sat, 31 Jan 2026 19:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sat, 31 Jan 2026 00:00:00 +0000</endDate>
+    <duration>4h</duration>
+    <targetAudience>Adulte</targetAudience>
+    <eventTime>19h30</eventTime>
     <description>Cinéma les Lobis
 
 AU CINEMA LES LOBIS (présentation de Audrey Pleynet)
@@ -1273,6 +1567,9 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <pubDate>Sun, 01 Feb 2026 16:15:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Thu, 01 Jan 2026 00:00:00 +0000</endDate>
+    <duration>1h42</duration>
+    <targetAudience></targetAudience>
+    <eventTime>16h15</eventTime>
     <description>Cinéma les Lobis</description>
   </item>
   <item>
@@ -1282,6 +1579,9 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <pubDate>Wed, 04 Feb 2026 14:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 04 Feb 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience></targetAudience>
+    <eventTime>14h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo</description>
   </item>
   <item>
@@ -1291,6 +1591,9 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <pubDate>Fri, 06 Feb 2026 18:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Fri, 06 Feb 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience></targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty</description>
   </item>
   <item>
@@ -1300,6 +1603,9 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <pubDate>Fri, 06 Feb 2026 20:45:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Fri, 06 Feb 2026 00:00:00 +0000</endDate>
+    <duration>4h</duration>
+    <targetAudience></targetAudience>
+    <eventTime>20h45</eventTime>
     <description>Cinéma les Lobis</description>
   </item>
   <item>
@@ -1309,6 +1615,9 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <pubDate>Sat, 07 Feb 2026 14:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 07 Feb 2026 00:00:00 +0000</endDate>
+    <duration>4h</duration>
+    <targetAudience></targetAudience>
+    <eventTime>14h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo</description>
   </item>
   <item>
@@ -1318,6 +1627,9 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <pubDate>Sat, 07 Feb 2026 19:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sat, 07 Feb 2026 00:00:00 +0000</endDate>
+    <duration>4h30</duration>
+    <targetAudience></targetAudience>
+    <eventTime>19h30</eventTime>
     <description>Cinéma les Lobis</description>
   </item>
   <item>
@@ -1327,6 +1639,9 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <pubDate>Sun, 08 Feb 2026 16:15:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sun, 08 Feb 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience></targetAudience>
+    <eventTime>16h15</eventTime>
     <description>Cinéma les Lobis</description>
   </item>
   <item>
@@ -1336,6 +1651,9 @@ Tarif par film : 6.90 euros (6.20 euros pour les abonnés) / Tarif soirée 2 fil
     <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 14 Feb 2026 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium
 
 Plongez dans un univers d'aventures avec les boîtes à histoires ! Lunii, Merlin, Max, etc. des compagnons
@@ -1349,6 +1667,9 @@ Contes, musiques, documentaires et histoires à composer : des heures de plaisir
     <pubDate>Wed, 04 Mar 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 04 Mar 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez pas comment on fait ? Vous voulez apprendre de nouvelles mailles au tricot ? Vous voulez passer un moment agréable autour d'un goûter en discutant chiffons ? Amenez vos aiguilles, travaux, dés et patrons ! Rendez-vous pour partager votre temps et vos connaissances avec les autres usagers de la médiathèque. </description>
@@ -1360,6 +1681,9 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <pubDate>Wed, 11 Mar 2026 14:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 11 Mar 2026 00:00:00 +0000</endDate>
+    <duration>1h22</duration>
+    <targetAudience>à partir de 7 ans</targetAudience>
+    <eventTime>14h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium
 
 C’est l’histoire d’une petite fille différente. Son monde, c’est Coyoacan au Mexique. Pétillante, vibrante, tout l’intéresse. Et lorsque les épreuves se présentent, elle leur fait face grâce à un imaginaire débordant. Cette petite fille s’appelle Frida Kahlo ! Dans le cadre de la Semaine Elles</description>
@@ -1371,6 +1695,9 @@ C’est l’histoire d’une petite fille différente. Son monde, c’est Coyoac
     <pubDate>Sat, 14 Mar 2026 14:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Sat, 14 Mar 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Adultes</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium
 
 Venez découvrir les pépites des bibliothèques d'Agglopolys ! Le site web permet d'accéder à de nombreuses ressources : compte lecteur, cinéma en ligne, presse en ligne, autoformation... On vous attend !</description>
@@ -1382,6 +1709,9 @@ Venez découvrir les pépites des bibliothèques d'Agglopolys ! Le site web perm
     <pubDate>Sat, 14 Mar 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 14 Mar 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>A partir de 12 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -1393,6 +1723,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Wed, 04 Feb 2026 10:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 07 Feb 2026 00:00:00 +0000</endDate>
+    <duration>7h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>10h-13h et 14h-18h</eventTime>
     <description>Bibliothèque Abbe-Grégoire, Espace Julien-Angelier
 
 À vos agendas ! La vente des livres désherbés revient du 4 au 7 février 2026  
@@ -1410,6 +1743,9 @@ Profitez de prix mini (0,50 € ou 1 €) sur des livres jeunesse, adultes et pa
     <pubDate>Fri, 20 Mar 2026 18:30:00 +0000</pubDate>
     <category>Concert</category>
     <endDate>Fri, 20 Mar 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Bibliothèque Abbe-Grégoire, espace Adultes
 
 Printemps des Poètes : 
@@ -1424,6 +1760,9 @@ Le Trio Lo'jo réunit les voix de Nadia, Yamina Nid el Mourid et Denis Péan, «
     <pubDate>Fri, 24 Apr 2026 15:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Fri, 24 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h30</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Médiathèque Maurice-Genevoix
 
 "Découverte de jeux de société en partenariat avec les ludothèques Quinière et Mirabeau de la Ville de Blois.         "</description>
@@ -1435,6 +1774,9 @@ Le Trio Lo'jo réunit les voix de Nadia, Yamina Nid el Mourid et Denis Péan, «
     <pubDate>Sat, 11 Apr 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 11 Apr 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>A partir de 12 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !</description>
@@ -1446,6 +1788,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Sat, 18 Apr 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 18 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -1457,6 +1802,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Thu, 26 Feb 2026 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Venez vous essayer au coloriage en réalité augmentée !
@@ -1469,6 +1817,9 @@ Grâce à des applications sur tablette, coloriez un dessin et regardez-le s’a
     <pubDate>Wed, 01 Apr 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Apr 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? Ce rendez-vous vous permettra de prendre en main votre écran. Par rdv de 20 min., les mercredis matin. Inscription obligatoire au 02 54 51 33 22 en précisant la demande.</description>
@@ -1480,6 +1831,9 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <pubDate>Sat, 11 Apr 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 11 Apr 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>15h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Installés confortablement autour d’un café ou d’un thé, nous prendrons le temps d’échanger sur les livres qui nous ont plu. Chacun pourra repartir avec le coup de cœur d’un autre. Nous vous attendons !</description>
@@ -1491,6 +1845,9 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <pubDate>Wed, 04 Mar 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 04 Mar 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>de 0 à 6 ans</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Rose-Valland
 
 Chaque mois, venez écouter des histoires en famille avec vos enfants de 0 à 6 ans ! Nouveautés, albums, livres cartonnés, lectures à thèmes... et plus encore. Un rendez-vous convivial et familial à ne pas manquer.</description>
@@ -1502,6 +1859,9 @@ Chaque mois, venez écouter des histoires en famille avec vos enfants de 0 à 6 
     <pubDate>Wed, 08 Apr 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 08 Apr 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>de 0 à 4 ans</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Rose-Valland
 
 Venez partager un moment parentalité autour des lectures pour les tout-petits. En partenariat avec le Relais Petite Enfance de Veuzain-sur-Loire. </description>
@@ -1513,6 +1873,9 @@ Venez partager un moment parentalité autour des lectures pour les tout-petits. 
     <pubDate>Sat, 04 Apr 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 04 Apr 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>de 0 à 6 ans</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Rose-Valland
 
 Chaque mois, venez écouter des histoires en famille avec vos enfants de 0 à 6 ans ! Nouveautés, albums, livres cartonnés, lectures à thèmes... et plus encore. Un rendez-vous convivial et familial à ne pas manquer.</description>
@@ -1524,6 +1887,9 @@ Chaque mois, venez écouter des histoires en famille avec vos enfants de 0 à 6 
     <pubDate>Sat, 25 Apr 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 25 Apr 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Médiathèque Rose-Valland
 
 Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez pas comment on fait ? Vous voulez apprendre de nouvelles mailles au tricot ? Vous voulez passer un moment agréable autour d'un goûter en discutant chiffons ? Amenez vos aiguilles, travaux, dés et patrons ! Rendez-vous pour partager votre temps et vos connaissances avec les autres usagers de la médiathèque. </description>
@@ -1535,6 +1901,9 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <pubDate>Sat, 18 Apr 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 18 Apr 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>à partir de 12 ans</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Médiathèque Rose-Valland
 
 Envie de partager vos coups de coeurs lecture ? Envie de découvrir de nouveaux auteurs ? Envie de partager un moment convivial ? Venez rencontrer les lecteurs de la médiathèque Rose-Valland le 3ème samedi de chaque mois. </description>
@@ -1546,6 +1915,9 @@ Envie de partager vos coups de coeurs lecture ? Envie de découvrir de nouveaux 
     <pubDate>Sat, 18 Apr 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 18 Apr 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>à partir de 8 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Rose-Valland
 
 Le club d’Échecs de Veuzain-sur-Loire s’installe à la médiathèque pour jouer aux échecs.</description>
@@ -1557,6 +1929,9 @@ Le club d’Échecs de Veuzain-sur-Loire s’installe à la médiathèque pour j
     <pubDate>Fri, 15 May 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 15 May 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Ado/adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Rose-Valland
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathèque de Veuzain. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager ! </description>
@@ -1568,6 +1943,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <pubDate>Wed, 15 Apr 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 15 Apr 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>à partir de 6 ans</targetAudience>
+    <eventTime>14h30</eventTime>
     <description>Médiathèque Rose-Valland
 
 On bricole, on invente, on fabrique, on bidouille à la médiathèque ! L'esprit créatif est invité et les petits doigts mobilisés pour un moment inventif ! Chaque mois une réalisation différente est proposée aux petits et aux grands. Tenue adaptée à prévoir et parents bienvenus !</description>
@@ -1579,6 +1957,9 @@ On bricole, on invente, on fabrique, on bidouille à la médiathèque ! L'esprit
     <pubDate>Sat, 11 Apr 2026 14:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 11 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>14h </eventTime>
     <description>Médiathèque Rose-Valland
 
 Bricoleur chevronné ou débutant, venez participer à la création d'une maquette collective. Technicité, partage et bonne humeur au programme, le 2ème samedi de chaque mois. </description>
@@ -1590,6 +1971,9 @@ Bricoleur chevronné ou débutant, venez participer à la création d'une maquet
     <pubDate>Wed, 08 Apr 2026 14:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Wed, 08 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>8-12 ans</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix
 
 Pars à l’aventure ! D’étranges et mystérieuses créatures auraient été vues près de toi ! Les créatures telles que la Manticore, le Te Hokioi ou le Caddy sont encore peu étudiées par la science. Le Club des créatures mystérieuses a décidé d’en savoir plus sur elles. Pour les aider, viens à la Médiathèque et embarque dans une aventure à travers le monde ! </description>
@@ -1601,6 +1985,9 @@ Pars à l’aventure ! D’étranges et mystérieuses créatures auraient été 
     <pubDate>Sat, 11 Apr 2026 15:30:00 +0000</pubDate>
     <category>Conférence &amp; Projections Cinéma</category>
     <endDate>Sat, 11 Apr 2026 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience>Adultes</targetAudience>
+    <eventTime>15h30 Conférence  + Projections à partir de 18h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium, Blois
 
 Auteur d'une œuvre dense et pléthorique, le New-Yorkais John Zorn est depuis plusieurs décennies considéré comme l'une des figures essentielles de l'avant-garde musicale, brassant dans un geste de compositeur résolument postmoderne un ensemble hétérogène de références dont le jazz, au même titre que le punk, le sérialisme, la noise, la musique klezmer ou les musiques de film. Le saxophoniste alto, John Zorn a développé sur cet instrument une palette d'effets parmi les plus larges, élaborant une phraséologie expressionniste particulièrement saisissante qu'il met au service d'improvisations radicales ou d'œuvres écrites délibérément hors normes.</description>
@@ -1612,6 +1999,9 @@ Auteur d'une œuvre dense et pléthorique, le New-Yorkais John Zorn est depuis p
     <pubDate>Wed, 01 Apr 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 01 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Tout public, à partir de 11 ans</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 À l’occasion de la thématique "Les femmes dans l'art", Aiguilles &amp; Cie rend hommage à Yayoi Kusama. Laissez-vous inspirer par l'univers de cette artiste emblématique et venez créer, en famille, des guirlandes aux célèbres motifs à pois. </description>
@@ -1623,6 +2013,9 @@ Auteur d'une œuvre dense et pléthorique, le New-Yorkais John Zorn est depuis p
     <pubDate>Wed, 15 Apr 2026 14:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Wed, 15 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>8-16 ans</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium
 
 Sur console (PS5 ou Switch 2) et grand écran, venez vous mesurer à d’autres joueurs en incarnant un pilote de course automobile, le capitaine d’une équipe de football, un aventurier ou un super héros !</description>
@@ -1634,6 +2027,9 @@ Sur console (PS5 ou Switch 2) et grand écran, venez vous mesurer à d’autres 
     <pubDate>Fri, 17 Apr 2026 15:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Fri, 17 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Public adulte, 6 places</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Vous avez déjà vu le logo France Connect mais vous ne savez pas ce que c'est ? Cet atelier vous apprendra à l'utiliser pour simplifier l'accès à vos démarches administratives en ligne. Venez le découvrir !</description>
@@ -1645,6 +2041,9 @@ Vous avez déjà vu le logo France Connect mais vous ne savez pas ce que c'est ?
     <pubDate>Thu, 23 Apr 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Thu, 23 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Tout public à partir de 11 ans</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Redonnez vie à votre dressing avec Aiguilles &amp; Cie ! En partenariat avec le Bar à Couture de Blois, rejoignez-nous pour transformer, réparer ou pimper vos vêtements oubliés. Que vous soyez curieux de nature ou déjà mordu de couture, profitez d'un accompagnement sur mesure pour créer une mode unique et durable. Ne jetez plus, créez ! Réservation conseillée, 5 places</description>
@@ -1656,6 +2055,9 @@ Redonnez vie à votre dressing avec Aiguilles &amp; Cie ! En partenariat avec le
     <pubDate>Sat, 30 May 2026 16:00:00 +0000</pubDate>
     <category>Conférence - Musique Classique</category>
     <endDate>Sat, 30 May 2026 00:00:00 +0000</endDate>
+    <duration>1h45</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Le combat pour la reconnaissance des compositrices a été très long, il est encore en cours. Il a également été très difficile, principalement pour des raisons culturelles. Pourtant, les femmes ont été nombreuses au fil des siècles à exercer leurs talents dans un domaine habituellement réservé aux hommes. L’histoire les a continuellement oubliées. Ces conférences leur rendent justice au travers d’une galerie de portraits de compositrices engagées dans leur art, contre vents et marée, et à l’écoute de leur vocation malgré toutes les barrières rencontrées, depuis le Moyen Âge jusqu’à nos jours. 
@@ -1669,6 +2071,9 @@ Par Guillaume Kosmicki musicologue et écrivain spécialisé dans l’histoire d
     <pubDate>Thu, 16 Apr 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Thu, 16 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 11 ans</targetAudience>
+    <eventTime>14h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
 
 Réalise un personnage de manga avec des feutres Posca (copyright) et Promarker (copyright) ! Réservation conseillée, 12 places</description>
@@ -1680,6 +2085,9 @@ Réalise un personnage de manga avec des feutres Posca (copyright) et Promarker 
     <pubDate>Wed, 01 Apr 2026 15:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 7 ans</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Découvrez l’art traditionnel ukrainien Petrykivka, inscrit au patrimoine culturel immatériel de l’UNESCO. Né au XVIIIe siècle, cet art décoratif ser- vait à embellir les murs, les cheminées et la vaisselle dans les maisons rurales.  Pratiqué par les femmes. Lors de cet atelier animé par Yuliia Skorokhod, vous apprendrez la technique d’empreinte dégradée, propre à cette peinture florale unique et créerez votre propre carte postale pleine de poésie, de couleurs et de fantaisie.   Durée 2h 1ere partie : 20 minutes : projection et explication de cet art traditionnel 2eme partie : atelier de fabrication : 1h30 Animé par l’artiste.  Matériel fourni. Gouter à l'issue de l'atelier</description>
@@ -1691,6 +2099,9 @@ Découvrez l’art traditionnel ukrainien Petrykivka, inscrit au patrimoine cult
     <pubDate>Wed, 01 Apr 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>tout public à partir de 7 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Rose-Valland
 
 Découvrez l’art traditionnel ukrainien Petrykivka, inscrit au patrimoine culturel immatériel de l’UNESCO. 
@@ -1710,6 +2121,9 @@ Matériel fourni.</description>
     <pubDate>Wed, 01 Apr 2026 14:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix
 
 L’invasion colorée a commencé !
@@ -1723,6 +2137,9 @@ Du 1er avril au  30 juin, des pois vous attendront ! Vous passez un petit temps 
     <pubDate>Sat, 25 Apr 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 25 Apr 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>Adolescent et Adules</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Bibliothèque Abbe-Grégoire, espace Adultes
 
 Créatrices ou sujet de bande-dessinées, les artistes féminines peuplent le 9e art. BD européenne, manga, comics, les bibliothécaires vous invitent à découvrir leur sélection et à partager vos coup de cœur lors d'un Samedi c'est BD où les femmes artistes seront à l'honneur.</description>
@@ -1734,6 +2151,9 @@ Créatrices ou sujet de bande-dessinées, les artistes féminines peuplent le 9e
     <pubDate>Wed, 29 Apr 2026 12:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 29 Apr 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>Adultes</targetAudience>
+    <eventTime>12h30</eventTime>
     <description>Bibliothèque Abbe-Grégoire, Espace Julien-Angelier
 
 Camille Claudel, Frida Kahlo, Dora Maar, Vivian Maier… des femmes ont marqué l’histoire de l’art. Peintres, sculptrices, photographes, chanteuses, cinéastes… ces femmes artistes inspirantes ont triomphé des difficultés, des codes ou des interdits pour exister pleinement et développer leur créativité.</description>
@@ -1745,6 +2165,9 @@ Camille Claudel, Frida Kahlo, Dora Maar, Vivian Maier… des femmes ont marqué 
     <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Sat, 02 May 2026 00:00:00 +0000</endDate>
+    <duration>1 mois</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland
 
 Description à venir + visuels (en attente prestataire) </description>
@@ -1756,6 +2179,9 @@ Description à venir + visuels (en attente prestataire) </description>
     <pubDate>Sat, 11 Apr 2026 10:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 11 Apr 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Rose-Valland
 
 Profitez de l’exposition de l’Artothèque pour rencontrer les artistes invités. Un moment privilégié pour découvrir leur univers et partager un verre de l’amitié. 
@@ -1769,6 +2195,9 @@ Exposition visible jusqu'au 2 mai 2026</description>
     <pubDate>Fri, 24 Apr 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Fri, 24 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 À quoi pense Madame Manet (sur son canapé bleu) repose sur la fascination pour une image de femme qui devient le point de départ d’un voyage parmi d’autres images, en l’occurrence, tous les autres modèles du peintre. Dans cette traversée visuelle, ce sont les couleurs qui l’emportent, les visages et leur beauté, portés par le très beau texte lu par le réalisateur.
@@ -1781,6 +2210,9 @@ Exposition visible jusqu'au 2 mai 2026</description>
     <pubDate>Sat, 25 Apr 2026 10:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 25 Apr 2026 00:00:00 +0000</endDate>
+    <duration>8h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Rose-Valland
 
 Donnez une seconde vie à vos plantes et graines surnuméraire. Partagez, échangez avec d'autres jardiniers. Repartez avec de nouvelles plantes, découvrez de nouvelles variétés. Un temps de convivialité à la médiathèque Rose-Valland. </description>
@@ -1792,6 +2224,9 @@ Donnez une seconde vie à vos plantes et graines surnuméraire. Partagez, échan
     <pubDate>Wed, 29 Apr 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 29 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h30</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Paris, 1896. Sarah Bernhardt est au sommet de sa gloire. Icône de son époque et première star mondiale, la comédienne est aussi une amoureuse, libre et moderne, qui défie les conventions. Découvrez la femme derrière la légende. Séance accompagnée par des membres l'association "Vite au théâtre".</description>
@@ -1803,6 +2238,9 @@ Paris, 1896. Sarah Bernhardt est au sommet de sa gloire. Icône de son époque e
     <pubDate>Wed, 20 May 2026 14:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Wed, 20 May 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>8-16 ans</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium
 
 Prête à enflammer le dancefloor ? Rejoins notre tournoi Just Dance 100% féminin ! Viens briller, t'amuser et montrer tes meilleurs moves dans une ambiance survoltée. Inscris-toi vite à la médiathèque pour devenir la reine de la choré ! </description>
@@ -1814,6 +2252,9 @@ Prête à enflammer le dancefloor ? Rejoins notre tournoi Just Dance 100% fémin
     <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate></endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente</description>
   </item>
   <item>
@@ -1823,6 +2264,9 @@ Prête à enflammer le dancefloor ? Rejoins notre tournoi Just Dance 100% fémin
     <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate></endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland</description>
   </item>
   <item>
@@ -1833,6 +2277,9 @@ Prête à enflammer le dancefloor ? Rejoins notre tournoi Just Dance 100% fémin
     <pubDate>Wed, 03 Jun 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>A partir de 7 ans</targetAudience>
+    <eventTime>14h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
 
 Après un échange avec l'artiste, réalisez une image inspirée du tableau *Le Déjeuner au chien* de Bonnard, mis en scène dans son album *L'Art en jouets* (éd. Palette). Goûter offert.
@@ -1849,6 +2296,9 @@ Inscription conseillée
     <pubDate>Thu, 04 Jun 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Thu, 04 Jun 2026 00:00:00 +0000</endDate>
+    <duration>1h15</duration>
+    <targetAudience>Public adulte, 25 places</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium
 
 Yayoi Kusama est née dans une famille conservatrice de la campagne japonaise et a gagné l’Amérique au lendemain de la Seconde Guerre mondiale. Là-bas, sans relations et ne parlant qu’un anglais approximatif, elle s’est consacrée à son seul véritable amour, la création artistique. Lors de son premier jour à New York, Kusama a déclaré qu’elle était montée au sommet de l’Empire State Building, qu’elle avait regardé la ville et qu’elle avait pris la décision de se démarquer de tous ceux qu’elle voyait en contrebas et de devenir une star. Aujourd’hui âgée de 80 ans, Kusama a passé les 30 dernières années dans un établissement psychiatrique au Japon. « Kusama : Infinity » explore le parcours de l’artiste Yayoi Kusama, depuis son éducation conservatrice au Japon jusqu’à ses débuts dans la célébrité aux États-Unis dans les années 1960 (où elle rivalisait avec Andy Warhol pour attirer l’attention de la presse), pour aboutir à la renommée internationale qu’elle a finalement acquise dans le monde de l’art.</description>
@@ -1860,6 +2310,9 @@ Yayoi Kusama est née dans une famille conservatrice de la campagne japonaise et
     <pubDate>Sat, 23 May 2026 10:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 23 May 2026 00:00:00 +0000</endDate>
+    <duration>5h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>10h-12h / 14h-17h</eventTime>
     <description>Médiathèque Maurice-Genevoix
 
 Amateurs et amoureux des végétaux, venez échanger avec nous vos boutures et vos conseils (avec la contribution du Service Parcs et Jardins - Espaces naturels de la Ville de Blois). Conseils pratiques : pensez à étiqueter et préparer vos plantes dans des contenants pour les futurs adoptants !</description>
@@ -1871,6 +2324,9 @@ Amateurs et amoureux des végétaux, venez échanger avec nous vos boutures et v
     <pubDate>Thu, 18 Jun 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Thu, 18 Jun 2026 00:00:00 +0000</endDate>
+    <duration>1h47</duration>
+    <targetAudience>Public adulte, 120 places</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 « Big eyes » raconte la scandaleuse histoire vraie de l’une des plus grandes impostures de l’histoire de l’art. À la fin des années 50 et au début des années 60, le peintre Walter Keane a connu un succès phénoménal et révolutionné le commerce de l’art grâce à ses énigmatiques tableaux représentant des enfants malheureux aux yeux immenses. 
@@ -1883,6 +2339,9 @@ La projection sera suivie d'un échange l'artiste plasticienne Svetlina Petrova.
     <pubDate>Wed, 27 May 2026 14:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Wed, 27 May 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>8-16 ans</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium
 
 Sur console (PS5 ou Switch 2) et grand écran, venez vous mesurer à d’autres joueurs en incarnant un pilote de course automobile, le capitaine d’une équipe de football, un aventurier ou un super héros !</description>
@@ -1894,6 +2353,9 @@ Sur console (PS5 ou Switch 2) et grand écran, venez vous mesurer à d’autres 
     <pubDate>Tue, 12 May 2026 15:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Tue, 12 May 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Public adulte, 6 places</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Cet atelier vous présentera les fonctionnalités du site Ameli et vous permettra de vous créer un compte à l'occasion.</description>
@@ -1905,6 +2367,9 @@ Cet atelier vous présentera les fonctionnalités du site Ameli et vous permettr
     <pubDate>Fri, 12 Jun 2026 15:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Fri, 12 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Public adulte, 6 places</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Venez vous familiariser avec les principes et le fonctionnement de l'IA au travers d'exercices ludiques et de quelques tests.</description>
@@ -1916,6 +2381,9 @@ Venez vous familiariser avec les principes et le fonctionnement de l'IA au trave
     <pubDate>Sat, 30 May 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 30 May 2026 00:00:00 +0000</endDate>
+    <duration>2h30</duration>
+    <targetAudience>Adultes et adolescents dès 13 ans</targetAudience>
+    <eventTime>14h30</eventTime>
     <description>Bibliothèque Abbe-Grégoire, espace Adultes
 
 Atelier Fanzine en présence de Lucile et Pauline Torregrossa, auteure et illustratrice de la BD Vivaces</description>
@@ -1927,6 +2395,9 @@ Atelier Fanzine en présence de Lucile et Pauline Torregrossa, auteure et illust
     <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Sat, 04 Jul 2026 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium
 
 "Vivaces" est un roman graphique qui parle de luttes pour l'environnement, de féminisme et de transmission familiale. L'exposition présente les grandes étapes de création de cette Bd, du scénario aux pages finales, en passant par des dessins inédits et des planches originales réalisées à l'aquarelle.</description>
@@ -1938,6 +2409,9 @@ Atelier Fanzine en présence de Lucile et Pauline Torregrossa, auteure et illust
     <pubDate>Sat, 30 May 2026 11:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 30 May 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 À partir d'extraits audio et vidéo, venez échanger sur des trouvailles musicales d'hier et d'aujourd'hui. Malgré le déclin de l'industrie du disque, les productions éditées par les artistes eux-mêmes et les micro-labels se multiplient à travers le monde. Et depuis des décennies, quantité de genres musicaux font leur apparition. </description>
@@ -1949,6 +2423,9 @@ Atelier Fanzine en présence de Lucile et Pauline Torregrossa, auteure et illust
     <pubDate>Sat, 25 Apr 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 25 Apr 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo
 
 	Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale autour d'un thé ou d'un café, pour discuter librement de l'actualité, débattre et partager vos coups de cœur.</description>
@@ -1960,6 +2437,9 @@ Atelier Fanzine en présence de Lucile et Pauline Torregrossa, auteure et illust
     <pubDate>Wed, 24 Jun 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 24 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>A partir de 12 ans, 12 places</targetAudience>
+    <eventTime>14h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
 
 Créez une petite toile à la manière de Margaret Keane dont l'histoire a inspiré le film de Tim Burton, "Big eyes" (projection le  18 juin)</description>
@@ -1971,6 +2451,9 @@ Créez une petite toile à la manière de Margaret Keane dont l'histoire a inspi
     <pubDate>Tue, 05 May 2026 13:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
+    <duration>1 mois</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>dès 13h le 4 mai 2026 et pendant les horaires d'ouverture au public</eventTime>
     <description>Bibliothèque Abbe-Grégoire, Hall d’accueil
 
 Exposition des inspirations et dessins originaux de Lucile et Pauline Torregrossa pour le roman graphique Vivaces</description>
@@ -1982,6 +2465,9 @@ Exposition des inspirations et dessins originaux de Lucile et Pauline Torregross
     <pubDate>Sat, 13 Jun 2026 14:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 13 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h30</duration>
+    <targetAudience>Adultes et adolescents dès 13 ans</targetAudience>
+    <eventTime>14h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
 
 Atelier Fanzine en présence de Lucile et Pauline Torregrossa, auteure et illustratrice de la BD Vivaces</description>
@@ -1994,6 +2480,9 @@ les doudous !</title>
     <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 21 Mar 2026 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse</description>
   </item>
   <item>
@@ -2003,6 +2492,9 @@ les doudous !</title>
     <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate></endDate>
+    <duration></duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description>Réseau des bibliothèques d'Agglopolys</description>
   </item>
   <item>
@@ -2012,6 +2504,9 @@ les doudous !</title>
     <pubDate>Wed, 10 Jun 2026 15:00:00 +0000</pubDate>
     <category>Initiation informatique</category>
     <endDate>Wed, 10 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>8-14 ans, 8 places</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Lightbot est un jeu de logique : un casse-tête dont le fonctionnement est basé sur des concepts de programmation. Choisis ton robot ou ta robote et fais-le se déplacer pour accomplir les missions.</description>
@@ -2024,6 +2519,9 @@ Lightbot est un jeu de logique : un casse-tête dont le fonctionnement est basé
     <pubDate>Wed, 24 Jun 2026 15:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Fri, 24 Apr 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>à partir de 8 ans</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Imagine et dessine ton propre super-héros : à toi de choisir ses pouvoirs, son costume, son univers ! Un atelier encadré par les animateurs de la Maison de la BD, dans le cadre de Partir en livre. Réservation conseillée - 12 places
@@ -2036,6 +2534,9 @@ Imagine et dessine ton propre super-héros : à toi de choisir ses pouvoirs, son
     <pubDate>Sat, 21 Mar 2026 10:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 21 Mar 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience></targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Maurice-Genevoix</description>
   </item>
   <item>
@@ -2045,6 +2546,9 @@ Imagine et dessine ton propre super-héros : à toi de choisir ses pouvoirs, son
     <pubDate>Wed, 06 May 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 06 May 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez pas comment on fait ? Vous voulez apprendre de nouvelles mailles au tricot ? Vous voulez passer un moment agréable autour d'un goûter en discutant chiffons ? Amenez vos aiguilles, travaux, dés et patrons ! Rendez-vous pour partager votre temps et vos connaissances avec les autres usagers de la médiathèque. </description>
@@ -2056,6 +2560,9 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <pubDate>Wed, 03 Jun 2026 16:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez pas comment on fait ? Vous voulez apprendre de nouvelles mailles au tricot ? Vous voulez passer un moment agréable autour d'un goûter en discutant chiffons ? Amenez vos aiguilles, travaux, dés et patrons ! Rendez-vous pour partager votre temps et vos connaissances avec les autres usagers de la médiathèque. </description>
@@ -2067,6 +2574,9 @@ Vous êtes doué en crochet ? Vous avez un bouton à recoudre et vous ne savez p
     <pubDate>Sat, 23 May 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 23 May 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -2078,6 +2588,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 13 Jun 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 13 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -2089,6 +2602,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 27 Jun 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 27 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -2100,6 +2616,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 30 May 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 30 May 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>15h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Installés confortablement autour d’un café ou d’un thé, nous prendrons le temps d’échanger sur les livres qui nous ont plu. Chacun pourra repartir avec le coup de cœur d’un autre. Nous vous attendons !</description>
@@ -2111,6 +2630,9 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <pubDate>Sat, 23 May 2026 10:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Sat, 23 May 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>A partir de 12 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !</description>
@@ -2122,6 +2644,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Sat, 06 Jun 2026 10:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Sat, 06 Jun 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>A partir de 12 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !</description>
@@ -2133,6 +2658,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Sat, 20 Jun 2026 10:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Sat, 20 Jun 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>A partir de 12 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !</description>
@@ -2144,6 +2672,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Wed, 17 Jun 2026 14:00:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Wed, 17 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>8-16 ans</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix, Auditorium
 
 Sur console (PS5 ou Switch 2) et grand écran, venez vous mesurer à d’autres joueurs en incarnant un pilote de course automobile, le capitaine d’une équipe de football, un aventurier ou un super héros !</description>
@@ -2155,6 +2686,9 @@ Sur console (PS5 ou Switch 2) et grand écran, venez vous mesurer à d’autres 
     <pubDate>Wed, 27 May 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 27 May 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? Ce rendez-vous vous permettra de prendre en main votre écran. Par rdv de 20 min., les mercredis matin. Inscription obligatoire au 02 54 51 33 22 en précisant la demande.</description>
@@ -2166,6 +2700,9 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <pubDate>Wed, 10 Jun 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 10 Jun 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? Ce rendez-vous vous permettra de prendre en main votre écran. Par rdv de 20 min., les mercredis matin. Inscription obligatoire au 02 54 51 33 22 en précisant la demande.</description>
@@ -2177,6 +2714,9 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <pubDate>Wed, 23 Sep 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 23 Sep 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? Ce rendez-vous vous permettra de prendre en main votre écran. Par rdv de 20 min., les mercredis matin. Inscription obligatoire au 02 54 51 33 22 en précisant la demande.</description>
@@ -2188,6 +2728,9 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <pubDate>Wed, 25 Mar 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 25 Mar 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2199,6 +2742,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 08 Apr 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 08 Apr 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2210,6 +2756,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 22 Apr 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 22 Apr 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2221,6 +2770,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 13 May 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 13 May 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2232,6 +2784,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 27 May 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 27 May 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2243,6 +2798,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Sat, 16 May 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 16 May 2026 00:00:00 +0000</endDate>
+    <duration>15 min par rendez-vous</duration>
+    <targetAudience>A partir de 6 ans</targetAudience>
+    <eventTime>10h45-12h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton moment privilégié avec Plume. Tu choisis le livre que tu souhaites lire à Plume (ou lui raconter si tu ne maîtrises pas la lecture) et tu viens la rejoindre dans sa tente cocooning. N’hésite plus. Prends ton RDV avec Plume en téléphonant à l’Espace jeunesse de la bibliothèque au 02 54 56 27 51 Plume t’attend !</description>
@@ -2254,6 +2812,9 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <pubDate>Sat, 04 Apr 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 04 Apr 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>Dès 2 ans</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Les bibliothécaires lisent des albums et des comptines choisis parmi les nouveautés et leurs coups de cœur</description>
@@ -2265,6 +2826,9 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <pubDate>Sat, 18 Apr 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 18 Apr 2026 00:00:00 +0000</endDate>
+    <duration>15 min par rendez-vous</duration>
+    <targetAudience>A partir de 6 ans</targetAudience>
+    <eventTime>10h45-12h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton moment privilégié avec Plume. Tu choisis le livre que tu souhaites lire à Plume (ou lui raconter si tu ne maîtrises pas la lecture) et tu viens la rejoindre dans sa tente cocooning. N’hésite plus. Prends ton RDV avec Plume en téléphonant à l’Espace jeunesse de la bibliothèque au 02 54 56 27 51 Plume t’attend !</description>
@@ -2276,6 +2840,9 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <pubDate>Sat, 14 Mar 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 14 Mar 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>Dès 2 ans</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Les bibliothécaires lisent des albums et des comptines choisis parmi les nouveautés et leurs coups de cœur</description>
@@ -2287,6 +2854,9 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <pubDate>Sat, 23 May 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 23 May 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>Dès 2 ans</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Les bibliothécaires lisent des albums et des comptines choisis parmi les nouveautés et leurs coups de cœur</description>
@@ -2298,6 +2868,9 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <pubDate>Sat, 13 Jun 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 13 Jun 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>Dès 2 ans</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Les bibliothécaires lisent des albums et des comptines choisis parmi les nouveautés et leurs coups de cœur</description>
@@ -2309,6 +2882,9 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <pubDate>Wed, 27 May 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 27 May 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>A partir de 3 ans</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse
 
 Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans</description>
@@ -2320,6 +2896,9 @@ Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans</descr
     <pubDate>Wed, 17 Jun 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 17 Jun 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>A partir de 3 ans</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse
 
 Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans</description>
@@ -2331,6 +2910,9 @@ Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans</descr
     <pubDate>Fri, 29 May 2026 18:00:00 +0000</pubDate>
     <category>Concert</category>
     <endDate>Fri, 29 May 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>18h</eventTime>
     <description>Médiathèque Rose-Valland
 
 Henriette, du Mans, et Rosette, de Lyon, deux chanteuses gouailleuse, amoureuses de leur liberté, vous proposent un répertoire savamment relevé. A partager avec toutes les bouches.  Swing et bonne humeur garantis ! </description>
@@ -2343,6 +2925,9 @@ Henriette, du Mans, et Rosette, de Lyon, deux chanteuses gouailleuse, amoureuses
     <pubDate>Wed, 03 Jun 2026 15:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>4-7 ans</targetAudience>
+    <eventTime>15h30</eventTime>
     <description>Médiathèque Rose-Valland
 
 
@@ -2359,6 +2944,9 @@ Inscription conseillée
     <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Sat, 20 Jun 2026 00:00:00 +0000</endDate>
+    <duration></duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime></eventTime>
     <description>Médiathèque Rose-Valland
 
 Les grands artistes ont déployé toute une palette de techniques pour exprimer leur talent. En travaillant « à la façon de », les enfants du centre de loisirs de Veuzain-sur-Loire ont expérimenté différentes techniques pour réaliser une série de créations originales.  </description>
@@ -2370,6 +2958,9 @@ Les grands artistes ont déployé toute une palette de techniques pour exprimer 
     <pubDate>Sat, 06 Jun 2026 16:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Sat, 06 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h30</duration>
+    <targetAudience>Ado/adulte</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Attachée de conservation au musée du Jeu de Paume pendant l’Occupation, Rose Valland a joué un rôle décisif dans la sauvegarde, la récupération et la restitution de plus de 60 000 œuvres d'art et biens culturels volés et spoliés par les nazis pendant la Seconde Guerre mondiale aux institutions publiques et aux familles juives françaises.  Venez découvrir le travail de cette femme d’exception. Projection suivie d’un échange avec Brigitte Chevet, réalisatrice du film. </description>
@@ -2381,6 +2972,9 @@ Attachée de conservation au musée du Jeu de Paume pendant l’Occupation, Rose
     <pubDate>Fri, 22 May 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Fri, 22 May 2026 00:00:00 +0000</endDate>
+    <duration>2h00</duration>
+    <targetAudience>Adulte</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Dans les années 50 et 60, au fin fond de la campagne américaine, une petite maison en bois abritait le premier réseau clandestin de travestis, créé par la célèbre Susanna, qui a eu le courage de créer ce refuge que l'on a appelé Casa Susanna. Séance accompagnée par des membres du planning familial.</description>
@@ -2392,6 +2986,9 @@ Dans les années 50 et 60, au fin fond de la campagne américaine, une petite ma
     <pubDate>Wed, 20 May 2026 18:30:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 20 May 2026 00:00:00 +0000</endDate>
+    <duration>2h15</duration>
+    <targetAudience>Tout public (à partir de 12 ans)</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Après avoir tenu des propos homophobes, Mathias Le Goff, vice-champion du monde de natation, est condamné à entraîner "Les Crevettes Pailletées", une équipe de water-polo gay, davantage motivée par la fête que par la compétition. Séance accompagnée par des membres du planning familial.</description>
@@ -2403,6 +3000,9 @@ Après avoir tenu des propos homophobes, Mathias Le Goff, vice-champion du monde
     <pubDate>Wed, 17 Jun 2026 10:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 17 Jun 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>2-7 ans</targetAudience>
+    <eventTime>10h30</eventTime>
     <description>Médiathèque Rose-Valland
 
 Une fille, c’est rose et c’est doux. Un garçon, c’est fort et ça ne pleure pas. Ou pas.  Venez rencontrer des filles piquantes, des garçons silencieux, des enfants qui vivent leur vie d’enfants, loin des idées des grands…  Dans le cadre du Mois des Fiertés. </description>
@@ -2414,6 +3014,9 @@ Une fille, c’est rose et c’est doux. Un garçon, c’est fort et ça ne pleu
     <pubDate>Sat, 25 Apr 2026 10:00:00 +0000</pubDate>
     <category>Jeux</category>
     <endDate>Sat, 25 Apr 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>A partir de 12 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !</description>
@@ -2425,6 +3028,9 @@ Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeu
     <pubDate>Wed, 05 Aug 2026 18:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 05 Aug 2026 00:00:00 +0000</endDate>
+    <duration>1h43</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>18h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Thibaut est un chef d’orchestre de renommée 
@@ -2444,6 +3050,9 @@ du destin. Jimmy se prend alors à rêver d’une autre vie.</description>
     <pubDate>Wed, 19 Aug 2026 18:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 19 Aug 2026 00:00:00 +0000</endDate>
+    <duration>1h54</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>18h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Aux sports d’hiver, une Américaine tombe amoureuse d’un séduisant célibataire. De retour à Paris, elle apprend le meurtre de son mari et elle va être poursuivie par d’étranges personnages, à la recherche d'un magot caché par la victime et dont elle ignore tout.</description>
@@ -2455,6 +3064,9 @@ Aux sports d’hiver, une Américaine tombe amoureuse d’un séduisant célibat
     <pubDate>Wed, 26 Aug 2026 18:00:00 +0000</pubDate>
     <category>Projection</category>
     <endDate>Wed, 26 Aug 2026 00:00:00 +0000</endDate>
+    <duration>1h47</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>18h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty
 
 Les vacances d’été. Sardaigne, Italie. Un (road) trip en famille. Claudine, bientôt 11 ans, raconte leurs aventures au fur et à mesure. Quand Raoul, son frère de 3 ans, ne l’en empêche pas.</description>
@@ -2467,6 +3079,9 @@ Les vacances d’été. Sardaigne, Italie. Un (road) trip en famille. Claudine, 
     <pubDate>Wed, 03 Jun 2026 15:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>A partir de 7 ans</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Auteur-illustrateur de *Didgeridoo*, *Bob et Marley* ou *Yasuké*, Frédéric Marais vous guide pour réaliser votre propre illustration en s'inspirant de son album *Didgeridoo*. Goûter offert.
@@ -2482,6 +3097,9 @@ Inscription conseillée</description>
     <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Wed, 03 Jun 2026 00:00:00 +0000</endDate>
+    <duration>/</duration>
+    <targetAudience>Tout public à partir de 6 ans</targetAudience>
+    <eventTime>/</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Federico Appel est un auteur, illustrateur et traducteur italien. Il a illustré une quinzaine d'albums et bandes dessinées. Il s'est fait remarquer en France par ses albums "La fabuleuse croisière du Capitaine Mistral" - "Le tandem" -" Loup et Renard n’ont peur de rien". Virginie Costa est une autrice et illustratrice qui s'est fait remarquer par son album "Graou c'est toi le loup" et sa série "Patoche et Timmy". Exposition en partenariat avec le Salon du livre de Saint-Gervais-La-Forêt. </description>
@@ -2493,6 +3111,9 @@ Federico Appel est un auteur, illustrateur et traducteur italien. Il a illustré
     <pubDate>Sat, 12 Sep 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 12 Sep 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>Dès 2 ans</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Les bibliothécaires lisent des albums et des comptines choisis parmi les nouveautés et leurs coups de cœur</description>
@@ -2504,6 +3125,9 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <pubDate>Sat, 03 Oct 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 03 Oct 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>Dès 2 ans</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Les bibliothécaires lisent des albums et des comptines choisis parmi les nouveautés et leurs coups de cœur</description>
@@ -2515,6 +3139,9 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <pubDate>Sat, 07 Nov 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 07 Nov 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>Dès 2 ans</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Les bibliothécaires lisent des albums et des comptines choisis parmi les nouveautés et leurs coups de cœur</description>
@@ -2526,6 +3153,9 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <pubDate>Sat, 12 Dec 2026 11:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 12 Dec 2026 00:00:00 +0000</endDate>
+    <duration>30 min</duration>
+    <targetAudience>Dès 2 ans</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Les bibliothécaires lisent des albums et des comptines choisis parmi les nouveautés et leurs coups de cœur</description>
@@ -2537,6 +3167,9 @@ Les bibliothécaires lisent des albums et des comptines choisis parmi les nouvea
     <pubDate>Wed, 22 Jul 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 22 Jul 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2548,6 +3181,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 26 Aug 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 26 Aug 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2559,6 +3195,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 02 Sep 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 02 Sep 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2570,6 +3209,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 16 Sep 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 16 Sep 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2581,6 +3223,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 30 Sep 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 30 Sep 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2592,6 +3237,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 28 Oct 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 28 Oct 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2603,6 +3251,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 04 Nov 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 04 Nov 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2614,6 +3265,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 18 Nov 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 18 Nov 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2625,6 +3279,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 02 Dec 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 02 Dec 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2636,6 +3293,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Wed, 16 Dec 2026 10:15:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 16 Dec 2026 00:00:00 +0000</endDate>
+    <duration>45 min.</duration>
+    <targetAudience>0-5 ans</targetAudience>
+    <eventTime>10h15</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine sa référente bibliothécaire, accompagnent les enfants à la découverte ludique des livres.</description>
@@ -2647,6 +3307,9 @@ Plume, notre caniche royale (chien d’assistance Handi’chiens) et Christine s
     <pubDate>Sat, 25 Jul 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 25 Jul 2026 00:00:00 +0000</endDate>
+    <duration>15 min par rendez-vous</duration>
+    <targetAudience>A partir de 6 ans</targetAudience>
+    <eventTime>10h45-12h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton moment privilégié avec Plume. Tu choisis le livre que tu souhaites lire à Plume (ou lui raconter si tu ne maîtrises pas la lecture) et tu viens la rejoindre dans sa tente cocooning. N’hésite plus. Prends ton RDV avec Plume en téléphonant à l’Espace jeunesse de la bibliothèque au 02 54 56 27 51 Plume t’attend !</description>
@@ -2658,6 +3321,9 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <pubDate>Sat, 05 Sep 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 05 Sep 2026 00:00:00 +0000</endDate>
+    <duration>15 min par rendez-vous</duration>
+    <targetAudience>A partir de 6 ans</targetAudience>
+    <eventTime>10h45-12h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton moment privilégié avec Plume. Tu choisis le livre que tu souhaites lire à Plume (ou lui raconter si tu ne maîtrises pas la lecture) et tu viens la rejoindre dans sa tente cocooning. N’hésite plus. Prends ton RDV avec Plume en téléphonant à l’Espace jeunesse de la bibliothèque au 02 54 56 27 51 Plume t’attend !</description>
@@ -2669,6 +3335,9 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <pubDate>Sat, 03 Oct 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 03 Oct 2026 00:00:00 +0000</endDate>
+    <duration>15 min par rendez-vous</duration>
+    <targetAudience>A partir de 6 ans</targetAudience>
+    <eventTime>10h45-12h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton moment privilégié avec Plume. Tu choisis le livre que tu souhaites lire à Plume (ou lui raconter si tu ne maîtrises pas la lecture) et tu viens la rejoindre dans sa tente cocooning. N’hésite plus. Prends ton RDV avec Plume en téléphonant à l’Espace jeunesse de la bibliothèque au 02 54 56 27 51 Plume t’attend !</description>
@@ -2680,6 +3349,9 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <pubDate>Sat, 28 Nov 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 28 Nov 2026 00:00:00 +0000</endDate>
+    <duration>15 min par rendez-vous</duration>
+    <targetAudience>A partir de 6 ans</targetAudience>
+    <eventTime>10h45-12h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton moment privilégié avec Plume. Tu choisis le livre que tu souhaites lire à Plume (ou lui raconter si tu ne maîtrises pas la lecture) et tu viens la rejoindre dans sa tente cocooning. N’hésite plus. Prends ton RDV avec Plume en téléphonant à l’Espace jeunesse de la bibliothèque au 02 54 56 27 51 Plume t’attend !</description>
@@ -2691,6 +3363,9 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <pubDate>Sat, 12 Dec 2026 10:45:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Sat, 12 Dec 2026 00:00:00 +0000</endDate>
+    <duration>15 min par rendez-vous</duration>
+    <targetAudience>A partir de 6 ans</targetAudience>
+    <eventTime>10h45-12h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, salle du conte
 
 Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton moment privilégié avec Plume. Tu choisis le livre que tu souhaites lire à Plume (ou lui raconter si tu ne maîtrises pas la lecture) et tu viens la rejoindre dans sa tente cocooning. N’hésite plus. Prends ton RDV avec Plume en téléphonant à l’Espace jeunesse de la bibliothèque au 02 54 56 27 51 Plume t’attend !</description>
@@ -2702,6 +3377,9 @@ Pour trouver ou retrouver le plaisir de lire à haute voix et profiter de ton mo
     <pubDate>Thu, 28 May 2026 18:30:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Thu, 28 May 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Adultes</targetAudience>
+    <eventTime>18h30</eventTime>
     <description>IUT, Amphithéâtre n°1
 
 Les six titres sont évoqués tour à tour à l’occasion de deux soirées. Des rencontres au cours desquelles chaque lecteur peut échanger avec les autres participant. La rencontre du jeudi 28 mai sera consacrée à Les mandragores, Pâture et Le jardin dans le ciel</description>
@@ -2713,6 +3391,9 @@ Les six titres sont évoqués tour à tour à l’occasion de deux soirées. Des
     <pubDate>Fri, 12 Jun 2026 17:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Fri, 12 Jun 2026 00:00:00 +0000</endDate>
+    <duration>?</duration>
+    <targetAudience>Adultes</targetAudience>
+    <eventTime>17h</eventTime>
     <description>Halle aux Grains
 
 Depuis mars, les romans sélectionnés font l’objet des lectures, débats, échanges de la part des lecteurs amateurs, réunis régulièrement au sein de leurs comités, associant ainsi plaisir des échanges et goût de la lecture. Le résultat des votes des comités sera rendu public à la Halle aux grains en présence des auteurs sélectionnés qui s’entretiendront avec Matthieu Garrigou-Lagrange. Un temps de dédicaces et un cocktail se tiendront aux alentours de 19h.</description>
@@ -2724,6 +3405,9 @@ Depuis mars, les romans sélectionnés font l’objet des lectures, débats, éc
     <pubDate>Wed, 29 Apr 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 29 Apr 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? Ce rendez-vous vous permettra de prendre en main votre écran. Par rdv de 20 min., les mercredis matin. Inscription obligatoire au 02 54 51 33 22 en précisant la demande.</description>
@@ -2736,6 +3420,9 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <pubDate>Wed, 08 Jul 2026 09:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 08 Jul 2026 00:00:00 +0000</endDate>
+    <duration>2 séances de 35 minutes</duration>
+    <targetAudience>Pour les tout-petits</targetAudience>
+    <eventTime>9h30 et 10h30</eventTime>
     <description>Jardin de l'Évêché
 
 Albums à voix haute, chansons à la guitare et moments à chanter ensemble : bibliothécaires et animatrices des Relais Petite Enfance unissent leur voix, accompagnées par la musicienne Clémence Bouin, pour un rendez-vous tendre et complice, pensé pour les tout-petits et leurs parents.
@@ -2758,6 +3445,9 @@ Mercredi 8 juillet – Jardins de l'Évêch&amp;#xE9;*(en cas de pluie : bibliot
     <pubDate>Fri, 03 Jul 2026 09:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Fri, 03 Jul 2026 00:00:00 +0000</endDate>
+    <duration>2 séances de 35 minutes</duration>
+    <targetAudience>Pour les tout-petits</targetAudience>
+    <eventTime>9h30 et 10h30</eventTime>
     <description>Jardin de la Crèche de Blois Vienne
 
 Albums à voix haute, chansons à la guitare et moments à chanter ensemble : bibliothécaires et animatrices des Relais Petite Enfance unissent leur voix, accompagnées par la musicienne Clémence Bouin, pour un rendez-vous tendre et complice, pensé pour les tout-petits et leurs parents.
@@ -2778,6 +3468,9 @@ Mercredi 8 juillet – Jardins de l'Évêch&amp;#xE9;*(en cas de pluie : bibliot
     <pubDate>Sat, 19 Sep 2026 14:00:00 +0000</pubDate>
     <category>Rencontre</category>
     <endDate>Sat, 19 Sep 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>Adulte</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, Fonds patrimonial
 
 Comment la bibliothèque municipale de Blois a-t-elle traversé la guerre ? Etait-elle un lieu épargné où les Blésois pouvaient trouver calme et répit durant les années d’occupation ? De la gestion des livres « anti-allemands » à la mise à l’abri des livres précieux au château de Chantreuil, cette conférence décrit comment le personnel de la bibliothèque a dû cohabiter avec l’occupant et comment les livres ont été préservés.
@@ -2791,6 +3484,9 @@ Une exposition de documents d’archives accompagnera la conférence du 16 au 24
     <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
     <category>Exposition</category>
     <endDate>Sat, 20 Jun 2026 00:00:00 +0000</endDate>
+    <duration>Sans heure (expo)</duration>
+    <targetAudience>Tout Public</targetAudience>
+    <eventTime>Sans heure (expo)</eventTime>
     <description>Bibliothèque Abbe-Grégoire, Espace Julien-Angelier
 
 Fonds d'encre
@@ -2809,6 +3505,9 @@ Vernissage de l'exposition le 12 mai 2026 à 18h</description>
     <pubDate>Thu, 02 Jul 2026 09:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Thu, 02 Jul 2026 00:00:00 +0000</endDate>
+    <duration>2 séances de 35 minutes</duration>
+    <targetAudience>Pour les tout-petits</targetAudience>
+    <eventTime>9h30 et 10h30</eventTime>
     <description>Jardin de la Médiathèque Maurice-Genevoix
 
 Albums à voix haute, chansons à la guitare et moments à chanter ensemble : bibliothécaires et animatrices des Relais Petite Enfance unissent leur voix, accompagnées par la musicienne Clémence Bouin, pour un rendez-vous tendre et complice, pensé pour les tout-petits et leurs parents.
@@ -2829,6 +3528,9 @@ Mercredi 8 juillet – Jardins de l'Évêch&amp;#xE9;*(en cas de pluie : bibliot
     <pubDate>Fri, 03 Apr 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 03 Apr 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Ado/adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Rose-Valland
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathèque de Veuzain. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager ! </description>
@@ -2840,6 +3542,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <pubDate>Fri, 29 May 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 29 May 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Ado/adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Rose-Valland
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathèque de Veuzain. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager ! </description>
@@ -2851,6 +3556,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <pubDate>Fri, 12 Jun 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 12 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Ado/adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Rose-Valland
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathèque de Veuzain. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager ! </description>
@@ -2862,6 +3570,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <pubDate>Fri, 26 Jun 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Fri, 26 Jun 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>Ado/adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Rose-Valland
 
 La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathèque de Veuzain. Dans une joyeuse bonne humeur, les participants échangent anagrammes, cafés et contrepèteries un vendredi sur deux. Venez essayer. Restez partager ! </description>
@@ -2873,6 +3584,9 @@ La CLÉ des mots est le Club Ludique d’Écriture des lecteurs de la médiathè
     <pubDate>Wed, 01 Jul 2026 16:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Jul 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>16h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
 
 Choisis tes fruits et tes ingrédients, mixe, et installe-toi dans le jardin pour savourer ta création ! Une pause fraîche et gourmande, à siroter sans modération.</description>
@@ -2884,6 +3598,9 @@ Choisis tes fruits et tes ingrédients, mixe, et installe-toi dans le jardin pou
     <pubDate>Tue, 07 Jul 2026 14:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Tue, 07 Jul 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>A partir de 12 ans</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Viens créer ton tote bag d'été en compagnie de Jade du Bar à couture ! Dessine, assemble, personnalise — et repars avec un sac 100% fait main, idéal pour l'été.
@@ -2896,6 +3613,9 @@ Viens créer ton tote bag d'été en compagnie de Jade du Bar à couture ! Dessi
     <pubDate>Wed, 08 Jul 2026 14:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 08 Jul 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>A partir de 12 ans</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Tu as un livre préféré ou un qui mérite une seconde vie ? Apporte-le et customise-le en y posant de petites résines colorées — les « diamonds » — pour lui donner un look unique et tout brillant.
@@ -2908,6 +3628,9 @@ Tu as un livre préféré ou un qui mérite une seconde vie ? Apporte-le et cust
     <pubDate>Thu, 09 Jul 2026 14:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Thu, 09 Jul 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>A partir de 8 ans</targetAudience>
+    <eventTime>14h</eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
 
 Pose, assemble, crée ! Dans cet atelier, on place une à une de petites résines colorées — les « diamonds » — sur un support adhésif pour composer un bracelet brillant et personnalisé. Laisse libre cours à ta créativité !
@@ -2920,6 +3643,9 @@ Pose, assemble, crée ! Dans cet atelier, on place une à une de petites résine
     <pubDate>Fri, 10 Jul 2026 14:30:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Fri, 10 Jul 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>A partir de 3 ans</targetAudience>
+    <eventTime>14h30</eventTime>
     <description>Jardin de la Médiathèque Maurice-Genevoix
 
 Moment détente en plein air avec les lectures au jardin : histoires racontées à voix haute, coin lecture libre sur tapis, etc.</description>
@@ -2931,6 +3657,9 @@ Moment détente en plein air avec les lectures au jardin : histoires racontées 
     <pubDate>Wed, 05 Aug 2026 16:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 05 Aug 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Lac de la Pinçonnière
 
 Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière, en partenariat avec les ludothèques de l'Espace Mirabeau et de Rosa-Parks. Lectures, jeux et activités seront proposés ! Annulé en cas de pluie.</description>
@@ -2942,6 +3671,9 @@ Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière
     <pubDate>Wed, 12 Aug 2026 16:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 12 Aug 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Lac de la Pinçonnière
 
 Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière, en partenariat avec les ludothèques de l'Espace Mirabeau et de Rosa-Parks. Lectures, jeux et activités seront proposés ! Annulé en cas de pluie.</description>
@@ -2953,6 +3685,9 @@ Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière
     <pubDate>Wed, 19 Aug 2026 16:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 19 Aug 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Lac de la Pinçonnière
 
 Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière, en partenariat avec les ludothèques de l'Espace Mirabeau et de Rosa-Parks. Lectures, jeux et activités seront proposés ! Annulé en cas de pluie.</description>
@@ -2964,6 +3699,9 @@ Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière
     <pubDate>Wed, 26 Aug 2026 16:00:00 +0000</pubDate>
     <category>Lecture spectacle</category>
     <endDate>Wed, 26 Aug 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>16h</eventTime>
     <description>Lac de la Pinçonnière
 
 Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière, en partenariat avec les ludothèques de l'Espace Mirabeau et de Rosa-Parks. Lectures, jeux et activités seront proposés ! Annulé en cas de pluie.</description>
@@ -2975,6 +3713,9 @@ Moment lecture avec la médiathèque Maurice-Genevoix au lac de la Pinçonnière
     <pubDate>Wed, 29 Jul 2026 11:00:00 +0000</pubDate>
     <category>Visite des bibliothèques</category>
     <endDate>Wed, 29 Jul 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Médiathèque Maurice-Genevoix
 
 Plongez dans les coulisses interdites de votre médiathèque ! Entre anecdotes historiques, exploration d'espaces secrets d'ordinaire inaccessibles et voyage dans le temps à travers nos archives, découvrez l’envers du décor et les mystères d'un métier bien plus surprenant qu'il n'y paraît.</description>
@@ -2986,6 +3727,9 @@ Plongez dans les coulisses interdites de votre médiathèque ! Entre anecdotes h
     <pubDate>Tue, 21 Jul 2026 11:00:00 +0000</pubDate>
     <category>Visite des bibliothèques</category>
     <endDate>Tue, 21 Jul 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Médiathèque Maurice-Genevoix
 
 Plongez dans les coulisses interdites de votre médiathèque ! Entre anecdotes historiques, exploration d'espaces secrets d'ordinaire inaccessibles et voyage dans le temps à travers nos archives, découvrez l’envers du décor et les mystères d'un métier bien plus surprenant qu'il n'y paraît.</description>
@@ -2998,6 +3742,9 @@ Plongez dans les coulisses interdites de votre médiathèque ! Entre anecdotes h
     <pubDate>Thu, 09 Jul 2026 13:30:00 +0000</pubDate>
     <category>Jeux vidéo</category>
     <endDate>Thu, 27 Aug 2026 00:00:00 +0000</endDate>
+    <duration>30 min.</duration>
+    <targetAudience>10 et +</targetAudience>
+    <eventTime>tous les jeudis de l'été entre 13h30 et 15h30 sur inscription.</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo
 
 Vous avez envie d'une immersion en station spatiale ? De combattre des zombies ou de mignons extraterrestres ? Ou simplement d'une initiation à la réalité virtuelle ? Venez découvrir notre tout nouveau casque VR Meta Quest 3 accompagné d'un agent de votre bibliothèque.</description>
@@ -3009,6 +3756,9 @@ Vous avez envie d'une immersion en station spatiale ? De combattre des zombies o
     <pubDate>Wed, 15 Jul 2026 18:00:00 +0000</pubDate>
     <category>Concert</category>
     <endDate>Wed, 15 Jul 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Tout public</targetAudience>
+    <eventTime>18h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Jeunesse
 
 Pour fêter sa 10ᵉ édition, le Festival International FIGAS — célébrant depuis 10 ans les musiques et cultures d'Afrique et de sa diaspora à Blois — s'invite à la médiathèque le temps d'un de ses Instants FIGAS. Le nom du groupe sera connu le 1er juin.
@@ -3026,6 +3776,9 @@ Festival International FIGAS — 17 au 19 juillet 2026, Blois</description>
     <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
     <category>Animation</category>
     <endDate>Thu, 30 Apr 2026 00:00:00 +0000</endDate>
+    <duration>00h</duration>
+    <targetAudience></targetAudience>
+    <eventTime></eventTime>
     <description></description>
   </item>
   <item>
@@ -3035,6 +3788,9 @@ Festival International FIGAS — 17 au 19 juillet 2026, Blois</description>
     <pubDate>Wed, 01 Jul 2026 15:30:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 01 Jul 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>à partir de 8 ans</targetAudience>
+    <eventTime>15h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, Salle polyvalente
 
 Imagine et dessine ton propre super-héros : à toi de choisir ses pouvoirs, son costume, son univers ! Un atelier encadré par les animateurs de la Maison de la BD, dans le cadre de Partir en livre. Réservation conseillée - 12 places
@@ -3047,6 +3803,9 @@ Imagine et dessine ton propre super-héros : à toi de choisir ses pouvoirs, son
     <pubDate>Thu, 28 May 2026 11:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Thu, 28 May 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>11h</eventTime>
     <description>Espace Quinière - Rosa Parks
 
 Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale autour d'un thé ou d'un café, pour discuter librement de l'actualité, débattre et partager vos coups de cœur.</description>
@@ -3058,6 +3817,9 @@ Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale a
     <pubDate>Sat, 20 Jun 2026 15:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 20 Jun 2026 00:00:00 +0000</endDate>
+    <duration>1h</duration>
+    <targetAudience>tout public</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo
 
 Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale autour d'un thé ou d'un café, pour discuter librement de l'actualité, débattre et partager vos coups de cœur.</description>
@@ -3069,6 +3831,9 @@ Le rendez-vous des amateurs de série et de cinéma ! Une rencontre conviviale a
     <pubDate>Sat, 13 Jun 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 13 Jun 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Parents-enfants à partir de 8 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Bibliothèque Abbé-Grégoire, espace Jeunesse
 
 
@@ -3087,6 +3852,9 @@ Entrée libre
     <pubDate>Sat, 13 Jun 2026 15:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Sat, 13 Jun 2026 00:00:00 +0000</endDate>
+    <duration>16h15</duration>
+    <targetAudience>Parents-enfants à partir de 8 ans</targetAudience>
+    <eventTime>15h</eventTime>
     <description>Bibliothèque Abbé-Grégoire - Antichambre
 
 **Atelier découverte gravure avec le GRIFE**\
@@ -3106,6 +3874,9 @@ Inscription conseillée
     <pubDate>Sat, 05 Sep 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 05 Sep 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -3117,6 +3888,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 12 Sep 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 12 Sep 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -3128,6 +3902,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 10 Oct 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 10 Oct 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -3139,6 +3916,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Wed, 21 Oct 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Wed, 21 Oct 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -3150,6 +3930,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 21 Nov 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 21 Nov 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -3161,6 +3944,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 28 Nov 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 28 Nov 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -3172,6 +3958,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 05 Dec 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 05 Dec 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -3183,6 +3972,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 19 Dec 2026 10:00:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 19 Dec 2026 00:00:00 +0000</endDate>
+    <duration>2h</duration>
+    <targetAudience>à partir de 10 ans</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo
 
 Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.</description>
@@ -3194,6 +3986,9 @@ Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie
     <pubDate>Sat, 19 Sep 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 19 Sep 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>15h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Installés confortablement autour d’un café ou d’un thé, nous prendrons le temps d’échanger sur les livres qui nous ont plu. Chacun pourra repartir avec le coup de cœur d’un autre. Nous vous attendons !</description>
@@ -3205,6 +4000,9 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <pubDate>Sat, 10 Oct 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 10 Oct 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>15h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Installés confortablement autour d’un café ou d’un thé, nous prendrons le temps d’échanger sur les livres qui nous ont plu. Chacun pourra repartir avec le coup de cœur d’un autre. Nous vous attendons !</description>
@@ -3216,6 +4014,9 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <pubDate>Sat, 07 Nov 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 07 Nov 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>15h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Installés confortablement autour d’un café ou d’un thé, nous prendrons le temps d’échanger sur les livres qui nous ont plu. Chacun pourra repartir avec le coup de cœur d’un autre. Nous vous attendons !</description>
@@ -3227,6 +4028,9 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <pubDate>Sat, 12 Dec 2026 15:30:00 +0000</pubDate>
     <category>Club</category>
     <endDate>Sat, 12 Dec 2026 00:00:00 +0000</endDate>
+    <duration>1h30</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>15h30</eventTime>
     <description>Médiathèque Maurice-Genevoix, espace Adultes
 
 Installés confortablement autour d’un café ou d’un thé, nous prendrons le temps d’échanger sur les livres qui nous ont plu. Chacun pourra repartir avec le coup de cœur d’un autre. Nous vous attendons !</description>
@@ -3238,6 +4042,9 @@ Installés confortablement autour d’un café ou d’un thé, nous prendrons le
     <pubDate>Wed, 24 Jun 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 24 Jun 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? Ce rendez-vous vous permettra de prendre en main votre écran. Par rdv de 20 min., les mercredis matin. Inscription obligatoire au 02 54 51 33 22 en précisant la demande.</description>
@@ -3249,6 +4056,9 @@ Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraim
     <pubDate>Wed, 09 Sep 2026 10:00:00 +0000</pubDate>
     <category>Atelier</category>
     <endDate>Wed, 09 Sep 2026 00:00:00 +0000</endDate>
+    <duration>3h</duration>
+    <targetAudience>Public adulte</targetAudience>
+    <eventTime>10h</eventTime>
     <description>Médiathèque Maurice-Genevoix, ETNA
 
 Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? Ce rendez-vous vous permettra de prendre en main votre écran. Par rdv de 20 min., les mercredis matin. Inscription obligatoire au 02 54 51 33 22 en précisant la demande.</description>
