@@ -15,6 +15,8 @@ jobs:
     steps:
     - name: Récupération du code source
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Configuration de Python
       uses: actions/setup-python@v5
@@ -29,14 +31,36 @@ jobs:
     - name: Exécution du script de génération JSON
       run: python scripts/generate_json.py
 
-    - name: Commit et Push du fichier agenda.json
+    - name: Commit et Push sur la branche gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add agenda.json
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        
+        # 1. Sauvegarde temporairement le fichier JSON généré
+        cp agenda.json /tmp/agenda.json
+        
+        # 2. Bascule sur la branche gh-pages (et la crée de zéro si elle n'existe pas encore)
+        if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
+          git checkout gh-pages
+          git pull origin gh-pages
+        else
+          git checkout --orphan gh-pages
+          git rm -rf .
+        fi
+        
+        # 3. Restaure le fichier agenda.json à la racine de la branche gh-pages
+        cp /tmp/agenda.json .
+        
+        # 4. Crée le fichier .nojekyll pour désactiver les filtres de GitHub Pages si absent
+        touch .nojekyll
+        
+        # 5. Enregistre et publie uniquement le fichier agenda.json et le .nojekyll
+        git add agenda.json .nojekyll
         if git diff --staged --quiet; then
           echo "Aucune modification détectée dans l'agenda."
         else
           git commit -m "Mise à jour automatique de l'agenda JSON [skip ci]"
-          git push
+          git push origin gh-pages
         fi
