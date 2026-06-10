@@ -1211,7 +1211,7 @@
     "Durée": "3h",
     "Public_cible": "",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://static.fnac-static.com/multimedia/PE/Images/FR/NR/5a/b0/14/18133082/1507-1/tsp20260211075859/Pour-une-fraction-de-seconde.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2427,7 +2427,7 @@
     "Durée": "1h47",
     "Public_cible": "Public adulte, 120 places",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://fr.web.img3.acsta.net/c_310_420/pictures/15/02/12/13/38/021020.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2475,7 +2475,7 @@
     "Durée": "2h",
     "Public_cible": "Public adulte, 6 places",
     "Ville": "",
-    "URL_de_l_image": "même visuel utilisé en février",
+    "URL_de_l_image": "https://images.unsplash.com/photo-1712002641088-9d76f9080889?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2555,7 +2555,7 @@
     "Durée": "2h",
     "Public_cible": "A partir de 12 ans, 12 places",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://fr.web.img3.acsta.net/c_310_420/pictures/15/02/12/13/38/021020.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2587,7 +2587,7 @@
     "Durée": "2h30",
     "Public_cible": "Adultes et adolescents dès 13 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=11178",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2641,7 +2641,7 @@
   },
   {
     "id": 186,
-    "Titre": "Atelier création BD – Super-héros\n",
+    "Titre": "Atelier création BD – Super-héros",
     "Catégorie": "Atelier",
     "Localisation": "Bibliothèque Abbé-Grégoire, espace Jeunesse",
     "Date_Debut": "2026-06-24",
@@ -2651,7 +2651,7 @@
     "Durée": "1h30",
     "Public_cible": "à partir de 8 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11225",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2731,7 +2731,7 @@
     "Durée": "2h",
     "Public_cible": "à partir de 10 ans",
     "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&itemId=11184",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=10788",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2747,7 +2747,7 @@
     "Durée": "2h",
     "Public_cible": "à partir de 10 ans",
     "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&itemId=11184",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=10788",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2811,7 +2811,7 @@
     "Durée": "3h",
     "Public_cible": "A partir de 12 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8087",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2827,7 +2827,7 @@
     "Durée": "2h",
     "Public_cible": "8-16 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://cdn.pixabay.com/photo/2023/01/12/16/05/controller-7714412_1280.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2859,7 +2859,7 @@
     "Durée": "3h",
     "Public_cible": "Public adulte",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -2875,7 +2875,7 @@
     "Durée": "3h",
     "Public_cible": "Public adulte",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3051,7 +3051,7 @@
     "Durée": "30 min",
     "Public_cible": "Dès 2 ans",
     "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&itemId=11184",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=9121",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3083,7 +3083,7 @@
     "Durée": "30 min",
     "Public_cible": "A partir de 3 ans",
     "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&itemId=11184",
+    "URL_de_l_image": "https://www.blois.fr/sites/default/files/styles/max_290/public/agenda/Gemini_Generated_Image_hk9zbshk9zbshk9z.png?itok=OqPBJh2T",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3227,7 +3227,7 @@
     "Durée": "1h43",
     "Public_cible": "tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://fr.web.img6.acsta.net/c_310_420/img/64/74/647422e028e4ec2074828047f69efa08.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3243,7 +3243,7 @@
     "Durée": "1h54",
     "Public_cible": "tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://m.media-amazon.com/images/I/61ARuTRDkBL._AC_UF894,1000_QL80_.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3259,7 +3259,7 @@
     "Durée": "1h47",
     "Public_cible": "tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://fr.web.img3.acsta.net/c_310_420/img/c6/b6/c6b64801fe51a66578f45148e6140335.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3307,7 +3307,7 @@
     "Durée": "30 min",
     "Public_cible": "Dès 2 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=9121",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3371,7 +3371,7 @@
     "Durée": "45 min.",
     "Public_cible": "0-5 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11227",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3387,7 +3387,7 @@
     "Durée": "45 min.",
     "Public_cible": "0-5 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11227",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3403,7 +3403,7 @@
     "Durée": "45 min.",
     "Public_cible": "0-5 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11227",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3419,7 +3419,7 @@
     "Durée": "45 min.",
     "Public_cible": "0-5 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11227",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3531,7 +3531,7 @@
     "Durée": "15 min par rendez-vous",
     "Public_cible": "A partir de 6 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11227",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3547,7 +3547,7 @@
     "Durée": "15 min par rendez-vous",
     "Public_cible": "A partir de 6 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11227",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3617,7 +3617,7 @@
   },
   {
     "id": 249,
-    "Titre": "Remise du prix 2026",
+    "Titre": "PRIX EMMANUEL-ROBLÈS Remise du prix 2026",
     "Catégorie": "Rencontre",
     "Localisation": "Halle aux Grains",
     "Date_Debut": "2026-06-12",
@@ -3627,7 +3627,7 @@
     "Durée": "?",
     "Public_cible": "Adultes",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=11181",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3649,7 +3649,7 @@
   },
   {
     "id": 251,
-    "Titre": "**Lectures et chansons aux jardins**\n",
+    "Titre": "**Lectures et chansons aux jardins**",
     "Catégorie": "Lecture spectacle",
     "Localisation": "Jardin de l'Évêché",
     "Date_Debut": "2026-07-08",
@@ -3659,13 +3659,13 @@
     "Durée": "2 séances de 35 minutes",
     "Public_cible": "Pour les tout-petits",
     "Ville": "",
-    "URL_de_l_image": "L:\\Bibliotheques\\JEUNESSE\\COMMUN\\PHOTOS ANIMATIONS\\DLE 2025\\com DLE 2026.jpg",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11226",
     "Lien": "",
     "Reservation": "FALSE"
   },
   {
     "id": 252,
-    "Titre": "**Lectures et chansons aux jardins**\n",
+    "Titre": "**Lectures et chansons aux jardins**",
     "Catégorie": "Lecture spectacle",
     "Localisation": "Jardin de la Crèche de Blois Vienne",
     "Date_Debut": "2026-07-03",
@@ -3675,7 +3675,7 @@
     "Durée": "2 séances de 35 minutes",
     "Public_cible": "Pour les tout-petits",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11226",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3691,7 +3691,7 @@
     "Durée": "1h",
     "Public_cible": "Adulte",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://www.blois.fr/sites/default/files/styles/max_600/public/media/images/blois-secondeguerremondiale-194006-ad41_fondsrenemillet-10_Fi_00056.jpg?itok=PrXDKBI-",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3713,7 +3713,7 @@
   },
   {
     "id": 255,
-    "Titre": "**Lectures et chansons aux jardins**\n",
+    "Titre": "**Lectures et chansons aux jardins**",
     "Catégorie": "Lecture spectacle",
     "Localisation": "Jardin de la Médiathèque Maurice-Genevoix",
     "Date_Debut": "2026-07-02",
@@ -3723,7 +3723,7 @@
     "Durée": "2 séances de 35 minutes",
     "Public_cible": "Pour les tout-petits",
     "Ville": "",
-    "URL_de_l_image": "L:\\Bibliotheques\\JEUNESSE\\COMMUN\\PHOTOS ANIMATIONS\\DLE 2025\\com DLE 2026.jpg",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11226",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3803,7 +3803,7 @@
     "Durée": "1h30",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://cdn.pixabay.com/photo/2024/02/07/14/41/ai-generated-8559200_1280.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3819,7 +3819,7 @@
     "Durée": "2h",
     "Public_cible": "A partir de 12 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://cdn.prod.website-files.com/6073eb3b809cd9df34e8208e/671893c35c8983fe1634e603_Tote%20Bag-3.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3835,7 +3835,7 @@
     "Durée": "1h",
     "Public_cible": "A partir de 12 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://c.pxhere.com/images/ff/2c/9021df0b0a3c5908f9c8969b696f-1638629.jpg!d",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3851,7 +3851,7 @@
     "Durée": "1h",
     "Public_cible": "A partir de 8 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11230",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3867,7 +3867,7 @@
     "Durée": "1h",
     "Public_cible": "A partir de 3 ans",
     "Ville": "",
-    "URL_de_l_image": "https://pixabay.com/photos/reading-plant-nature-leaf-garden-3355230/",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11226",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3883,7 +3883,7 @@
     "Durée": "3h",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://www.blois.fr/sites/default/files/media/images/blois-ete-202107-nwietrich-09_022.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3899,7 +3899,7 @@
     "Durée": "3h",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://www.blois.fr/sites/default/files/media/images/blois-ete-202107-nwietrich-09_022.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3915,7 +3915,7 @@
     "Durée": "3h",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://www.blois.fr/sites/default/files/media/images/blois-ete-202107-nwietrich-09_022.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3931,7 +3931,7 @@
     "Durée": "3h",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://www.blois.fr/sites/default/files/media/images/blois-ete-202107-nwietrich-09_022.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3947,7 +3947,7 @@
     "Durée": "1h30",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=5261",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3963,13 +3963,13 @@
     "Durée": "1h30",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=5261",
     "Lien": "",
     "Reservation": "FALSE"
   },
   {
     "id": 271,
-    "Titre": "Découverte du casque de réalité virtuelle (VR)\n",
+    "Titre": "Découverte du casque de réalité virtuelle (VR)",
     "Catégorie": "Jeux vidéo",
     "Localisation": "Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo",
     "Date_Debut": "2026-07-09",
@@ -3979,7 +3979,7 @@
     "Durée": "30 min.",
     "Public_cible": "10 et +",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://t7j.cdnartwhere.eu/wp-content/uploads/2024/05/French-Days-amusez-vous-avec-le-casque-VR-Meta-Quest-3-a-30-768x432.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3995,7 +3995,7 @@
     "Durée": "1h30",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://festivalinternationalfigas.com/wp-content/uploads/2026/05/selection-officielle-figas2026.jpeg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -4027,7 +4027,7 @@
     "Durée": "1h30",
     "Public_cible": "à partir de 8 ans",
     "Ville": "",
-    "URL_de_l_image": "https://www.partir-en-livre.fr/partirenlivre/les-ressources-de-ledition-2026",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11225",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -4059,7 +4059,7 @@
     "Durée": "1h",
     "Public_cible": "tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11222",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -4075,13 +4075,13 @@
     "Durée": "3h",
     "Public_cible": "Parents-enfants à partir de 8 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://img-cache.net/im/7491719/d846492e60caefd43edd13ade30175d43d07f196d733ec12a76e4b3dc4600a68.jpg?e=qXGY8rLNfbA216zApCjQmJCL8myFQizHFlZ0nuLSjxi6c0ulqaKNrohsAxLDSVJR5VGM6kHtCx6vSBcTAkxylMakVYZoohTI-UF_peYirgFptAYVUp4FiFmbBPt3smOxRJJQY56p4G67_LaNe05ZPvUdbbl7dJLPr5TBdAJL3xkaoHACEV9PEpSikiDonUyaatD5riGmzvAwDSp-9lsQAJ6yZjw2sVvF3sUHemgcyGOghvQ",
     "Lien": "",
     "Reservation": "FALSE"
   },
   {
     "id": 279,
-    "Titre": "Atelier découverte gravure avec le GRIFE\n",
+    "Titre": "Atelier découverte gravure avec le GRIFE",
     "Catégorie": "Atelier",
     "Localisation": "Bibliothèque Abbé-Grégoire - Antichambre",
     "Date_Debut": "2026-06-13",
@@ -4091,7 +4091,7 @@
     "Durée": "16h15",
     "Public_cible": "Parents-enfants à partir de 8 ans",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://img-cache.net/im/7491719/572ee351b0abba2ff7c41acaad28bbbf29f977a5760558d1dff125168d048210.jpg?e=BeU6pZg4R73IyqBKn4j2jdoO_6c4W9r0F9bypGB0BLwFg3fe_XdMk9uY8KPn_CySc7YDVSmeIanZx0Bmf5X8u00M1ygF1BToA9qRMvOL5ALbPOxPgubkfnaBdg2uyA97oOZcpoF-hwNAUSIOrvRAAncdA8mzWp-u2LyqHM3nneKqKPQCAIXHRm1UmPKyxd_wjjnQi1lLNT-s2SHoMWKDVG9KIPdO66iBUo1y6jMoo0WTDJk6CgLHSkEmWoIy2VlSYw2nvMV4Ftg",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -4107,7 +4107,7 @@
     "Durée": "2h",
     "Public_cible": "à partir de 10 ans",
     "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&itemId=11184",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=10788",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -4123,7 +4123,7 @@
     "Durée": "2h",
     "Public_cible": "à partir de 10 ans",
     "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&itemId=11184",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=10788",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -4235,7 +4235,7 @@
     "Durée": "1h30",
     "Public_cible": "Public adulte",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=10567",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -4299,7 +4299,7 @@
     "Durée": "3h",
     "Public_cible": "Public adulte",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -4315,7 +4315,7 @@
     "Durée": "3h",
     "Public_cible": "Public adulte",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -4347,7 +4347,7 @@
     "Durée": "1h30",
     "Public_cible": "Public adulte",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11228",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -4395,7 +4395,7 @@
     "Durée": "30 min",
     "Public_cible": "A partir de 3 ans",
     "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&itemId=11184",
+    "URL_de_l_image": "https://www.blois.fr/sites/default/files/styles/max_290/public/agenda/Gemini_Generated_Image_hk9zbshk9zbshk9z.png?itok=OqPBJh2T",
     "Lien": "",
     "Reservation": "FALSE"
   },
