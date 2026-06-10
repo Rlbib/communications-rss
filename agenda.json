@@ -2061,7 +2061,7 @@
     "Ville": "Blois",
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=11101",
     "Lien": "",
-    "Reservation": "FALSE"
+    "Reservation": "TRUE"
   },
   {
     "id": 148,
@@ -2381,7 +2381,7 @@
     "Ville": "",
     "URL_de_l_image": "",
     "Lien": "",
-    "Reservation": "FALSE"
+    "Reservation": "TRUE"
   },
   {
     "id": 169,
@@ -2397,7 +2397,7 @@
     "Ville": "",
     "URL_de_l_image": "",
     "Lien": "",
-    "Reservation": "FALSE"
+    "Reservation": "TRUE"
   },
   {
     "id": 170,
@@ -2477,7 +2477,7 @@
     "Ville": "",
     "URL_de_l_image": "https://images.unsplash.com/photo-1712002641088-9d76f9080889?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "Lien": "",
-    "Reservation": "FALSE"
+    "Reservation": "TRUE"
   },
   {
     "id": 176,
@@ -2557,7 +2557,7 @@
     "Ville": "",
     "URL_de_l_image": "https://fr.web.img3.acsta.net/c_310_420/pictures/15/02/12/13/38/021020.jpg",
     "Lien": "",
-    "Reservation": "FALSE"
+    "Reservation": "TRUE"
   },
   {
     "id": 181,
@@ -2637,7 +2637,7 @@
     "Ville": "",
     "URL_de_l_image": "https://www.banq.qc.ca/sites/default/files/815e0b52-637b-489b-991c-cd1fd7de39d9.jpg",
     "Lien": "",
-    "Reservation": "FALSE"
+    "Reservation": "TRUE"
   },
   {
     "id": 186,
@@ -2653,7 +2653,7 @@
     "Ville": "",
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11225",
     "Lien": "",
-    "Reservation": "FALSE"
+    "Reservation": "TRUE"
   },
   {
     "id": 187,
@@ -4093,7 +4093,7 @@
     "Ville": "",
     "URL_de_l_image": "https://img-cache.net/im/7491719/572ee351b0abba2ff7c41acaad28bbbf29f977a5760558d1dff125168d048210.jpg?e=BeU6pZg4R73IyqBKn4j2jdoO_6c4W9r0F9bypGB0BLwFg3fe_XdMk9uY8KPn_CySc7YDVSmeIanZx0Bmf5X8u00M1ygF1BToA9qRMvOL5ALbPOxPgubkfnaBdg2uyA97oOZcpoF-hwNAUSIOrvRAAncdA8mzWp-u2LyqHM3nneKqKPQCAIXHRm1UmPKyxd_wjjnQi1lLNT-s2SHoMWKDVG9KIPdO66iBUo1y6jMoo0WTDJk6CgLHSkEmWoIy2VlSYw2nvMV4Ftg",
     "Lien": "",
-    "Reservation": "FALSE"
+    "Reservation": "TRUE"
   },
   {
     "id": 280,
@@ -4301,7 +4301,7 @@
     "Ville": "",
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
     "Lien": "",
-    "Reservation": "FALSE"
+    "Reservation": "TRUE"
   },
   {
     "id": 293,
