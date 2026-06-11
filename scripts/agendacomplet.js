@@ -1,9 +1,19 @@
-    //<![CDATA[
+//<![CDATA[
     document.addEventListener('DOMContentLoaded', () => {
         // ==========================================
-        // CONFIGURATION URL
+        // CONFIGURATION URL ET CONTACTS
         // ==========================================
         const JSON_URL = "https://rlbib.github.io/communications-rss/agenda.json";
+        const MAIN_AGENDA_URL = "https://bibliotheques.agglopolys.fr/agenda"; // L'URL de la page sur laquelle le widget est affiché
+
+        // Annuaire des bibliothèques pour la réservation par téléphone/email
+        const libraryContacts = {
+            "Bibliothèque Abbé-Grégoire": { phone: "0254562740", phoneDisplay: "02 54 56 27 40", email: "bibliotheques@agglopolys.fr" },
+            "Médiathèque Maurice-Genevoix": { phone: "0254433113", phoneDisplay: "02 54 43 31 13", email: "bibliotheques@agglopolys.fr" },
+            "Bibliothèque Rose-Valland": { phone: "0254444114", phoneDisplay: "02 54 44 41 14", email: "bibliotheques@agglopolys.fr" }
+        };
+        // Contact par défaut pour les "Autres structures"
+        const defaultContact = { phone: "0254562740", phoneDisplay: "02 54 56 27 40", email: "bibliotheques@agglopolys.fr" };
 
         const grid = document.getElementById('hb-events-grid');
         const searchBox = document.getElementById('hb-search-box');
@@ -351,9 +361,56 @@
             const durationStr = (rawEvent.Durée || rawEvent.Duree || "").trim();
             const targetAudienceStr = (rawEvent.Public_cible || "").trim();
 
-            let reservationModalHtml = rawEvent.Reservation === "TRUE"
-                ? `<div class="hb-modal-meta-item" style="background-color: #fee2e2; color: #b91c1c; padding: 6px 12px; border-radius: 4px; border-left: 4px solid #f87171; font-weight: bold; margin-top: 5px; font-size: 12.5px; text-transform: uppercase;"><i class="fa fa-ticket"></i> Inscription / Réservation Obligatoire</div>`
-                : `<div class="hb-modal-meta-item" style="background-color: #f0fdf4; color: #166534; padding: 6px 12px; border-radius: 4px; border-left: 4px solid #4ade80; font-weight: bold; margin-top: 5px; font-size: 12.5px; text-transform: uppercase;"><i class="fa fa-check"></i> Entrée libre (Sans réservation)</div>`;
+            // RECTIFICATION VISUELLE EXACTE DU WIDGET POUR LA RÉSERVATION
+            let reservationModalHtml = '';
+            if (rawEvent.Reservation === "TRUE") {
+                reservationModalHtml = `
+                <div class="hb-modal-meta-item" style="background-color: #fee2e2; color: #b91c1c; padding: 6px 12px; border-radius: 4px; display: inline-flex; align-items: center; gap: 6px; border-left: 4px solid #f87171; font-weight: bold; margin-top: 5px; font-size: 12px; text-transform: uppercase;">
+                    <i class="fa fa-ticket"></i> Inscription / Réservation Obligatoire
+                </div>`;
+            } else {
+                reservationModalHtml = `
+                <div class="hb-modal-meta-item" style="background-color: #f0fdf4; color: #166534; padding: 6px 12px; border-radius: 4px; display: inline-flex; align-items: center; gap: 6px; border-left: 4px solid #4ade80; font-weight: bold; margin-top: 5px; font-size: 12px; text-transform: uppercase;">
+                    <i class="fa fa-check"></i> Entrée libre (Sans réservation)
+                </div>`;
+            }
+
+            // Construction dynamique des boutons d'action (Lien web, Téléphone, E-mail)
+            let actionButtonsHtml = '';
+            if (rawEvent.Reservation === "TRUE") {
+                const locGroup = getGroupedLocation(rawEvent.Localisation);
+                const contactInfo = libraryContacts[locGroup] || defaultContact;
+                
+                if (rawEvent.Lien) {
+                    actionButtonsHtml += `<a href="${rawEvent.Lien}" target="_blank" class="hb-btn hb-btn-primary" style="flex-basis: 100%; margin-bottom: 5px;"><i class="fa fa-ticket"></i> Réserver en ligne</a>`;
+                }
+                
+                actionButtonsHtml += `
+                    <a href="tel:${contactInfo.phone}" class="hb-btn hb-btn-default" style="flex-grow: 1; background-color: #f8fafc;"><i class="fa fa-phone"></i> ${contactInfo.phoneDisplay}</a>
+                    <a href="mailto:${contactInfo.email}?subject=Réservation : ${encodeURIComponent(rawEvent.Titre)}" class="hb-btn hb-btn-default" style="flex-grow: 1; background-color: #f8fafc;"><i class="fa fa-envelope-o"></i> Par e-mail</a>
+                `;
+            } else {
+                if (rawEvent.Lien) {
+                    actionButtonsHtml += `<a href="${rawEvent.Lien}" target="_blank" class="hb-btn hb-btn-primary" style="flex-grow: 1;"><i class="fa fa-external-link"></i> En savoir plus</a>`;
+                }
+            }
+            
+            actionButtonsHtml += `<button id="hb-modal-ics" class="hb-btn hb-btn-default" style="flex-grow: 1;"><i class="fa fa-calendar-plus-o"></i> Ajouter à mon agenda</button>`;
+
+            // GÉNÉRATION DES LIENS DE PARTAGE SOCIAUX
+            const shareUrl = encodeURIComponent(MAIN_AGENDA_URL);
+            const shareText = encodeURIComponent(`À découvrir : "${rawEvent.Titre}" le ${dateText} à ${locText} sur l'agenda des médiathèques !`);
+            
+            const socialShareHtml = `
+                <div class="hb-modal-share">
+                    <span>Partager :</span>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="hb-share-btn hb-share-fb" title="Partager sur Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}" target="_blank" class="hb-share-btn hb-share-tw" title="Partager sur X (Twitter)"><i class="fa fa-twitter"></i></a>
+                    <a href="https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}" target="_blank" class="hb-share-btn hb-share-wa" title="Partager sur WhatsApp"><i class="fa fa-whatsapp"></i></a>
+                    <a href="mailto:?subject=${encodeURIComponent(rawEvent.Titre)}&body=${shareText}%0A%0A${shareUrl}" class="hb-share-btn hb-share-em" title="Envoyer à un ami"><i class="fa fa-envelope"></i></a>
+                    <button id="hb-copy-link-btn" class="hb-share-btn hb-share-cp" title="Copier le lien d'accès" data-url="${MAIN_AGENDA_URL}"><i class="fa fa-link"></i></button>
+                </div>
+            `;
 
             modalBodyContent.innerHTML = `
                 <span class="agenda-card-tag" style="position:static; display:inline-block; margin-bottom:12px;">${cleanCat}</span>
@@ -362,18 +419,21 @@
                 <div class="hb-modal-meta-list">
                     <div class="hb-modal-meta-item"><i class="fa fa-map-marker"></i> <strong>Lieu :</strong> ${locText}</div>
                     <div class="hb-modal-meta-item"><i class="fa fa-calendar"></i> <strong>Date :</strong> ${dateText}</div>
-                    ${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background-color: var(--hb-secondary); padding: 6px 12px; border-radius: 4px; border-left: 4px solid var(--hb-accent); margin-top: 5px; font-weight: bold; color: var(--hb-dark);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}
-                    ${durationStr ? `<div class="hb-modal-meta-item" style="margin-top: 8px;"><i class="fa fa-hourglass-half"></i> <strong>Durée de l'animation :</strong> ${durationStr}</div>` : ''}
+                    ${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background-color: var(--hb-secondary); padding: 6px 12px; border-radius: 4px; display: inline-flex; align-items: center; gap: 6px; border-left: 4px solid var(--hb-accent); margin-top: 5px; font-weight: bold; color: var(--hb-dark);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}
+                    ${durationStr ? `<div class="hb-modal-meta-item" style="margin-top: 8px;"><i class="fa fa-hourglass-half"></i> <strong>Durée :</strong> ${durationStr}</div>` : ''}
                     ${targetAudienceStr ? `<div class="hb-modal-meta-item"><i class="fa fa-users"></i> <strong>Public :</strong> ${targetAudienceStr}</div>` : ''}
                     ${reservationModalHtml}
                 </div>
                 <div class="hb-modal-desc">${rawEvent.Description || 'Découvrez cette animation proposée par vos médiathèques.'}</div>
+                
                 <div class="hb-modal-actions">
-                    ${rawEvent.Lien ? `<a href="${rawEvent.Lien}" target="_blank" class="hb-btn hb-btn-primary"><i class="fa fa-external-link"></i> En savoir plus / Réserver</a>` : ''}
-                    <button id="hb-modal-ics" class="hb-btn hb-btn-default"><i class="fa fa-calendar-plus-o"></i> Ajouter à mon agenda</button>
+                    ${actionButtonsHtml}
                 </div>
+                
+                ${socialShareHtml}
             `;
 
+            // Ajout des listeners pour le téléchargement ICS et la copie du lien
             document.getElementById('hb-modal-ics').addEventListener('click', () => {
                 const start = buildUTCDate(rawEvent.Date_Debut, rawEvent.Heure);
                 const end = rawEvent.Date_Fin ? buildUTCDate(rawEvent.Date_Fin, "18h") : new Date(start.getTime() + 2 * 60 * 60 * 1000);
@@ -390,6 +450,22 @@
                 const link = document.createElement("a"); link.href = URL.createObjectURL(blob);
                 link.setAttribute("download", `${(rawEvent.Titre || "event").toLowerCase().replace(/[^a-z0-9]/g, "-")}.ics`);
                 document.body.appendChild(link); link.click(); document.body.removeChild(link);
+            });
+
+            // Bouton "Copier le lien"
+            document.getElementById('hb-copy-link-btn').addEventListener('click', (e) => {
+                const url = e.currentTarget.dataset.url;
+                const tempInput = document.createElement('input');
+                tempInput.value = url;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+                
+                // Animation visuelle de confirmation de l'icône
+                const icon = e.currentTarget.querySelector('i');
+                icon.className = 'fa fa-check';
+                setTimeout(() => { icon.className = 'fa fa-link'; }, 2000);
             });
 
             modalOverlay.style.display = 'flex';
