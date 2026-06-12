@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const JSON_URL = "https://rlbib.github.io/communications-rss/agenda.json";
-    const MAIN_AGENDA_URL = "https://bibliotheques.agglopolys.fr/agenda"; 
+    const MAIN_AGENDA_URL = "https://bibliotheques.agglopolys.fr/EXPLOITATION/agenda2026.aspx"; 
 
     const grid = document.getElementById('hb-events-grid');
     const searchBox = document.getElementById('hb-search-box');
