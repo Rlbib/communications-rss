@@ -171,7 +171,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     grid.addEventListener('click', (e) => { const icsBtn = e.target.closest('.hb-list-ics-btn'); if (icsBtn) { e.stopPropagation(); downloadICS(parseInt(icsBtn.dataset.id, 10)); return; } const target = e.target.closest('.agenda-card, .agenda-list-item, .hb-ongoing-card'); if (target) { e.preventDefault(); openDetailsModal(parseInt(target.dataset.id, 10)); } });
 
-    function downloadICS(eventId) { const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId); if (!rawEvent) return; const startDate = buildUTCDate(rawEvent.Date_Debut, rawEvent.Heure); const endDate = rawEvent.Date_Fin ? buildUTCDate(rawEvent.Date_Fin, "18h") : new Date(startDate.getTime() + 2 * 60 * 60 * 1000); const formatDateICS = (d) => d.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z"; const cleanCat = (rawEvent.Catégorie || rawEvent.Categorie || "Animation"); const locText = (rawEvent.Localisation || "Médiathèque") + (rawEvent.Ville ? `, ${rawEvent.Ville}` : ''); const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Agglopolys//AgendaComplet//FR", "BEGIN:VEVENT", `UID:ev-${eventId}-${new Date().getTime()}@agglopolys.fr`, `DTSTAMP:${formatDateICS(new Date())}`, `DTSTART:${formatDateICS(startDate)}`, `DTEND:${formatDateICS(endDate)}`, `SUMMARY:[${cleanCat.toUpperCase()}] ${rawEvent.Titre}`, `LOCATION:${locText.replace(/,/g, "\\,")}`, `DESCRIPTION:${(rawEvent.Description || '').substring(0, 300).replace(/\n/g, "\\n")}`, "END:VEVENT", "END:VCALENDAR"].join("\r\n"); const blob = new Blob([ics], { type: "text/calendar;charset=utf-8;" }); const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.setAttribute("download", `${(rawEvent.Titre || "event").toLowerCase().replace(/[^a-z0-9]/g, "-")}.ics`); document.body.appendChild(link); link.click(); document.body.removeChild(link); }
+        function downloadICS(eventId) { 
+        const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId); 
+        if (!rawEvent) return; 
+        
+        const startDate = buildUTCDate(rawEvent.Date_Debut, rawEvent.Heure); 
+        const endDate = rawEvent.Date_Fin ? buildUTCDate(rawEvent.Date_Fin, "18h") : new Date(startDate.getTime() + 2 * 60 * 60 * 1000); 
+        
+        // CORRECTION : On enlève le "Z" à la fin du formatage pour DTSTART et DTEND. 
+        // Cela indique aux calendriers qu'il s'agit d'une heure locale (heure de Blois) et non UTC.
+        const formatDateICS = (d) => d.toISOString().replace(/[-:]/g, "").split(".")[0]; 
+        
+        const cleanCat = (rawEvent.Catégorie || rawEvent.Categorie || "Animation"); 
+        const locText = (rawEvent.Localisation || "Médiathèque") + (rawEvent.Ville ? `, ${rawEvent.Ville}` : ''); 
+        
+        const ics = [
+            "BEGIN:VCALENDAR", 
+            "VERSION:2.0", 
+            "PRODID:-//Agglopolys//AgendaComplet//FR", 
+            "BEGIN:VEVENT", 
+            `UID:ev-${eventId}-${new Date().getTime()}@agglopolys.fr`, 
+            `DTSTAMP:${formatDateICS(new Date())}Z`, // DTSTAMP doit rester en UTC (avec Z)
+            `DTSTART;VALUE=DATE-TIME:${formatDateICS(startDate)}`, // Sans Z = Heure locale française !
+            `DTEND;VALUE=DATE-TIME:${formatDateICS(endDate)}`,     // Sans Z = Heure locale française !
+            `SUMMARY:[${cleanCat.toUpperCase()}] ${rawEvent.Titre}`, 
+            `LOCATION:${locText.replace(/,/g, "\\,")}`, 
+            `DESCRIPTION:${(rawEvent.Description || '').substring(0, 300).replace(/\n/g, "\\n")}`, 
+            "END:VEVENT", "END:VCALENDAR"
+        ].join("\r\n"); 
+        
+        const blob = new Blob([ics], { type: "text/calendar;charset=utf-8;" }); 
+        const link = document.createElement("a"); 
+        link.href = URL.createObjectURL(blob); 
+        link.setAttribute("download", `${(rawEvent.Titre || "event").toLowerCase().replace(/[^a-z0-9]/g, "-")}.ics`); 
+        document.body.appendChild(link); 
+        link.click(); 
+        document.body.removeChild(link); 
+    }
 
     function openDetailsModal(eventId) { 
         const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId); if (!rawEvent) return;
