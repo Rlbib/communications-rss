@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const JSON_URL = "https://rlbib.github.io/communications-rss/agenda.json";
-    const MAIN_AGENDA_URL = "https://bibliotheques.agglopolys.fr/EXPLOITATION/agenda2026.aspx"; 
+    const MAIN_AGENDA_URL = "https://bibliotheques.agglopolys.fr/agenda"; 
 
     const grid = document.getElementById('hb-events-grid');
     const searchBox = document.getElementById('hb-search-box');
@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if(params.has('cat')) currentCategoryFilter = params.get('cat');
         if(params.has('date')) currentDateFilter = params.get('date');
 
-        // Mettre à jour l'UI des dropdowns (avec sécurité si l'URL est fausse)
         if(currentLocationFilter !== 'all') {
             const activeLieuLi = document.querySelector(`#hb-location-dropdown li[data-value="${currentLocationFilter}"]`);
             if(activeLieuLi) {
@@ -46,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 activeCatLi.classList.add('active');
             }
         }
-        
         dateTabs.forEach(btn => { btn.classList.remove('hb-active'); if(btn.dataset.date === currentDateFilter) btn.classList.add('hb-active'); });
     }
 
@@ -56,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if(currentLocationFilter !== 'all') params.set('lieu', currentLocationFilter);
         if(currentCategoryFilter !== 'all') params.set('cat', currentCategoryFilter);
         if(currentDateFilter !== 'all') params.set('date', currentDateFilter);
-        
         const newUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
         history.replaceState(null, '', newUrl);
     }
@@ -171,15 +168,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     grid.addEventListener('click', (e) => { const icsBtn = e.target.closest('.hb-list-ics-btn'); if (icsBtn) { e.stopPropagation(); downloadICS(parseInt(icsBtn.dataset.id, 10)); return; } const target = e.target.closest('.agenda-card, .agenda-list-item, .hb-ongoing-card'); if (target) { e.preventDefault(); openDetailsModal(parseInt(target.dataset.id, 10)); } });
 
-        function downloadICS(eventId) { 
+    // CORRECTION ICS : Fuseau horaire local (sans Z)
+    function downloadICS(eventId) { 
         const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId); 
         if (!rawEvent) return; 
         
         const startDate = buildUTCDate(rawEvent.Date_Debut, rawEvent.Heure); 
         const endDate = rawEvent.Date_Fin ? buildUTCDate(rawEvent.Date_Fin, "18h") : new Date(startDate.getTime() + 2 * 60 * 60 * 1000); 
         
-        // CORRECTION : On enlève le "Z" à la fin du formatage pour DTSTART et DTEND. 
-        // Cela indique aux calendriers qu'il s'agit d'une heure locale (heure de Blois) et non UTC.
+        // On retire le Z final pour que l'heure soit considérée comme locale
         const formatDateICS = (d) => d.toISOString().replace(/[-:]/g, "").split(".")[0]; 
         
         const cleanCat = (rawEvent.Catégorie || rawEvent.Categorie || "Animation"); 
@@ -191,9 +188,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "PRODID:-//Agglopolys//AgendaComplet//FR", 
             "BEGIN:VEVENT", 
             `UID:ev-${eventId}-${new Date().getTime()}@agglopolys.fr`, 
-            `DTSTAMP:${formatDateICS(new Date())}Z`, // DTSTAMP doit rester en UTC (avec Z)
-            `DTSTART;VALUE=DATE-TIME:${formatDateICS(startDate)}`, // Sans Z = Heure locale française !
-            `DTEND;VALUE=DATE-TIME:${formatDateICS(endDate)}`,     // Sans Z = Heure locale française !
+            `DTSTAMP:${formatDateICS(new Date())}Z`, // Le stamp de création reste en UTC
+            `DTSTART;VALUE=DATE-TIME:${formatDateICS(startDate)}`, // Heure locale
+            `DTEND;VALUE=DATE-TIME:${formatDateICS(endDate)}`, // Heure locale
             `SUMMARY:[${cleanCat.toUpperCase()}] ${rawEvent.Titre}`, 
             `LOCATION:${locText.replace(/,/g, "\\,")}`, 
             `DESCRIPTION:${(rawEvent.Description || '').substring(0, 300).replace(/\n/g, "\\n")}`, 
@@ -210,7 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function openDetailsModal(eventId) { 
-        const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId); if (!rawEvent) return;
+        const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId); 
+        if (!rawEvent) return;
         const startDate = buildUTCDate(rawEvent.Date_Debut, rawEvent.Heure); const endDate = rawEvent.Date_Fin ? buildUTCDate(rawEvent.Date_Fin, "18h") : startDate;
         const cleanCat = (rawEvent.Catégorie || rawEvent.Categorie || "Animation").charAt(0).toUpperCase() + (rawEvent.Catégorie || rawEvent.Categorie || "Animation").slice(1).toLowerCase().trim();
         const dateText = formatEventDates(startDate, endDate, cleanCat); let locText = rawEvent.Localisation || "Médiathèque"; if (rawEvent.Ville) locText += `, ${rawEvent.Ville}`;
@@ -223,10 +221,36 @@ document.addEventListener('DOMContentLoaded', () => {
         } else { 
             reservationModalHtml = `<div class="hb-modal-meta-item" style="background-color: #f0fdf4; color: #166534; padding: 6px 12px; border-radius: 4px; border-left: 4px solid #4ade80; font-weight: bold; margin-top: 5px; font-size: 12px; text-transform: uppercase;"><i class="fa fa-check"></i> Entrée libre (Sans réservation)</div>`; 
         } 
-        
+
+        // AJOUT : Conversion du Markdown (Gras et Italique) pour la description
+        let descHtmlContent = rawEvent.Description || '';
+        descHtmlContent = descHtmlContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Gras
+        descHtmlContent = descHtmlContent.replace(/\*(.*?)\*/g, '<em>$1</em>'); // Italique
+
         const shareUrl = encodeURIComponent(rawEvent.Lien || MAIN_AGENDA_URL); const shareTitle = encodeURIComponent(`À découvrir : ${rawEvent.Titre || "Animation"}`); const shareText = encodeURIComponent(`Découvrez cette animation dans vos médiathèques d'Agglopolys : ${rawEvent.Titre || "Animation"}`);
         
-        modalBodyContent.innerHTML = `<span class="agenda-card-tag" style="position:static; display:inline-block; margin-bottom:12px;">${cleanCat}</span><h3 class="hb-modal-title">${rawEvent.Titre || "Sans titre"}</h3>${rawEvent.Description ? `<div class="hb-modal-desc">${rawEvent.Description}</div>` : ''}<div class="hb-modal-meta-list"><div class="hb-modal-meta-item"><i class="fa fa-map-marker"></i> <strong>Lieu :</strong> ${locText}</div><div class="hb-modal-meta-item"><i class="fa fa-calendar"></i> <strong>Date :</strong> ${dateText}</div>${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background-color: #f3f4f6; padding: 6px 12px; border-radius: 4px; border-left: 4px solid var(--hb-accent); margin-top: 5px; font-weight: bold; color: var(--hb-primary);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}${reservationModalHtml}</div><div class="hb-modal-actions"><div id="hb-share-panel" class="hb-share-panel"><a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="hb-social-btn hb-fb"><i class="fa fa-facebook"></i></a><a href="https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}" target="_blank" class="hb-social-btn hb-wa"><i class="fa fa-whatsapp"></i></a><a href="https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}" target="_blank" class="hb-social-btn hb-tw"><i class="fa fa-twitter"></i></a><a href="mailto:?subject=${shareTitle}&body=${shareText}%0A%0A${shareUrl}" class="hb-social-btn hb-em"><i class="fa fa-envelope"></i></a><button id="hb-btn-copy-link" class="hb-social-btn hb-cp" data-url="${MAIN_AGENDA_URL}"><i class="fa fa-link"></i></button></div><button id="hb-modal-ics" class="hb-btn-action hb-btn-calendar"><i class="fa fa-calendar-plus-o"></i> Rappel</button><button id="hb-btn-share" class="hb-btn-action hb-btn-share"><i class="fa fa-share-alt"></i> Partager</button>${rawEvent.Lien ? `<a href="${rawEvent.Lien}" target="_blank" class="hb-btn-action hb-btn-calendar"><i class="fa fa-external-link"></i> En savoir plus</a>` : ''}</div>`; 
+        modalBodyContent.innerHTML = `
+            <span class="agenda-card-tag" style="position:static; display:inline-block; margin-bottom:12px;">${cleanCat}</span>
+            <h3 class="hb-modal-title">${rawEvent.Titre || "Sans titre"}</h3>
+            ${descHtmlContent ? `<div class="hb-modal-desc">${descHtmlContent}</div>` : ''}
+            <div class="hb-modal-meta-list">
+                <div class="hb-modal-meta-item"><i class="fa fa-map-marker"></i> <strong>Lieu :</strong> ${locText}</div>
+                <div class="hb-modal-meta-item"><i class="fa fa-calendar"></i> <strong>Date :</strong> ${dateText}</div>
+                ${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background-color: #f3f4f6; padding: 6px 12px; border-radius: 4px; border-left: 4px solid var(--hb-accent); margin-top: 5px; font-weight: bold; color: var(--hb-primary);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}
+                ${reservationModalHtml}
+            </div>
+            <div class="hb-modal-actions">
+                <div id="hb-share-panel" class="hb-share-panel">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="hb-social-btn hb-fb"><i class="fa fa-facebook"></i></a>
+                    <a href="https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}" target="_blank" class="hb-social-btn hb-wa"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}" target="_blank" class="hb-social-btn hb-tw"><i class="fa fa-twitter"></i></a>
+                    <a href="mailto:?subject=${shareTitle}&body=${shareText}%0A%0A${shareUrl}" class="hb-social-btn hb-em"><i class="fa fa-envelope"></i></a>
+                    <button id="hb-btn-copy-link" class="hb-social-btn hb-cp" data-url="${MAIN_AGENDA_URL}"><i class="fa fa-link"></i></button>
+                </div>
+                <button id="hb-modal-ics" class="hb-btn-action hb-btn-calendar"><i class="fa fa-calendar-plus-o"></i> Rappel</button>
+                <button id="hb-btn-share" class="hb-btn-action hb-btn-share"><i class="fa fa-share-alt"></i> Partager</button>
+                ${rawEvent.Lien ? `<a href="${rawEvent.Lien}" target="_blank" class="hb-btn-action hb-btn-calendar"><i class="fa fa-external-link"></i> En savoir plus</a>` : ''}
+            </div>`; 
         
         if (rawEvent.Reservation === "TRUE") { 
             document.getElementById('btn-generate-mail').addEventListener('click', () => { 
