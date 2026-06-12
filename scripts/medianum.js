@@ -1,3 +1,7 @@
+// On attend que le DOM (la page HTML) soit entièrement chargé avant d'exécuter le script
+document.addEventListener("DOMContentLoaded", function() {
+
+  // 1. TON JSON COMPLET
   const moviesData = [
   {
     "titre": "So Long, My Son",
@@ -451,8 +455,10 @@
   }
 ];
 
+  // 2. L'URL de base du SSO
   const ssoBaseURL = "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/Ermes/ASSARedirect.ashx?url=https%3a%2f%2fportal.mediatheque-numerique.com%2fsso_login%3freturn_url%3dhttps%3a%2f%2fvod.mediatheque-numerique.com%2ffilms%2f";
 
+  // 3. Fonction pour générer une carte film
   function createMovieCard(movie) {
     const slug = movie.url.split('/').pop();
     const watchLink = ssoBaseURL + slug;
@@ -477,20 +483,33 @@
     `;
   }
 
+  // 4. Affichage des films
   const moviesGrid = document.getElementById('moviesGrid');
-  moviesGrid.innerHTML = moviesData.map(createMovieCard).join('');
+  
+  // Sécurité : on vérifie que l'élément existe bien sur la page avant de remplir le HTML
+  if (moviesGrid) {
+    let htmlContent = moviesData.map(createMovieCard).join('');
+    moviesGrid.innerHTML = htmlContent;
+  }
 
-  // Recherche
-  document.getElementById('movieSearch').addEventListener('input', function(e) {
-    const searchTerm = e.target.value.toLowerCase();
-    const cards = document.querySelectorAll('.movie-card-2026');
-    
-    cards.forEach(card => {
-      const title = card.getAttribute('data-title');
-      if (title.includes(searchTerm)) {
-        card.style.display = '';
-      } else {
-        card.style.display = 'none';
-      }
+  // 5. Fonction de recherche
+  const searchInput = document.getElementById('movieSearch');
+  
+  // Sécurité : on vérifie que la barre de recherche existe avant d'y attacher un événement
+  if (searchInput) {
+    searchInput.addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      const cards = document.querySelectorAll('.movie-card-2026');
+      
+      cards.forEach(card => {
+        const title = card.getAttribute('data-title');
+        if (title.includes(searchTerm)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
     });
-  });
+  }
+
+}); // Fin du DOMContentLoaded
