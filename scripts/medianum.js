@@ -1,8 +1,18 @@
-// On attend que le DOM (la page HTML) soit entièrement chargé avant d'exécuter le script
-document.addEventListener("DOMContentLoaded", function() {
+// Fonction infaillible pour attendre qu'un élément existe dans le DOM (même chargé en Ajax)
+function waitForElement(elementId, callback) {
+    var checkExist = setInterval(function() {
+        if (document.getElementById(elementId)) {
+            clearInterval(checkExist); // On arrête de vérifier
+            callback(); // On exécute le code
+        }
+    }, 100); // Vérification toutes les 100ms
+}
 
-  // 1. TON JSON COMPLET
-  const moviesData = [
+// On attend que l'élément "moviesGrid" soit présent dans la page
+waitForElement("moviesGrid", function() {
+
+    // 1. TON JSON COMPLET
+    const moviesData = [
   {
     "titre": "So Long, My Son",
     "annee": "2019",
@@ -455,61 +465,56 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 ];
 
-  // 2. L'URL de base du SSO
-  const ssoBaseURL = "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/Ermes/ASSARedirect.ashx?url=https%3a%2f%2fportal.mediatheque-numerique.com%2fsso_login%3freturn_url%3dhttps%3a%2f%2fvod.mediatheque-numerique.com%2ffilms%2f";
+    // 2. L'URL de base du SSO
+    const ssoBaseURL = "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/Ermes/ASSARedirect.ashx?url=https%3a%2f%2fportal.mediatheque-numerique.com%2fsso_login%3freturn_url%3dhttps%3a%2f%2fvod.mediatheque-numerique.com%2ffilms%2f";
 
-  // 3. Fonction pour générer une carte film
-  function createMovieCard(movie) {
-    const slug = movie.url.split('/').pop();
-    const watchLink = ssoBaseURL + slug;
-    const imgSrc = movie.image && movie.image.trim() !== '' ? movie.image : '';
-    const placeholderStyle = imgSrc === '' ? 'display:flex;' : 'display:none;';
+    // 3. Fonction pour générer une carte film
+    function createMovieCard(movie) {
+      const slug = movie.url.split('/').pop();
+      const watchLink = ssoBaseURL + slug;
+      const imgSrc = movie.image && movie.image.trim() !== '' ? movie.image : '';
+      const placeholderStyle = imgSrc === '' ? 'display:flex;' : 'display:none;';
 
-    return `
-      <div class="movie-card-2026" data-title="${movie.titre.toLowerCase()}">
-        <a href="${watchLink}" class="movie-card-inner" target="_blank" title="Regarder ${movie.titre}">
-          <div class="poster-box-2026">
-            <span class="badge-illimite">Illimité</span>
-            ${imgSrc !== '' ? `<img src="${imgSrc}" class="poster-img-2026" alt="${movie.titre}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` : ''}
-            <div class="poster-placeholder-2026" style="${placeholderStyle}"><span>${movie.titre}</span></div>
-          </div>
-          <div class="card-infos-2026">
-            <div class="card-title-2026">${movie.titre}</div>
-            <div class="card-meta-2026">${movie.annee} • ${movie.duree}</div>
-            <button class="btn-play-2026">▶ Regarder</button>
-          </div>
-        </a>
-      </div>
-    `;
-  }
+      return `
+        <div class="movie-card-2026" data-title="${movie.titre.toLowerCase()}">
+          <a href="${watchLink}" class="movie-card-inner" target="_blank" title="Regarder ${movie.titre}">
+            <div class="poster-box-2026">
+              <span class="badge-illimite">Illimité</span>
+              ${imgSrc !== '' ? `<img src="${imgSrc}" class="poster-img-2026" alt="${movie.titre}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` : ''}
+              <div class="poster-placeholder-2026" style="${placeholderStyle}"><span>${movie.titre}</span></div>
+            </div>
+            <div class="card-infos-2026">
+              <div class="card-title-2026">${movie.titre}</div>
+              <div class="card-meta-2026">${movie.annee} • ${movie.duree}</div>
+              <button class="btn-play-2026">▶ Regarder</button>
+            </div>
+          </a>
+        </div>
+      `;
+    }
 
-  // 4. Affichage des films
-  const moviesGrid = document.getElementById('moviesGrid');
-  
-  // Sécurité : on vérifie que l'élément existe bien sur la page avant de remplir le HTML
-  if (moviesGrid) {
+    // 4. Affichage des films (L'élément est garanti d'exister ici grâce à waitForElement)
+    const moviesGrid = document.getElementById('moviesGrid');
     let htmlContent = moviesData.map(createMovieCard).join('');
     moviesGrid.innerHTML = htmlContent;
-  }
 
-  // 5. Fonction de recherche
-  const searchInput = document.getElementById('movieSearch');
-  
-  // Sécurité : on vérifie que la barre de recherche existe avant d'y attacher un événement
-  if (searchInput) {
-    searchInput.addEventListener('input', function(e) {
-      const searchTerm = e.target.value.toLowerCase();
-      const cards = document.querySelectorAll('.movie-card-2026');
-      
-      cards.forEach(card => {
-        const title = card.getAttribute('data-title');
-        if (title.includes(searchTerm)) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
+    // 5. Fonction de recherche
+    const searchInput = document.getElementById('movieSearch');
+    
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const cards = document.querySelectorAll('.movie-card-2026');
+        
+        cards.forEach(card => {
+          const title = card.getAttribute('data-title');
+          if (title.includes(searchTerm)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
       });
-    });
-  }
+    }
 
-}); // Fin du DOMContentLoaded
+}); // Fin de la fonction waitForElement
