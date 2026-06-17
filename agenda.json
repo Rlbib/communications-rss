@@ -2864,22 +2864,6 @@
     "Reservation": "FALSE"
   },
   {
-    "id": 200,
-    "Titre": "1 smartphone 1 question",
-    "Catégorie": "Atelier",
-    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
-    "Date_Debut": "2026-09-23",
-    "Date_Fin": "2026-09-23",
-    "Description": "Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? Ce rendez-vous vous permettra de prendre en main votre écran. Par rdv de 20 min., les mercredis matin. Inscription obligatoire au 02 54 51 33 22 en précisant la demande.",
-    "Heure": "10h",
-    "Durée": "3h",
-    "Public_cible": "Public adulte",
-    "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
-    "Lien": "",
-    "Reservation": "TRUE"
-  },
-  {
     "id": 201,
     "Titre": "Je lis avec Plume",
     "Catégorie": "Lecture spectacle",
@@ -4561,7 +4545,7 @@
   },
   {
     "id": 310,
-    "Titre": "Dessine ta carte Pokemon",
+    "Titre": "Dessine ta carte Pokémon",
     "Catégorie": "Atelier",
     "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
     "Date_Debut": "2026-09-09",
@@ -4577,7 +4561,7 @@
   },
   {
     "id": 311,
-    "Titre": "Safari Pokemon",
+    "Titre": "Safari Pokémon",
     "Catégorie": "Jeux vidéo",
     "Localisation": "Médiathèque Maurice-Genevoix",
     "Date_Debut": "2026-09-19",
@@ -4593,12 +4577,12 @@
   },
   {
     "id": 312,
-    "Titre": "Safari Pokemon",
+    "Titre": "Safari Pokémon",
     "Catégorie": "Jeux vidéo",
     "Localisation": "Médiathèque Maurice-Genevoix",
     "Date_Debut": "2026-09-09",
     "Date_Fin": "2026-09-09",
-    "Description": "Des Pokémon sauvages se sont glissés dans nos rayons et se cachent au milieu des livres ! Armés d'une tablette ou de votre smartphone, partez explorer la médiathèque pour les débusquer, scanner leurs secrets et les capturer en photo. Remplissez votre Pokédex, résolvez des énigmes et repartez avec votre récompense de dresseur ! Une aventure interactive et fun à vivre en famille.. Inscription recommandée, 12 places",
+    "Description": "Des Pokémon sauvages se sont glissés dans nos rayons et se cachent au milieu des livres ! Armés d'une tablette ou de votre smartphone, partez explorer la médiathèque pour les débusquer, scanner leurs secrets et les capturer en photo. Remplissez votre Pokédex, résolvez des énigmes et repartez avec votre récompense de dresseur ! Une aventure interactive et fun à vivre en famille. Inscription recommandée, 12 places",
     "Heure": "16h",
     "Durée": "1h",
     "Public_cible": "7-14 ans",
@@ -4609,7 +4593,7 @@
   },
   {
     "id": 313,
-    "Titre": "Safari Pokemon",
+    "Titre": "Safari Pokémon",
     "Catégorie": "Jeux vidéo",
     "Localisation": "Médiathèque Maurice-Genevoix",
     "Date_Debut": "2026-09-16",
@@ -4625,7 +4609,7 @@
   },
   {
     "id": 314,
-    "Titre": "Safari Pokemon",
+    "Titre": "Safari Pokémon",
     "Catégorie": "Jeux vidéo",
     "Localisation": "Médiathèque Maurice-Genevoix",
     "Date_Debut": "2026-09-23",
@@ -4657,7 +4641,7 @@
   },
   {
     "id": 316,
-    "Titre": "Réalise un marque coin de page",
+    "Titre": "Réalise un marque page en coin",
     "Catégorie": "Atelier",
     "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
     "Date_Debut": "2026-09-23",
@@ -4710,7 +4694,7 @@
     "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
     "Date_Debut": "2026-09-26",
     "Date_Fin": "2026-09-26",
-    "Description": "Et si le prochain Pokémon, c’était toi qui l'inventais ? Viens créer ta propre carte Pokémon personnalisée grâce à un outil numérique ludique. Personnalise ton illustration ou ta photo, invente tes attaques les plus folles et repars avec ton impression exclusive à collectionner (merci de venir avec une clé usb contenant des photos ou images à utiliser comme visuel). Réservation obligatoire (16 places)",
+    "Description": "Et si le prochain Pokémon, c’est toi qui l'inventais ? Viens créer ta propre carte Pokémon personnalisée grâce à un outil numérique ludique. Personnalise ton illustration ou ta photo, invente tes attaques les plus folles et repars avec ton impression exclusive à collectionner (merci de venir avec une clé usb contenant des photos ou images à utiliser comme visuel). Réservation obligatoire (16 places)",
     "Heure": "14h",
     "Durée": "1h",
     "Public_cible": "8-14 ans",
@@ -4796,6 +4780,22 @@
     "Public_cible": "A partir de 6 ans",
     "Ville": "",
     "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE"
+  },
+  {
+    "id": 325,
+    "Titre": "Club manga",
+    "Catégorie": "Club",
+    "Localisation": "Médiathèque Maurice-Genevoix, espace Musique, Cinéma et Jeux vidéo",
+    "Date_Debut": "2026-12-23",
+    "Date_Fin": "2026-12-23",
+    "Description": "Tu es curieux de découvrir les mangas ? Tu les dévores déjà ? Si tu as envie de plonger dans cet univers, ce club est fait pour toi, pour découvrir des nouveautés, échanger et même suggérer les prochains achats.",
+    "Heure": "10h",
+    "Durée": "2h",
+    "Public_cible": "à partir de 10 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&itemId=11184",
     "Lien": "",
     "Reservation": "FALSE"
   }
