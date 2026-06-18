@@ -214,6 +214,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const dateText = formatEventDates(startDate, endDate, cleanCat); let locText = rawEvent.Localisation || "Médiathèque"; if (rawEvent.Ville) locText += `, ${rawEvent.Ville}`;
         if (rawEvent.URL_de_l_image) { modalImg.src = rawEvent.URL_de_l_image; modalImg.style.display = 'block'; } else { modalImg.style.display = 'none'; } 
         
+        // Récupération sécurisée du public cible dans le JSON
+        const publicCible = (rawEvent.Public_cible || rawEvent.Public || rawEvent["Public cible"] || rawEvent["Public_Cible"] || "").trim();
+
         let reservationModalHtml = '';
         if (rawEvent.Reservation === "TRUE") { 
             const contact = getLibraryContactInfo(rawEvent.Localisation); 
@@ -236,6 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="hb-modal-meta-list">
                 <div class="hb-modal-meta-item"><i class="fa fa-map-marker"></i> <strong>Lieu :</strong> ${locText}</div>
                 <div class="hb-modal-meta-item"><i class="fa fa-calendar"></i> <strong>Date :</strong> ${dateText}</div>
+                ${publicCible ? `<div class="hb-modal-meta-item"><i class="fa fa-users"></i> <strong>Public :</strong> ${publicCible}</div>` : ''}
                 ${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background-color: #f3f4f6; padding: 6px 12px; border-radius: 4px; border-left: 4px solid var(--hb-accent); margin-top: 5px; font-weight: bold; color: var(--hb-primary);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}
                 ${reservationModalHtml}
             </div>
