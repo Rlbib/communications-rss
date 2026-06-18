@@ -214,8 +214,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const dateText = formatEventDates(startDate, endDate, cleanCat); let locText = rawEvent.Localisation || "Médiathèque"; if (rawEvent.Ville) locText += `, ${rawEvent.Ville}`;
         if (rawEvent.URL_de_l_image) { modalImg.src = rawEvent.URL_de_l_image; modalImg.style.display = 'block'; } else { modalImg.style.display = 'none'; } 
         
-        // Récupération sécurisée du public cible dans le JSON
-        const publicCible = (rawEvent.Public_cible || rawEvent.Public || rawEvent["Public cible"] || rawEvent["Public_Cible"] || "").trim();
+        // --- RECHERCHE MULTI-CRITÈRES DU PUBLIC CIBLE ---
+        // Cette liste ordonnée teste les différentes clés possibles présentes dans le fichier JSON
+        const publicCible = (() => {
+            const keys = ["Public_cible", "Public cible", "Public_Cible", "Public", "public_cible", "Age", "Tranche d'âge", "Tranche_d_age"];
+            for (const key of keys) {
+                if (rawEvent[key] !== undefined && rawEvent[key] !== null) {
+                    const value = String(rawEvent[key]).trim();
+                    if (value) return value;
+                }
+            }
+            return "";
+        })();
 
         let reservationModalHtml = '';
         if (rawEvent.Reservation === "TRUE") { 
