@@ -281,7 +281,7 @@
         +'  <div class="alert-ico"><i class="fa fa-exclamation-triangle"></i></div>'
         +'  <div class="alert-txt">'
         +'    <strong>Alerte canicule</strong>'
-        +'    <span>Les horaires d\'\u00e9t\u00e9, initialement pr\u00e9vus le 4 juillet, s\'appliquent d\u00e8s le <em>mardi 23 juin</em> en raison de la vigilance m\u00e9t\u00e9o.</span>'
+        +'    <span>Les horaires d\'\u00e9t\u00e9, initialement pr\u00e9vus le 4 juillet, s\'appliquent <em>d\u00e8s maintenant</em> en raison de la vigilance m\u00e9t\u00e9o.</span>'
         +'  </div>'
         +'</div>'
 
@@ -402,7 +402,7 @@
     shadow.appendChild(ov);
     shadow.appendChild(memoOv);
 
-    /* Toast (conservé par sécurité, inutilisé) */
+    /* Toast */
     var toast=document.createElement('div');toast.className='toast';
     toast.innerHTML='<i class="fa fa-check-circle"></i> Lien copi\u00e9 !';
     document.body.appendChild(toast);
@@ -488,9 +488,8 @@
     });
 
     /* ============================================================
-       HORAIRES TEMPS RÉEL — Été avancé au mardi 23 juin
+       HORAIRES TEMPS RÉEL — Été avancé au 23 juin
        ============================================================ */
-    /* mois 5 = juin, jour 23 */
     var SS=new Date(Y,5,23),SE=new Date(Y,7,29);
     var CL={ag:{s:new Date(Y,7,11),e:new Date(Y,7,15)},mg:{s:new Date(Y,7,18),e:new Date(Y,7,22)},rv:{s:new Date(Y,7,11),e:new Date(Y,7,22)}};
     var RG={ag:{0:null,1:null,2:[{s:13,e:18.5}],3:[{s:10,e:18.5}],4:[{s:13,e:18.5}],5:[{s:13,e:18.5}],6:[{s:10,e:18}]},mg:{0:null,1:null,2:[{s:15,e:18}],3:[{s:10,e:13},{s:14,e:18}],4:[{s:15,e:18}],5:[{s:15,e:18}],6:[{s:10,e:13},{s:14,e:18}]},rv:{0:null,1:null,2:null,3:[{s:10,e:13},{s:14,e:18}],4:[{s:15,e:18}],5:[{s:15,e:18}],6:[{s:10,e:13},{s:14,e:18}]}};
