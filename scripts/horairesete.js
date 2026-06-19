@@ -201,7 +201,7 @@
         +'          <p>Empruntez pour 8 semaines, sans prolongation.</p>'
         +'        </div>'
         +'      </div>'
-        +'      <div class="pret-note"><i class="fa fa-info-circle"></i><span>Les pr\u00eats en cours sont automatiquement ajust\u00e9s. Pensez \u00e0 v\u00e9rifier vos dates de retour sur votre compte.</span></div>'
+        +'      <div class="pret-note"><i class="fa fa-info-circle"></i><span>Pensez \u00e0 v\u00e9rifier vos dates de retour sur votre compte.</span></div>'
         +'    </div>'
         +'  </div>'
         +'</div>';
