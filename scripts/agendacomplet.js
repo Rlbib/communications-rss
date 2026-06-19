@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderChips();
 
         let ongoingExpos = []; let imminentEvents = []; let laterEvents = [];
-        const DAYS_THRESHOLD = 14; const months = ["JAN", "FÉV", "MAR", "AVR", "MAI", "JUIN", "JUIL", "AOÛT", "SEP", "OCT", "NOV", "DÉC"];
+        const DAYS_THRESHOLD = 21; const months = ["JAN", "FÉV", "MAR", "AVR", "MAI", "JUIN", "JUIL", "AOÛT", "SEP", "OCT", "NOV", "DÉC"];
 
         events.forEach(ev => { const isExpo = ev.category.toLowerCase().includes('exposition'); const isOngoing = isExpo && ev.date <= nowLocalAsUTC && ev.endDate >= nowLocalAsUTC; const eventDateOnly = new Date(Date.UTC(ev.date.getUTCFullYear(), ev.date.getUTCMonth(), ev.date.getUTCDate(), 0, 0, 0, 0)); const diffDays = Math.round((eventDateOnly - todayLocalAsUTC) / (1000 * 60 * 60 * 24)); if (isOngoing) ongoingExpos.push({event: ev, diffDays: diffDays}); else if (diffDays <= DAYS_THRESHOLD) imminentEvents.push({event: ev, diffDays: diffDays}); else laterEvents.push({event: ev, diffDays: diffDays}); });
         imminentEvents.sort((a, b) => a.event.date - b.event.date); ongoingExpos.sort((a, b) => b.event.endDate - a.event.endDate); laterEvents.sort((a, b) => a.event.date - b.event.date);
