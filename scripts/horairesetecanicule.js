@@ -181,7 +181,6 @@
 +'.ms i{color:var(--acc);font-size:14px;}'
 +'.ms.warm{border-bottom-color:var(--orange);}.ms.warm i{color:var(--orange);}'
 +''
-+'/* === BADGE NON APPLIQUÉ === */'
 +'.badge-na{'
 +'  display:inline-flex;align-items:center;gap:4px;'
 +'  background:var(--red-bg);color:var(--red);'
@@ -193,7 +192,6 @@
 +'}'
 +'.badge-na i{font-size:9px;}'
 +''
-+'/* === TABLEAU NON APPLIQUÉ (grisé + barré) === */'
 +'.tbl-off{opacity:.45;pointer-events:none;position:relative;}'
 +'.tbl-off td{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--red-bd);}'
 +'.tbl-off td strong{text-decoration:line-through;text-decoration-color:var(--red-bd);color:var(--muted);}'
@@ -209,7 +207,6 @@
 +'td:first-child strong{white-space:nowrap;}'
 +'.bc{display:inline-flex;align-items:center;gap:4px;background:var(--orange);color:#fff;font-weight:700;font-size:10px;padding:3px 9px;border-radius:4px;text-transform:uppercase;white-space:nowrap;}'
 +''
-+'/* Note sous tableau habituels */'
 +'.note-na{'
 +'  display:flex;align-items:center;gap:8px;'
 +'  padding:10px 14px;margin-bottom:20px;'
@@ -378,7 +375,6 @@
         +'<div class="md">'
         +'  <div class="mh"><h3><i class="fa fa-calendar"></i> Grille compl\u00e8te des horaires</h3><button class="mx" id="jc" type="button"><i class="fa fa-times"></i></button></div>'
         +'  <div class="mb">'
-        /* --- Horaires habituels : grisé + barré + badge Non appliqué --- */
         +'    <div class="ms"><i class="fa fa-calendar-o"></i> Horaires habituels <span class="badge-na"><i class="fa fa-ban"></i> Non appliqu\u00e9</span></div>'
         +'    <div class="tw"><table class="tbl-off">'
         +'      <thead><tr><th>Structure</th><th>Mardi</th><th>Mercredi</th><th>Jeudi</th><th>Vendredi</th><th>Samedi</th></tr></thead>'
@@ -389,7 +385,6 @@
         +'      </tbody>'
         +'    </table></div>'
         +'    <div class="note-na"><i class="fa fa-exclamation-circle"></i> Ces horaires sont suspendus en raison de l\'alerte canicule. Reportez-vous aux horaires d\'\u00e9t\u00e9 ci-dessous.</div>'
-        /* --- Horaires d'été : actifs --- */
         +'    <div class="ms warm"><i class="fa fa-sun-o"></i> Horaires d\'\u00e9t\u00e9 (23 juin \u2013 29 ao\u00fbt)</div>'
         +'    <div class="tw"><table>'
         +'      <thead><tr><th>Structure</th><th>Horaires</th><th>Fermeture annuelle</th></tr></thead>'
@@ -524,9 +519,9 @@
     });
 
     /* ============================================================
-       HORAIRES TEMPS RÉEL — Été avancé au 23 juin
+       HORAIRES TEMPS RÉEL — SS au 1er juin → été actif immédiatement
        ============================================================ */
-    var SS=new Date(Y,5,23),SE=new Date(Y,7,29);
+    var SS=new Date(Y,5,1),SE=new Date(Y,7,29);
     var CL={ag:{s:new Date(Y,7,11),e:new Date(Y,7,15)},mg:{s:new Date(Y,7,18),e:new Date(Y,7,22)},rv:{s:new Date(Y,7,11),e:new Date(Y,7,22)}};
     var RG={ag:{0:null,1:null,2:[{s:13,e:18.5}],3:[{s:10,e:18.5}],4:[{s:13,e:18.5}],5:[{s:13,e:18.5}],6:[{s:10,e:18}]},mg:{0:null,1:null,2:[{s:15,e:18}],3:[{s:10,e:13},{s:14,e:18}],4:[{s:15,e:18}],5:[{s:15,e:18}],6:[{s:10,e:13},{s:14,e:18}]},rv:{0:null,1:null,2:null,3:[{s:10,e:13},{s:14,e:18}],4:[{s:15,e:18}],5:[{s:15,e:18}],6:[{s:10,e:13},{s:14,e:18}]}};
     var SM={ag:{0:null,1:null,2:[{s:10,e:15.5}],3:[{s:10,e:15.5}],4:[{s:10,e:15.5}],5:[{s:10,e:15.5}],6:[{s:10,e:15.5}]},mg:{0:null,1:null,2:[{s:10,e:12.5},{s:13.5,e:15.5}],3:[{s:10,e:12.5},{s:13.5,e:15.5}],4:[{s:10,e:12.5},{s:13.5,e:15.5}],5:[{s:10,e:12.5},{s:13.5,e:15.5}],6:[{s:10,e:12.5},{s:13.5,e:15.5}]},rv:{0:null,1:null,2:null,3:[{s:10,e:13}],4:[{s:10,e:13}],5:[{s:10,e:13}],6:[{s:10,e:13}]}};
