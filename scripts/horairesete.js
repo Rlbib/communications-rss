@@ -182,7 +182,7 @@
         +'<div class="row2">'
         +'  <div class="bl">'
         +'    <div class="bl-h">'
-        +'      <div class="bl-h-l"><i class="fa fa-sun-o"></i><span>Horaires d\'\u00e9t\u00e9</span></div>'
+        +'      <div class="bl-h-l"><i class="fa fa-sun-o"></i><span>Horaires d\'\u00e9t\u00e9 (4 juillet – 29 août)</span></div>'
         +'      <button class="bl-h-btn" id="jo" type="button"><span>D\u00e9tails</span> <i class="fa fa-arrow-right"></i></button>'
         +'    </div>'
         +'    <div class="bl-b">'
