@@ -187,7 +187,7 @@
         +'    </div>'
         +'    <div class="bl-b">'
         +'      <div class="ete-line" data-open-modal><span class="ete-line-n">Abb\u00e9-Gr\u00e9goire</span><span class="ete-line-h">Mar.\u2013sam. 10h\u201315h30<span class="ete-line-c">Ferm\u00e9 11/08\u201315/08</span></span></div>'
-        +'      <div class="ete-line" data-open-modal><span class="ete-line-n">Maurice-Genevoix</span><span class="ete-line-h">Mar.\u2013sam. 10h\u201315h30<span class="ete-line-c">Ferm\u00e9 18/08\u201322/08</span></span></div>'
+        +'      <div class="ete-line" data-open-modal><span class="ete-line-n">Maurice-Genevoix</span><span class="ete-line-h">Mar.\u2013sam. 10h \u2013 12h30 / 13h30 \u2013 15h30<span class="ete-line-c">Ferm\u00e9 18/08\u201322/08</span></span></div>'
         +'      <div class="ete-line" data-open-modal><span class="ete-line-n">Rose-Valland</span><span class="ete-line-h">Mer.\u2013sam. 10h\u201313h<span class="ete-line-c">Ferm\u00e9 11/08\u201322/08</span></span></div>'
         +'    </div>'
         +'  </div>'
