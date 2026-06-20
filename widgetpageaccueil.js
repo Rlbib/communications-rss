@@ -165,73 +165,80 @@ document.addEventListener('DOMContentLoaded', () => {
     // =========================================================================
     // === NOUVEAU : Fermetures exceptionnelles d'août 2026 ====================
     // =========================================================================
-    function isExceptionallyClosed(libType) {
-        const now = new Date();
-        const y = now.getFullYear();
-        const m = now.getMonth();   // 0-indexed : août = 7
-        const d = now.getDate();
+function isExceptionallyClosed(libType) {
+    const now = new Date();
+    const y = now.getFullYear();
+    const m = now.getMonth();
+    const d = now.getDate();
 
-        // Les fermetures exceptionnelles ne sont définies que pour 2026
-        if (y !== 2026) return false;
+    if (y !== 2026) return false;
 
-        if (libType === "gregoire") {
-            // Fermé du 11 au 15 août 2026
-            if (m === 7 && d >= 11 && d <= 15) return true;
-        }
-        if (libType === "genevoix" || libType === "valland") {
-            // Fermé du 15 au 22 août 2026
-            if (m === 7 && d >= 15 && d <= 22) return true;
-        }
-        return false;
+    if (libType === "gregoire") {
+        if (m === 7 && d >= 11 && d <= 15) return true;
     }
+    if (libType === "genevoix") {
+        if (m === 7 && d >= 15 && d <= 22) return true;
+    }
+    if (libType === "valland") {
+        // MODIFIÉ : fermé du 11 au 22 août (et non plus du 15 au 22)
+        if (m === 7 && d >= 11 && d <= 22) return true;
+    }
+    return false;
+}
 
     // =========================================================================
     // === MODIFIÉ : Badge ouvert/fermé avec gestion été + fermetures excep. ====
     // =========================================================================
-    function getLiveStatusBadge(libType) {
-        const now = new Date();
-        const day = now.getDay();   // 0=Dim, 1=Lun, 2=Mar, 3=Mer, 4=Jeu, 5=Ven, 6=Sam
-        const time = now.getHours() + (now.getMinutes() / 60);
-        let isOpen = false;
+function getLiveStatusBadge(libType) {
+    const now = new Date();
+    const day = now.getDay();
+    const time = now.getHours() + (now.getMinutes() / 60);
+    let isOpen = false;
 
-        // --- 1. Vérifier les fermetures exceptionnelles (priorité maximale) ---
-        if (isExceptionallyClosed(libType)) {
-            return `<span class="hb-status-badge hb-status-exception" title="Fermeture exceptionnelle estivale — réouverture prochaine"><i class="fa fa-exclamation-triangle" style="font-size:8px;"></i> Fermé (été)</span>`;
+    // 1. Fermetures exceptionnelles (priorité max)
+    if (isExceptionallyClosed(libType)) {
+        return `<span class="hb-status-badge hb-status-exception" title="Fermeture exceptionnelle estivale"><i class="fa fa-exclamation-triangle" style="font-size:8px;"></i> Fermé (été)</span>`;
+    }
+
+    // 2. Horaires d'été — chaque site a ses propres plages
+    if (isSummerPeriod()) {
+        if (libType === "gregoire") {
+            // Mar(2)–sam(6) : 10h–15h30
+            if (day >= 2 && day <= 6) isOpen = (time >= 10 && time < 15.5);
         }
-
-        // --- 2. Déterminer les horaires selon la période ---
-        if (isSummerPeriod()) {
-            // ===== HORAIRES D'ÉTÉ =====
-            // Mercredi(3), Jeudi(4), Vendredi(5), Samedi(6) : 10h - 15h30
-            if (day === 3 || day === 4 || day === 5 || day === 6) {
-                isOpen = (time >= 10 && time < 15.5);
-            }
-            // Lundi(1), Mardi(2), Dimanche(0) : fermé
-        } else {
-            // ===== HORAIRES HORS ÉTÉ (année courante) =====
-            if (libType === "gregoire") {
-                if (day === 2 || day === 4 || day === 5) isOpen = (time >= 13 && time < 18.5);
-                else if (day === 3) isOpen = (time >= 10 && time < 18.5);
-                else if (day === 6) isOpen = (time >= 10 && time < 18);
-            }
-            else if (libType === "genevoix") {
-                if (day === 2 || day === 4 || day === 5) isOpen = (time >= 15 && time < 18);
-                else if (day === 3 || day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
-            }
-            else if (libType === "valland") {
-                if (day === 3) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18.5));
-                else if (day === 4 || day === 5) isOpen = (time >= 15 && time < 18.5);
-                else if (day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
-            }
+        else if (libType === "genevoix") {
+            // Mar(2)–sam(6) : 10h–12h30 / 13h30–15h30
+            if (day >= 2 && day <= 6) isOpen = ((time >= 10 && time < 12.5) || (time >= 13.5 && time < 15.5));
         }
-
-        if (isOpen) {
-            return `<span class="hb-status-badge hb-status-open" title="Vous pouvez appeler maintenant"><i class="fa fa-circle" style="font-size:8px;"></i> Ouvert</span>`;
-        } else {
-            return `<span class="hb-status-badge hb-status-closed" title="Le standard est actuellement fermé"><i class="fa fa-circle" style="font-size:8px;"></i> Fermé</span>`;
+        else if (libType === "valland") {
+            // Mer(3)–sam(6) : 10h–13h
+            if (day >= 3 && day <= 6) isOpen = (time >= 10 && time < 13);
+        }
+    }
+    // 3. Horaires hors été (inchangés)
+    else {
+        if (libType === "gregoire") {
+            if (day === 2 || day === 4 || day === 5) isOpen = (time >= 13 && time < 18.5);
+            else if (day === 3) isOpen = (time >= 10 && time < 18.5);
+            else if (day === 6) isOpen = (time >= 10 && time < 18);
+        }
+        else if (libType === "genevoix") {
+            if (day === 2 || day === 4 || day === 5) isOpen = (time >= 15 && time < 18);
+            else if (day === 3 || day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
+        }
+        else if (libType === "valland") {
+            if (day === 3) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18.5));
+            else if (day === 4 || day === 5) isOpen = (time >= 15 && time < 18.5);
+            else if (day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
         }
     }
 
+    if (isOpen) {
+        return `<span class="hb-status-badge hb-status-open" title="Vous pouvez appeler maintenant"><i class="fa fa-circle" style="font-size:8px;"></i> Ouvert</span>`;
+    } else {
+        return `<span class="hb-status-badge hb-status-closed" title="Le standard est actuellement fermé"><i class="fa fa-circle" style="font-size:8px;"></i> Fermé</span>`;
+    }
+}
     // =========================================================================
     // === MODIFIÉ : Infos contact avec horaires d'été/hiver dynamiques ========
     // =========================================================================
@@ -244,8 +251,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const hoursGenevoix    = "<strong>Mar, Jeu, Ven :</strong> 15h – 18h<br><strong>Mercredi & Samedi :</strong> 10h – 13h / 14h – 18h";
         const hoursValland     = "<strong>Mercredi :</strong> 10h – 13h / 14h – 18h30<br><strong>Jeu & Ven :</strong> 15h – 18h30<br><strong>Samedi :</strong> 10h – 13h / 14h – 18h";
 
-        // --- Horaires D'ÉTÉ (communs aux 3 sites) ---
-        const summerHoursBase  = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mercredi, Jeudi, Vendredi, Samedi :</strong> 10h – 15h30";
+                // --- Horaires D'ÉTÉ (spécifiques par site) ---
+        const summerHoursGregoire = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mardi – Samedi :</strong> 10h – 15h30";
+        const summerHoursGenevoix = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mardi – Samedi :</strong> 10h – 12h30 / 13h30 – 15h30";
+        const summerHoursValland  = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mercredi – Samedi :</strong> 10h – 13h";
 
         // --- Notes de fermeture exceptionnelle août 2026 ---
         const exceptionGregoire = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 11 au 15 août 2026.</strong></span></div>";
@@ -263,21 +272,21 @@ document.addEventListener('DOMContentLoaded', () => {
             name  = "Bibliothèque Abbé-Grégoire";
             phone = "02 54 56 27 40";
             hours = isSummerPeriod()
-                ? summerHoursBase + exceptionGregoire
+                ? summerHoursGregoire + exceptionGregoire
                 : hoursGregoire;
         }
         else if (libType === "genevoix") {
             name  = "Médiathèque Maurice-Genevoix";
             phone = "02 54 43 31 13";
             hours = isSummerPeriod()
-                ? summerHoursBase + exceptionGenevoix
+                ? summerHoursGenevoix + exceptionGenevoix
                 : hoursGenevoix;
         }
         else if (libType === "valland") {
             name  = "Médiathèque Rose-Valland";
             phone = "02 54 20 78 00";
             hours = isSummerPeriod()
-                ? summerHoursBase + exceptionValland
+                ? summerHoursValland + exceptionValland
                 : hoursValland;
         }
 
