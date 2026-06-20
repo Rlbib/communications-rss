@@ -230,7 +230,7 @@
         +'        <tr><td><strong>Rose-Valland</strong></td><td>Mercredi au samedi<br>10h \u2013 13h00</td><td><span class="bc"><i class="fa fa-lock"></i> Ferm\u00e9</span> 11/08 \u2013 22/08</td></tr>'
         +'      </tbody>'
         +'    </table></div>'
-        +'    <div class="ft"><i class="fa fa-info-circle"></i> Ferm\u00e9 le dimanche et le lundi en p\u00e9riode habituelle.</div>'
+        +'    <div class="ft"><i class="fa fa-info-circle"></i> Ferm\u00e9 le dimanche et le lundi.</div>'
         +'  </div>'
         +'</div>';
     shadow.appendChild(ov);
