@@ -19,6 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const dFormatter = new Intl.DateTimeFormat('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 
+    // =========================================================================
+    // === NOUVEAU : INJECTION DU CSS COMPLÉMENTAIRE POUR L'ÉTÉ ================
+    // =========================================================================
+    const summerStyle = document.createElement('style');
+    summerStyle.innerHTML = `
+        .hb-status-exception { color: #92400e; background: #fef3c7; border: 1px solid #fde68a; }
+        .hb-summer-label { display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 800; padding: 2px 7px; border-radius: 8px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; border: 1px solid #fde68a; }
+        .hb-summer-exception-note { margin-top: 10px; padding: 8px 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 4px; font-size: 11.5px; color: #92400e; line-height: 1.5; display: flex; align-items: flex-start; gap: 6px; }
+        .hb-summer-exception-note i { margin-top: 2px; flex-shrink: 0; }
+    `;
+    document.head.appendChild(summerStyle);
+
     // ==========================================
     // INITIALISATION URL & UI
     // ==========================================
@@ -65,10 +77,133 @@ document.addEventListener('DOMContentLoaded', () => {
     function formatTime(date) { if (!date || isNaN(date.getTime())) return ""; const hours = date.getUTCHours(); const minutes = date.getUTCMinutes(); if (hours === 0 && minutes === 0) return ""; return minutes === 0 ? `${hours}h` : `${hours}h${minutes.toString().padStart(2, '0')}`; }
     function formatEventDates(startDate, endDate, category) { let formattedStart = dFormatter.format(startDate); formattedStart = formattedStart.charAt(0).toUpperCase() + formattedStart.slice(1); const isExpo = category && (category.toLowerCase().trim() === 'exposition' || category.toLowerCase().trim() === 'expositions'); if (isExpo && endDate && !isNaN(endDate.getTime())) { if (startDate.getUTCDate() === endDate.getUTCDate() && startDate.getUTCMonth() === endDate.getUTCMonth()) return formattedStart; let formattedEnd = dFormatter.format(endDate); formattedEnd = formattedEnd.charAt(0).toUpperCase() + formattedEnd.slice(1); if (startDate.getUTCFullYear() === endDate.getUTCFullYear()) { return "Du " + formattedStart.replace(new RegExp('\\s+' + startDate.getUTCFullYear() + '$'), '') + " au " + formattedEnd; } return "Du " + formattedStart + " au " + formattedEnd; } const timeStr = formatTime(startDate); return "Le " + formattedStart + (timeStr ? ` <span class="hb-time-highlight"><i class="fa fa-clock-o"></i> ${timeStr}</span>` : ""); }
     function getGroupedLocation(locStr) { if (!locStr) return "Autres structures"; const lower = locStr.toLowerCase(); if (lower.includes("abbé-grégoire") || lower.includes("abbé gregoire") || lower.includes("abbé")) return "Bibliothèque Abbé-Grégoire"; if (lower.includes("maurice-genevoix") || lower.includes("genevoix")) return "Médiathèque Maurice-Genevoix"; if (lower.includes("rose-valland") || lower.includes("valland")) return "Bibliothèque Rose-Valland"; return "Autres structures"; }
-    
-    function getLiveStatusBadge(libType) { const now = new Date(); const day = now.getDay(); const time = now.getHours() + (now.getMinutes() / 60); let isOpen = false; if (libType === "gregoire") { if ((day===2||day===4||day===5) && time >= 13 && time < 18.5) isOpen=true; else if (day===3 && time >= 10 && time < 18.5) isOpen=true; else if (day===6 && time >= 10 && time < 18) isOpen=true; } else if (libType === "genevoix") { if ((day===2||day===4||day===5) && time >= 15 && time < 18) isOpen=true; else if ((day===3||day===6) && ((time >= 10 && time < 13) || (time >= 14 && time < 18))) isOpen=true; } else if (libType === "valland") { if (day===3 && ((time >= 10 && time < 13) || (time >= 14 && time < 18.5))) isOpen=true; else if ((day===4||day===5) && time >= 15 && time < 18.5) isOpen=true; else if (day===6 && ((time >= 10 && time < 13) || (time >= 14 && time < 18))) isOpen=true; } return isOpen ? `<span class="hb-status-badge hb-status-open"><i class="fa fa-circle" style="font-size:8px;"></i> Ouvert</span>` : `<span class="hb-status-badge hb-status-closed"><i class="fa fa-circle" style="font-size:8px;"></i> Fermé</span>`; }
-    
-    function getLibraryContactInfo(locationStr) { const loc = (locationStr || "").toLowerCase(); let libType = "gregoire"; const hoursGregoire = "<strong>Mar, Jeu, Ven :</strong> 13h - 18h30<br><strong>Mercredi :</strong> 10h - 18h30<br><strong>Samedi :</strong> 10h - 18h"; const hoursGenevoix = "<strong>Mar, Jeu, Ven :</strong> 15h - 18h<br><strong>Mercredi & Samedi :</strong> 10h - 13h / 14h - 18h"; const hoursValland = "<strong>Mercredi :</strong> 10h - 13h / 14h - 18h30<br><strong>Jeu & Ven :</strong> 15h - 18h30<br><strong>Samedi :</strong> 10h - 13h / 14h - 18h"; if (loc.includes("genevoix")) libType = "genevoix"; else if (loc.includes("valland") || loc.includes("veuzain")) libType = "valland"; const statusBadge = getLiveStatusBadge(libType); if (libType === "genevoix") return { name: "Médiathèque Maurice-Genevoix", phone: "02 54 43 31 13", hours: hoursGenevoix, badge: statusBadge, email: "bibliotheques@agglopolys.fr" }; if (libType === "valland") return { name: "Médiathèque Rose-Valland", phone: "02 54 20 78 00", hours: hoursValland, badge: statusBadge, email: "bibliotheques@agglopolys.fr" }; return { name: "Bibliothèque Abbé-Grégoire", phone: "02 54 56 27 40", hours: hoursGregoire, badge: statusBadge, email: "bibliotheques@agglopolys.fr" }; }
+
+    // =========================================================================
+    // === NOUVEAU : Détection période d'été (23 juin → 29 août) ===============
+    // =========================================================================
+    function isSummerPeriod() {
+        const now = new Date();
+        const m = now.getMonth(); // 0-indexed : juin=5, août=7
+        const d = now.getDate();
+        if (m < 5) return false;
+        if (m === 5 && d < 23) return false;
+        if (m > 7) return false;
+        if (m === 7 && d > 29) return false;
+        return true;
+    }
+
+    // =========================================================================
+    // === NOUVEAU : Fermetures exceptionnelles août 2026 ======================
+    // =========================================================================
+    function isExceptionallyClosed(libType) {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = now.getMonth();
+        const d = now.getDate();
+        if (y !== 2026) return false;
+        if (libType === "gregoire") {
+            if (m === 7 && d >= 11 && d <= 15) return true;
+        }
+        if (libType === "genevoix") {
+            if (m === 7 && d >= 15 && d <= 22) return true;
+        }
+        if (libType === "valland") {
+            if (m === 7 && d >= 11 && d <= 22) return true;
+        }
+        return false;
+    }
+
+    // =========================================================================
+    // === MODIFIÉ : Badge ouvert/fermé avec été + fermetures excep. ===========
+    // =========================================================================
+    function getLiveStatusBadge(libType) {
+        const now = new Date();
+        const day = now.getDay();
+        const time = now.getHours() + (now.getMinutes() / 60);
+        let isOpen = false;
+
+        // 1. Fermetures exceptionnelles (priorité max)
+        if (isExceptionallyClosed(libType)) {
+            return `<span class="hb-status-badge hb-status-exception" title="Fermeture exceptionnelle estivale"><i class="fa fa-exclamation-triangle" style="font-size:8px;"></i> Fermé (été)</span>`;
+        }
+
+        // 2. Horaires d'été — individualisés par site
+        if (isSummerPeriod()) {
+            if (libType === "gregoire") {
+                // Mar(2)–sam(6) : 10h–15h30
+                if (day >= 2 && day <= 6) isOpen = (time >= 10 && time < 15.5);
+            }
+            else if (libType === "genevoix") {
+                // Mar(2)–sam(6) : 10h–12h30 / 13h30–15h30
+                if (day >= 2 && day <= 6) isOpen = ((time >= 10 && time < 12.5) || (time >= 13.5 && time < 15.5));
+            }
+            else if (libType === "valland") {
+                // Mer(3)–sam(6) : 10h–13h
+                if (day >= 3 && day <= 6) isOpen = (time >= 10 && time < 13);
+            }
+        }
+        // 3. Horaires hors été (inchangés)
+        else {
+            if (libType === "gregoire") {
+                if ((day===2||day===4||day===5) && time >= 13 && time < 18.5) isOpen=true;
+                else if (day===3 && time >= 10 && time < 18.5) isOpen=true;
+                else if (day===6 && time >= 10 && time < 18) isOpen=true;
+            } else if (libType === "genevoix") {
+                if ((day===2||day===4||day===5) && time >= 15 && time < 18) isOpen=true;
+                else if ((day===3||day===6) && ((time >= 10 && time < 13) || (time >= 14 && time < 18))) isOpen=true;
+            } else if (libType === "valland") {
+                if (day===3 && ((time >= 10 && time < 13) || (time >= 14 && time < 18.5))) isOpen=true;
+                else if ((day===4||day===5) && time >= 15 && time < 18.5) isOpen=true;
+                else if (day===6 && ((time >= 10 && time < 13) || (time >= 14 && time < 18))) isOpen=true;
+            }
+        }
+
+        return isOpen ? `<span class="hb-status-badge hb-status-open"><i class="fa fa-circle" style="font-size:8px;"></i> Ouvert</span>` : `<span class="hb-status-badge hb-status-closed"><i class="fa fa-circle" style="font-size:8px;"></i> Fermé</span>`;
+    }
+
+    // =========================================================================
+    // === MODIFIÉ : Infos contact avec horaires d'été/hiver dynamiques ========
+    // =========================================================================
+    function getLibraryContactInfo(locationStr) {
+        const loc = (locationStr || "").toLowerCase();
+        let libType = "gregoire";
+
+        // --- Horaires HORS ÉTÉ ---
+        const hoursGregoire = "<strong>Mar, Jeu, Ven :</strong> 13h - 18h30<br><strong>Mercredi :</strong> 10h - 18h30<br><strong>Samedi :</strong> 10h - 18h";
+        const hoursGenevoix = "<strong>Mar, Jeu, Ven :</strong> 15h - 18h<br><strong>Mercredi & Samedi :</strong> 10h - 13h / 14h - 18h";
+        const hoursValland  = "<strong>Mercredi :</strong> 10h - 13h / 14h - 18h30<br><strong>Jeu & Ven :</strong> 15h - 18h30<br><strong>Samedi :</strong> 10h - 13h / 14h - 18h";
+
+        // --- Horaires D'ÉTÉ (spécifiques par site) ---
+        const summerHoursGregoire = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mardi – Samedi :</strong> 10h – 15h30";
+        const summerHoursGenevoix = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mardi – Samedi :</strong> 10h – 12h30 / 13h30 – 15h30";
+        const summerHoursValland  = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mercredi – Samedi :</strong> 10h – 13h";
+
+        // --- Notes de fermeture exceptionnelle août 2026 ---
+        const exceptionGregoire = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 11 au 15 août 2026.</strong></span></div>";
+        const exceptionGenevoix = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 15 au 22 août 2026.</strong></span></div>";
+        const exceptionValland  = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 11 au 22 août 2026.</strong></span></div>";
+
+        if (loc.includes("genevoix")) libType = "genevoix";
+        else if (loc.includes("valland") || loc.includes("veuzain")) libType = "valland";
+
+        const statusBadge = getLiveStatusBadge(libType);
+
+        if (libType === "genevoix") return {
+            name: "Médiathèque Maurice-Genevoix", phone: "02 54 43 31 13",
+            hours: isSummerPeriod() ? summerHoursGenevoix + exceptionGenevoix : hoursGenevoix,
+            badge: statusBadge, email: "bibliotheques@agglopolys.fr"
+        };
+        if (libType === "valland") return {
+            name: "Médiathèque Rose-Valland", phone: "02 54 20 78 00",
+            hours: isSummerPeriod() ? summerHoursValland + exceptionValland : hoursValland,
+            badge: statusBadge, email: "bibliotheques@agglopolys.fr"
+        };
+        return {
+            name: "Bibliothèque Abbé-Grégoire", phone: "02 54 56 27 40",
+            hours: isSummerPeriod() ? summerHoursGregoire + exceptionGregoire : hoursGregoire,
+            badge: statusBadge, email: "bibliotheques@agglopolys.fr"
+        };
+    }
 
     async function loadAgendaData() { let response = null; let success = false; let data = []; try { response = await fetch(`${JSON_URL}?t=${new Date().getTime()}`); if (response.ok) { data = await response.json(); success = true; } } catch (e) {} if (!success) { try { response = await fetch(`https://corsproxy.io/?${encodeURIComponent(JSON_URL)}`); if (response.ok) { data = await response.json(); success = true; } } catch (err) {} } if (!success) { grid.innerHTML = `<div class="hb-error"><i class="fa fa-exclamation-triangle"></i> Échec du chargement.</div>`; resultsCounter.textContent = "0 animation trouvée"; return; } allEvents = data; buildCategoryDropdown(); renderAgenda(); }
     
@@ -168,7 +303,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     grid.addEventListener('click', (e) => { const icsBtn = e.target.closest('.hb-list-ics-btn'); if (icsBtn) { e.stopPropagation(); downloadICS(parseInt(icsBtn.dataset.id, 10)); return; } const target = e.target.closest('.agenda-card, .agenda-list-item, .hb-ongoing-card'); if (target) { e.preventDefault(); openDetailsModal(parseInt(target.dataset.id, 10)); } });
 
-    // CORRECTION ICS : Fuseau horaire local (sans Z)
     function downloadICS(eventId) { 
         const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId); 
         if (!rawEvent) return; 
@@ -176,7 +310,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const startDate = buildUTCDate(rawEvent.Date_Debut, rawEvent.Heure); 
         const endDate = rawEvent.Date_Fin ? buildUTCDate(rawEvent.Date_Fin, "18h") : new Date(startDate.getTime() + 2 * 60 * 60 * 1000); 
         
-        // On retire le Z final pour que l'heure soit considérée comme locale
         const formatDateICS = (d) => d.toISOString().replace(/[-:]/g, "").split(".")[0]; 
         
         const cleanCat = (rawEvent.Catégorie || rawEvent.Categorie || "Animation"); 
@@ -188,9 +321,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "PRODID:-//Agglopolys//AgendaComplet//FR", 
             "BEGIN:VEVENT", 
             `UID:ev-${eventId}-${new Date().getTime()}@agglopolys.fr`, 
-            `DTSTAMP:${formatDateICS(new Date())}Z`, // Le stamp de création reste en UTC
-            `DTSTART;VALUE=DATE-TIME:${formatDateICS(startDate)}`, // Heure locale
-            `DTEND;VALUE=DATE-TIME:${formatDateICS(endDate)}`, // Heure locale
+            `DTSTAMP:${formatDateICS(new Date())}Z`,
+            `DTSTART;VALUE=DATE-TIME:${formatDateICS(startDate)}`, 
+            `DTEND;VALUE=DATE-TIME:${formatDateICS(endDate)}`, 
             `SUMMARY:[${cleanCat.toUpperCase()}] ${rawEvent.Titre}`, 
             `LOCATION:${locText.replace(/,/g, "\\,")}`, 
             `DESCRIPTION:${(rawEvent.Description || '').substring(0, 300).replace(/\n/g, "\\n")}`, 
@@ -214,8 +347,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const dateText = formatEventDates(startDate, endDate, cleanCat); let locText = rawEvent.Localisation || "Médiathèque"; if (rawEvent.Ville) locText += `, ${rawEvent.Ville}`;
         if (rawEvent.URL_de_l_image) { modalImg.src = rawEvent.URL_de_l_image; modalImg.style.display = 'block'; } else { modalImg.style.display = 'none'; } 
         
-        // --- RECHERCHE MULTI-CRITÈRES DU PUBLIC CIBLE ---
-        // Cette liste ordonnée teste les différentes clés possibles présentes dans le fichier JSON
         const publicCible = (() => {
             const keys = ["Public_cible", "Public cible", "Public_Cible", "Public", "public_cible", "Age", "Tranche d'âge", "Tranche_d_age"];
             for (const key of keys) {
@@ -235,10 +366,9 @@ document.addEventListener('DOMContentLoaded', () => {
             reservationModalHtml = `<div class="hb-modal-meta-item" style="background-color: #f0fdf4; color: #166534; padding: 6px 12px; border-radius: 4px; border-left: 4px solid #4ade80; font-weight: bold; margin-top: 5px; font-size: 12px; text-transform: uppercase;"><i class="fa fa-check"></i> Entrée libre (Sans réservation)</div>`; 
         } 
 
-        // AJOUT : Conversion du Markdown (Gras et Italique) pour la description
         let descHtmlContent = rawEvent.Description || '';
-        descHtmlContent = descHtmlContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Gras
-        descHtmlContent = descHtmlContent.replace(/\*(.*?)\*/g, '<em>$1</em>'); // Italique
+        descHtmlContent = descHtmlContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        descHtmlContent = descHtmlContent.replace(/\*(.*?)\*/g, '<em>$1</em>');
 
         const shareUrl = encodeURIComponent(rawEvent.Lien || MAIN_AGENDA_URL); const shareTitle = encodeURIComponent(`À découvrir : ${rawEvent.Titre || "Animation"}`); const shareText = encodeURIComponent(`Découvrez cette animation dans vos médiathèques d'Agglopolys : ${rawEvent.Titre || "Animation"}`);
         
