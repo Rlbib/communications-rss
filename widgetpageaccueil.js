@@ -12,19 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
         .hb-modal-body::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
         .hb-modal-body::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
 
-        /* CORRECTION DESCRIPTION (Affichage complet et aéré) */
+        /* CORRECTION DESCRIPTION */
         .hb-modal-desc { max-height: none !important; overflow-y: visible !important; margin-top: 15px !important; margin-bottom: 25px !important; font-size: 14px !important; line-height: 1.6 !important; color: #374151 !important; }
 
         /* Style Formulaire Réservation */
         .hb-resa-box { background-color: #f9fafb; border: 1px solid #e5e7eb; padding: 18px; border-radius: 6px; margin-top: 15px; border-left: 4px solid var(--hb-primary); box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
         .hb-resa-title { color: var(--hb-primary); font-weight: 800; margin-bottom: 12px; font-size: 14px; text-transform: uppercase; display: flex; align-items: center; gap: 8px; letter-spacing: 0.5px; }
         .hb-resa-subtitle { font-size: 13.5px; color: #4b5563; margin: 0 0 10px 0; line-height: 1.5; font-weight: 600; }
-        
+
         /* Status Badge Temps Réel */
         .hb-status-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 12px; margin-left: 10px; text-transform: uppercase; letter-spacing: 0.3px; }
         .hb-status-open { color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; }
         .hb-status-closed { color: #991b1b; background: #fee2e2; border: 1px solid #fecaca; }
-        
+        /* === NOUVEAU : Badge fermeture exceptionnelle été === */
+        .hb-status-exception { color: #92400e; background: #fef3c7; border: 1px solid #fde68a; }
+
         /* Accordéon Horaires */
         .hb-hours-details { margin-bottom: 15px; background: #ffffff; border-radius: 4px; border: 1px solid #e5e7eb; overflow: hidden; }
         .hb-hours-summary { padding: 8px 12px; font-size: 12px; font-weight: bold; color: var(--hb-muted); cursor: pointer; background: #f3f4f6; list-style: none; display: flex; align-items: center; justify-content: space-between; transition: background 0.2s; }
@@ -33,23 +35,21 @@ document.addEventListener('DOMContentLoaded', () => {
         .hb-hours-summary::after { content: '\\f078'; font-family: 'FontAwesome'; font-size: 10px; transition: transform 0.2s; }
         .hb-hours-details[open] .hb-hours-summary::after { transform: rotate(180deg); }
         .hb-hours-content { padding: 12px; font-size: 12px; color: #374151; line-height: 1.6; }
-        
+
         /* Mini-formulaire */
         .hb-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 8px; }
         .hb-form-full { grid-column: span 2; }
         .hb-input { width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 4px; font-size: 13px; box-sizing: border-box; font-family: inherit; background: #ffffff; transition: border-color 0.2s; }
         .hb-input:focus { outline: none; border-color: var(--hb-accent); box-shadow: 0 0 0 3px rgba(239, 172, 42, 0.2); }
-        
+
         .hb-btn-submit { background-color: var(--hb-accent); color: var(--hb-dark); padding: 12px 16px; border: none; border-radius: 4px; display: flex; align-items: center; justify-content: center; width: 100%; font-weight: 800; font-size: 13.5px; transition: all 0.2s; cursor: pointer; margin-top: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
         .hb-btn-submit:hover { background-color: var(--hb-primary); color: #ffffff; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 
         /* BOUTONS D'ACTION EN BAS */
         .hb-modal-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 25px; padding-top: 15px; border-top: 1px solid #e5e7eb; }
         .hb-btn-action { flex: 1; min-width: 130px; padding: 10px 15px; border-radius: 6px; font-weight: 800; font-size: 12.5px; text-decoration: none !important; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; border: 2px solid transparent; text-transform: uppercase; letter-spacing: 0.5px; gap: 8px; }
-        
         .hb-btn-calendar { background-color: var(--hb-primary); color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .hb-btn-calendar:hover { background-color: #000000; color: #ffffff; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
-        
         .hb-btn-share { background-color: #ffffff; color: var(--hb-primary); border-color: var(--hb-primary); }
         .hb-btn-share:hover { background-color: var(--hb-light); color: var(--hb-primary); transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.08); }
 
@@ -63,7 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
         .hb-tw { background-color: #000000; }
         .hb-em { background-color: #ef4444; }
         .hb-cp { background-color: #6b7280; }
-        
+
+        /* === NOUVEAU : Style de la note de fermeture exceptionnelle dans l'accordéon === */
+        .hb-summer-exception-note { margin-top: 10px; padding: 8px 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 4px; font-size: 11.5px; color: #92400e; line-height: 1.5; display: flex; align-items: flex-start; gap: 6px; }
+        .hb-summer-exception-note i { margin-top: 2px; flex-shrink: 0; }
+
+        /* === NOUVEAU : Indicateur visuel "Horaires d'été" dans l'accordéon === */
+        .hb-summer-label { display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 800; padding: 2px 7px; border-radius: 8px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; border: 1px solid #fde68a; }
+
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
     `;
     document.head.appendChild(style);
@@ -79,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctaBtn = document.getElementById('hb-cta-btn');
     const scrollLeftBtn = document.getElementById('hb-scroll-left');
     const scrollRightBtn = document.getElementById('hb-scroll-right');
-    
+
     const modalOverlay = document.getElementById('hb-modal-overlay');
     const modalClose = document.getElementById('hb-modal-close');
     const modalImg = document.getElementById('hb-modal-img');
@@ -87,10 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let allEvents = []; let activeCategory = 'all';
 
-    // Formatage sans forcer l'UTC pour afficher l'heure française naturelle
     const dFormatter = new Intl.DateTimeFormat('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
-    // Construction en heure LOCALE (française)
     function buildLocalDate(dateStr, heureStr) {
         if (!dateStr) return null;
         const parts = dateStr.split('-');
@@ -110,8 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function formatTime(date) {
         if (!date || isNaN(date.getTime())) return "";
-        const hours = date.getHours(); // Heure locale
-        const minutes = date.getMinutes(); // Minutes locales
+        const hours = date.getHours();
+        const minutes = date.getMinutes();
         if (hours === 0 && minutes === 0) return "";
         return minutes === 0 ? `${hours}h` : `${hours}h${minutes.toString().padStart(2, '0')}`;
     }
@@ -120,7 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let formattedStart = dFormatter.format(startDate);
         formattedStart = formattedStart.charAt(0).toUpperCase() + formattedStart.slice(1);
         const isExpo = category && (category.toLowerCase().trim() === 'exposition' || category.toLowerCase().trim() === 'expositions');
-
         if (isExpo && endDate && !isNaN(endDate.getTime())) {
             if (startDate.getDate() === endDate.getDate() && startDate.getMonth() === endDate.getMonth()) return formattedStart;
             let formattedEnd = dFormatter.format(endDate);
@@ -139,25 +143,86 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!locStr) return "Médiathèque"; return locStr.split(',')[0].trim();
     }
 
+    // =========================================================================
+    // === NOUVEAU : Détection de la période d'été (23 juin → 29 août) ========
+    // =========================================================================
+    function isSummerPeriod() {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = now.getMonth();   // 0-indexed : juin = 5, août = 7
+        const d = now.getDate();
+
+        // Avant le 23 juin → pas d'été
+        if (m < 5) return false;
+        if (m === 5 && d < 23) return false;
+        // Après le 29 août → pas d'été
+        if (m > 7) return false;
+        if (m === 7 && d > 29) return false;
+
+        return true;
+    }
+
+    // =========================================================================
+    // === NOUVEAU : Fermetures exceptionnelles d'août 2026 ====================
+    // =========================================================================
+    function isExceptionallyClosed(libType) {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = now.getMonth();   // 0-indexed : août = 7
+        const d = now.getDate();
+
+        // Les fermetures exceptionnelles ne sont définies que pour 2026
+        if (y !== 2026) return false;
+
+        if (libType === "gregoire") {
+            // Fermé du 11 au 15 août 2026
+            if (m === 7 && d >= 11 && d <= 15) return true;
+        }
+        if (libType === "genevoix" || libType === "valland") {
+            // Fermé du 15 au 22 août 2026
+            if (m === 7 && d >= 15 && d <= 22) return true;
+        }
+        return false;
+    }
+
+    // =========================================================================
+    // === MODIFIÉ : Badge ouvert/fermé avec gestion été + fermetures excep. ====
+    // =========================================================================
     function getLiveStatusBadge(libType) {
         const now = new Date();
-        const day = now.getDay();
+        const day = now.getDay();   // 0=Dim, 1=Lun, 2=Mar, 3=Mer, 4=Jeu, 5=Ven, 6=Sam
         const time = now.getHours() + (now.getMinutes() / 60);
         let isOpen = false;
 
-        if (libType === "gregoire") {
-            if (day === 2 || day === 4 || day === 5) isOpen = (time >= 13 && time < 18.5);
-            else if (day === 3) isOpen = (time >= 10 && time < 18.5);
-            else if (day === 6) isOpen = (time >= 10 && time < 18);
-        } 
-        else if (libType === "genevoix") {
-            if (day === 2 || day === 4 || day === 5) isOpen = (time >= 15 && time < 18);
-            else if (day === 3 || day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
-        } 
-        else if (libType === "valland") {
-            if (day === 3) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18.5));
-            else if (day === 4 || day === 5) isOpen = (time >= 15 && time < 18.5);
-            else if (day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
+        // --- 1. Vérifier les fermetures exceptionnelles (priorité maximale) ---
+        if (isExceptionallyClosed(libType)) {
+            return `<span class="hb-status-badge hb-status-exception" title="Fermeture exceptionnelle estivale — réouverture prochaine"><i class="fa fa-exclamation-triangle" style="font-size:8px;"></i> Fermé (été)</span>`;
+        }
+
+        // --- 2. Déterminer les horaires selon la période ---
+        if (isSummerPeriod()) {
+            // ===== HORAIRES D'ÉTÉ =====
+            // Mercredi(3), Jeudi(4), Vendredi(5), Samedi(6) : 10h - 15h30
+            if (day === 3 || day === 4 || day === 5 || day === 6) {
+                isOpen = (time >= 10 && time < 15.5);
+            }
+            // Lundi(1), Mardi(2), Dimanche(0) : fermé
+        } else {
+            // ===== HORAIRES HORS ÉTÉ (année courante) =====
+            if (libType === "gregoire") {
+                if (day === 2 || day === 4 || day === 5) isOpen = (time >= 13 && time < 18.5);
+                else if (day === 3) isOpen = (time >= 10 && time < 18.5);
+                else if (day === 6) isOpen = (time >= 10 && time < 18);
+            }
+            else if (libType === "genevoix") {
+                if (day === 2 || day === 4 || day === 5) isOpen = (time >= 15 && time < 18);
+                else if (day === 3 || day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
+            }
+            else if (libType === "valland") {
+                if (day === 3) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18.5));
+                else if (day === 4 || day === 5) isOpen = (time >= 15 && time < 18.5);
+                else if (day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
+            }
         }
 
         if (isOpen) {
@@ -167,22 +232,56 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // =========================================================================
+    // === MODIFIÉ : Infos contact avec horaires d'été/hiver dynamiques ========
+    // =========================================================================
     function getLibraryContactInfo(locationStr) {
         const loc = (locationStr || "").toLowerCase();
         let libType = "gregoire";
-        
-        const hoursGregoire = "<strong>Mar, Jeu, Ven :</strong> 13h - 18h30<br><strong>Mercredi :</strong> 10h - 18h30<br><strong>Samedi :</strong> 10h - 18h";
-        const hoursGenevoix = "<strong>Mar, Jeu, Ven :</strong> 15h - 18h<br><strong>Mercredi & Samedi :</strong> 10h - 13h / 14h - 18h";
-        const hoursValland = "<strong>Mercredi :</strong> 10h - 13h / 14h - 18h30<br><strong>Jeu & Ven :</strong> 15h - 18h30<br><strong>Samedi :</strong> 10h - 13h / 14h - 18h";
+
+        // --- Horaires HORS ÉTÉ ---
+        const hoursGregoire    = "<strong>Mar, Jeu, Ven :</strong> 13h – 18h30<br><strong>Mercredi :</strong> 10h – 18h30<br><strong>Samedi :</strong> 10h – 18h";
+        const hoursGenevoix    = "<strong>Mar, Jeu, Ven :</strong> 15h – 18h<br><strong>Mercredi & Samedi :</strong> 10h – 13h / 14h – 18h";
+        const hoursValland     = "<strong>Mercredi :</strong> 10h – 13h / 14h – 18h30<br><strong>Jeu & Ven :</strong> 15h – 18h30<br><strong>Samedi :</strong> 10h – 13h / 14h – 18h";
+
+        // --- Horaires D'ÉTÉ (communs aux 3 sites) ---
+        const summerHoursBase  = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mercredi, Jeudi, Vendredi, Samedi :</strong> 10h – 15h30";
+
+        // --- Notes de fermeture exceptionnelle août 2026 ---
+        const exceptionGregoire = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 11 au 15 août 2026.</strong></span></div>";
+        const exceptionGenevoix = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 15 au 22 août 2026.</strong></span></div>";
+        const exceptionValland  = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 15 au 22 août 2026.</strong></span></div>";
 
         if (loc.includes("genevoix")) libType = "genevoix";
         else if (loc.includes("valland") || loc.includes("veuzain")) libType = "valland";
 
         const statusBadge = getLiveStatusBadge(libType);
 
-        if (libType === "gregoire") return { name: "Bibliothèque Abbé-Grégoire", phone: "02 54 56 27 40", hours: hoursGregoire, badge: statusBadge };
-        if (libType === "genevoix") return { name: "Médiathèque Maurice-Genevoix", phone: "02 54 43 31 13", hours: hoursGenevoix, badge: statusBadge };
-        if (libType === "valland") return { name: "Médiathèque Rose-Valland", phone: "02 54 20 78 00", hours: hoursValland, badge: statusBadge };
+        let hours, name, phone;
+
+        if (libType === "gregoire") {
+            name  = "Bibliothèque Abbé-Grégoire";
+            phone = "02 54 56 27 40";
+            hours = isSummerPeriod()
+                ? summerHoursBase + exceptionGregoire
+                : hoursGregoire;
+        }
+        else if (libType === "genevoix") {
+            name  = "Médiathèque Maurice-Genevoix";
+            phone = "02 54 43 31 13";
+            hours = isSummerPeriod()
+                ? summerHoursBase + exceptionGenevoix
+                : hoursGenevoix;
+        }
+        else if (libType === "valland") {
+            name  = "Médiathèque Rose-Valland";
+            phone = "02 54 20 78 00";
+            hours = isSummerPeriod()
+                ? summerHoursBase + exceptionValland
+                : hoursValland;
+        }
+
+        return { name, phone, hours, badge: statusBadge };
     }
 
     async function loadAgendaData() {
@@ -303,34 +402,33 @@ document.addEventListener('DOMContentLoaded', () => {
         const dateText = formatEventDates(startDate, endDate, cleanCat);
         let locText = rawEvent.Localisation || "Médiathèque";
 
-        // Récupération du public cible (gestion des différentes graphies possibles dans le JSON)
         const publicCible = rawEvent.Public_cible || rawEvent.Public || rawEvent["Public cible"] || rawEvent["Public_Cible"] || "";
 
-        if (rawEvent.URL_de_l_image) { modalImg.src = rawEvent.URL_de_l_image; modalImg.style.display = 'block'; } 
+        if (rawEvent.URL_de_l_image) { modalImg.src = rawEvent.URL_de_l_image; modalImg.style.display = 'block'; }
         else { modalImg.style.display = 'none'; }
 
         let reservationModalHtml = '';
         if (rawEvent.Reservation === "TRUE") {
             const contact = getLibraryContactInfo(rawEvent.Localisation);
-            
+
             reservationModalHtml = `
             <div class="hb-resa-box">
                 <div class="hb-resa-title"><i class="fa fa-ticket" style="color: var(--hb-accent); font-size: 16px;"></i> Inscription Obligatoire</div>
-                
+
                 <p class="hb-resa-subtitle" style="display:flex; align-items:center; flex-wrap:wrap; gap:4px;">
                     <i class="fa fa-phone" style="color: var(--hb-muted);"></i> Appeler le <a href="tel:${contact.phone.replace(/\s/g, '')}" style="color: var(--hb-primary); font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--hb-accent);">${contact.phone}</a>
                     ${contact.badge}
                 </p>
-                
+
                 <details class="hb-hours-details">
                     <summary class="hb-hours-summary"><i class="fa fa-info-circle"></i> Détail des horaires d'ouverture</summary>
                     <div class="hb-hours-content">${contact.hours}</div>
                 </details>
-                
+
                 <hr style="border: 0; height: 1px; background-color: #e5e7eb; margin: 15px 0;">
 
                 <p class="hb-resa-subtitle"><i class="fa fa-envelope-o" style="color: var(--hb-muted);"></i> Ou préparez votre e-mail de demande :</p>
-                
+
                 <div class="hb-form-grid" id="resa-email-form">
                     <input type="text" id="r-nom" class="hb-input" placeholder="Votre Nom*" required>
                     <input type="text" id="r-prenom" class="hb-input" placeholder="Votre Prénom*" required>
@@ -340,7 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <label for="r-places" style="font-size: 13px; color: #4b5563;">Nombre de places :</label>
                         <input type="number" id="r-places" class="hb-input" style="width:80px;" min="1" value="1">
                     </div>
-                    
+
                     <button type="button" id="btn-generate-mail" class="hb-btn-submit hb-form-full">
                         Créer mon e-mail <i class="fa fa-paper-plane" style="margin-left: 8px;"></i>
                     </button>
@@ -357,11 +455,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const shareTitle = encodeURIComponent(`À découvrir : ${rawEvent.Titre || "Animation"}`);
         const shareText = encodeURIComponent(`Découvrez cette animation dans vos médiathèques d'Agglopolys : ${rawEvent.Titre || "Animation"}`);
 
-        // On injecte le HTML dans la modale - AJOUT de data-event-id sur le container et du Public cible
         modalBodyContent.innerHTML = `
             <span class="agenda-card-tag" style="position:static; display:inline-block; margin-bottom:12px;">${cleanCat}</span>
             <h3 class="hb-modal-title">${rawEvent.Titre || "Sans titre"}</h3>
-            
+
             ${rawEvent.Description ? `<div class="hb-modal-desc">${rawEvent.Description}</div>` : ''}
 
             <div class="hb-modal-meta-list">
@@ -371,7 +468,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background-color: #f3f4f6; padding: 6px 12px; border-radius: 4px; border-left: 4px solid var(--hb-accent); margin-top: 5px; font-weight: bold; color: var(--hb-primary);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}
                 ${reservationModalHtml}
             </div>
-            
+
             <div class="hb-modal-actions">
                 <div id="hb-share-panel" class="hb-share-panel">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="hb-social-btn hb-fb" title="Partager sur Facebook"><i class="fa fa-facebook"></i></a>
@@ -385,24 +482,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button id="hb-modal-share" class="hb-btn-action hb-btn-share"><i class="fa fa-share-alt"></i> Partager</button>
             </div>
         `;
-        
-        // Mise à jour du conteneur parent avec l'ID de l'événement pour le récupérer lors de l'export .ics
-        modalBodyContent.closest('.hb-modal-container').dataset.eventId = eventId;
 
+        modalBodyContent.closest('.hb-modal-container').dataset.eventId = eventId;
         modalOverlay.classList.add('hb-active');
 
         // Gestion du bouton de partage
         const shareBtn = document.getElementById('hb-modal-share');
         const sharePanel = document.getElementById('hb-share-panel');
-        if(shareBtn && sharePanel) {
-            shareBtn.addEventListener('click', () => {
-                sharePanel.classList.toggle('hb-active');
-            });
+        if (shareBtn && sharePanel) {
+            shareBtn.addEventListener('click', () => { sharePanel.classList.toggle('hb-active'); });
         }
 
         // Gestion du bouton copier le lien
         const copyBtn = document.getElementById('hb-btn-copy-link');
-        if(copyBtn) {
+        if (copyBtn) {
             copyBtn.addEventListener('click', () => {
                 navigator.clipboard.writeText(rawEvent.Lien || MAIN_AGENDA_URL).then(() => {
                     copyBtn.innerHTML = '<i class="fa fa-check"></i>';
@@ -422,10 +515,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const places = document.getElementById('r-places').value;
                 const errorMsg = document.getElementById('resa-error-msg');
 
-                if (!nom || !prenom) {
-                    errorMsg.style.display = 'block';
-                    return;
-                }
+                if (!nom || !prenom) { errorMsg.style.display = 'block'; return; }
                 errorMsg.style.display = 'none';
 
                 const contact = getLibraryContactInfo(rawEvent.Localisation);
@@ -455,15 +545,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- FONCTION D'EXPORT .ICS CORRIGÉE POUR L'HEURE FRANÇAISE ---
+    // --- FONCTION D'EXPORT .ICS ---
     function generateICS(rawEvent) {
-        // 1. On crée la date en heure locale (française)
         const startDate = buildLocalDate(rawEvent.Date_Debut, rawEvent.Heure);
-        // Par défaut, l'événement dure 1h si pas de date de fin explicite
         const endDate = rawEvent.Date_Fin ? buildLocalDate(rawEvent.Date_Fin, rawEvent.Heure || "18h00") : new Date(startDate.getTime() + 3600000);
 
-        // 2. Le format ICS EXIGE du temps UTC absolu identifié par un Z à la fin.
-        // toISOString() convertit parfaitement notre heure locale (Paris) en heure UTC vraie.
         const formatICSDate = (date) => {
             return date.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
         };
@@ -471,13 +557,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const dtStart = formatICSDate(startDate);
         const dtEnd = formatICSDate(endDate);
 
-        // 3. Nettoyage des textes pour le format ICS
         const title = (rawEvent.Titre || "Animation").replace(/,/g, '\\,');
         const desc = (rawEvent.Description || "").replace(/<[^>]*>?/gm, '').replace(/,/g, '\\,').replace(/\n/g, '\\n');
         const location = (rawEvent.Localisation || "Médiathèque").replace(/,/g, '\\,');
         const url = rawEvent.Lien || MAIN_AGENDA_URL;
 
-        // 4. Génération du fichier
         const icsContent = [
             'BEGIN:VCALENDAR',
             'VERSION:2.0',
