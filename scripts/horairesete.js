@@ -204,12 +204,14 @@
         <div class="hd"><h2><span>Horaires</span></h2></div>
 
         <!-- GRAND BANDEAU INFO ROUGE -->
-        <div class="info-banner">
-            <i class="fa fa-exclamation-triangle"></i>
-            <div>
-                <strong>ATTENTION - HORAIRES D'ÉTÉ AVANCÉS :</strong> Les horaires d'été entrent en vigueur dès ce <strong>mardi 23 juin</strong> (au lieu du 4 juillet initialement prévu).
-            </div>
-        </div>
+<!--
+<div class="info-banner">
+    <i class="fa fa-exclamation-triangle"></i>
+    <div>
+        <strong>ATTENTION - HORAIRES D'ÉTÉ AVANCÉS :</strong> Les horaires d'été entrent en vigueur dès ce <strong>mardi 23 juin</strong> (au lieu du 4 juillet initialement prévu).
+    </div>
+</div>
+-->
 
         <div class="now">
             <div class="now-item" data-open-modal>
