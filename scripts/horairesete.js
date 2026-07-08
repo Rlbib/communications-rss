@@ -8,7 +8,6 @@
         host.id = 'agglo-summer-host';
         host.style.cssText = 'all:initial;display:block;font-family:inherit;';
         
-        // Sécurité si currentScript est nul (chargement async)
         if (document.currentScript && document.currentScript.parentNode) {
             document.currentScript.parentNode.insertBefore(host, document.currentScript);
         } else {
@@ -16,11 +15,10 @@
         }
     }
 
-    // Nettoyage préalable pour éviter les doublons au rechargement
     host.innerHTML = '';
 
     // =========================================================
-    // 2. INJECTION DES STYLES (CSS NOMINATIF SCOPÉ)
+    // 2. INJECTION DES STYLES OPTIMISÉS
     // =========================================================
     if (!document.querySelector('link[href*="font-awesome"]')) {
         const fa = document.createElement('link');
@@ -47,42 +45,52 @@
         
         #agglo-summer-host .w { width: 100%; padding: 0 16px 12px; }
         
-        #agglo-summer-host .hd { margin-bottom: 12px; }
+        #agglo-summer-host .hd { margin-bottom: 14px; }
         #agglo-summer-host .hd h2 { font-size: 22px; font-weight: 700; color: var(--pri); line-height: 1.3; }
         #agglo-summer-host .hd h2 span { border-bottom: 3px solid var(--acc); padding-bottom: 4px; }
         
-        /* GRAND BANDEAU D'INFORMATION ROUGE */
-        #agglo-summer-host .info-banner {
-            background: var(--red-bg);
-            border: 2px solid var(--red-bd);
-            color: var(--dark);
-            border-radius: var(--r);
-            padding: 12px 16px;
-            margin-bottom: 14px;
-            font-size: 13px;
-            line-height: 1.5;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            box-shadow: 0 2px 6px rgba(220, 38, 38, 0.08);
+        /* GRILLE DES HORAIRES REPENSIÉE */
+        #agglo-summer-host .now { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 10px; 
+            margin-bottom: 14px; 
         }
-        #agglo-summer-host .info-banner i {
-            color: var(--red);
-            font-size: 18px;
-            flex-shrink: 0;
+        
+        /* CARTES INDIVIDUELLES EN DISPOSITION VERTICALE */
+        #agglo-summer-host .now-item { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+            gap: 8px; 
+            background: #fff; 
+            border: 1px solid var(--border); 
+            border-radius: var(--r); 
+            padding: 12px; 
+            transition: border-color .2s, box-shadow .2s; 
+            cursor: pointer; 
         }
-        #agglo-summer-host .info-banner strong {
-            color: var(--red);
-            font-weight: 800;
-        }
-
-        #agglo-summer-host .now { display: flex; gap: 8px; margin-bottom: 10px; }
-        #agglo-summer-host .now-item { flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 6px; background: #fff; border: 1px solid var(--border); border-radius: var(--r); padding: 8px 10px; transition: border-color .2s, box-shadow .2s; cursor: pointer; }
         #agglo-summer-host .now-item:hover { border-color: var(--acc); box-shadow: 0 2px 8px rgba(239,172,42,.15); }
-        #agglo-summer-host .now-name { font-size: 11.5px; font-weight: 700; color: var(--pri); display: flex; align-items: center; gap: 5px; white-space: nowrap; }
-        #agglo-summer-host .now-name i { color: var(--acc); font-size: 10px; }
-        #agglo-summer-host .now-r { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
-        #agglo-summer-host .now-t { font-size: 11px; font-weight: 600; color: var(--text); white-space: nowrap; }
+        
+        #agglo-summer-host .now-name { 
+            font-size: 13px; 
+            font-weight: 700; 
+            color: var(--dark); 
+            display: flex; 
+            align-items: center; 
+            gap: 6px; 
+        }
+        #agglo-summer-host .now-name i { color: var(--acc); font-size: 12px; }
+        
+        #agglo-summer-host .now-r { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            gap: 6px; 
+            border-top: 1px dashed var(--border);
+            padding-top: 8px;
+        }
+        #agglo-summer-host .now-t { font-size: 11px; font-weight: 600; color: var(--muted); white-space: nowrap; }
         
         #agglo-summer-host .st { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; text-transform: uppercase; letter-spacing: .2px; white-space: nowrap; }
         #agglo-summer-host .st-o { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-bd); }
@@ -92,38 +100,51 @@
         #agglo-summer-host .st-c .dot { background: var(--red); }
         @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(5,150,105,.6); } 70% { box-shadow: 0 0 0 4px rgba(5,150,105,0); } 100% { box-shadow: 0 0 0 0 rgba(5,150,105,.6); } }
         
-        #agglo-summer-host .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: stretch; }
-        #agglo-summer-host .bl { background: #fff; border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; display: flex; flex-direction: column; }
-        #agglo-summer-host .bl-h { padding: 8px 12px; background: var(--light); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 6px; flex-shrink: 0; }
-        #agglo-summer-host .bl-h-l { display: flex; align-items: center; gap: 6px; }
-        #agglo-summer-host .bl-h-l i { color: var(--acc); font-size: 12px; }
-        #agglo-summer-host .bl-h-l span { font-size: 11.5px; font-weight: 700; color: var(--pri); text-transform: uppercase; letter-spacing: .2px; }
-        
-        #agglo-summer-host .bl-h-btn { background: none; border: 1px solid var(--border); color: var(--muted); font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 4px; cursor: pointer; transition: all .3s cubic-bezier(.4,0,.2,1); display: flex; align-items: center; gap: 4px; font-family: inherit; white-space: nowrap; position: relative; overflow: hidden; animation: btn-glow 3s ease-in-out infinite; }
-        #agglo-summer-host .bl-h-btn::after { content: ""; position: absolute; inset: 0; background: var(--acc); opacity: 0; transition: opacity .3s; border-radius: 3px; }
-        #agglo-summer-host .bl-h-btn:hover { border-color: var(--acc); color: var(--dark); transform: translateX(2px); animation: none; box-shadow: 0 2px 8px rgba(239,172,42,.25); }
-        #agglo-summer-host .bl-h-btn:hover::after { opacity: .1; }
-        #agglo-summer-host .bl-h-btn i, #agglo-summer-host .bl-h-btn span { position: relative; z-index: 1; }
-        #agglo-summer-host .bl-h-btn i { transition: transform .3s cubic-bezier(.4,0,.2,1); }
-        #agglo-summer-host .bl-h-btn:hover i { transform: translateX(3px); }
-        @keyframes btn-glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(239,172,42,0); } 50% { box-shadow: 0 0 0 4px rgba(239,172,42,.2); } }
-        
-        #agglo-summer-host .bl-b { padding: 10px 12px; flex-grow: 1; display: flex; flex-direction: column; }
-        #agglo-summer-host .ete-line { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; padding: 6px 0; border-bottom: 1px dashed var(--border); font-size: 11px; color: var(--text); line-height: 1.4; cursor: pointer; transition: color .2s; }
-        #agglo-summer-host .ete-line:hover { color: var(--dark); }
-        #agglo-summer-host .ete-line:last-child { border-bottom: none; padding-bottom: 0; }
-        #agglo-summer-host .ete-line:first-child { padding-top: 0; }
-        #agglo-summer-host .ete-line-n { font-weight: 700; color: var(--pri); white-space: nowrap; }
-        #agglo-summer-host .ete-line-h { text-align: right; white-space: nowrap; }
-        #agglo-summer-host .ete-line-c { display: block; font-size: 10px; color: var(--orange); font-weight: 600; margin-top: 1px; }
-        
-        #agglo-summer-host .pret { display: flex; align-items: center; gap: 12px; flex-grow: 1; justify-content: center; }
-        #agglo-summer-host .pret-ico { width: 42px; height: 42px; border-radius: 50%; background: var(--acc); display: flex; align-items: center; justify-content: center; color: var(--dark); font-size: 17px; flex-shrink: 0; box-shadow: 0 3px 10px rgba(239,172,42,.25); }
-        #agglo-summer-host .pret-txt h4 { font-size: 13px; font-weight: 700; color: var(--dark); text-transform: uppercase; margin-bottom: 2px; }
-        #agglo-summer-host .pret-txt p { font-size: 11px; color: var(--muted); line-height: 1.4; }
-        #agglo-summer-host .pret-note { margin-top: auto; padding-top: 10px; border-top: 1px dashed var(--border); font-size: 10px; color: var(--muted); display: flex; align-items: flex-start; gap: 5px; line-height: 1.4; }
-        #agglo-summer-host .pret-note i { color: var(--acc); font-size: 10px; margin-top: 2px; flex-shrink: 0; }
-        
+        /* BANDEAU INFÉRIEUR */
+        #agglo-summer-host .widget-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            background: var(--light);
+            border: 1px solid var(--border);
+            border-radius: var(--r);
+            font-size: 11.5px;
+            color: var(--text);
+        }
+        #agglo-summer-host .summer-info {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            line-height: 1.4;
+        }
+        #agglo-summer-host .summer-info i {
+            color: var(--orange);
+            font-size: 13px;
+        }
+        #agglo-summer-host .summer-info strong {
+            color: var(--dark);
+        }
+        #agglo-summer-host .btn-more {
+            background: none;
+            border: none;
+            color: var(--pri);
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            padding: 2px 4px;
+            transition: color .2s;
+            text-decoration: underline;
+            white-space: nowrap;
+        }
+        #agglo-summer-host .btn-more:hover {
+            color: var(--acc-h);
+        }
+
         /* MODALE */
         #agglo-summer-host .ov { position: fixed; inset: 0; background: rgba(17,24,39,.5); backdrop-filter: blur(4px); z-index: 99999; display: none; align-items: center; justify-content: center; padding: 16px; opacity: 0; transition: opacity .3s ease; }
         #agglo-summer-host .ov.on { display: flex; opacity: 1; }
@@ -154,27 +175,25 @@
         #agglo-summer-host .ft { font-size: 12px; color: var(--muted); margin-top: 8px; display: flex; align-items: center; gap: 6px; padding: 10px 12px; background: var(--light); border-radius: var(--r-sm); border: 1px solid var(--border); }
         #agglo-summer-host .ft i { color: var(--acc); font-size: 11px; }
         
-        /* MOBILE */
+        /* ADAPTATION RESPONSIVE */
+        @media (max-width: 768px) {
+            #agglo-summer-host .now { 
+                grid-template-columns: 1fr; 
+                gap: 8px; 
+            }
+            #agglo-summer-host .widget-footer { 
+                flex-direction: column; 
+                align-items: flex-start; 
+                gap: 10px; 
+            }
+            #agglo-summer-host .btn-more { 
+                align-self: flex-end; 
+            }
+        }
         @media (max-width: 600px) {
             #agglo-summer-host .w { padding: 0 10px 8px; }
             #agglo-summer-host .hd { margin-bottom: 10px; }
             #agglo-summer-host .hd h2 { font-size: 19px; }
-            #agglo-summer-host .info-banner { font-size: 11.5px; padding: 10px 12px; margin-bottom: 12px; gap: 8px; }
-            #agglo-summer-host .info-banner i { font-size: 16px; }
-            #agglo-summer-host .now { flex-direction: column; gap: 6px; }
-            #agglo-summer-host .now-item { padding: 7px 9px; }
-            #agglo-summer-host .now-name { font-size: 11px; }
-            #agglo-summer-host .now-t { font-size: 10.5px; }
-            #agglo-summer-host .row2 { grid-template-columns: 1fr; gap: 8px; }
-            #agglo-summer-host .bl-h { padding: 7px 10px; }
-            #agglo-summer-host .bl-h-l span { font-size: 11px; }
-            #agglo-summer-host .bl-b { padding: 9px 10px; }
-            #agglo-summer-host .ete-line { font-size: 10.5px; }
-            #agglo-summer-host .pret { gap: 10px; }
-            #agglo-summer-host .pret-ico { width: 36px; height: 36px; font-size: 14px; }
-            #agglo-summer-host .pret-txt h4 { font-size: 11.5px; }
-            #agglo-summer-host .pret-txt p { font-size: 10.5px; }
-            #agglo-summer-host .pret-note { font-size: 9.5px; padding-top: 8px; }
             #agglo-summer-host .ov { padding: 0; align-items: flex-end; }
             #agglo-summer-host .md { max-height: 92vh; border-radius: var(--r) var(--r) 0 0; transform: translateY(100%); }
             #agglo-summer-host .mh { padding: 14px 16px; }
@@ -187,31 +206,16 @@
             #agglo-summer-host .mx { width: 34px; height: 34px; font-size: 14px; }
             #agglo-summer-host .ft { font-size: 11px; padding: 8px 10px; }
         }
-        @media (max-width: 380px) {
-            #agglo-summer-host .hd h2 { font-size: 17px; }
-            #agglo-summer-host .ete-line { flex-direction: column; gap: 2px; }
-            #agglo-summer-host .ete-line-h { text-align: left; }
-        }
     `;
     host.appendChild(style);
 
     // =========================================================
-    // 3. INJECTION DU HTML (WIDGET & MODALE)
+    // 3. INJECTION DU HTML (WIDGET COMPACT & MODALE)
     // =========================================================
     const widgetHTML = document.createElement('div');
     widgetHTML.className = 'w';
     widgetHTML.innerHTML = `
         <div class="hd"><h2><span>Horaires</span></h2></div>
-
-        <!-- GRAND BANDEAU INFO ROUGE -->
-<!--
-<div class="info-banner">
-    <i class="fa fa-exclamation-triangle"></i>
-    <div>
-        <strong>ATTENTION - HORAIRES D'ÉTÉ AVANCÉS :</strong> Les horaires d'été entrent en vigueur dès ce <strong>mardi 23 juin</strong> (au lieu du 4 juillet initialement prévu).
-    </div>
-</div>
--->
 
         <div class="now">
             <div class="now-item" data-open-modal>
@@ -237,40 +241,13 @@
             </div>
         </div>
 
-        <div class="row2">
-            <div class="bl">
-                <div class="bl-h">
-                    <div class="bl-h-l"><i class="fa fa-sun-o"></i><span>Horaires d'été (23 juin – 29 août)</span></div>
-                    <button class="bl-h-btn" id="jo" type="button"><span>Détails</span> <i class="fa fa-arrow-right"></i></button>
-                </div>
-                <div class="bl-b">
-                    <div class="ete-line" data-open-modal>
-                        <span class="ete-line-n">Abbé-Grégoire</span>
-                        <span class="ete-line-h">Mar.–sam. 10h–15h30<span class="ete-line-c">Fermé 11/08–15/08</span></span>
-                    </div>
-                    <div class="ete-line" data-open-modal>
-                        <span class="ete-line-n">Maurice-Genevoix</span>
-                        <span class="ete-line-h">Mar.–sam. 10h–12h30 / 13h30–15h30<span class="ete-line-c">Fermé 15/08–22/08</span></span>
-                    </div>
-                    <div class="ete-line" data-open-modal>
-                        <span class="ete-line-n">Rose-Valland</span>
-                        <span class="ete-line-h">Mer.–sam. 10h–13h<span class="ete-line-c">Fermé 11/08–22/08</span></span>
-                    </div>
-                </div>
+        <!-- FOOTER DU WIDGET -->
+        <div class="widget-footer">
+            <div class="summer-info">
+                <i class="fa fa-sun-o"></i>
+                <span><strong>Prêts d'été (4 juil. – 29 août) :</strong> emprunts prolongés à 8 semaines.</span>
             </div>
-            <div class="bl">
-                <div class="bl-h"><div class="bl-h-l"><i class="fa fa-book"></i><span>Prêts d'été</span></div></div>
-                <div class="bl-b">
-                    <div class="pret">
-                        <div class="pret-ico"><i class="fa fa-book"></i></div>
-                        <div class="pret-txt">
-                            <h4>4 juillet – 29 août</h4>
-                            <p>Empruntez pour 8 semaines, sans prolongation.</p>
-                        </div>
-                    </div>
-                    <div class="pret-note"><i class="fa fa-info-circle"></i><span>Pensez à vérifier vos dates de retour sur votre compte.</span></div>
-                </div>
-            </div>
+            <button class="btn-more" id="jo" type="button">Voir tous les horaires <i class="fa fa-chevron-right"></i></button>
         </div>
     `;
     host.appendChild(widgetHTML);
@@ -354,25 +331,21 @@
     // =========================================================
     const currentYear = new Date().getFullYear();
     
-    // Période estivale : 23 juin (mois indexé à 5) au 29 août (mois indexé à 7)
     const summerStart = new Date(currentYear, 5, 23);
     const summerEnd = new Date(currentYear, 7, 29);
 
-    // Périodes de fermeture annuelle par bibliothèque
     const closures = {
-        ag: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 15) }, // 11 au 15 août
-        mg: { start: new Date(currentYear, 7, 18), end: new Date(currentYear, 7, 22) }, // 18 au 22 août
-        rv: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 22) }  // 11 au 22 août
+        ag: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 15) },
+        mg: { start: new Date(currentYear, 7, 18), end: new Date(currentYear, 7, 22) },
+        rv: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 22) }
     };
 
-    // Horaires réguliers (0=Dimanche, 1=Lundi, 2=Mardi, etc.)
     const regularHours = {
         ag: { 0: null, 1: null, 2: [{ s: 13, e: 18.5 }], 3: [{ s: 10, e: 18.5 }], 4: [{ s: 13, e: 18.5 }], 5: [{ s: 13, e: 18.5 }], 6: [{ s: 10, e: 18 }] },
         mg: { 0: null, 1: null, 2: [{ s: 15, e: 18 }], 3: [{ s: 10, e: 13 }, { s: 14, e: 18 }], 4: [{ s: 15, e: 18 }], 5: [{ s: 15, e: 18 }], 6: [{ s: 10, e: 13 }, { s: 14, e: 18 }] },
         rv: { 0: null, 1: null, 2: null, 3: [{ s: 10, e: 13 }, { s: 14, e: 18 }], 4: [{ s: 15, e: 18 }], 5: [{ s: 15, e: 18 }], 6: [{ s: 10, e: 13 }, { s: 14, e: 18 }] }
     };
 
-    // Horaires d'été
     const summerHours = {
         ag: { 0: null, 1: null, 2: [{ s: 10, e: 15.5 }], 3: [{ s: 10, e: 15.5 }], 4: [{ s: 10, e: 15.5 }], 5: [{ s: 10, e: 15.5 }], 6: [{ s: 10, e: 15.5 }] },
         mg: { 0: null, 1: null, 2: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 3: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 4: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 5: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 6: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }] },
@@ -408,7 +381,6 @@
             
             if (!timeEl || !statusEl || !labelEl) return;
 
-            // Vérification des fermetures annuelles
             if (isSummer && isBetweenDates(now, closures[lib].start, closures[lib].end)) {
                 timeEl.textContent = 'Fermé';
                 statusEl.className = 'st st-c';
@@ -425,7 +397,6 @@
         });
     };
 
-    // Exécution initiale et mise à jour toutes les 30 secondes
     updateStatus();
     setInterval(updateStatus, 30000);
 })();
