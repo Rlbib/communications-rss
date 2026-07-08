@@ -344,7 +344,7 @@
         vz: {
             start: new Date(currentYear, 6, 8),  // 8 Juillet (6)
             end: new Date(currentYear, 6, 11),  // 11 Juillet (6)
-            reason: "En raison des fortes chaleurs, la médiathèque sera exceptionnellement fermée."
+            reason: "En raison des fortes chaleurs, la médiathèque Rose-Valland sera exceptionnellement fermée du 8 au 11 juillet inclus."
         }
     };
 
