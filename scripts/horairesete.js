@@ -234,7 +234,7 @@
                 </div>
             </div>
             <div class="now-item" data-open-modal>
-                <span class="now-name"><i class="fa fa-sun-o"></i> Rose-Valland</span>
+                <span class="now-name"><i class="fa fa-sun-o"></i> Rose-Valland | fermée du 8 au 11 juillet inclus</span>
                 <div class="now-r">
                     <span class="now-t" data-t="vz">...</span>
                     <span class="st st-c" data-l="vz"><span class="dot"></span><span data-x="vz">...</span></span>
@@ -344,7 +344,7 @@
         vz: {
             start: new Date(currentYear, 6, 8),  // 8 Juillet (6)
             end: new Date(currentYear, 6, 11),  // 11 Juillet (6)
-            reason: "En raison des fortes chaleurs, la médiathèque Rose-Valland sera exceptionnellement fermée du 8 au 11 juillet inclus."
+            reason: "En raison des fortes chaleurs, la médiathèque Rose-Valland sera exceptionnellement fermée."
         }
     };
 
