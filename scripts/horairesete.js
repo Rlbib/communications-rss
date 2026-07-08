@@ -49,7 +49,6 @@
         #agglo-summer-host .hd h2 { font-size: 22px; font-weight: 700; color: var(--pri); line-height: 1.3; }
         #agglo-summer-host .hd h2 span { border-bottom: 3px solid var(--acc); padding-bottom: 4px; }
         
-        /* GRILLE DES HORAIRES REPENSIÉE */
         #agglo-summer-host .now { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
@@ -57,7 +56,6 @@
             margin-bottom: 14px; 
         }
         
-        /* CARTES INDIVIDUELLES EN DISPOSITION VERTICALE */
         #agglo-summer-host .now-item { 
             display: flex; 
             flex-direction: column; 
@@ -100,7 +98,6 @@
         #agglo-summer-host .st-c .dot { background: var(--red); }
         @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(5,150,105,.6); } 70% { box-shadow: 0 0 0 4px rgba(5,150,105,0); } 100% { box-shadow: 0 0 0 0 rgba(5,150,105,.6); } }
         
-        /* BANDEAU INFÉRIEUR */
         #agglo-summer-host .widget-footer {
             display: flex;
             justify-content: space-between;
@@ -119,13 +116,8 @@
             gap: 6px;
             line-height: 1.4;
         }
-        #agglo-summer-host .summer-info i {
-            color: var(--orange);
-            font-size: 13px;
-        }
-        #agglo-summer-host .summer-info strong {
-            color: var(--dark);
-        }
+        #agglo-summer-host .summer-info i { color: var(--orange); font-size: 13px; }
+        #agglo-summer-host .summer-info strong { color: var(--dark); }
         #agglo-summer-host .btn-more {
             background: none;
             border: none;
@@ -141,9 +133,7 @@
             text-decoration: underline;
             white-space: nowrap;
         }
-        #agglo-summer-host .btn-more:hover {
-            color: var(--acc-h);
-        }
+        #agglo-summer-host .btn-more:hover { color: var(--acc-h); }
 
         /* MODALE */
         #agglo-summer-host .ov { position: fixed; inset: 0; background: rgba(17,24,39,.5); backdrop-filter: blur(4px); z-index: 99999; display: none; align-items: center; justify-content: center; padding: 16px; opacity: 0; transition: opacity .3s ease; }
@@ -175,20 +165,10 @@
         #agglo-summer-host .ft { font-size: 12px; color: var(--muted); margin-top: 8px; display: flex; align-items: center; gap: 6px; padding: 10px 12px; background: var(--light); border-radius: var(--r-sm); border: 1px solid var(--border); }
         #agglo-summer-host .ft i { color: var(--acc); font-size: 11px; }
         
-        /* ADAPTATION RESPONSIVE */
         @media (max-width: 768px) {
-            #agglo-summer-host .now { 
-                grid-template-columns: 1fr; 
-                gap: 8px; 
-            }
-            #agglo-summer-host .widget-footer { 
-                flex-direction: column; 
-                align-items: flex-start; 
-                gap: 10px; 
-            }
-            #agglo-summer-host .btn-more { 
-                align-self: flex-end; 
-            }
+            #agglo-summer-host .now { grid-template-columns: 1fr; gap: 8px; }
+            #agglo-summer-host .widget-footer { flex-direction: column; align-items: flex-start; gap: 10px; }
+            #agglo-summer-host .btn-more { align-self: flex-end; }
         }
         @media (max-width: 600px) {
             #agglo-summer-host .w { padding: 0 10px 8px; }
@@ -210,7 +190,7 @@
     host.appendChild(style);
 
     // =========================================================
-    // 3. INJECTION DU HTML (WIDGET COMPACT & MODALE)
+    // 3. INJECTION DU HTML (WIDGET COMPACT & MODALE - AVEC VEUZAIN)
     // =========================================================
     const widgetHTML = document.createElement('div');
     widgetHTML.className = 'w';
@@ -233,15 +213,15 @@
                 </div>
             </div>
             <div class="now-item" data-open-modal>
-                <span class="now-name"><i class="fa fa-star"></i> Rose-Valland</span>
+                <!-- Remplacement de Rose-Valland par Veuzain -->
+                <span class="now-name"><i class="fa fa-sun-o"></i> Veuzain</span>
                 <div class="now-r">
-                    <span class="now-t" data-t="rv">...</span>
-                    <span class="st st-c" data-l="rv"><span class="dot"></span><span data-x="rv">...</span></span>
+                    <span class="now-t" data-t="vz">...</span>
+                    <span class="st st-c" data-l="vz"><span class="dot"></span><span data-x="vz">...</span></span>
                 </div>
             </div>
         </div>
 
-        <!-- FOOTER DU WIDGET -->
         <div class="widget-footer">
             <div class="summer-info">
                 <i class="fa fa-sun-o"></i>
@@ -262,7 +242,6 @@
             </div>
             <div class="mb">
                 
-                <!-- 1. HORAIRES D'ÉTÉ EN PREMIER -->
                 <div class="ms warm"><i class="fa fa-sun-o"></i> Horaires d'été (23 juin – 29 août)</div>
                 <div class="tw">
                     <table>
@@ -272,12 +251,11 @@
                         <tbody>
                             <tr><td><strong>Abbé-Grégoire</strong></td><td>Mardi au samedi<br>10h – 15h30</td><td><span class="bc"><i class="fa fa-lock"></i> Fermé</span> 11/08 – 15/08</td></tr>
                             <tr><td><strong>Maurice-Genevoix</strong></td><td>Mardi au samedi<br>10h – 12h30 / 13h30 – 15h30</td><td><span class="bc"><i class="fa fa-lock"></i> Fermé</span> 15/08 – 22/08</td></tr>
-                            <tr><td><strong>Rose-Valland</strong></td><td>Mercredi au samedi<br>10h – 13h00</td><td><span class="bc"><i class="fa fa-lock"></i> Fermé</span> 11/08 – 22/08</td></tr>
+                            <tr><td><strong>Veuzain</strong></td><td>Mercredi au samedi<br>10h – 13h00</td><td><span class="bc"><i class="fa fa-lock"></i> Fermé</span> 11/08 – 22/08</td></tr>
                         </tbody>
                     </table>
                 </div>
 
-                <!-- 2. HORAIRES HABITUELS EN SECOND -->
                 <div class="ms"><i class="fa fa-calendar-o"></i> Horaires habituels</div>
                 <div class="tw">
                     <table>
@@ -287,7 +265,7 @@
                         <tbody>
                             <tr><td><strong>Abbé-Grégoire</strong></td><td>13h – 18h30</td><td>10h – 18h30</td><td>13h – 18h30</td><td>13h – 18h30</td><td>10h – 18h00</td></tr>
                             <tr><td><strong>Maurice-Genevoix</strong></td><td>15h – 18h00</td><td>10h – 13h / 14h – 18h</td><td>15h – 18h00</td><td>15h – 18h00</td><td>10h – 13h / 14h – 18h</td></tr>
-                            <tr><td><strong>Rose-Valland</strong></td><td>Fermé</td><td>10h – 13h / 14h – 18h</td><td>15h – 18h00</td><td>15h – 18h00</td><td>10h – 13h / 14h – 18h</td></tr>
+                            <tr><td><strong>Veuzain</strong></td><td>Fermé</td><td>10h – 13h / 14h – 18h</td><td>15h – 18h00</td><td>15h – 18h00</td><td>10h – 13h / 14h – 18h</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -334,22 +312,36 @@
     const summerStart = new Date(currentYear, 5, 23);
     const summerEnd = new Date(currentYear, 7, 29);
 
+    // Fermetures annuelles prévues
     const closures = {
         ag: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 15) },
         mg: { start: new Date(currentYear, 7, 18), end: new Date(currentYear, 7, 22) },
-        rv: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 22) }
+        vz: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 22) }
+    };
+
+    // --- ZONE MODIFIABLE : FERMETURES TEMPORAIRES EXCEPTIONNELLES ---
+    // Vous pouvez définir ici des périodes de fermeture spécifiques avec une raison personnalisée.
+    // Les mois dans l'objet Date de JavaScript commencent à 0 (janvier = 0, février = 1, ... juillet = 6, août = 7).
+    const exceptionalClosures = {
+        vz: {
+            start: new Date(2026, 6, 8), // Exemple : du 15 juillet 2025
+            end: new Date(2026, 6, 11),   // ... au 22 juillet 2025
+            reason: "En raison des fortes chaleurs, la médiathèque Rose-Valland sera exceptionnellement fermée du 8 au 11 juillet inclus."
+        }
+        // Vous pouvez ajouter d'autres bibliothèques si nécessaire :
+        // ag: { start: new Date(...), end: new Date(...), reason: "Travaux" }
     };
 
     const regularHours = {
         ag: { 0: null, 1: null, 2: [{ s: 13, e: 18.5 }], 3: [{ s: 10, e: 18.5 }], 4: [{ s: 13, e: 18.5 }], 5: [{ s: 13, e: 18.5 }], 6: [{ s: 10, e: 18 }] },
         mg: { 0: null, 1: null, 2: [{ s: 15, e: 18 }], 3: [{ s: 10, e: 13 }, { s: 14, e: 18 }], 4: [{ s: 15, e: 18 }], 5: [{ s: 15, e: 18 }], 6: [{ s: 10, e: 13 }, { s: 14, e: 18 }] },
-        rv: { 0: null, 1: null, 2: null, 3: [{ s: 10, e: 13 }, { s: 14, e: 18 }], 4: [{ s: 15, e: 18 }], 5: [{ s: 15, e: 18 }], 6: [{ s: 10, e: 13 }, { s: 14, e: 18 }] }
+        vz: { 0: null, 1: null, 2: null, 3: [{ s: 10, e: 13 }, { s: 14, e: 18 }], 4: [{ s: 15, e: 18 }], 5: [{ s: 15, e: 18 }], 6: [{ s: 10, e: 13 }, { s: 14, e: 18 }] }
     };
 
     const summerHours = {
         ag: { 0: null, 1: null, 2: [{ s: 10, e: 15.5 }], 3: [{ s: 10, e: 15.5 }], 4: [{ s: 10, e: 15.5 }], 5: [{ s: 10, e: 15.5 }], 6: [{ s: 10, e: 15.5 }] },
         mg: { 0: null, 1: null, 2: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 3: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 4: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 5: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 6: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }] },
-        rv: { 0: null, 1: null, 2: null, 3: [{ s: 10, e: 13 }], 4: [{ s: 10, e: 13 }], 5: [{ s: 10, e: 13 }], 6: [{ s: 10, e: 13 }] }
+        vz: { 0: null, 1: null, 2: null, 3: [{ s: 10, e: 13 }], 4: [{ s: 10, e: 13 }], 5: [{ s: 10, e: 13 }], 6: [{ s: 10, e: 13 }] }
     };
 
     const formatHour = (h) => {
@@ -374,13 +366,22 @@
         const currentTime = now.getHours() + now.getMinutes() / 60;
         const isSummer = isBetweenDates(now, summerStart, summerEnd);
 
-        ['ag', 'mg', 'rv'].forEach((lib) => {
+        ['ag', 'mg', 'vz'].forEach((lib) => {
             const timeEl = q(`[data-t="${lib}"]`);
             const statusEl = q(`[data-l="${lib}"]`);
             const labelEl = q(`[data-x="${lib}"]`);
             
             if (!timeEl || !statusEl || !labelEl) return;
 
+            // 1. VÉRIFICATION DES FERMETURES EXCEPTIONNELLES (Prioritaire)
+            if (exceptionalClosures[lib] && isBetweenDates(now, exceptionalClosures[lib].start, exceptionalClosures[lib].end)) {
+                timeEl.textContent = exceptionalClosures[lib].reason || 'Fermé';
+                statusEl.className = 'st st-c';
+                labelEl.textContent = 'Fermé';
+                return;
+            }
+
+            // 2. VÉRIFICATION DES FERMETURES ANNUELLES
             if (isSummer && isBetweenDates(now, closures[lib].start, closures[lib].end)) {
                 timeEl.textContent = 'Fermé';
                 statusEl.className = 'st st-c';
@@ -388,6 +389,7 @@
                 return;
             }
 
+            // 3. HORAIRES STANDARDS
             const slots = (isSummer ? summerHours[lib] : regularHours[lib])[dayOfWeek];
             const open = isOpenNow(slots, currentTime);
 
