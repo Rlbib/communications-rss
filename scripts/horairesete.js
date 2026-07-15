@@ -18,7 +18,7 @@
     host.innerHTML = '';
 
     // =========================================================
-    // 2. INJECTION DES STYLES OPTIMISÉS (CORRIGÉS)
+    // 2. INJECTION DES STYLES OPTIMISÉS
     // =========================================================
     if (!document.querySelector('link[href*="font-awesome"]')) {
         const fa = document.createElement('link');
@@ -49,9 +49,10 @@
         #agglo-summer-host .hd h2 { font-size: 22px; font-weight: 700; color: var(--pri); line-height: 1.3; }
         #agglo-summer-host .hd h2 span { border-bottom: 3px solid var(--acc); padding-bottom: 4px; }
         
+        /* Ajustement de la grille pour 4 éléments */
         #agglo-summer-host .now { 
             display: grid; 
-            grid-template-columns: repeat(3, 1fr); 
+            grid-template-columns: repeat(4, 1fr); 
             gap: 10px; 
             margin-bottom: 14px; 
         }
@@ -67,7 +68,7 @@
             padding: 12px; 
             transition: border-color .2s, box-shadow .2s; 
             cursor: pointer; 
-            min-width: 0; /* Permet aux colonnes de respecter la largeur de la grille */
+            min-width: 0;
         }
         #agglo-summer-host .now-item:hover { border-color: var(--acc); box-shadow: 0 2px 8px rgba(239,172,42,.15); }
         
@@ -83,14 +84,13 @@
         
         #agglo-summer-host .now-r { 
             display: flex; 
-            align-items: flex-start; /* Aligne le badge en haut si le texte fait plusieurs lignes */
+            align-items: flex-start; 
             justify-content: space-between; 
             gap: 8px; 
             border-top: 1px dashed var(--border);
             padding-top: 8px;
         }
         
-        /* MODIFICATION : On retire white-space: nowrap pour permettre le retour à la ligne */
         #agglo-summer-host .now-t { 
             font-size: 11px; 
             font-weight: 600; 
@@ -98,7 +98,6 @@
             line-height: 1.3;
         }
         
-        /* MODIFICATION : Ajout de flex-shrink: 0 pour éviter que le badge ne s'écrase */
         #agglo-summer-host .st { 
             display: inline-flex; 
             align-items: center; 
@@ -114,9 +113,13 @@
         }
         #agglo-summer-host .st-o { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-bd); }
         #agglo-summer-host .st-c { background: var(--red-bg); color: var(--red); border: 1px solid var(--red-bd); }
+        #agglo-summer-host .st-y { background: var(--orange-bg); color: var(--orange); border: 1px solid var(--orange-bd); }
+        
         #agglo-summer-host .dot { width: 5px; height: 5px; border-radius: 50%; display: block; }
         #agglo-summer-host .st-o .dot { background: var(--green); box-shadow: 0 0 0 0 rgba(5,150,105,.6); animation: pulse 2s infinite; }
         #agglo-summer-host .st-c .dot { background: var(--red); }
+        #agglo-summer-host .st-y .dot { background: var(--orange); }
+        
         @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(5,150,105,.6); } 70% { box-shadow: 0 0 0 4px rgba(5,150,105,0); } 100% { box-shadow: 0 0 0 0 rgba(5,150,105,.6); } }
         
         #agglo-summer-host .widget-footer {
@@ -186,12 +189,19 @@
         #agglo-summer-host .ft { font-size: 12px; color: var(--muted); margin-top: 8px; display: flex; align-items: center; gap: 6px; padding: 10px 12px; background: var(--light); border-radius: var(--r-sm); border: 1px solid var(--border); }
         #agglo-summer-host .ft i { color: var(--acc); font-size: 11px; }
         
+        #agglo-summer-host .ft-list { list-style: none; padding-left: 16px; margin-top: 4px; }
+        #agglo-summer-host .ft-list li { position: relative; margin-bottom: 4px; font-size: 11.5px; }
+        #agglo-summer-host .ft-list li::before { content: "•"; color: var(--orange); font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+
+        @media (max-width: 992px) {
+            #agglo-summer-host .now { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        }
         @media (max-width: 768px) {
-            #agglo-summer-host .now { grid-template-columns: 1fr; gap: 8px; }
             #agglo-summer-host .widget-footer { flex-direction: column; align-items: flex-start; gap: 10px; }
             #agglo-summer-host .btn-more { align-self: flex-end; }
         }
         @media (max-width: 600px) {
+            #agglo-summer-host .now { grid-template-columns: 1fr; gap: 8px; }
             #agglo-summer-host .w { padding: 0 10px 8px; }
             #agglo-summer-host .hd { margin-bottom: 10px; }
             #agglo-summer-host .hd h2 { font-size: 19px; }
@@ -205,13 +215,13 @@
             #agglo-summer-host td { padding: 9px 10px; font-size: 12px; }
             #agglo-summer-host table { min-width: 400px; }
             #agglo-summer-host .mx { width: 34px; height: 34px; font-size: 14px; }
-            #agglo-summer-host .ft { font-size: 11px; padding: 8px 10px; }
+            #agglo-summer-host .ft { font-size: 11px; padding: 8px 10px; flex-direction: column; align-items: flex-start; }
         }
     `;
     host.appendChild(style);
 
     // =========================================================
-    // 3. INJECTION DU HTML (WIDGET COMPACT & MODALE - AVEC Rose-Valland)
+    // 3. INJECTION DU HTML (AVEC FONDS PATRIMONIAL)
     // =========================================================
     const widgetHTML = document.createElement('div');
     widgetHTML.className = 'w';
@@ -238,6 +248,13 @@
                 <div class="now-r">
                     <span class="now-t" data-t="vz">...</span>
                     <span class="st st-c" data-l="vz"><span class="dot"></span><span data-x="vz">...</span></span>
+                </div>
+            </div>
+            <div class="now-item" data-open-modal>
+                <span class="now-name"><i class="fa fa-archive"></i> Fonds Patrimonial</span>
+                <div class="now-r">
+                    <span class="now-t" data-t="fp">...</span>
+                    <span class="st st-c" data-l="fp"><span class="dot"></span><span data-x="fp">...</span></span>
                 </div>
             </div>
         </div>
@@ -272,6 +289,11 @@
                             <tr><td><strong>Abbé-Grégoire</strong></td><td>Mardi au samedi<br>10h – 15h30</td><td><span class="bc"><i class="fa fa-lock"></i> Fermé</span> 11/08 – 15/08</td></tr>
                             <tr><td><strong>Maurice-Genevoix</strong></td><td>Mardi au samedi<br>10h – 12h30 / 13h30 – 15h30</td><td><span class="bc"><i class="fa fa-lock"></i> Fermé</span> 15/08 – 22/08</td></tr>
                             <tr><td><strong>Rose-Valland</strong></td><td>Mercredi au samedi<br>10h – 13h00</td><td><span class="bc"><i class="fa fa-lock"></i> Fermé</span> 11/08 – 22/08</td></tr>
+                            <tr>
+                                <td><strong>Fonds patrimonial</strong></td>
+                                <td>Mercredi au vendredi<br>10h – 13h<br><small style="color:var(--orange); font-weight:600;">Sur rendez-vous uniquement</small></td>
+                                <td><span class="bc"><i class="fa fa-lock"></i> Fermé</span> 11/08 – 14/08</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -286,11 +308,27 @@
                             <tr><td><strong>Abbé-Grégoire</strong></td><td>13h – 18h30</td><td>10h – 18h30</td><td>13h – 18h30</td><td>13h – 18h30</td><td>10h – 18h00</td></tr>
                             <tr><td><strong>Maurice-Genevoix</strong></td><td>15h – 18h00</td><td>10h – 13h / 14h – 18h</td><td>15h – 18h00</td><td>15h – 18h00</td><td>10h – 13h / 14h – 18h</td></tr>
                             <tr><td><strong>Rose-Valland</strong></td><td>Fermé</td><td>10h – 13h / 14h – 18h</td><td>15h – 18h00</td><td>15h – 18h00</td><td>10h – 13h / 14h – 18h</td></tr>
+                            <tr>
+                                <td><strong>Fonds patrimonial</strong></td>
+                                <td colspan="5" style="text-align: center; font-style: italic; background: var(--light);">
+                                    <i class="fa fa-envelope-o"></i> Uniquement sur rendez-vous (contacter <a href="mailto:bibliotheques@agglopolys.fr" style="color: var(--dark); font-weight: bold;">bibliotheques@agglopolys.fr</a>)
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="ft"><i class="fa fa-info-circle"></i> Fermé le dimanche et le lundi.</div>
+                <div class="ft">
+                    <div><i class="fa fa-info-circle"></i> Fermé le dimanche et le lundi.</div>
+                    <div style="margin-top: 8px;">
+                        <strong>Modalités de consultation du Fonds patrimonial :</strong>
+                        <ul class="ft-list">
+                            <li>Sur rendez-vous uniquement.</li>
+                            <li>Les demandes doivent être transmises à <strong>bibliotheques@agglopolys.fr</strong> au moins 24h avant le rendez-vous.</li>
+                            <li>Seuls les documents préalablement identifiés par le demandeur seront communiqués.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     `;
@@ -332,18 +370,21 @@
     const summerStart = new Date(currentYear, 5, 23);
     const summerEnd = new Date(currentYear, 7, 29);
 
+    // Dates d'été spécifiques pour le Fonds patrimonial (24 juin au 28 août)
+    const summerStartFP = new Date(currentYear, 5, 24);
+    const summerEndFP = new Date(currentYear, 7, 28);
+
     const closures = {
         ag: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 15) },
         mg: { start: new Date(currentYear, 7, 18), end: new Date(currentYear, 7, 22) },
-        vz: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 22) }
+        vz: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 22) },
+        fp: { start: new Date(currentYear, 7, 11), end: new Date(currentYear, 7, 14) } // Fermeture Fonds patrimonial
     };
 
-    // --- ZONE MODIFIABLE : FERMETURES TEMPORAIRES EXCEPTIONNELLES ---
-    // Les mois dans l'objet Date de JavaScript commencent à 0 (juillet = 6, août = 7).
     const exceptionalClosures = {
         vz: {
-            start: new Date(currentYear, 6, 8),  // 8 Juillet (6)
-            end: new Date(currentYear, 6, 11),  // 11 Juillet (6)
+            start: new Date(currentYear, 6, 8),
+            end: new Date(currentYear, 6, 11),
             reason: "En raison des fortes chaleurs"
         }
     };
@@ -351,13 +392,15 @@
     const regularHours = {
         ag: { 0: null, 1: null, 2: [{ s: 13, e: 18.5 }], 3: [{ s: 10, e: 18.5 }], 4: [{ s: 13, e: 18.5 }], 5: [{ s: 13, e: 18.5 }], 6: [{ s: 10, e: 18 }] },
         mg: { 0: null, 1: null, 2: [{ s: 15, e: 18 }], 3: [{ s: 10, e: 13 }, { s: 14, e: 18 }], 4: [{ s: 15, e: 18 }], 5: [{ s: 15, e: 18 }], 6: [{ s: 10, e: 13 }, { s: 14, e: 18 }] },
-        vz: { 0: null, 1: null, 2: null, 3: [{ s: 10, e: 13 }, { s: 14, e: 18 }], 4: [{ s: 15, e: 18 }], 5: [{ s: 15, e: 18 }], 6: [{ s: 10, e: 13 }, { s: 14, e: 18 }] }
+        vz: { 0: null, 1: null, 2: null, 3: [{ s: 10, e: 13 }, { s: 14, e: 18 }], 4: [{ s: 15, e: 18 }], 5: [{ s: 15, e: 18 }], 6: [{ s: 10, e: 13 }, { s: 14, e: 18 }] },
+        fp: { 0: null, 1: null, 2: null, 3: null, 4: null, 5: null, 6: null } // Hors-saison : géré à part par "Sur rendez-vous"
     };
 
     const summerHours = {
         ag: { 0: null, 1: null, 2: [{ s: 10, e: 15.5 }], 3: [{ s: 10, e: 15.5 }], 4: [{ s: 10, e: 15.5 }], 5: [{ s: 10, e: 15.5 }], 6: [{ s: 10, e: 15.5 }] },
         mg: { 0: null, 1: null, 2: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 3: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 4: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 5: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }], 6: [{ s: 10, e: 12.5 }, { s: 13.5, e: 15.5 }] },
-        vz: { 0: null, 1: null, 2: null, 3: [{ s: 10, e: 13 }], 4: [{ s: 10, e: 13 }], 5: [{ s: 10, e: 13 }], 6: [{ s: 10, e: 13 }] }
+        vz: { 0: null, 1: null, 2: null, 3: [{ s: 10, e: 13 }], 4: [{ s: 10, e: 13 }], 5: [{ s: 10, e: 13 }], 6: [{ s: 10, e: 13 }] },
+        fp: { 0: null, 1: null, 2: null, 3: [{ s: 10, e: 13 }], 4: [{ s: 10, e: 13 }], 5: [{ s: 10, e: 13 }], 6: null } // Mercredi, Jeudi, Vendredi 10h-13h
     };
 
     const formatHour = (h) => {
@@ -381,13 +424,16 @@
         const dayOfWeek = now.getDay();
         const currentTime = now.getHours() + now.getMinutes() / 60;
         const isSummer = isBetweenDates(now, summerStart, summerEnd);
+        const isSummerFP = isBetweenDates(now, summerStartFP, summerEndFP);
 
-        ['ag', 'mg', 'vz'].forEach((lib) => {
+        ['ag', 'mg', 'vz', 'fp'].forEach((lib) => {
             const timeEl = q(`[data-t="${lib}"]`);
             const statusEl = q(`[data-l="${lib}"]`);
             const labelEl = q(`[data-x="${lib}"]`);
             
             if (!timeEl || !statusEl || !labelEl) return;
+
+            const isSummerActive = lib === 'fp' ? isSummerFP : isSummer;
 
             // 1. VÉRIFICATION DES FERMETURES EXCEPTIONNELLES
             if (exceptionalClosures[lib] && isBetweenDates(now, exceptionalClosures[lib].start, exceptionalClosures[lib].end)) {
@@ -398,18 +444,31 @@
             }
 
             // 2. VÉRIFICATION DES FERMETURES ANNUELLES
-            if (isSummer && isBetweenDates(now, closures[lib].start, closures[lib].end)) {
+            if (isSummerActive && isBetweenDates(now, closures[lib].start, closures[lib].end)) {
                 timeEl.textContent = 'Fermé';
                 statusEl.className = 'st st-c';
                 labelEl.textContent = 'Fermé';
                 return;
             }
 
-            // 3. HORAIRES STANDARDS
-            const slots = (isSummer ? summerHours[lib] : regularHours[lib])[dayOfWeek];
+            // 3. LOGIQUE HORS-SAISON POUR LE FONDS PATRIMONIAL
+            if (lib === 'fp' && !isSummerActive) {
+                timeEl.textContent = 'Sur rendez-vous';
+                statusEl.className = 'st st-y';
+                labelEl.textContent = 'Sur RDV';
+                return;
+            }
+
+            // 4. HORAIRES STANDARDS / ÉTÉ
+            const slots = (isSummerActive ? summerHours[lib] : regularHours[lib])[dayOfWeek];
             const open = isOpenNow(slots, currentTime);
 
-            timeEl.textContent = slots ? slots.map(s => `${formatHour(s.s)}–${formatHour(s.e)}`).join(' / ') : 'Fermé';
+            if (lib === 'fp') {
+                timeEl.textContent = slots ? slots.map(s => `${formatHour(s.s)}–${formatHour(s.e)} (Sur RDV)`).join(' / ') : 'Fermé';
+            } else {
+                timeEl.textContent = slots ? slots.map(s => `${formatHour(s.s)}–${formatHour(s.e)}`).join(' / ') : 'Fermé';
+            }
+            
             statusEl.className = open ? 'st st-o' : 'st st-c';
             labelEl.textContent = open ? 'Ouvert' : 'Fermé';
         });
