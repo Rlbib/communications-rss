@@ -5214,5 +5214,37 @@
     "URL_de_l_image": "",
     "Lien": "",
     "Reservation": "FALSE"
+  },
+  {
+    "id": 352,
+    "Titre": "Atelier parentalité avec Sophie Correia",
+    "Catégorie": "Rencontre",
+    "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
+    "Date_Debut": "2026-10-24",
+    "Date_Fin": "2026-10-24",
+    "Description": "On sait que la lecture est essentielle pour le développement des plus petits, mais comment en faire un vrai moment de jeu et de partage au quotidien ? Cet atelier pratique et décontracté, tenu par Sophie Correia (consultante en parentalité) est conçu spécialement pour les parents  qui souhaitent apprivoiser le livre autrement.  Loin des grands discours théoriques, venez découvrir des astuces simples et ludiques pour donner vie aux histoires : jouer avec les voix, décoder les images, créer des rituels rassurants et, surtout, faire confiance à votre créativité ! Un temps d'échange bienveillant pour repartir avec le plein d'idées et l'envie de feuilleter ensemble. Réservation conseillée, 12 places",
+    "Heure": "10h30",
+    "Durée": "1h30",
+    "Public_cible": "Pour les 0-6 ans avec leurs parents",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE"
+  },
+  {
+    "id": 353,
+    "Titre": "Faire grandir",
+    "Catégorie": "Exposition",
+    "Localisation": "Médiathèque Maurice-Genevoix",
+    "Date_Debut": "2026-10-02",
+    "Date_Fin": "2026-10-30",
+    "Description": "Elles accueillent nos tout-petits, les accompagnent dans leurs premières découvertes. Pourtant, le métier d'assistant maternel reste méconnu. Pour valoriser cette profession essentielle, les relais Petite Enfance de Blois ont co-réalisé cette exposition avec Quentin Tavenier.",
+    "Heure": "15h",
+    "Durée": "jusqu'au 30/10",
+    "Public_cible": "Tout public",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE"
   }
 ]
