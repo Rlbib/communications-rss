@@ -3915,7 +3915,7 @@
     "Durée": "1h30",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=5261",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11268",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3931,7 +3931,7 @@
     "Durée": "1h30",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=5261",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11268",
     "Lien": "",
     "Reservation": "TRUE"
   },
