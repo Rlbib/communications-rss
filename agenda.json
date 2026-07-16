@@ -5278,5 +5278,21 @@
     "URL_de_l_image": "",
     "Lien": "",
     "Reservation": "FALSE"
+  },
+  {
+    "id": 356,
+    "Titre": "Peindre à la façon de \"Big Eyes\" ",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
+    "Date_Debut": "2026-10-14",
+    "Date_Fin": "2026-10-14",
+    "Description": "Créez une petite toile à la manière de Margaret Keane dont l'histoire a inspiré le film de Tim Burton, \"Big eyes\".",
+    "Heure": "14h",
+    "Durée": "2h",
+    "Public_cible": "A partir de 12 ans, 12 places",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11235",
+    "Lien": "",
+    "Reservation": "TRUE"
   }
 ]
