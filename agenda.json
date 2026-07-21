@@ -5326,5 +5326,37 @@
     "URL_de_l_image": "",
     "Lien": "",
     "Reservation": "FALSE"
+  },
+  {
+    "id": 360,
+    "Titre": "Lecture Annie Huet",
+    "Catégorie": "Lecture spectacle",
+    "Localisation": "Bibliothèque Abbe-Grégoire, espace Adultes",
+    "Date_Debut": "2026-10-07",
+    "Date_Fin": "2026-10-07",
+    "Description": "\"Si c'est un homme\", de Primo Levi, est un texte essentiel, non seulement sur la Shoah, mais sur cette question vertigineuse : qu'est-ce qui permet à l'homme de rester un homme ? Lire Primo Levi aujourd'hui c'est entendre une voix qui, au cœur de l'effondrement, a choisi de témoigner plutôt que de se taire. Primo Levi témoigne avec réalisme mais sans haine, de l'horreur de la déshumanisation dans les camps d'extermination. De son récit, neutre et dépassionné, se dégagent l'humiliation, l'absence de solidarité, la perte de dignité humaine. Résister à la violence et y survivre allait permettre à l'auteur de faire œuvre de mémoire.",
+    "Heure": "19h00",
+    "Durée": "1h00",
+    "Public_cible": "Tout public",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE"
+  },
+  {
+    "id": 361,
+    "Titre": "Lecture Annie Huet",
+    "Catégorie": "Lecture spectacle",
+    "Localisation": "Médiathèque Maurice-Genevoix, espace Jeunesse",
+    "Date_Debut": "2026-10-10",
+    "Date_Fin": "2026-10-10",
+    "Description": "Laure Grandbesançon revisite ce chef d’œuvre de la littérature avec son humour, sa gouaille, et son énergie qui font le sel, sur France Inter, de ses podcasts à destination des enfants. Annie Huet fera une lecture de cette version condensée pour les plus petits (dès 5 ans), restant fidèle à l’œuvre de Jules Verne et à son esprit, truffée de clins d’œil modernes et amusants. ",
+    "Heure": "17h00",
+    "Durée": "0h30",
+    "Public_cible": "Jeunesse",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE"
   }
 ]
