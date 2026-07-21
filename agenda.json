@@ -3243,7 +3243,7 @@
     "Durée": "1h47",
     "Public_cible": "tout public",
     "Ville": "",
-    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/explorer/items/1b6990ad-7e1e-4bd9-8c31-25f5a1d6d20e",
+    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/explorer/items/files/58929c5d-6da1-4c9f-992f-8a645833b45b",
     "Lien": "",
     "Reservation": "FALSE"
   },
@@ -3654,7 +3654,7 @@
     "Localisation": "Bibliothèque Abbé-Grégoire, Fonds patrimonial",
     "Date_Debut": "2026-09-19",
     "Date_Fin": "2026-09-19",
-    "Description": "La bibliothèque municipale de Blois a-t-elle traversé la guerre comme un havre de paix pour les Blésois ? Entre gestion des livres \"anti-allemands\" et mise à l'abri des ouvrages précieux au château de Chantreuil, cette conférence retrace la cohabitation du personnel avec l'occupant. Rainer Pohl travaille depuis plusieurs années sur Blois pendant la Seconde Guerre mondiale et a publié et donné plusieurs conférences sur le sujet.",
+    "Description": "De la gestion des livres \"anti-allemands\" à la mise à l'abri des livres précieux au château de Chantreuil, cette conférence décrit comment le personnel de la bibliothèque a dû cohabiter avec l'occupant et comment les livres ont été préservés. Comment la bibliothèque municipale de Blois a-t-elle traversé la guerre ? Était-elle un lieu épargné où les Blésois pouvaient trouver calme et répit durant les années d'occupation ?\n\nElle est animée par Rainer Pohl, historien spécialisé dans l'histoire de Blois durant la Seconde Guerre mondiale et professeur émérite de Lettres et Langues de l'Université de Tours, accompagné par Rachel Denoeud, documentaliste multimédia à l'Ina.\n\nUne exposition de documents d'archives accompagnera la conférence du 16 au 24 septembre.",
     "Heure": "14h",
     "Durée": "1h",
     "Public_cible": "Adulte",
@@ -5294,5 +5294,37 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11235",
     "Lien": "",
     "Reservation": "TRUE"
+  },
+  {
+    "id": 358,
+    "Titre": "spectacle Deinos Sauros (titre provisoire)",
+    "Catégorie": "Spectacle",
+    "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium Samuel-Paty",
+    "Date_Debut": "2026-12-12",
+    "Date_Fin": "2026-12-12",
+    "Description": "La  Cie des Sans-Lacets, accueillie en résidence de création à la bibliothèque Abbé-Grégoire en septembre dernier, présente son nouveau spectacle autour des dinosaures. ",
+    "Heure": "15h00",
+    "Durée": "1h00",
+    "Public_cible": "Jeunesse",
+    "Ville": "BLOIS",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE"
+  },
+  {
+    "id": 359,
+    "Titre": "Atelier dinosaures",
+    "Catégorie": "Atelier",
+    "Localisation": "Bibliothèque Abbé-Grégoire, espace Jeunesse",
+    "Date_Debut": "2026-09-23",
+    "Date_Fin": "2026-09-23",
+    "Description": "",
+    "Heure": "10h30",
+    "Durée": "1h00",
+    "Public_cible": "Jeunesse",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE"
   }
 ]
