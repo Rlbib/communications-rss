@@ -4665,7 +4665,7 @@
     "Description": "Si vous avez toujours rêvé d'un tatouage à l'effigie de votre créature Pokémon préférée, rejoignez-nous à la médiathèque pour une séance éphémère !",
     "Heure": "15h",
     "Durée": "45 min.",
-    "Public_cible": "Tout public",
+    "Public_cible": "A partir de 6 ans",
     "Ville": "",
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11260",
     "Lien": "",
@@ -4694,7 +4694,7 @@
     "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
     "Date_Debut": "2026-09-26",
     "Date_Fin": "2026-09-26",
-    "Description": "Et si le prochain Pokémon, c’est toi qui l'inventais ? Viens créer ta propre carte Pokémon personnalisée grâce à un outil numérique ludique. Personnalise ton illustration ou ta photo, invente tes attaques les plus folles et repars avec ton impression exclusive à collectionner.\nMerci de venir avec une clé usb contenant des photos ou images à utiliser comme visuel.\nRéservation obligatoire (16 places)",
+    "Description": "Et si le prochain Pokémon, c’est toi qui l'inventais ? Viens créer ta propre carte Pokémon personnalisée grâce à un outil numérique ludique. Personnalise ton illustration ou ta photo, invente tes attaques les plus folles et repars avec ton impression exclusive à collectionner.\nMerci de venir avec une clé usb contenant des photos ou images à utiliser comme visuel.\nRéservation obligatoire (2 sessions de 8 places)",
     "Heure": "14h",
     "Durée": "1h",
     "Public_cible": "8-14 ans",
@@ -4750,8 +4750,6 @@
     "URL_de_l_image": "",
     "Lien": "",
     "Reservation": "FALSE"
-    "Agents_Prevus": "Diemert Mélissa",
-"Statut":"Prévu"
   },
   {
     "id": 323,
@@ -5194,7 +5192,7 @@
     "Date_Fin": "2026-09-26",
     "Description": "Les sorciers investissent la bibliothèque Abbé-Grégoire et le fonds patrimonial pour deux épreuves",
     "Heure": "10h30",
-    "Durée": "17h30",
+    "Durée": "",
     "Public_cible": "Tout public",
     "Ville": "",
     "URL_de_l_image": "",
@@ -5282,22 +5280,6 @@
     "Reservation": "FALSE"
   },
   {
-    "id": 356,
-    "Titre": "Peindre à la façon de \"Big Eyes\" ",
-    "Catégorie": "Atelier",
-    "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
-    "Date_Debut": "2026-10-14",
-    "Date_Fin": "2026-10-14",
-    "Description": "Créez une petite toile à la manière de Margaret Keane dont l'histoire a inspiré le film de Tim Burton, \"Big eyes\".",
-    "Heure": "14h",
-    "Durée": "2h",
-    "Public_cible": "A partir de 12 ans, 12 places",
-    "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11235",
-    "Lien": "",
-    "Reservation": "TRUE"
-  },
-  {
     "id": 358,
     "Titre": "spectacle Deinos Sauros (titre provisoire)",
     "Catégorie": "Spectacle",
@@ -5358,6 +5340,22 @@
     "Public_cible": "Jeunesse",
     "Ville": "",
     "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE"
+  },
+  {
+    "id": 362,
+    "Titre": "Ciné frissons : les animaux fantastiques",
+    "Catégorie": "Projection",
+    "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty",
+    "Date_Debut": "2026-10-28",
+    "Date_Fin": "2026-10-28",
+    "Description": "Pour Halloween, venez plonger avec nous dans les aventures de Norbert Dragonneau, l’auteur du livre \"Les Animaux Fantastiques\" qu’étudiait Harry Potter. Séance suivie d'un goûter.",
+    "Heure": "15h",
+    "Durée": "2h15",
+    "Public_cible": "Tout public (à partir de 8 ans)",
+    "Ville": "",
+    "URL_de_l_image": "https://fr.web.img3.acsta.net/pictures/16/10/11/09/32/205295.jpg",
     "Lien": "",
     "Reservation": "FALSE"
   }
