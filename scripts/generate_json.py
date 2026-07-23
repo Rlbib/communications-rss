@@ -31,11 +31,45 @@ def get_field(rec, name):
         return rec.get(name)
     return None
 
+def get_field_any(rec, possible_names):
+    """Cherche le premier champ qui existe parmi une liste de noms possibles."""
+    for n in possible_names:
+        v = get_field(rec, n)
+        if v not in (None, "", []):
+            return v
+    # fallback insensible à la casse
+    if isinstance(rec, dict):
+        fields = rec.get("fields", rec) if "fields" in rec else rec
+        if isinstance(fields, dict):
+            lower_map = {k.lower(): v for k, v in fields.items()}
+            for n in possible_names:
+                if n.lower() in lower_map:
+                    val = lower_map[n.lower()]
+                    if val not in (None, "", []):
+                        return val
+    return None
+
+def get_field_list(rec, possible_names):
+    """Récupère un champ qui est une ChoiceList / liste d'agents, toujours en liste Python."""
+    val = get_field_any(rec, possible_names)
+    if val is None:
+        return []
+    if isinstance(val, list):
+        # Grist renvoie ChoiceList comme list, ex: ["Amiot Matthieu", "Basire Céline"] ou ["L"]
+        # On nettoie les vides
+        return [str(x).strip() for x in val if str(x).strip()]
+    if isinstance(val, str):
+        # Si c'est une string avec séparateur virgule
+        if "," in val:
+            return [s.strip() for s in val.split(",") if s.strip()]
+        if val.strip():
+            return [val.strip()]
+    return []
+
 def clean_date(val):
     """Normalise la date de Grist pour renvoyer un format standardisé YYYY-MM-DD."""
     if not val:
         return ""
-    # Si c'est un timestamp numérique
     if isinstance(val, (int, float)):
         try:
             if val > 100000000000:
@@ -44,7 +78,6 @@ def clean_date(val):
             return dt.strftime("%Y-%m-%d")
         except Exception:
             pass
-    
     val_str = str(val).strip()
     if val_str.replace('.', '', 1).isdigit():
         try:
@@ -55,7 +88,6 @@ def clean_date(val):
             return dt.strftime("%Y-%m-%d")
         except Exception:
             pass
-
     try:
         dt = dateutil.parser.parse(val_str)
         return dt.strftime("%Y-%m-%d")
@@ -63,7 +95,7 @@ def clean_date(val):
         return val_str
 
 def build_json_data(rows):
-    """Génère la structure JSON conforme à votre modèle à partir des données Grist."""
+    """Génère la structure JSON conforme + extension RH."""
     events_list = []
     
     if isinstance(rows, dict) and "records" in rows:
@@ -80,78 +112,60 @@ def build_json_data(rows):
             
         record_id = r.get("id") or 999
         
-        # Extraction robuste et insensible à la casse des métadonnées
-        titre = get_field(r, "Titre") or get_field(r, "titre") or "Sans titre"
+        titre = get_field_any(r, ["Titre", "titre"]) or "Sans titre"
         
-        # Recherche de la catégorie
         categorie = "Animation"
-        champs_cat = ["Categorie", "categorie", "Type", "type", "Rubrique", "rubrique", "Genre", "genre"]
-        for c in champs_cat:
-            val = get_field(r, c)
-            if val:
-                categorie = str(val).strip()
-                break
+        categorie = get_field_any(r, ["Categorie", "categorie", "Catégorie", "Type", "type"]) or categorie
+        categorie = str(categorie).strip() if categorie else "Animation"
                 
-        # Recherche de la localisation
-        loc = get_field(r, "Localisation") or get_field(r, "localisation") or get_field(r, "Lieu") or ""
-        ville = get_field(r, "Ville") or get_field(r, "ville") or ""
+        loc = get_field_any(r, ["Localisation", "localisation", "Localisation2", "Lieu"]) or ""
+        ville = get_field_any(r, ["Ville", "ville"]) or ""
         
-        # Formatage des dates
-        date_debut_raw = ""
-        champs_debut = ["Date_Debut", "Date_debut", "date_debut", "Date", "date", "Date de début", "Start Date"]
-        for c in champs_debut:
-            val = get_field(r, c)
-            if val:
-                date_debut_raw = val
-                break
-                
-        date_fin_raw = ""
-        champs_fin = ["Date_Fin", "Date_fin", "date_fin", "Date de fin", "End Date"]
-        for c in champs_fin:
-            val = get_field(r, c)
-            if val:
-                date_fin_raw = val
-                break
+        date_debut_raw = get_field_any(r, ["Date_Debut", "Date_debut", "date_debut", "Date", "date"]) or ""
+        date_fin_raw = get_field_any(r, ["Date_Fin", "Date_fin", "date_fin"]) or ""
 
         date_debut = clean_date(date_debut_raw)
-        # Si pas de date de fin, on s'aligne par défaut sur la date de début
         date_fin = clean_date(date_fin_raw) if date_fin_raw else date_debut
         
-        desc = get_field(r, "Description") or get_field(r, "description") or ""
+        desc = get_field_any(r, ["Description", "description"]) or ""
         
-        # Extraction de l'Heure
-        heure = ""
-        champs_heures = ["Heure", "heure", "Heure_Debut", "heure_debut", "Horaire", "horaire"]
-        for c in champs_heures:
-            val = get_field(r, c)
-            if val:
-                heure = str(val).strip()
-                break
+        heure = get_field_any(r, ["Heure", "heure", "heure2", "Heure_Debut", "heure_debut", "Horaire"]) or ""
+        duree = get_field_any(r, ["Duree", "duree", "Durée", "durée"]) or ""
+        public = get_field_any(r, ["Public_cible", "public_cible", "Public", "public"]) or ""
                 
-        # Extraction de la Durée
-        duree = ""
-        champs_duree = ["Duree", "duree", "Durée", "durée"]
-        for c in champs_duree:
-            val = get_field(r, c)
-            if val:
-                duree = str(val).strip()
-                break
-                
-        # Extraction du Public cible
-        public = ""
-        champs_public = ["Public_cible", "public_cible", "Public", "public", "Public cible"]
-        for c in champs_public:
-            val = get_field(r, c)
-            if val:
-                public = str(val).strip()
-                break
-                
-        # Image et lien
-        image_url = get_field(r, "Lien_vers_affiche") or get_field(r, "URL_de_l_image") or ""
-        lien = get_field(r, "Lien") or get_field(r, "lien") or ""
-        reservation = "TRUE" if str(get_field(r, "Reservation") or get_field(r, "reservation")).upper() == "TRUE" else "FALSE"
+        image_url = get_field_any(r, ["Lien_vers_affiche", "URL_de_l_image", "URL_image"]) or ""
+        lien = get_field_any(r, ["Lien", "lien"]) or ""
+        reservation_val = get_field_any(r, ["Reservation", "reservation"])
+        reservation = "TRUE" if str(reservation_val).upper() == "TRUE" else "FALSE"
+
+        # ===== NOUVEAUX CHAMPS RH =====
+        # 1. Animateurs Biblio (ta nouvelle colonne ChoiceList)
+        animateurs = get_field_list(r, [
+            "Animateurs_Biblio", "Animateurs_Biblio_", "Animateurs", 
+            "Animateurs_Bibliotheque", "Agents_Prevus", "Agents"
+        ])
+
+        # 2. Besoin RH (si tu ajoutes la colonne plus tard, déjà géré)
+        besoin_rh_raw = get_field_any(r, ["Besoin_RH", "BesoinRH", "Besoin", "Nb_Agents", "Nb_agents"])
+        try:
+            besoin_rh = int(float(besoin_rh_raw)) if besoin_rh_raw not in (None, "", []) else (len(animateurs) if animateurs else 1)
+        except:
+            besoin_rh = 1
+
+        # 3. Autres champs optionnels (si tu les ajoutes plus tard, ils sortiront auto)
+        section_requise = get_field_any(r, ["Section_Requise", "Section", "section_requise"]) or ""
+        creneau_rh = get_field_any(r, ["Creneau_RH", "Creneau", "creneau_rh"]) or ""
+        impact_sp_raw = get_field_any(r, ["Impact_SP", "ImpactSP", "impact_sp"])
+        impact_sp = False
+        if isinstance(impact_sp_raw, bool):
+            impact_sp = impact_sp_raw
+        elif str(impact_sp_raw).lower() in ("true", "1", "oui", "vrai"):
+            impact_sp = True
         
-        # Construction de l'objet événement conforme à votre schéma JSON
+        statut_rh = get_field_any(r, ["Statut_RH", "StatutRH", "Statut"]) or ""
+        commentaire_rh = get_field_any(r, ["Commentaire_RH", "CommentaireRH", "commentaire_rh"]) or ""
+
+        # Construction de l'objet événement
         event_item = {
             "id": record_id,
             "Titre": str(titre),
@@ -166,7 +180,16 @@ def build_json_data(rows):
             "Ville": str(ville),
             "URL_de_l_image": str(image_url),
             "Lien": str(lien),
-            "Reservation": str(reservation)
+            "Reservation": str(reservation),
+            # --- EXTENSION RH POUR SIRIUS ---
+            "Agents_Prevus": animateurs,  # <- c'est ce que SIRIUS va lire pour l'infobulle
+            "Animateurs_Biblio": animateurs,  # alias compatibilité
+            "Besoin_RH": besoin_rh,
+            "Section_Requise": str(section_requise),
+            "Creneau_RH": str(creneau_rh),
+            "Impact_SP": impact_sp,
+            "Statut_RH": str(statut_rh),
+            "Commentaire_RH": str(commentaire_rh),
         }
         
         events_list.append(event_item)
@@ -177,11 +200,23 @@ def main():
     rows = fetch_rows()
     events_json = build_json_data(rows)
     
-    # Écriture du fichier agenda.json
+    # Tri par date pour SIRIUS
+    def sort_key(e):
+        try:
+            return dateutil.parser.parse(e.get("Date_Debut",""))
+        except:
+            return datetime.datetime.max
+    events_json.sort(key=sort_key)
+
     with open("agenda.json", "w", encoding="utf-8") as f:
         json.dump(events_json, f, ensure_ascii=False, indent=2)
         
     print(f"Le fichier agenda.json a été généré avec succès ({len(events_json)} événements exportés).")
+    # Stats RH
+    avec_agents = sum(1 for e in events_json if e.get("Agents_Prevus"))
+    print(f"→ {avec_agents} animations avec au moins 1 animateur biblio affecté")
+    print(f"Exemple avec agents: {[e for e in events_json if e.get('Agents_Prevus')][:2]}")
 
 if __name__ == "__main__":
     main()
+
