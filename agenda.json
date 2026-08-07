@@ -5613,11 +5613,11 @@
     "Description": "Aux sports d’hiver, une Américaine tombe amoureuse d’un séduisant célibataire. De retour à Paris, elle apprend le meurtre de son mari et elle va être poursuivie par d’étranges personnages, à la recherche d'un magot caché par la victime et dont elle ignore tout.",
     "Heure": "18h",
     "Durée": "1h54",
-    "Public_cible": "tout public",
+    "Public_cible": "tout public (50 places)",
     "Ville": "",
     "URL_de_l_image": "https://m.media-amazon.com/images/I/61ARuTRDkBL._AC_UF894,1000_QL80_.jpg",
     "Lien": "",
-    "Reservation": "FALSE",
+    "Reservation": "TRUE",
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
@@ -5667,11 +5667,11 @@
     "Description": "Les vacances d’été. Sardaigne, Italie. Un (road) trip en famille. Claudine, bientôt 11 ans, raconte leurs aventures au fur et à mesure. Quand Raoul, son frère de 3 ans, ne l’en empêche pas.",
     "Heure": "18h",
     "Durée": "1h47",
-    "Public_cible": "tout public",
+    "Public_cible": "tout public (120 places)",
     "Ville": "",
     "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/bbe0e6cb-690e-4724-a966-eba2deb2d417/Aventure-carre.jpg",
     "Lien": "",
-    "Reservation": "FALSE",
+    "Reservation": "TRUE",
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
@@ -6240,9 +6240,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11248",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Cloux Isabelle"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Cloux Isabelle"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -6382,9 +6388,17 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11255",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn",
+      "Sergent Marie Virginie"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn",
+      "Sergent Marie Virginie"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -6406,9 +6420,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11258",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -6550,9 +6570,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11236",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -6604,9 +6630,15 @@
     "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/8004e092-bcef-4da2-9f3a-b710ab2c683b/conference_pokemon.png",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -6708,13 +6740,39 @@
     "Reservation": "TRUE",
     "Agents_Prevus": [
       "L",
-      "Diemert Mélissa"
+      "Basire Céline",
+      "Sicard Dominique"
     ],
     "Animateurs_Biblio": [
       "L",
-      "Diemert Mélissa"
+      "Basire Céline",
+      "Sicard Dominique"
     ],
-    "Besoin_RH": 2,
+    "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 386,
+    "Titre": "Ateliers numériques avec le CRIA 41",
+    "Catégorie": "Initiation informatique",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2026-10-01",
+    "Date_Fin": "2026-10-01",
+    "Description": "Cet atelier est proposé par le CRIA 41 (Centre Ressources Illettrisme Analphabétisme) et s’adresse aux débutants sur le support numérique.  Il vous permettra d’apprendre à utiliser un ordinateur ou une tablette. Venez avec vos questions, nous y répondrons ! Vous pouvez également apporter votre matériel portable. 2 ateliers d'1h, 5 places par atelier",
+    "Heure": "9h30",
+    "Durée": "2h30",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://images.pexels.com/photos/5745519/pexels-photo-5745519.jpeg",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [],
+    "Animateurs_Biblio": [],
+    "Besoin_RH": 1,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -6736,9 +6794,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11249",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -6880,9 +6944,17 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11240",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn",
+      "Basire Céline"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn",
+      "Basire Céline"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -6904,9 +6976,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11248",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Sergent Marie Virginie"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Sergent Marie Virginie"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -6976,9 +7054,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11236",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -7000,9 +7084,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11238",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -7120,9 +7210,17 @@
     "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/ee1e8861-6219-4d0a-bf8d-6ba29f7b34d8/puluc-place-au-jeu.jpg",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Teffe Cécile",
+      "Debuire Agnès"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Teffe Cécile",
+      "Debuire Agnès"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -7405,7 +7503,7 @@
     "Durée": "1h32",
     "Public_cible": "A partir de 6 ans (25 places)",
     "Ville": "",
-    "URL_de_l_image": "https://grist.numerique.gouv.fr/dw/10-42-11-130/v/unknown/o/docs/attachment?clientId=d20e418595e56827&docFD=0&name=Monstres%26Cie%20Visuel.jpg&rowId=364&colId=photo_d_illustration&tableId=Com&maybeNew=1&attId=129",
+    "URL_de_l_image": "https://grist.numerique.gouv.fr/api/docs/9yLQzULqduhD/attachments/129/download",
     "Lien": "",
     "Reservation": "TRUE",
     "Agents_Prevus": [],
@@ -7429,7 +7527,7 @@
     "Durée": "1h",
     "Public_cible": "A partir de 6 ans (8 places)",
     "Ville": "",
-    "URL_de_l_image": "https://grist.numerique.gouv.fr/dw/10-42-11-130/v/unknown/o/docs/attachment?clientId=d20e418595e56827&docFD=0&name=20260724_140203.jpg&rowId=365&colId=photo_d_illustration&tableId=Com&maybeNew=1&attId=134",
+    "URL_de_l_image": "https://grist.numerique.gouv.fr/api/docs/9yLQzULqduhD/attachments/134/download",
     "Lien": "",
     "Reservation": "TRUE",
     "Agents_Prevus": [],
@@ -7645,7 +7743,7 @@
     "Durée": "2h30",
     "Public_cible": "Public adulte, (8 places)",
     "Ville": "",
-    "URL_de_l_image": "https://grist.numerique.gouv.fr/dw/10-42-11-130/v/unknown/o/docs/attachment?clientId=d20e418595e56827&docFD=0&name=661512-family-tree-8249245_1920.png&rowId=150&colId=photo_d_illustration&tableId=Com&maybeNew=1&attId=126",
+    "URL_de_l_image": "https://grist.numerique.gouv.fr/api/docs/9yLQzULqduhD/attachments/126/download",
     "Lien": "",
     "Reservation": "TRUE",
     "Agents_Prevus": [],
@@ -8630,6 +8728,30 @@
     "Public_cible": "à partir de 8 ans",
     "Ville": "",
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=10481",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [],
+    "Animateurs_Biblio": [],
+    "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 385,
+    "Titre": "Sans titre",
+    "Catégorie": "Animation",
+    "Localisation": "",
+    "Date_Debut": "",
+    "Date_Fin": "",
+    "Description": "",
+    "Heure": "",
+    "Durée": "",
+    "Public_cible": "",
+    "Ville": "",
+    "URL_de_l_image": "",
     "Lien": "",
     "Reservation": "FALSE",
     "Agents_Prevus": [],
