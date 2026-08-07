@@ -82,6 +82,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const JSON_URL = "https://rlbib.github.io/communications-rss/agenda.json";
 
     const grid = document.getElementById('hb-widget-grid');
+    
+    // CORRECTION 1 : Sécurité si le script est chargé sur une page sans le widget (évite les erreurs innerHTML)
+    if (!grid) return; 
+
     const hashtagsWrapper = document.getElementById('hb-hashtags');
     const ctaBtn = document.getElementById('hb-cta-btn');
     const scrollLeftBtn = document.getElementById('hb-scroll-left');
@@ -152,10 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const m = now.getMonth();   // 0-indexed : juin = 5, août = 7
         const d = now.getDate();
 
-        // Avant le 23 juin → pas d'été
         if (m < 5) return false;
         if (m === 5 && d < 23) return false;
-        // Après le 29 août → pas d'été
         if (m > 7) return false;
         if (m === 7 && d > 29) return false;
 
@@ -165,80 +167,74 @@ document.addEventListener('DOMContentLoaded', () => {
     // =========================================================================
     // === NOUVEAU : Fermetures exceptionnelles d'août 2026 ====================
     // =========================================================================
-function isExceptionallyClosed(libType) {
-    const now = new Date();
-    const y = now.getFullYear();
-    const m = now.getMonth();
-    const d = now.getDate();
+    function isExceptionallyClosed(libType) {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = now.getMonth();
+        const d = now.getDate();
 
-    if (y !== 2026) return false;
+        if (y !== 2026) return false;
 
-    if (libType === "gregoire") {
-        if (m === 7 && d >= 11 && d <= 15) return true;
+        if (libType === "gregoire") {
+            if (m === 7 && d >= 11 && d <= 15) return true;
+        }
+        if (libType === "genevoix") {
+            if (m === 7 && d >= 15 && d <= 22) return true;
+        }
+        if (libType === "valland") {
+            if (m === 7 && d >= 11 && d <= 22) return true;
+        }
+        return false;
     }
-    if (libType === "genevoix") {
-        if (m === 7 && d >= 15 && d <= 22) return true;
-    }
-    if (libType === "valland") {
-        // MODIFIÉ : fermé du 11 au 22 août (et non plus du 15 au 22)
-        if (m === 7 && d >= 11 && d <= 22) return true;
-    }
-    return false;
-}
 
     // =========================================================================
     // === MODIFIÉ : Badge ouvert/fermé avec gestion été + fermetures excep. ====
     // =========================================================================
-function getLiveStatusBadge(libType) {
-    const now = new Date();
-    const day = now.getDay();
-    const time = now.getHours() + (now.getMinutes() / 60);
-    let isOpen = false;
+    function getLiveStatusBadge(libType) {
+        const now = new Date();
+        const day = now.getDay();
+        const time = now.getHours() + (now.getMinutes() / 60);
+        let isOpen = false;
 
-    // 1. Fermetures exceptionnelles (priorité max)
-    if (isExceptionallyClosed(libType)) {
-        return `<span class="hb-status-badge hb-status-exception" title="Fermeture exceptionnelle estivale"><i class="fa fa-exclamation-triangle" style="font-size:8px;"></i> Fermé (été)</span>`;
+        if (isExceptionallyClosed(libType)) {
+            return `<span class="hb-status-badge hb-status-exception" title="Fermeture exceptionnelle estivale"><i class="fa fa-exclamation-triangle" style="font-size:8px;"></i> Fermé (été)</span>`;
+        }
+
+        if (isSummerPeriod()) {
+            if (libType === "gregoire") {
+                if (day >= 2 && day <= 6) isOpen = (time >= 10 && time < 15.5);
+            }
+            else if (libType === "genevoix") {
+                if (day >= 2 && day <= 6) isOpen = ((time >= 10 && time < 12.5) || (time >= 13.5 && time < 15.5));
+            }
+            else if (libType === "valland") {
+                if (day >= 3 && day <= 6) isOpen = (time >= 10 && time < 13);
+            }
+        }
+        else {
+            if (libType === "gregoire") {
+                if (day === 2 || day === 4 || day === 5) isOpen = (time >= 13 && time < 18.5);
+                else if (day === 3) isOpen = (time >= 10 && time < 18.5);
+                else if (day === 6) isOpen = (time >= 10 && time < 18);
+            }
+            else if (libType === "genevoix") {
+                if (day === 2 || day === 4 || day === 5) isOpen = (time >= 15 && time < 18);
+                else if (day === 3 || day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
+            }
+            else if (libType === "valland") {
+                if (day === 3) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18.5));
+                else if (day === 4 || day === 5) isOpen = (time >= 15 && time < 18.5);
+                else if (day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
+            }
+        }
+
+        if (isOpen) {
+            return `<span class="hb-status-badge hb-status-open" title="Vous pouvez appeler maintenant"><i class="fa fa-circle" style="font-size:8px;"></i> Ouvert</span>`;
+        } else {
+            return `<span class="hb-status-badge hb-status-closed" title="Le standard est actuellement fermé"><i class="fa fa-circle" style="font-size:8px;"></i> Fermé</span>`;
+        }
     }
 
-    // 2. Horaires d'été — chaque site a ses propres plages
-    if (isSummerPeriod()) {
-        if (libType === "gregoire") {
-            // Mar(2)–sam(6) : 10h–15h30
-            if (day >= 2 && day <= 6) isOpen = (time >= 10 && time < 15.5);
-        }
-        else if (libType === "genevoix") {
-            // Mar(2)–sam(6) : 10h–12h30 / 13h30–15h30
-            if (day >= 2 && day <= 6) isOpen = ((time >= 10 && time < 12.5) || (time >= 13.5 && time < 15.5));
-        }
-        else if (libType === "valland") {
-            // Mer(3)–sam(6) : 10h–13h
-            if (day >= 3 && day <= 6) isOpen = (time >= 10 && time < 13);
-        }
-    }
-    // 3. Horaires hors été (inchangés)
-    else {
-        if (libType === "gregoire") {
-            if (day === 2 || day === 4 || day === 5) isOpen = (time >= 13 && time < 18.5);
-            else if (day === 3) isOpen = (time >= 10 && time < 18.5);
-            else if (day === 6) isOpen = (time >= 10 && time < 18);
-        }
-        else if (libType === "genevoix") {
-            if (day === 2 || day === 4 || day === 5) isOpen = (time >= 15 && time < 18);
-            else if (day === 3 || day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
-        }
-        else if (libType === "valland") {
-            if (day === 3) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18.5));
-            else if (day === 4 || day === 5) isOpen = (time >= 15 && time < 18.5);
-            else if (day === 6) isOpen = ((time >= 10 && time < 13) || (time >= 14 && time < 18));
-        }
-    }
-
-    if (isOpen) {
-        return `<span class="hb-status-badge hb-status-open" title="Vous pouvez appeler maintenant"><i class="fa fa-circle" style="font-size:8px;"></i> Ouvert</span>`;
-    } else {
-        return `<span class="hb-status-badge hb-status-closed" title="Le standard est actuellement fermé"><i class="fa fa-circle" style="font-size:8px;"></i> Fermé</span>`;
-    }
-}
     // =========================================================================
     // === MODIFIÉ : Infos contact avec horaires d'été/hiver dynamiques ========
     // =========================================================================
@@ -246,20 +242,17 @@ function getLiveStatusBadge(libType) {
         const loc = (locationStr || "").toLowerCase();
         let libType = "gregoire";
 
-        // --- Horaires HORS ÉTÉ ---
         const hoursGregoire    = "<strong>Mar, Jeu, Ven :</strong> 13h – 18h30<br><strong>Mercredi :</strong> 10h – 18h30<br><strong>Samedi :</strong> 10h – 18h";
         const hoursGenevoix    = "<strong>Mar, Jeu, Ven :</strong> 15h – 18h<br><strong>Mercredi & Samedi :</strong> 10h – 13h / 14h – 18h";
         const hoursValland     = "<strong>Mercredi :</strong> 10h – 13h / 14h – 18h30<br><strong>Jeu & Ven :</strong> 15h – 18h30<br><strong>Samedi :</strong> 10h – 13h / 14h – 18h";
 
-                // --- Horaires D'ÉTÉ (spécifiques par site) ---
         const summerHoursGregoire = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mardi – Samedi :</strong> 10h – 15h30";
         const summerHoursGenevoix = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mardi – Samedi :</strong> 10h – 12h30 / 13h30 – 15h30";
         const summerHoursValland  = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mercredi – Samedi :</strong> 10h – 13h";
 
-        // --- Notes de fermeture exceptionnelle août 2026 ---
         const exceptionGregoire = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 11 au 15 août 2026.</strong></span></div>";
         const exceptionGenevoix = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 15 au 22 août 2026.</strong></span></div>";
-        const exceptionValland  = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 15 au 22 août 2026.</strong></span></div>";
+        const exceptionValland  = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 11 au 22 août 2026.</strong></span></div>";
 
         if (loc.includes("genevoix")) libType = "genevoix";
         else if (loc.includes("valland") || loc.includes("veuzain")) libType = "valland";
@@ -271,23 +264,17 @@ function getLiveStatusBadge(libType) {
         if (libType === "gregoire") {
             name  = "Bibliothèque Abbé-Grégoire";
             phone = "02 54 56 27 40";
-            hours = isSummerPeriod()
-                ? summerHoursGregoire + exceptionGregoire
-                : hoursGregoire;
+            hours = isSummerPeriod() ? summerHoursGregoire + exceptionGregoire : hoursGregoire;
         }
         else if (libType === "genevoix") {
             name  = "Médiathèque Maurice-Genevoix";
             phone = "02 54 43 31 13";
-            hours = isSummerPeriod()
-                ? summerHoursGenevoix + exceptionGenevoix
-                : hoursGenevoix;
+            hours = isSummerPeriod() ? summerHoursGenevoix + exceptionGenevoix : hoursGenevoix;
         }
         else if (libType === "valland") {
             name  = "Médiathèque Rose-Valland";
             phone = "02 54 20 78 00";
-            hours = isSummerPeriod()
-                ? summerHoursValland + exceptionValland
-                : hoursValland;
+            hours = isSummerPeriod() ? summerHoursValland + exceptionValland : hoursValland;
         }
 
         return { name, phone, hours, badge: statusBadge };
@@ -302,6 +289,7 @@ function getLiveStatusBadge(libType) {
     }
 
     function buildHashtags() {
+        if (!hashtagsWrapper) return;
         FEATURED_HASHTAGS.forEach(cat => {
             const btn = document.createElement('button');
             btn.className = 'hb-hashtag-btn'; btn.dataset.cat = cat; btn.textContent = `# ${cat}`;
@@ -317,6 +305,7 @@ function getLiveStatusBadge(libType) {
     }
 
     function renderWidget() {
+        if (!grid) return; // Sécurité supplémentaire
         grid.innerHTML = '';
         const today = new Date();
         const nowLocal = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes(), 0, 0);
@@ -327,19 +316,37 @@ function getLiveStatusBadge(libType) {
             const endDate = item.Date_Fin ? buildLocalDate(item.Date_Fin, "18h") : startDate;
             const itemCat = item.Catégorie || item.Categorie || "Animation";
             return {
-                id: item.id || index, title: item.Titre || "Sans titre", link: item.Lien || MAIN_AGENDA_URL,
-                date: startDate, endDate: endDate, category: itemCat.charAt(0).toUpperCase() + itemCat.slice(1).toLowerCase().trim(),
-                location: item.Localisation || "Médiathèque", ville: item.Ville || "",
-                description: item.Description || "", imageUrl: item.URL_de_l_image || null,
+                id: item.id || index, 
+                title: item.Titre || "Sans titre", 
+                link: item.Lien || MAIN_AGENDA_URL,
+                date: startDate, 
+                endDate: endDate, 
+                category: itemCat.charAt(0).toUpperCase() + itemCat.slice(1).toLowerCase().trim(),
+                location: item.Localisation || "Médiathèque", 
+                ville: item.Ville || "",
+                description: item.Description || "", 
+                // CORRECTION 2 : Conversion automatique HTTP -> HTTPS pour les images (Mixed Content)
+                imageUrl: item.URL_de_l_image ? item.URL_de_l_image.replace(/^http:\/\//i, 'https://') : null,
                 highlight: (String(item.A_la_Une || '').toUpperCase() === "TRUE" || String(item.Selection || '').toUpperCase() === "TRUE"),
                 reservation: item.Reservation === "TRUE"
             };
         }).filter(ev => {
+            // CORRECTION 3 : Sécurité pour éviter le crash TypeError ev.date is null
+            if (!ev.date || isNaN(ev.date.getTime())) return false;
+
             const isExpo = ev.category.toLowerCase().includes('exposition');
-            return isExpo ? ev.endDate >= nowLocal : new Date(ev.date.getTime() + (60 * 60 * 1000)) >= nowLocal;
+            if (isExpo) {
+                const validEndDate = (ev.endDate && !isNaN(ev.endDate.getTime())) ? ev.endDate : ev.date;
+                return validEndDate >= nowLocal;
+            } else {
+                return new Date(ev.date.getTime() + (60 * 60 * 1000)) >= nowLocal;
+            }
         });
 
-        ctaBtn.innerHTML = `Voir nos ${events.length} animations <i class="fa fa-chevron-right"></i>`;
+        if (ctaBtn) {
+            ctaBtn.innerHTML = `Voir nos ${events.length} animations <i class="fa fa-chevron-right"></i>`;
+        }
+        
         if (activeCategory !== 'all') events = events.filter(ev => ev.category.toLowerCase().trim() === activeCategory.toLowerCase().trim());
 
         events.sort((a, b) => {
@@ -359,6 +366,7 @@ function getLiveStatusBadge(libType) {
             const diffDays = Math.round((eventDateOnly - todayStart) / 86400000);
             let relativeDateHtml = '';
             const isExpo = event.category.toLowerCase().includes('exposition');
+            
             if (isExpo && event.date <= nowLocal && event.endDate >= nowLocal) relativeDateHtml = `<span class="hb-meta-pill hb-pill-countdown"><i class="fa fa-calendar-check-o"></i> En cours</span>`;
             else if (diffDays === 0) relativeDateHtml = `<span class="hb-meta-pill hb-pill-countdown" style="background-color: #ffebeb; color: #e11d48; border-color: #fecdd3;"><i class="fa fa-clock-o"></i> Aujourd'hui</span>`;
             else if (diffDays === 1) relativeDateHtml = `<span class="hb-meta-pill hb-pill-countdown" style="background-color: #fff7ed; color: #ea580c; border-color: #ffedd5;"><i class="fa fa-calendar-o"></i> Demain</span>`;
@@ -394,12 +402,14 @@ function getLiveStatusBadge(libType) {
     }
 
     function updateScrollButtonsVisibility() {
+        if(!grid || !scrollLeftBtn || !scrollRightBtn) return;
         scrollLeftBtn.classList.toggle('hb-disabled', grid.scrollLeft <= 5);
         scrollRightBtn.classList.toggle('hb-disabled', grid.scrollLeft >= grid.scrollWidth - grid.clientWidth - 5 || grid.scrollWidth <= grid.clientWidth);
     }
-    scrollLeftBtn.addEventListener('click', () => grid.scrollBy({ left: -315, behavior: 'smooth' }));
-    scrollRightBtn.addEventListener('click', () => grid.scrollBy({ left: 315, behavior: 'smooth' }));
-    grid.addEventListener('scroll', updateScrollButtonsVisibility);
+    
+    if (scrollLeftBtn) scrollLeftBtn.addEventListener('click', () => grid.scrollBy({ left: -315, behavior: 'smooth' }));
+    if (scrollRightBtn) scrollRightBtn.addEventListener('click', () => grid.scrollBy({ left: 315, behavior: 'smooth' }));
+    if (grid) grid.addEventListener('scroll', updateScrollButtonsVisibility);
 
     function openDetailsModal(eventId) {
         const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId);
@@ -413,8 +423,13 @@ function getLiveStatusBadge(libType) {
 
         const publicCible = rawEvent.Public_cible || rawEvent.Public || rawEvent["Public cible"] || rawEvent["Public_Cible"] || "";
 
-        if (rawEvent.URL_de_l_image) { modalImg.src = rawEvent.URL_de_l_image; modalImg.style.display = 'block'; }
-        else { modalImg.style.display = 'none'; }
+        if (rawEvent.URL_de_l_image && modalImg) { 
+            // Application du forçage HTTPS ici aussi pour la grande image
+            modalImg.src = rawEvent.URL_de_l_image.replace(/^http:\/\//i, 'https://'); 
+            modalImg.style.display = 'block'; 
+        } else if (modalImg) { 
+            modalImg.style.display = 'none'; 
+        }
 
         let reservationModalHtml = '';
         if (rawEvent.Reservation === "TRUE") {
@@ -464,45 +479,45 @@ function getLiveStatusBadge(libType) {
         const shareTitle = encodeURIComponent(`À découvrir : ${rawEvent.Titre || "Animation"}`);
         const shareText = encodeURIComponent(`Découvrez cette animation dans vos médiathèques d'Agglopolys : ${rawEvent.Titre || "Animation"}`);
 
-        modalBodyContent.innerHTML = `
-            <span class="agenda-card-tag" style="position:static; display:inline-block; margin-bottom:12px;">${cleanCat}</span>
-            <h3 class="hb-modal-title">${rawEvent.Titre || "Sans titre"}</h3>
+        if (modalBodyContent) {
+            modalBodyContent.innerHTML = `
+                <span class="agenda-card-tag" style="position:static; display:inline-block; margin-bottom:12px;">${cleanCat}</span>
+                <h3 class="hb-modal-title">${rawEvent.Titre || "Sans titre"}</h3>
 
-            ${rawEvent.Description ? `<div class="hb-modal-desc">${rawEvent.Description}</div>` : ''}
+                ${rawEvent.Description ? `<div class="hb-modal-desc">${rawEvent.Description}</div>` : ''}
 
-            <div class="hb-modal-meta-list">
-                <div class="hb-modal-meta-item"><i class="fa fa-map-marker"></i> <strong>Lieu :</strong> ${locText}</div>
-                <div class="hb-modal-meta-item"><i class="fa fa-calendar"></i> <strong>Date :</strong> ${dateText}</div>
-                ${publicCible ? `<div class="hb-modal-meta-item"><i class="fa fa-users"></i> <strong>Public :</strong> ${publicCible}</div>` : ''}
-                ${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background-color: #f3f4f6; padding: 6px 12px; border-radius: 4px; border-left: 4px solid var(--hb-accent); margin-top: 5px; font-weight: bold; color: var(--hb-primary);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}
-                ${reservationModalHtml}
-            </div>
-
-            <div class="hb-modal-actions">
-                <div id="hb-share-panel" class="hb-share-panel">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="hb-social-btn hb-fb" title="Partager sur Facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}" target="_blank" class="hb-social-btn hb-wa" title="Partager sur WhatsApp"><i class="fa fa-whatsapp"></i></a>
-                    <a href="https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}" target="_blank" class="hb-social-btn hb-tw" title="Partager sur X (Twitter)"><i class="fa fa-twitter"></i></a>
-                    <a href="mailto:?subject=${shareTitle}&body=${shareText}%0A%0A${shareUrl}" class="hb-social-btn hb-em" title="Envoyer par E-mail"><i class="fa fa-envelope"></i></a>
-                    <button id="hb-btn-copy-link" class="hb-social-btn hb-cp" title="Copier le lien"><i class="fa fa-link"></i></button>
+                <div class="hb-modal-meta-list">
+                    <div class="hb-modal-meta-item"><i class="fa fa-map-marker"></i> <strong>Lieu :</strong> ${locText}</div>
+                    <div class="hb-modal-meta-item"><i class="fa fa-calendar"></i> <strong>Date :</strong> ${dateText}</div>
+                    ${publicCible ? `<div class="hb-modal-meta-item"><i class="fa fa-users"></i> <strong>Public :</strong> ${publicCible}</div>` : ''}
+                    ${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background-color: #f3f4f6; padding: 6px 12px; border-radius: 4px; border-left: 4px solid var(--hb-accent); margin-top: 5px; font-weight: bold; color: var(--hb-primary);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}
+                    ${reservationModalHtml}
                 </div>
 
-                <button id="hb-modal-ics" class="hb-btn-action hb-btn-calendar"><i class="fa fa-calendar-plus-o"></i> Rappel Agenda</button>
-                <button id="hb-modal-share" class="hb-btn-action hb-btn-share"><i class="fa fa-share-alt"></i> Partager</button>
-            </div>
-        `;
+                <div class="hb-modal-actions">
+                    <div id="hb-share-panel" class="hb-share-panel">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="hb-social-btn hb-fb" title="Partager sur Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}" target="_blank" class="hb-social-btn hb-wa" title="Partager sur WhatsApp"><i class="fa fa-whatsapp"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}" target="_blank" class="hb-social-btn hb-tw" title="Partager sur X (Twitter)"><i class="fa fa-twitter"></i></a>
+                        <a href="mailto:?subject=${shareTitle}&body=${shareText}%0A%0A${shareUrl}" class="hb-social-btn hb-em" title="Envoyer par E-mail"><i class="fa fa-envelope"></i></a>
+                        <button id="hb-btn-copy-link" class="hb-social-btn hb-cp" title="Copier le lien"><i class="fa fa-link"></i></button>
+                    </div>
 
-        modalBodyContent.closest('.hb-modal-container').dataset.eventId = eventId;
-        modalOverlay.classList.add('hb-active');
+                    <button id="hb-modal-ics" class="hb-btn-action hb-btn-calendar"><i class="fa fa-calendar-plus-o"></i> Rappel Agenda</button>
+                    <button id="hb-modal-share" class="hb-btn-action hb-btn-share"><i class="fa fa-share-alt"></i> Partager</button>
+                </div>
+            `;
+            modalBodyContent.closest('.hb-modal-container').dataset.eventId = eventId;
+        }
 
-        // Gestion du bouton de partage
+        if (modalOverlay) modalOverlay.classList.add('hb-active');
+
         const shareBtn = document.getElementById('hb-modal-share');
         const sharePanel = document.getElementById('hb-share-panel');
         if (shareBtn && sharePanel) {
             shareBtn.addEventListener('click', () => { sharePanel.classList.toggle('hb-active'); });
         }
 
-        // Gestion du bouton copier le lien
         const copyBtn = document.getElementById('hb-btn-copy-link');
         if (copyBtn) {
             copyBtn.addEventListener('click', () => {
@@ -513,7 +528,6 @@ function getLiveStatusBadge(libType) {
             });
         }
 
-        // Gestion formulaire réservation
         const btnGenerateMail = document.getElementById('btn-generate-mail');
         if (btnGenerateMail) {
             btnGenerateMail.addEventListener('click', () => {
@@ -542,19 +556,20 @@ function getLiveStatusBadge(libType) {
         }
     }
 
-    // Fermeture modale
-    modalClose.addEventListener('click', () => modalOverlay.classList.remove('hb-active'));
-    modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) modalOverlay.classList.remove('hb-active'); });
+    if (modalClose && modalOverlay) {
+        modalClose.addEventListener('click', () => modalOverlay.classList.remove('hb-active'));
+        modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) modalOverlay.classList.remove('hb-active'); });
+    }
 
-    // Clic sur les cartes
-    grid.addEventListener('click', (e) => {
-        const card = e.target.closest('.agenda-card');
-        if (card && card.dataset.id && !card.classList.contains('hb-more-cta-card')) {
-            openDetailsModal(parseInt(card.dataset.id));
-        }
-    });
+    if (grid) {
+        grid.addEventListener('click', (e) => {
+            const card = e.target.closest('.agenda-card');
+            if (card && card.dataset.id && !card.classList.contains('hb-more-cta-card')) {
+                openDetailsModal(parseInt(card.dataset.id));
+            }
+        });
+    }
 
-    // --- FONCTION D'EXPORT .ICS ---
     function generateICS(rawEvent) {
         const startDate = buildLocalDate(rawEvent.Date_Debut, rawEvent.Heure);
         const endDate = rawEvent.Date_Fin ? buildLocalDate(rawEvent.Date_Fin, rawEvent.Heure || "18h00") : new Date(startDate.getTime() + 3600000);
@@ -595,13 +610,14 @@ function getLiveStatusBadge(libType) {
         document.body.removeChild(link);
     }
 
-    // Écouteur global pour le bouton d'export ICS
     document.addEventListener('click', function(e) {
         if (e.target && e.target.id === 'hb-modal-ics') {
             const modalContainer = document.querySelector('.hb-modal-container');
-            const eventId = parseInt(modalContainer.dataset.eventId);
-            const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId);
-            if (rawEvent) generateICS(rawEvent);
+            if(modalContainer) {
+                const eventId = parseInt(modalContainer.dataset.eventId);
+                const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId);
+                if (rawEvent) generateICS(rawEvent);
+            }
         }
     });
 
