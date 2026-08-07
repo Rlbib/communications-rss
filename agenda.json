@@ -2582,9 +2582,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -2606,9 +2612,15 @@
     "URL_de_l_image": "",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -2630,9 +2642,15 @@
     "URL_de_l_image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTcSuv_iGxYNL0izIghvTtsnGbs2JrnByM4GWVaBYmzu0efCCHY1sAd1coD2ILepKN8eUirKM9zMmegv7I",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -2654,9 +2672,15 @@
     "URL_de_l_image": "",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -2870,9 +2894,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -2894,9 +2924,17 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=11107",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Sergent Marie Virginie",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Sergent Marie Virginie",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -2966,9 +3004,19 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=11153",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Basire Céline",
+      "Teffe Cécile",
+      "Boulanger Mathilde"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Basire Céline",
+      "Teffe Cécile",
+      "Boulanger Mathilde"
+    ],
+    "Besoin_RH": 4,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3134,9 +3182,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=11104",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3182,9 +3236,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8087",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3206,9 +3266,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=10567",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Sergent Marie Virginie"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Sergent Marie Virginie"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3326,9 +3392,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11155",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3350,9 +3422,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=11105",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3374,9 +3452,15 @@
     "URL_de_l_image": "https://www.cdad-aveyron.fr/wp-content/uploads/2021/06/FC_800x430_1.jpg",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3398,9 +3482,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=10788",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3494,9 +3584,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=11107",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Sergent Marie Virginie"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Sergent Marie Virginie"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3518,9 +3614,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=6418",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3662,9 +3764,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=6129",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3734,9 +3842,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3782,9 +3896,17 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=11107",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3806,9 +3928,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=11173",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -3950,9 +4078,17 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11182",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa",
+      "Debuire Agnès"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa",
+      "Debuire Agnès"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -4046,9 +4182,17 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11175",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa",
+      "Sicard Dominique"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa",
+      "Sicard Dominique"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -4070,9 +4214,17 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=10788",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Basire Céline",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Basire Céline",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -4094,9 +4246,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=6129",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -4142,9 +4300,15 @@
     "URL_de_l_image": "",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -4166,9 +4330,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -4214,9 +4384,15 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/basicfilesdownload.ashx?repositoryId=1&itemId=11184",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Boulanger Mathilde"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Boulanger Mathilde"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -4406,9 +4582,19 @@
     "URL_de_l_image": "",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Cloux Isabelle",
+      "Sergent Marie Virginie",
+      "Beauchet Christele"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Cloux Isabelle",
+      "Sergent Marie Virginie",
+      "Beauchet Christele"
+    ],
+    "Besoin_RH": 4,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8992,6 +9178,30 @@
     "Heure": "",
     "Durée": "",
     "Public_cible": "",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [],
+    "Animateurs_Biblio": [],
+    "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 387,
+    "Titre": "Table ronde I.A. et société",
+    "Catégorie": "Animation",
+    "Localisation": "Bibliothèque Abbe-Grégoire, espace Adultes",
+    "Date_Debut": "2/10 ou 16/10",
+    "Date_Fin": "2/10 ou 16/10",
+    "Description": "Dans le cadre de la fête de la Science",
+    "Heure": "18h",
+    "Durée": "1h",
+    "Public_cible": "adulte",
     "Ville": "",
     "URL_de_l_image": "",
     "Lien": "",
