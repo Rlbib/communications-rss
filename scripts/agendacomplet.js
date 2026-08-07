@@ -3,6 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const MAIN_AGENDA_URL = "https://bibliotheques.agglopolys.fr/agenda"; 
 
     const grid = document.getElementById('hb-events-grid');
+    
+    // --- NOTE DE RÉSOLUTION (FIX 1) : ÉVITER L'ERREUR "container is null" ---
+    // Si le conteneur n'existe pas sur la page (ex: un utilisateur charge ce script sur l'accueil par erreur), 
+    // on arrête immédiatement le script. Cela évite le plantage "can't access property innerHTML".
+    if (!grid) return; 
+
     const searchBox = document.getElementById('hb-search-box');
     const dateTabs = document.querySelectorAll('.hb-tab-btn');
     const resultsCounter = document.getElementById('hb-results-counter');
@@ -83,7 +89,7 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
     // =========================================================================
     function isSummerPeriod() {
         const now = new Date();
-        const m = now.getMonth(); // 0-indexed : juin=5, août=7
+        const m = now.getMonth(); 
         const d = now.getDate();
         if (m < 5) return false;
         if (m === 5 && d < 23) return false;
@@ -122,27 +128,21 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
         const time = now.getHours() + (now.getMinutes() / 60);
         let isOpen = false;
 
-        // 1. Fermetures exceptionnelles (priorité max)
         if (isExceptionallyClosed(libType)) {
             return `<span class="hb-status-badge hb-status-exception" title="Fermeture exceptionnelle estivale"><i class="fa fa-exclamation-triangle" style="font-size:8px;"></i> Fermé (été)</span>`;
         }
 
-        // 2. Horaires d'été — individualisés par site
         if (isSummerPeriod()) {
             if (libType === "gregoire") {
-                // Mar(2)–sam(6) : 10h–15h30
                 if (day >= 2 && day <= 6) isOpen = (time >= 10 && time < 15.5);
             }
             else if (libType === "genevoix") {
-                // Mar(2)–sam(6) : 10h–12h30 / 13h30–15h30
                 if (day >= 2 && day <= 6) isOpen = ((time >= 10 && time < 12.5) || (time >= 13.5 && time < 15.5));
             }
             else if (libType === "valland") {
-                // Mer(3)–sam(6) : 10h–13h
                 if (day >= 3 && day <= 6) isOpen = (time >= 10 && time < 13);
             }
         }
-        // 3. Horaires hors été (inchangés)
         else {
             if (libType === "gregoire") {
                 if ((day===2||day===4||day===5) && time >= 13 && time < 18.5) isOpen=true;
@@ -168,17 +168,14 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
         const loc = (locationStr || "").toLowerCase();
         let libType = "gregoire";
 
-        // --- Horaires HORS ÉTÉ ---
         const hoursGregoire = "<strong>Mar, Jeu, Ven :</strong> 13h - 18h30<br><strong>Mercredi :</strong> 10h - 18h30<br><strong>Samedi :</strong> 10h - 18h";
         const hoursGenevoix = "<strong>Mar, Jeu, Ven :</strong> 15h - 18h<br><strong>Mercredi & Samedi :</strong> 10h - 13h / 14h - 18h";
         const hoursValland  = "<strong>Mercredi :</strong> 10h - 13h / 14h - 18h30<br><strong>Jeu & Ven :</strong> 15h - 18h30<br><strong>Samedi :</strong> 10h - 13h / 14h - 18h";
 
-        // --- Horaires D'ÉTÉ (spécifiques par site) ---
         const summerHoursGregoire = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mardi – Samedi :</strong> 10h – 15h30";
         const summerHoursGenevoix = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mardi – Samedi :</strong> 10h – 12h30 / 13h30 – 15h30";
         const summerHoursValland  = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mercredi – Samedi :</strong> 10h – 13h";
 
-        // --- Notes de fermeture exceptionnelle août 2026 ---
         const exceptionGregoire = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 11 au 15 août 2026.</strong></span></div>";
         const exceptionGenevoix = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 15 au 22 août 2026.</strong></span></div>";
         const exceptionValland  = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 11 au 22 août 2026.</strong></span></div>";
@@ -205,7 +202,13 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
         };
     }
 
-    async function loadAgendaData() { let response = null; let success = false; let data = []; try { response = await fetch(`${JSON_URL}?t=${new Date().getTime()}`); if (response.ok) { data = await response.json(); success = true; } } catch (e) {} if (!success) { try { response = await fetch(`https://corsproxy.io/?${encodeURIComponent(JSON_URL)}`); if (response.ok) { data = await response.json(); success = true; } } catch (err) {} } if (!success) { grid.innerHTML = `<div class="hb-error"><i class="fa fa-exclamation-triangle"></i> Échec du chargement.</div>`; resultsCounter.textContent = "0 animation trouvée"; return; } allEvents = data; buildCategoryDropdown(); renderAgenda(); }
+    async function loadAgendaData() { 
+        let response = null; let success = false; let data = []; 
+        try { response = await fetch(`${JSON_URL}?t=${new Date().getTime()}`); if (response.ok) { data = await response.json(); success = true; } } catch (e) {} 
+        if (!success) { try { response = await fetch(`https://corsproxy.io/?${encodeURIComponent(JSON_URL)}`); if (response.ok) { data = await response.json(); success = true; } } catch (err) {} } 
+        if (!success) { grid.innerHTML = `<div class="hb-error"><i class="fa fa-exclamation-triangle"></i> Échec du chargement.</div>`; resultsCounter.textContent = "0 animation trouvée"; return; } 
+        allEvents = data; buildCategoryDropdown(); renderAgenda(); 
+    }
     
     function buildCategoryDropdown() { 
         const categories = new Set(); const catMenu = document.getElementById('hb-cat-menu');
@@ -218,9 +221,48 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
     // MOTEUR DE RENDU HYBRIDE
     // ==========================================
     function renderAgenda() {
+        if (!grid) return; // Sécurité si grid absent
         grid.innerHTML = '';
-        const today = new Date(); const nowLocalAsUTC = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes(), 0, 0)); const todayLocalAsUTC = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate(), 0, 0, 0, 0));
-        let events = allEvents.map((item, index) => { const startDate = buildUTCDate(item.Date_Debut, item.Heure); const endDate = item.Date_Fin ? buildUTCDate(item.Date_Fin, "18h") : startDate; const cleanCat = (item.Catégorie || item.Categorie || "Animation").charAt(0).toUpperCase() + (item.Catégorie || item.Categorie || "Animation").slice(1).toLowerCase().trim(); return { id: item.id || index, title: item.Titre || "Sans titre", link: item.Lien || "", date: startDate, endDate: endDate, category: cleanCat, location: item.Localisation || "Médiathèque", ville: item.Ville || "", description: item.Description || "", imageUrl: item.URL_de_l_image || null, duration: (item.Durée || item.Duree || "").trim(), targetAudience: (item.Public_cible || "").trim(), time: (item.Heure || "").trim(), highlight: (String(item.A_la_Une || '').toUpperCase() === "TRUE" || String(item.Selection || '').toUpperCase() === "TRUE"), reservation: item.Reservation === "TRUE" }; }).filter(ev => { const isExpo = ev.category.toLowerCase().includes('exposition'); return isExpo ? ev.endDate >= todayLocalAsUTC : new Date(ev.date.getTime() + (60 * 60 * 1000)) >= nowLocalAsUTC; });
+        const today = new Date(); 
+        const nowLocalAsUTC = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes(), 0, 0)); 
+        const todayLocalAsUTC = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate(), 0, 0, 0, 0));
+        
+        let events = allEvents.map((item, index) => { 
+            const startDate = buildUTCDate(item.Date_Debut, item.Heure); 
+            const endDate = item.Date_Fin ? buildUTCDate(item.Date_Fin, "18h") : startDate; 
+            const cleanCat = (item.Catégorie || item.Categorie || "Animation").charAt(0).toUpperCase() + (item.Catégorie || item.Categorie || "Animation").slice(1).toLowerCase().trim(); 
+            return { 
+                id: item.id || index, 
+                title: item.Titre || "Sans titre", 
+                link: item.Lien || "", 
+                date: startDate, 
+                endDate: endDate, 
+                category: cleanCat, 
+                location: item.Localisation || "Médiathèque", 
+                ville: item.Ville || "", 
+                description: item.Description || "", 
+                // --- NOTE DE RÉSOLUTION (FIX 2) : FORÇAGE HTTPS ---
+                // Remplace automatiquement http:// par https:// pour éviter le Mixed Content
+                imageUrl: item.URL_de_l_image ? item.URL_de_l_image.replace(/^http:\/\//i, 'https://') : null, 
+                duration: (item.Durée || item.Duree || "").trim(), 
+                targetAudience: (item.Public_cible || "").trim(), 
+                time: (item.Heure || "").trim(), 
+                highlight: (String(item.A_la_Une || '').toUpperCase() === "TRUE" || String(item.Selection || '').toUpperCase() === "TRUE"), 
+                reservation: item.Reservation === "TRUE" 
+            }; 
+        }).filter(ev => { 
+            // --- NOTE DE RÉSOLUTION (FIX 3) : PROTECTION DATES MANQUANTES ---
+            // On vérifie que la date existe avant de continuer, sinon getTime() plantera.
+            if (!ev.date || isNaN(ev.date.getTime())) return false;
+
+            const isExpo = ev.category.toLowerCase().includes('exposition'); 
+            if (isExpo) {
+                const validEndDate = (ev.endDate && !isNaN(ev.endDate.getTime())) ? ev.endDate : ev.date;
+                return validEndDate >= todayLocalAsUTC;
+            } else {
+                return new Date(ev.date.getTime() + (60 * 60 * 1000)) >= nowLocalAsUTC;
+            }
+        });
 
         const q = searchBox.value.toLowerCase().trim(); if (q) events = events.filter(ev => (ev.title||'').toLowerCase().includes(q) || (ev.description||'').toLowerCase().includes(q) || (ev.location||'').toLowerCase().includes(q));
         if (currentLocationFilter !== 'all') events = events.filter(ev => getGroupedLocation(ev.location) === currentLocationFilter);
@@ -301,7 +343,9 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
         }
     });
 
-    grid.addEventListener('click', (e) => { const icsBtn = e.target.closest('.hb-list-ics-btn'); if (icsBtn) { e.stopPropagation(); downloadICS(parseInt(icsBtn.dataset.id, 10)); return; } const target = e.target.closest('.agenda-card, .agenda-list-item, .hb-ongoing-card'); if (target) { e.preventDefault(); openDetailsModal(parseInt(target.dataset.id, 10)); } });
+    if(grid) {
+        grid.addEventListener('click', (e) => { const icsBtn = e.target.closest('.hb-list-ics-btn'); if (icsBtn) { e.stopPropagation(); downloadICS(parseInt(icsBtn.dataset.id, 10)); return; } const target = e.target.closest('.agenda-card, .agenda-list-item, .hb-ongoing-card'); if (target) { e.preventDefault(); openDetailsModal(parseInt(target.dataset.id, 10)); } });
+    }
 
     function downloadICS(eventId) { 
         const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId); 
@@ -345,7 +389,14 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
         const startDate = buildUTCDate(rawEvent.Date_Debut, rawEvent.Heure); const endDate = rawEvent.Date_Fin ? buildUTCDate(rawEvent.Date_Fin, "18h") : startDate;
         const cleanCat = (rawEvent.Catégorie || rawEvent.Categorie || "Animation").charAt(0).toUpperCase() + (rawEvent.Catégorie || rawEvent.Categorie || "Animation").slice(1).toLowerCase().trim();
         const dateText = formatEventDates(startDate, endDate, cleanCat); let locText = rawEvent.Localisation || "Médiathèque"; if (rawEvent.Ville) locText += `, ${rawEvent.Ville}`;
-        if (rawEvent.URL_de_l_image) { modalImg.src = rawEvent.URL_de_l_image; modalImg.style.display = 'block'; } else { modalImg.style.display = 'none'; } 
+        
+        // --- NOTE DE RÉSOLUTION (FIX 2) : FORÇAGE HTTPS POUR L'IMAGE DE LA MODALE ---
+        if (rawEvent.URL_de_l_image && modalImg) { 
+            modalImg.src = rawEvent.URL_de_l_image.replace(/^http:\/\//i, 'https://'); 
+            modalImg.style.display = 'block'; 
+        } else if (modalImg) { 
+            modalImg.style.display = 'none'; 
+        } 
         
         const publicCible = (() => {
             const keys = ["Public_cible", "Public cible", "Public_Cible", "Public", "public_cible", "Age", "Tranche d'âge", "Tranche_d_age"];
@@ -372,29 +423,31 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
 
         const shareUrl = encodeURIComponent(rawEvent.Lien || MAIN_AGENDA_URL); const shareTitle = encodeURIComponent(`À découvrir : ${rawEvent.Titre || "Animation"}`); const shareText = encodeURIComponent(`Découvrez cette animation dans vos médiathèques d'Agglopolys : ${rawEvent.Titre || "Animation"}`);
         
-        modalBodyContent.innerHTML = `
-            <span class="agenda-card-tag" style="position:static; display:inline-block; margin-bottom:12px;">${cleanCat}</span>
-            <h3 class="hb-modal-title">${rawEvent.Titre || "Sans titre"}</h3>
-            ${descHtmlContent ? `<div class="hb-modal-desc">${descHtmlContent}</div>` : ''}
-            <div class="hb-modal-meta-list">
-                <div class="hb-modal-meta-item"><i class="fa fa-map-marker"></i> <strong>Lieu :</strong> ${locText}</div>
-                <div class="hb-modal-meta-item"><i class="fa fa-calendar"></i> <strong>Date :</strong> ${dateText}</div>
-                ${publicCible ? `<div class="hb-modal-meta-item"><i class="fa fa-users"></i> <strong>Public :</strong> ${publicCible}</div>` : ''}
-                ${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background-color: #f3f4f6; padding: 6px 12px; border-radius: 4px; border-left: 4px solid var(--hb-accent); margin-top: 5px; font-weight: bold; color: var(--hb-primary);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}
-                ${reservationModalHtml}
-            </div>
-            <div class="hb-modal-actions">
-                <div id="hb-share-panel" class="hb-share-panel">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="hb-social-btn hb-fb"><i class="fa fa-facebook"></i></a>
-                    <a href="https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}" target="_blank" class="hb-social-btn hb-wa"><i class="fa fa-whatsapp"></i></a>
-                    <a href="https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}" target="_blank" class="hb-social-btn hb-tw"><i class="fa fa-twitter"></i></a>
-                    <a href="mailto:?subject=${shareTitle}&body=${shareText}%0A%0A${shareUrl}" class="hb-social-btn hb-em"><i class="fa fa-envelope"></i></a>
-                    <button id="hb-btn-copy-link" class="hb-social-btn hb-cp" data-url="${MAIN_AGENDA_URL}"><i class="fa fa-link"></i></button>
+        if(modalBodyContent) {
+            modalBodyContent.innerHTML = `
+                <span class="agenda-card-tag" style="position:static; display:inline-block; margin-bottom:12px;">${cleanCat}</span>
+                <h3 class="hb-modal-title">${rawEvent.Titre || "Sans titre"}</h3>
+                ${descHtmlContent ? `<div class="hb-modal-desc">${descHtmlContent}</div>` : ''}
+                <div class="hb-modal-meta-list">
+                    <div class="hb-modal-meta-item"><i class="fa fa-map-marker"></i> <strong>Lieu :</strong> ${locText}</div>
+                    <div class="hb-modal-meta-item"><i class="fa fa-calendar"></i> <strong>Date :</strong> ${dateText}</div>
+                    ${publicCible ? `<div class="hb-modal-meta-item"><i class="fa fa-users"></i> <strong>Public :</strong> ${publicCible}</div>` : ''}
+                    ${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background-color: #f3f4f6; padding: 6px 12px; border-radius: 4px; border-left: 4px solid var(--hb-accent); margin-top: 5px; font-weight: bold; color: var(--hb-primary);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}
+                    ${reservationModalHtml}
                 </div>
-                <button id="hb-modal-ics" class="hb-btn-action hb-btn-calendar"><i class="fa fa-calendar-plus-o"></i> Rappel</button>
-                <button id="hb-btn-share" class="hb-btn-action hb-btn-share"><i class="fa fa-share-alt"></i> Partager</button>
-                ${rawEvent.Lien ? `<a href="${rawEvent.Lien}" target="_blank" class="hb-btn-action hb-btn-calendar"><i class="fa fa-external-link"></i> En savoir plus</a>` : ''}
-            </div>`; 
+                <div class="hb-modal-actions">
+                    <div id="hb-share-panel" class="hb-share-panel">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="hb-social-btn hb-fb"><i class="fa fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}" target="_blank" class="hb-social-btn hb-wa"><i class="fa fa-whatsapp"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}" target="_blank" class="hb-social-btn hb-tw"><i class="fa fa-twitter"></i></a>
+                        <a href="mailto:?subject=${shareTitle}&body=${shareText}%0A%0A${shareUrl}" class="hb-social-btn hb-em"><i class="fa fa-envelope"></i></a>
+                        <button id="hb-btn-copy-link" class="hb-social-btn hb-cp" data-url="${MAIN_AGENDA_URL}"><i class="fa fa-link"></i></button>
+                    </div>
+                    <button id="hb-modal-ics" class="hb-btn-action hb-btn-calendar"><i class="fa fa-calendar-plus-o"></i> Rappel</button>
+                    <button id="hb-btn-share" class="hb-btn-action hb-btn-share"><i class="fa fa-share-alt"></i> Partager</button>
+                    ${rawEvent.Lien ? `<a href="${rawEvent.Lien}" target="_blank" class="hb-btn-action hb-btn-calendar"><i class="fa fa-external-link"></i> En savoir plus</a>` : ''}
+                </div>`; 
+        }
         
         if (rawEvent.Reservation === "TRUE") { 
             document.getElementById('btn-generate-mail').addEventListener('click', () => { 
@@ -410,13 +463,15 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
         document.getElementById('hb-btn-copy-link').addEventListener('click', (e) => { const url = e.currentTarget.dataset.url; navigator.clipboard.writeText(url).then(() => { const icon = e.currentTarget.querySelector('i'); icon.className = 'fa fa-check'; setTimeout(() => { icon.className = 'fa fa-link'; }, 2000); }); }); 
         document.getElementById('hb-modal-ics').addEventListener('click', () => { downloadICS(eventId); }); 
         
-        modalOverlay.style.display = 'flex'; void modalOverlay.offsetWidth; modalOverlay.classList.add('hb-active'); document.body.style.overflow = 'hidden'; 
+        if(modalOverlay) {
+            modalOverlay.style.display = 'flex'; void modalOverlay.offsetWidth; modalOverlay.classList.add('hb-active'); document.body.style.overflow = 'hidden'; 
+        }
     }
 
-    function closeModal() { modalOverlay.classList.remove('hb-active'); setTimeout(() => { modalOverlay.style.display = 'none'; document.body.style.overflow = ''; }, 300); }
-    modalClose.addEventListener('click', closeModal); 
-    modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); }); 
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modalOverlay.classList.contains('hb-active')) closeModal(); });
+    function closeModal() { if(modalOverlay) { modalOverlay.classList.remove('hb-active'); setTimeout(() => { modalOverlay.style.display = 'none'; document.body.style.overflow = ''; }, 300); } }
+    if(modalClose) modalClose.addEventListener('click', closeModal); 
+    if(modalOverlay) modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); }); 
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modalOverlay && modalOverlay.classList.contains('hb-active')) closeModal(); });
 
     // Lancement
     loadInitialState();
