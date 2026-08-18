@@ -8464,6 +8464,40 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 394,
+    "Titre": "Escargot/CDPNE",
+    "Catégorie": "Projection",
+    "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium",
+    "Date_Debut": "2026-11-25",
+    "Date_Fin": "2026-11-25",
+    "Description": "Projection du film \"Escargot, le grand voyage du petit-gris\" suivie d'un goûter et d'un atelier ",
+    "Heure": "15h",
+    "Durée": "2h30",
+    "Public_cible": "Jeunesse (6-10 ans)",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Froger Matthieu",
+      "Deliot Christèle",
+      "Olivier Nicolas"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Froger Matthieu",
+      "Deliot Christèle",
+      "Olivier Nicolas"
+    ],
+    "Besoin_RH": 4,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 381,
     "Titre": "Ateliers numériques avec le CRIA 41",
     "Catégorie": "Initiation informatique",
