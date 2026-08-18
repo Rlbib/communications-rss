@@ -8030,6 +8030,40 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 390,
+    "Titre": "Mois du film documentaire",
+    "Catégorie": "Projection",
+    "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty",
+    "Date_Debut": "2026-11-04",
+    "Date_Fin": "2026-11-04",
+    "Description": "",
+    "Heure": "18h",
+    "Durée": "2h",
+    "Public_cible": "Adulte",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Froger Matthieu",
+      "Deliot Christèle",
+      "Olivier Nicolas"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Froger Matthieu",
+      "Deliot Christèle",
+      "Olivier Nicolas"
+    ],
+    "Besoin_RH": 4,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 378,
     "Titre": "Ateliers numériques avec le CRIA 41",
     "Catégorie": "Initiation informatique",
@@ -8258,6 +8292,40 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 391,
+    "Titre": "Mois du film documentaire",
+    "Catégorie": "Projection",
+    "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty",
+    "Date_Debut": "2026-11-18",
+    "Date_Fin": "2026-11-18",
+    "Description": "",
+    "Heure": "18h",
+    "Durée": "2h",
+    "Public_cible": "Adulte",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Froger Matthieu",
+      "Deliot Christèle",
+      "Olivier Nicolas"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Froger Matthieu",
+      "Deliot Christèle",
+      "Olivier Nicolas"
+    ],
+    "Besoin_RH": 4,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 302,
     "Titre": "Raconte Thé Cinéma",
     "Catégorie": "Club",
@@ -8355,6 +8423,40 @@
       "Petit Nolwenn"
     ],
     "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 392,
+    "Titre": "Mois du film documentaire",
+    "Catégorie": "Projection",
+    "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty",
+    "Date_Debut": "2026-11-25",
+    "Date_Fin": "2026-11-25",
+    "Description": "",
+    "Heure": "18h",
+    "Durée": "2h",
+    "Public_cible": "Adulte",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Froger Matthieu",
+      "Deliot Christèle",
+      "Olivier Nicolas"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Froger Matthieu",
+      "Deliot Christèle",
+      "Olivier Nicolas"
+    ],
+    "Besoin_RH": 4,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8715,6 +8817,40 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 393,
+    "Titre": "Ciné-goûter : Panique à Noël !",
+    "Catégorie": "Projection",
+    "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty",
+    "Date_Debut": "2026-12-16",
+    "Date_Fin": "2026-12-16",
+    "Description": "Une adorable famille de souris se prépare à célébrer Noël dans leur chaleureuse maison. Tout est prêt pour des fêtes parfaites, jusqu’à l’irruption d’une famille d'humains ! La guerre est déclarée, et, dans cette bataille de Noël, personne ne se fera de cadeaux… Une comédie de Noël pour toute la famille suivie d'un goûter.",
+    "Heure": "15h",
+    "Durée": "Durée du film : 1h20 + goûter",
+    "Public_cible": "Tout public (à partir de 6 ans)",
+    "Ville": "",
+    "URL_de_l_image": "https://fr.web.img2.acsta.net/r_1920_1080/img/9f/19/9f191a2130afb6c28922c480202c7d41.jpg https://fr.web.img6.acsta.net/r_1920_1080/img/7a/f1/7af100e6eede4e816e56d1a48af06b86.jpg ",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Froger Matthieu",
+      "Deliot Christèle",
+      "Olivier Nicolas"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Froger Matthieu",
+      "Deliot Christèle",
+      "Olivier Nicolas"
+    ],
+    "Besoin_RH": 4,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
