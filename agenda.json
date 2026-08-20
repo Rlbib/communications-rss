@@ -6010,9 +6010,15 @@
     "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/dc22d963-4bb6-46b5-8e66-8b2ded482182/VR_complet.png",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Hubert Mathias"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Hubert Mathias"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
