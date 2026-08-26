@@ -659,10 +659,7 @@
         </div>
 
         <div class="widget-footer">
-            <div class="summer-info">
-                <i class="fa fa-sun-o"></i>
-                
-            </div>
+            
 
             <button class="btn-more" id="jo" type="button">
                 Voir tous les horaires
