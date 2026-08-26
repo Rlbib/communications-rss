@@ -661,10 +661,7 @@
         <div class="widget-footer">
             <div class="summer-info">
                 <i class="fa fa-sun-o"></i>
-                <span>
-                    <strong>Prêts d'été (4 juil. – 29 août) :</strong>
-                    emprunts prolongés à 8 semaines.
-                </span>
+                
             </div>
 
             <button class="btn-more" id="jo" type="button">
