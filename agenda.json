@@ -8084,9 +8084,15 @@
     "URL_de_l_image": "https://grist.numerique.gouv.fr/api/docs/9yLQzULqduhD/attachments/129/download",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8108,9 +8114,15 @@
     "URL_de_l_image": "https://grist.numerique.gouv.fr/api/docs/9yLQzULqduhD/attachments/134/download",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8191,6 +8203,40 @@
       "Froger Matthieu",
       "Deliot Christèle",
       "Olivier Nicolas"
+    ],
+    "Besoin_RH": 4,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 403,
+    "Titre": "Atelier solidaire : fabriquez la magie du réveillon !",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix",
+    "Date_Debut": "2026-11-04",
+    "Date_Fin": "2026-04-01",
+    "Description": "Chaque année, la Ville de Blois offre un moment exceptionnel aux personnes fragilisées en organisant son réveillon festif et solidaire au Château. Venez participer à notre atelier créatif ! Fabriquons ensemble les décorations qui illumineront ce grand événement.",
+    "Heure": "14h",
+    "Durée": "2h30",
+    "Public_cible": "Tout public",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Boulanger Mathilde",
+      "Sergent Marie Virginie",
+      "Debuire Agnès"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Boulanger Mathilde",
+      "Sergent Marie Virginie",
+      "Debuire Agnès"
     ],
     "Besoin_RH": 4,
     "Section_Requise": "",
@@ -8370,9 +8416,15 @@
     "URL_de_l_image": "https://grist.numerique.gouv.fr/api/docs/9yLQzULqduhD/attachments/126/download",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8410,7 +8462,7 @@
     "Localisation": "Médiathèque Maurice-Genevoix, espace Jeunesse",
     "Date_Debut": "2026-11-18",
     "Date_Fin": "2026-11-18",
-    "Description": "Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans",
+    "Description": "Chaque mois, venez écouter des histoires pour enfants à partir de 3 ans.",
     "Heure": "10h30",
     "Durée": "30 min",
     "Public_cible": "A partir de 3 ans",
@@ -8944,7 +8996,7 @@
     "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
     "Date_Debut": "2026-12-10",
     "Date_Fin": "2026-12-10",
-    "Description": "Cet atelier est proposé par le CRIA 41 (Centre Ressources Illettrisme Analphabétisme) et s’adresse aux débutants sur le support numérique.  Il vous permettra d’apprendre à utiliser un ordinateur ou une tablette. Venez avec vos questions, nous y répondrons ! Vous pouvez également apporter votre matériel portable. 2 ateliers d'1h, 5 places par atelier",
+    "Description": "Cet atelier est proposé par le CRIA 41 (Centre Ressources Illettrisme Analphabétisme) et s’adresse aux débutants sur le support numérique.  Il vous permettra d’apprendre à utiliser un ordinateur ou une tablette. Venez avec vos questions, nous y répondrons ! Vous pouvez également apporter votre matériel portable. 2 ateliers d'1h, 5 places par atelier.",
     "Heure": "9h30",
     "Durée": "2h30",
     "Public_cible": "Public adulte",
