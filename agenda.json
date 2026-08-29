@@ -9182,6 +9182,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 404,
+    "Titre": "Mission Père Noël",
+    "Catégorie": "Projection",
+    "Localisation": "Médiathèque Maurice-Genevoix, Auditorium",
+    "Date_Debut": "2026-12-16",
+    "Date_Fin": "2026-12-16",
+    "Description": "Timo, un petit elfe, va accomplir son rêve : fabriquer des cadeaux dans l’atelier du Père Noël. C’est un lieu féérique où travaillait son grand-père et Timo va enfin prendre la relève. Mais une grande fabrique de cadeaux a remplacé le petit atelier et la tradition de Noël est sur le point de disparaître. Timo et son petit renne partent alors pour une grande mission : sauver la magie de Noël !",
+    "Heure": "15h30",
+    "Durée": "1h36",
+    "Public_cible": "Tout public (25 places)",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 373,
     "Titre": "Ateliers numériques avec le CRIA 41",
     "Catégorie": "Initiation informatique",
