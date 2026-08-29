@@ -659,8 +659,6 @@
         </div>
 
         <div class="widget-footer">
-            
-
             <button class="btn-more" id="jo" type="button">
                 Voir tous les horaires
                 <i class="fa fa-chevron-right"></i>
@@ -961,16 +959,6 @@
     // =========================================================
     // 9. JOURS FÉRIÉS
     // =========================================================
-    // Les mois JavaScript commencent à 0 :
-    // 0 = janvier
-    // 4 = mai
-    // 6 = juillet
-    // 7 = août
-    // 10 = novembre
-    // 11 = décembre
-    //
-    // Le jour férié est appliqué à toutes les structures.
-    // =========================================================
     const publicHolidays = [
         { month: 0, day: 1, name: "Jour de l'An" },
         { month: 4, day: 1, name: "Fête du Travail" },
@@ -1075,7 +1063,7 @@
     };
 
     // =========================================================
-    // 12. UTILITAIRES
+    // 12. UTILITAIRES (CORRIGÉS POUR INCLURE TOUTE LA JOURNÉE)
     // =========================================================
     const formatHour = (h) => {
         const hours = Math.floor(h);
@@ -1094,12 +1082,11 @@
     };
 
     const isBetweenDates = (date, start, end) => {
+        const s = new Date(start).setHours(0, 0, 0, 0);
+        const e = new Date(end).setHours(23, 59, 59, 999);
         const t = date.getTime();
 
-        return (
-            t >= start.getTime() &&
-            t <= end.getTime()
-        );
+        return t >= s && t <= e;
     };
 
     // =========================================================
@@ -1161,23 +1148,15 @@
                     ? isSummerFP
                     : isSummer;
 
-            // =================================================
             // PRIORITÉ 1 : JOUR FÉRIÉ
-            // =================================================
             if (publicHoliday) {
-
                 timeEl.textContent = 'Fermé';
-
                 statusEl.className = 'st st-c';
-
                 labelEl.textContent = 'Fermé';
-
                 return;
             }
 
-            // =================================================
             // PRIORITÉ 2 : FERMETURE EXCEPTIONNELLE
-            // =================================================
             if (
                 exceptionalClosures[lib] &&
                 isBetweenDates(
@@ -1186,20 +1165,14 @@
                     exceptionalClosures[lib].end
                 )
             ) {
-
                 timeEl.textContent =
                     exceptionalClosures[lib].reason || 'Fermé';
-
                 statusEl.className = 'st st-c';
-
                 labelEl.textContent = 'Fermé';
-
                 return;
             }
 
-            // =================================================
             // PRIORITÉ 3 : FERMETURE ANNUELLE
-            // =================================================
             if (
                 isSummerActive &&
                 closures[lib] &&
@@ -1209,36 +1182,24 @@
                     closures[lib].end
                 )
             ) {
-
                 timeEl.textContent = 'Fermé';
-
                 statusEl.className = 'st st-c';
-
                 labelEl.textContent = 'Fermé';
-
                 return;
             }
 
-            // =================================================
             // PRIORITÉ 4 : FONDS PATRIMONIAL HORS SAISON
-            // =================================================
             if (
                 lib === 'fp' &&
                 !isSummerActive
             ) {
-
                 timeEl.textContent = 'Sur rendez-vous';
-
                 statusEl.className = 'st st-y';
-
                 labelEl.textContent = 'Sur RDV';
-
                 return;
             }
 
-            // =================================================
             // HORAIRES
-            // =================================================
             const hoursTable =
                 isSummerActive
                     ? summerHours[lib]
@@ -1254,7 +1215,6 @@
                 );
 
             if (lib === 'fp') {
-
                 timeEl.textContent =
                     slots
                         ? slots
@@ -1264,9 +1224,7 @@
                             )
                             .join(' / ')
                         : 'Fermé';
-
             } else {
-
                 timeEl.textContent =
                     slots
                         ? slots
