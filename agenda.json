@@ -8652,6 +8652,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 405,
+    "Titre": "Cosy coloriage aux feutres à alcool",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
+    "Date_Debut": "2026-11-25",
+    "Date_Fin": "2026-11-25",
+    "Description": "Venez apprendre et expérimenter plusieurs techniques pour donner plus de vie à vos coloriages.",
+    "Heure": "14h30",
+    "Durée": "1h30",
+    "Public_cible": "A partir de 8 ans (8 places)",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 381,
     "Titre": "Ateliers numériques avec le CRIA 41",
     "Catégorie": "Initiation informatique",
@@ -9275,6 +9305,36 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 406,
+    "Titre": "Création de Noël - Diamonds painting",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
+    "Date_Debut": "2026-12-22",
+    "Date_Fin": "2026-12-22",
+    "Description": "Plongez dans la magie de Noel le temps d'un atelier créatif et scintillant.",
+    "Heure": "14h30",
+    "Durée": "1h30",
+    "Public_cible": "A partir de 8 ans (12 places)",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
