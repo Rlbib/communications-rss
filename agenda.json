@@ -7636,40 +7636,6 @@
     "Commentaire_RH": ""
   },
   {
-    "id": 399,
-    "Titre": "Just Dance sur grand écran",
-    "Catégorie": "Jeux vidéo",
-    "Localisation": "Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo",
-    "Date_Debut": "2026-10-14",
-    "Date_Fin": "2026-10-14",
-    "Description": "Venez danser en famille ou entre amis au 4ème étage de votre Bibliothèque. Tous vos tubes préférés vous attendent dans le jeu Just Dance",
-    "Heure": "14h",
-    "Durée": "2h",
-    "Public_cible": "tout public",
-    "Ville": "",
-    "URL_de_l_image": "https://www.reddit.com/r/JustDance/comments/10d4bib/in_your_opinion_whats_the_best_just_dance_game/?tl=fr",
-    "Lien": "",
-    "Reservation": "TRUE",
-    "Agents_Prevus": [
-      "L",
-      "Froger Matthieu",
-      "Deliot Christèle",
-      "Olivier Nicolas"
-    ],
-    "Animateurs_Biblio": [
-      "L",
-      "Froger Matthieu",
-      "Deliot Christèle",
-      "Olivier Nicolas"
-    ],
-    "Besoin_RH": 4,
-    "Section_Requise": "",
-    "Creneau_RH": "",
-    "Impact_SP": false,
-    "Statut_RH": "",
-    "Commentaire_RH": ""
-  },
-  {
     "id": 375,
     "Titre": "Ateliers numériques avec le CRIA 41",
     "Catégorie": "Initiation informatique",
@@ -8770,7 +8736,7 @@
     "Localisation": "Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo",
     "Date_Debut": "2026-11-28",
     "Date_Fin": "2026-11-28",
-    "Description": "Venez jouer  sur écran géant et affronter Corentin spécialiste et champion français du jeu FIFA",
+    "Description": "Venez jouer  sur écran géant et affronter Corentin Pellegrin testeur pour EA Sports. Spécialiste des jeux FIFA et participant, chaque année aux championnats nationaux, d'Europe et mondiaux (dont l'EWC à Paris) Champion régional sur FC26.",
     "Heure": "14h",
     "Durée": "2h",
     "Public_cible": "tout public",
@@ -9183,7 +9149,7 @@
   },
   {
     "id": 404,
-    "Titre": "Mission Père Noël",
+    "Titre": "🎅 Mission Père Noël 🎅 ",
     "Catégorie": "Projection",
     "Localisation": "Médiathèque Maurice-Genevoix, Auditorium",
     "Date_Debut": "2026-12-16",
