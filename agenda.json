@@ -8428,6 +8428,70 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 409,
+    "Titre": "L'Energie positive des dieux",
+    "Catégorie": "Projection",
+    "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium",
+    "Date_Debut": "2026-11-14",
+    "Date_Fin": "2026-11-14",
+    "Description": "Leur musique est une déferlante de rock électrique. Le collectif Astéréotypie, composé de musiciens autistes, dévoile sur scène son univers détonant. Ce documentaire émouvant et instructif révèle les coulisses d’un projet artistique ambitieux. La projection sera suivie d’un échange avec Charlotte Lacotte, art-thérapeute et Yoan Prevost, psychiatre à l’EAM/FAM « Les Rêveries » et ingénieur son du groupe de musique Krum.",
+    "Heure": "15h30",
+    "Durée": "1h10",
+    "Public_cible": "Adultes (100 places)",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Hubert Mathias",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Hubert Mathias",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 410,
+    "Titre": "[KRUM] - (Musique expérimentale)",
+    "Catégorie": "Concert",
+    "Localisation": "Bibliothèque Abbe-Grégoire, espace Adultes",
+    "Date_Debut": "2026-11-14",
+    "Date_Fin": "2026-11-14",
+    "Description": "[KRUM] est un groupe de musique expérimentale et d'improvisation. Il a la particularité d'être né au sein du Foyer d'Accueil Médicalisé (FAM) Les Rêveries à Vineuil, porté par l'association Aidaphi et accompagné par les structures BrutPop et ZamZamRecords. Le groupe s'est produit dans la région lors d'événements et de festivals de cultures numériques ou le Sonic Protest à Paris.",
+    "Heure": "18h",
+    "Durée": "1h",
+    "Public_cible": "Adultes",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Hubert Mathias",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Hubert Mathias",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 240,
     "Titre": "Je lis avec Plume",
     "Catégorie": "Lecture spectacle",
@@ -8824,6 +8888,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 411,
+    "Titre": "La Rivière",
+    "Catégorie": "Projection",
+    "Localisation": "Médiathèque Maurice-Genevoix, Auditorium",
+    "Date_Debut": "2026-11-28",
+    "Date_Fin": "2026-11-28",
+    "Description": "Entre Pyrénées et Atlantique coulent des rivières puissantes qu’on appelle les gaves. Les champs de maïs les assoiffent, les barrages bloquent la circulation du saumon. L’activité humaine bouleverse le cycle de l’eau et la biodiversité de la rivière. Des hommes et des femmes tendent leur regard curieux et amoureux vers ce monde fascinant fait de beauté et de désastre.",
+    "Heure": "15h30",
+    "Durée": "1h44",
+    "Public_cible": "Adultes (25 places)",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 241,
     "Titre": "Je lis avec Plume",
     "Catégorie": "Lecture spectacle",
@@ -8986,7 +9080,7 @@
     "Localisation": "Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo",
     "Date_Debut": "2026-12-09",
     "Date_Fin": "2026-12-09",
-    "Description": "Venez découvrir une sélection de jeux coopératifs sur PS5 écran géant.",
+    "Description": "",
     "Heure": "14h",
     "Durée": "2h",
     "Public_cible": "à partir de 7 ans",
