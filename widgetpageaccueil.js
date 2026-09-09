@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .hb-status-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 12px; margin-left: 10px; text-transform: uppercase; letter-spacing: 0.3px; }
         .hb-status-open { color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; }
         .hb-status-closed { color: #991b1b; background: #fee2e2; border: 1px solid #fecaca; }
-        /* === NOUVEAU : Badge fermeture exceptionnelle été === */
         .hb-status-exception { color: #92400e; background: #fef3c7; border: 1px solid #fde68a; }
 
         /* Accordéon Horaires */
@@ -64,11 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
         .hb-em { background-color: #ef4444; }
         .hb-cp { background-color: #6b7280; }
 
-        /* === NOUVEAU : Style de la note de fermeture exceptionnelle dans l'accordéon === */
         .hb-summer-exception-note { margin-top: 10px; padding: 8px 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 4px; font-size: 11.5px; color: #92400e; line-height: 1.5; display: flex; align-items: flex-start; gap: 6px; }
         .hb-summer-exception-note i { margin-top: 2px; flex-shrink: 0; }
 
-        /* === NOUVEAU : Indicateur visuel "Horaires d'été" dans l'accordéon === */
         .hb-summer-label { display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 800; padding: 2px 7px; border-radius: 8px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; border: 1px solid #fde68a; }
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
@@ -82,8 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const JSON_URL = "https://rlbib.github.io/communications-rss/agenda.json";
 
     const grid = document.getElementById('hb-widget-grid');
-    
-    // CORRECTION 1 : Sécurité si le script est chargé sur une page sans le widget
     if (!grid) return; 
 
     const hashtagsWrapper = document.getElementById('hb-hashtags');
@@ -147,49 +142,29 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!locStr) return "Médiathèque"; return locStr.split(',')[0].trim();
     }
 
-    // =========================================================================
-    // === Détection de la période d'été (23 juin → 29 août) ===================
-    // =========================================================================
     function isSummerPeriod() {
         const now = new Date();
-        const y = now.getFullYear();
-        const m = now.getMonth();   // 0-indexed : juin = 5, août = 7
+        const m = now.getMonth();
         const d = now.getDate();
-
         if (m < 5) return false;
         if (m === 5 && d < 23) return false;
         if (m > 7) return false;
         if (m === 7 && d > 29) return false;
-
         return true;
     }
 
-    // =========================================================================
-    // === Fermetures exceptionnelles d'août 2026 ==============================
-    // =========================================================================
     function isExceptionallyClosed(libType) {
         const now = new Date();
         const y = now.getFullYear();
         const m = now.getMonth();
         const d = now.getDate();
-
         if (y !== 2026) return false;
-
-        if (libType === "gregoire") {
-            if (m === 7 && d >= 11 && d <= 15) return true;
-        }
-        if (libType === "genevoix") {
-            if (m === 7 && d >= 15 && d <= 22) return true;
-        }
-        if (libType === "valland") {
-            if (m === 7 && d >= 11 && d <= 22) return true;
-        }
+        if (libType === "gregoire" && m === 7 && d >= 11 && d <= 15) return true;
+        if (libType === "genevoix" && m === 7 && d >= 15 && d <= 22) return true;
+        if (libType === "valland" && m === 7 && d >= 11 && d <= 22) return true;
         return false;
     }
 
-    // =========================================================================
-    // === Badge ouvert/fermé avec gestion été + fermetures exceptionnelles =====
-    // =========================================================================
     function getLiveStatusBadge(libType) {
         const now = new Date();
         const day = now.getDay();
@@ -235,9 +210,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // =========================================================================
-    // === Infos contact avec horaires d'été/hiver dynamiques ==================
-    // =========================================================================
     function getLibraryContactInfo(locationStr) {
         const loc = (locationStr || "").toLowerCase();
         let libType = "gregoire";
@@ -258,7 +230,6 @@ document.addEventListener('DOMContentLoaded', () => {
         else if (loc.includes("valland") || loc.includes("veuzain")) libType = "valland";
 
         const statusBadge = getLiveStatusBadge(libType);
-
         let hours, name, phone;
 
         if (libType === "gregoire") {
@@ -331,7 +302,6 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         }).filter(ev => {
             if (!ev.date || isNaN(ev.date.getTime())) return false;
-
             const isExpo = ev.category.toLowerCase().includes('exposition');
             if (isExpo) {
                 const validEndDate = (ev.endDate && !isNaN(ev.endDate.getTime())) ? ev.endDate : ev.date;
@@ -370,7 +340,16 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (diffDays === 1) relativeDateHtml = `<span class="hb-meta-pill hb-pill-countdown" style="background-color: #fff7ed; color: #ea580c; border-color: #ffedd5;"><i class="fa fa-calendar-o"></i> Demain</span>`;
             else if (diffDays > 1 && diffDays <= 30) relativeDateHtml = `<span class="hb-meta-pill hb-pill-countdown"><i class="fa fa-hourglass-start"></i> Dans ${diffDays} j.</span>`;
 
-            let resHtml = event.reservation ? `<span class="hb-meta-pill hb-pill-reservation"><i class="fa fa-ticket"></i> Inscription</span>` : `<span class="hb-meta-pill hb-pill-free"><i class="fa fa-check"></i> Entrée libre</span>`;
+            // Détection si l'animation est complète
+            const isEventComplet = event.title.toLowerCase().includes('[complet]');
+            let resHtml = '';
+            if (isEventComplet) {
+                resHtml = `<span class="hb-meta-pill" style="background-color: #fee2e2; color: #991b1b; border-color: #fecaca;"><i class="fa fa-times-circle"></i> Complet</span>`;
+            } else if (event.reservation) {
+                resHtml = `<span class="hb-meta-pill hb-pill-reservation"><i class="fa fa-ticket"></i> Inscription</span>`;
+            } else {
+                resHtml = `<span class="hb-meta-pill hb-pill-free"><i class="fa fa-check"></i> Entrée libre</span>`;
+            }
 
             grid.insertAdjacentHTML('beforeend', `
                 <div class="agenda-card format-tempsFortsPortail ${event.highlight ? 'hb-highlighted' : ''}" data-id="${event.id}">
@@ -417,8 +396,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const endDate = rawEvent.Date_Fin ? buildLocalDate(rawEvent.Date_Fin, "18h") : startDate;
         const cleanCat = (rawEvent.Catégorie || rawEvent.Categorie || "Animation").charAt(0).toUpperCase() + (rawEvent.Catégorie || rawEvent.Categorie || "Animation").slice(1).toLowerCase().trim();
         const dateText = formatEventDates(startDate, endDate, cleanCat);
-        let locText = rawEvent.Localisation || "Médiathèque";
+        
+        // Version texte propre de la date pour le corps et l'objet de l'e-mail
+        const plainDateText = dateText.replace(/<[^>]*>?/gm, ' ').replace(/\s+/g, ' ').trim();
 
+        let locText = rawEvent.Localisation || "Médiathèque";
         const publicCible = rawEvent.Public_cible || rawEvent.Public || rawEvent["Public cible"] || rawEvent["Public_Cible"] || "";
 
         if (rawEvent.URL_de_l_image && modalImg) { 
@@ -428,10 +410,25 @@ document.addEventListener('DOMContentLoaded', () => {
             modalImg.style.display = 'none'; 
         }
 
-        let reservationModalHtml = '';
-        if (rawEvent.Reservation === "TRUE") {
-            const contact = getLibraryContactInfo(rawEvent.Localisation);
+        // Vérification si l'animation est complète
+        const isComplet = (rawEvent.Titre || "").toLowerCase().includes('[complet]');
 
+        let reservationModalHtml = '';
+        const contact = getLibraryContactInfo(rawEvent.Localisation);
+
+        if (isComplet) {
+            // Blocage de l'option d'envoi de mail si complet
+            reservationModalHtml = `
+            <div class="hb-resa-box" style="border-left-color: #dc2626; background-color: #fef2f2;">
+                <div class="hb-resa-title" style="color: #991b1b;"><i class="fa fa-ban" style="color: #dc2626; font-size: 16px;"></i> Animation Complète</div>
+                <p style="margin: 0; color: #991b1b; font-size: 13px; font-weight: bold;">
+                    Cette animation est actuellement complète. Les réservations par e-mail sont closes.
+                </p>
+                <p style="margin: 6px 0 0 0; color: #4b5563; font-size: 12px;">
+                    Pour toute information complémentaire ou demande de désistement, vous pouvez joindre l'équipe par téléphone au <strong>${contact.phone}</strong>.
+                </p>
+            </div>`;
+        } else if (rawEvent.Reservation === "TRUE") {
             reservationModalHtml = `
             <div class="hb-resa-box">
                 <div class="hb-resa-title"><i class="fa fa-ticket" style="color: var(--hb-accent); font-size: 16px;"></i> Inscription Obligatoire</div>
@@ -455,17 +452,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     <input type="text" id="r-prenom" class="hb-input" placeholder="Votre Prénom*" required>
                     <input type="tel" id="r-tel" class="hb-input hb-form-full" placeholder="Numéro de téléphone">
                     <input type="email" id="r-mail" class="hb-input" placeholder="Adresse E-mail">
-                    <div class="hb-form-full" style="display:flex; align-items:center; gap:10px;">
-                        <label for="r-places" style="font-size: 13px; color: #4b5563;">Nombre de places :</label>
-                        <input type="number" id="r-places" class="hb-input" style="width:80px;" min="1" value="1">
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <label for="r-places" style="font-size: 13px; color: #4b5563;">Places :</label>
+                        <input type="number" id="r-places" class="hb-input" style="width:70px;" min="1" value="1">
                     </div>
+                    <input type="text" id="r-age" class="hb-input hb-form-full" placeholder="Âge de la ou des personnes inscrites*">
 
                     <button type="button" id="btn-generate-mail" class="hb-btn-submit hb-form-full">
                         Créer mon e-mail <i class="fa fa-paper-plane" style="margin-left: 8px;"></i>
                     </button>
                 </div>
                 <div id="resa-error-msg" style="color: #991b1b; font-size: 11.5px; margin-top: 8px; font-weight: bold; display: none;">
-                    <i class="fa fa-exclamation-circle"></i> Veuillez au moins remplir votre Nom et Prénom.
+                    <i class="fa fa-exclamation-circle"></i> Veuillez remplir au moins le Nom, le Prénom et l'Âge.
                 </div>
             </div>`;
         } else {
@@ -533,21 +531,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 const tel = document.getElementById('r-tel').value.trim();
                 const mail = document.getElementById('r-mail').value.trim();
                 const places = document.getElementById('r-places').value;
+                const age = document.getElementById('r-age') ? document.getElementById('r-age').value.trim() : '';
                 const errorMsg = document.getElementById('resa-error-msg');
 
-                if (!nom || !prenom) { errorMsg.style.display = 'block'; return; }
+                if (!nom || !prenom || !age) { 
+                    errorMsg.style.display = 'block'; 
+                    return; 
+                }
                 errorMsg.style.display = 'none';
 
-                const subject = `Réservation : ${rawEvent.Titre}`;
-                let body = `Bonjour,%0A%0AJe souhaite réserver ${places} place(s) pour l'animation "${rawEvent.Titre}".%0A%0A`;
+                // Objet et corps avec date à côté du nom + âge des inscrits
+                const subject = `Réservation : ${rawEvent.Titre} (${plainDateText})`;
+                let body = `Bonjour,%0A%0AJe souhaite réserver ${places} place(s) pour l'animation "${rawEvent.Titre}" (${plainDateText}).%0A%0A`;
                 body += `Mes coordonnées :%0A`;
                 body += `Nom : ${nom}%0A`;
                 body += `Prénom : ${prenom}%0A`;
+                body += `Âge des personnes inscrites : ${age}%0A`;
                 if (tel) body += `Téléphone : ${tel}%0A`;
                 if (mail) body += `Email : ${mail}%0A`;
                 body += `%0AMerci d'avance.`;
 
-                // Adresse unique de destination pour toutes les animations
+                // Adresse unique de destination
                 window.location.href = `mailto:bibliotheques@agglopolys.fr?subject=${encodeURIComponent(subject)}&body=${body}`;
             });
         }
