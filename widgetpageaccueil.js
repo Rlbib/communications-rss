@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const grid = document.getElementById('hb-widget-grid');
     
-    // CORRECTION 1 : Sécurité si le script est chargé sur une page sans le widget (évite les erreurs innerHTML)
+    // CORRECTION 1 : Sécurité si le script est chargé sur une page sans le widget
     if (!grid) return; 
 
     const hashtagsWrapper = document.getElementById('hb-hashtags');
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========================================================================
-    // === NOUVEAU : Détection de la période d'été (23 juin → 29 août) ========
+    // === Détection de la période d'été (23 juin → 29 août) ===================
     // =========================================================================
     function isSummerPeriod() {
         const now = new Date();
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========================================================================
-    // === NOUVEAU : Fermetures exceptionnelles d'août 2026 ====================
+    // === Fermetures exceptionnelles d'août 2026 ==============================
     // =========================================================================
     function isExceptionallyClosed(libType) {
         const now = new Date();
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========================================================================
-    // === MODIFIÉ : Badge ouvert/fermé avec gestion été + fermetures excep. ====
+    // === Badge ouvert/fermé avec gestion été + fermetures exceptionnelles =====
     // =========================================================================
     function getLiveStatusBadge(libType) {
         const now = new Date();
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========================================================================
-    // === MODIFIÉ : Infos contact avec horaires d'été/hiver dynamiques ========
+    // === Infos contact avec horaires d'été/hiver dynamiques ==================
     // =========================================================================
     function getLibraryContactInfo(locationStr) {
         const loc = (locationStr || "").toLowerCase();
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderWidget() {
-        if (!grid) return; // Sécurité supplémentaire
+        if (!grid) return;
         grid.innerHTML = '';
         const today = new Date();
         const nowLocal = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes(), 0, 0);
@@ -325,13 +325,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 location: item.Localisation || "Médiathèque", 
                 ville: item.Ville || "",
                 description: item.Description || "", 
-                // CORRECTION 2 : Conversion automatique HTTP -> HTTPS pour les images (Mixed Content)
                 imageUrl: item.URL_de_l_image ? item.URL_de_l_image.replace(/^http:\/\//i, 'https://') : null,
                 highlight: (String(item.A_la_Une || '').toUpperCase() === "TRUE" || String(item.Selection || '').toUpperCase() === "TRUE"),
                 reservation: item.Reservation === "TRUE"
             };
         }).filter(ev => {
-            // CORRECTION 3 : Sécurité pour éviter le crash TypeError ev.date is null
             if (!ev.date || isNaN(ev.date.getTime())) return false;
 
             const isExpo = ev.category.toLowerCase().includes('exposition');
@@ -424,7 +422,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const publicCible = rawEvent.Public_cible || rawEvent.Public || rawEvent["Public cible"] || rawEvent["Public_Cible"] || "";
 
         if (rawEvent.URL_de_l_image && modalImg) { 
-            // Application du forçage HTTPS ici aussi pour la grande image
             modalImg.src = rawEvent.URL_de_l_image.replace(/^http:\/\//i, 'https://'); 
             modalImg.style.display = 'block'; 
         } else if (modalImg) { 
@@ -541,7 +538,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!nom || !prenom) { errorMsg.style.display = 'block'; return; }
                 errorMsg.style.display = 'none';
 
-                const contact = getLibraryContactInfo(rawEvent.Localisation);
                 const subject = `Réservation : ${rawEvent.Titre}`;
                 let body = `Bonjour,%0A%0AJe souhaite réserver ${places} place(s) pour l'animation "${rawEvent.Titre}".%0A%0A`;
                 body += `Mes coordonnées :%0A`;
@@ -551,7 +547,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (mail) body += `Email : ${mail}%0A`;
                 body += `%0AMerci d'avance.`;
 
-                window.location.href = `mailto:${contact.name.replace(/\s/g, '.').toLowerCase()}@agglopolys.fr?subject=${encodeURIComponent(subject)}&body=${body}`;
+                // Adresse unique de destination pour toutes les animations
+                window.location.href = `mailto:bibliotheques@agglopolys.fr?subject=${encodeURIComponent(subject)}&body=${body}`;
             });
         }
     }
