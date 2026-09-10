@@ -453,14 +453,17 @@
         #agglo-summer-host .fp-banner-td {
             background: #fffbeb;
             border: 1px solid var(--orange-bd);
-            padding: 10px 14px;
+            padding: 12px 16px;
+            border-radius: var(--r-sm);
+            margin-top: 10px;
+            margin-bottom: 8px;
         }
 
         #agglo-summer-host .fp-banner-title {
             font-weight: 700;
             color: #92400e;
             font-size: 12px;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
             gap: 6px;
@@ -475,11 +478,11 @@
             padding-left: 18px;
             font-size: 11.5px;
             color: #78350f;
-            line-height: 1.45;
+            line-height: 1.5;
         }
 
         #agglo-summer-host .fp-banner-list li {
-            margin-bottom: 2px;
+            margin-bottom: 3px;
         }
 
         #agglo-summer-host .fp-banner-list li:last-child {
@@ -761,6 +764,28 @@
                     Fermé le dimanche et le lundi.
                 </div>
 
+                <div class="fp-banner-td">
+                    <div class="fp-banner-title">
+                        <i class="fa fa-info-circle"></i>
+                        Modalités de consultation du Fonds patrimonial :
+                    </div>
+
+                    <ul class="fp-banner-list">
+                        <li>Sur rendez-vous uniquement.</li>
+                        <li>
+                            Les demandes doivent être transmises à
+                            <a href="mailto:bibliotheques@agglopolys.fr">
+                                bibliotheques@agglopolys.fr
+                            </a>
+                            au moins 24h avant le rendez-vous.
+                        </li>
+                        <li>
+                            Seuls les documents préalablement identifiés
+                            par le demandeur seront communiqués.
+                        </li>
+                    </ul>
+                </div>
+
                 <div style="opacity: 0.6; filter: grayscale(1); margin-top: 24px;">
                     <div class="ms warm">
                         <i class="fa fa-sun-o"></i>
@@ -823,32 +848,6 @@
                                             <i class="fa fa-lock"></i> Fermé
                                         </span>
                                         11/08 – 14/08
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td colspan="3" class="fp-banner-td">
-
-                                        <div class="fp-banner-title">
-                                            <i class="fa fa-info-circle"></i>
-                                            Modalités de consultation du Fonds patrimonial :
-                                        </div>
-
-                                        <ul class="fp-banner-list">
-                                            <li>Sur rendez-vous uniquement.</li>
-                                            <li>
-                                                Les demandes doivent être transmises à
-                                                <a href="mailto:bibliotheques@agglopolys.fr">
-                                                    bibliotheques@agglopolys.fr
-                                                </a>
-                                                au moins 24h avant le rendez-vous.
-                                            </li>
-                                            <li>
-                                                Seuls les documents préalablement identifiés
-                                                par le demandeur seront communiqués.
-                                            </li>
-                                        </ul>
-
                                     </td>
                                 </tr>
 
@@ -1010,9 +1009,9 @@
             0: null,
             1: null,
             2: null,
-            3: null,
-            4: null,
-            5: null,
+            3: [{ s: 10, e: 13 }, { s: 14, e: 18 }],
+            4: [{ s: 13, e: 16 }],
+            5: [{ s: 14, e: 18 }],
             6: null
         }
     };
@@ -1189,17 +1188,6 @@
                 return;
             }
 
-            // PRIORITÉ 4 : FONDS PATRIMONIAL HORS SAISON
-            if (
-                lib === 'fp' &&
-                !isSummerActive
-            ) {
-                timeEl.textContent = 'Sur rendez-vous';
-                statusEl.className = 'st st-y';
-                labelEl.textContent = 'Sur RDV';
-                return;
-            }
-
             // HORAIRES
             const hoursTable =
                 isSummerActive
@@ -1215,27 +1203,15 @@
                     currentTime
                 );
 
-            if (lib === 'fp') {
-                timeEl.textContent =
-                    slots
-                        ? slots
-                            .map(
-                                s =>
-                                    `${formatHour(s.s)}–${formatHour(s.e)} (Sur RDV)`
-                            )
-                            .join(' / ')
-                        : 'Fermé';
-            } else {
-                timeEl.textContent =
-                    slots
-                        ? slots
-                            .map(
-                                s =>
-                                    `${formatHour(s.s)}–${formatHour(s.e)}`
-                            )
-                            .join(' / ')
-                        : 'Fermé';
-            }
+            timeEl.textContent =
+                slots
+                    ? slots
+                        .map(
+                            s =>
+                                `${formatHour(s.s)}–${formatHour(s.e)}`
+                        )
+                        .join(' / ')
+                    : 'Fermé';
 
             statusEl.className =
                 open
