@@ -1680,7 +1680,7 @@
     "Commentaire_RH": ""
   },
   {
-    "id": 293,
+    "id": 458,
     "Titre": "1 smartphone 1 question",
     "Catégorie": "Atelier",
     "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
@@ -7562,6 +7562,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 461,
+    "Titre": "Coin des gameurs",
+    "Catégorie": "Jeux vidéo",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2026-11-07",
+    "Date_Fin": "2026-10-24",
+    "Description": "Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "A partir de 12 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11236",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 379,
     "Titre": "Ateliers numériques avec le CRIA 41",
     "Catégorie": "Initiation informatique",
@@ -7833,6 +7863,36 @@
       "Petit Nolwenn"
     ],
     "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 293,
+    "Titre": "1 smartphone 1 question",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2026-11-25",
+    "Date_Fin": "2026-09-09",
+    "Description": "Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? \nCe rendez-vous vous permettra de prendre en main votre écran. \nCréneau de 20 min. les mercredis matin. \nInscription obligatoire au 02 54 51 33 22 en précisant la demande.",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8122,6 +8182,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 462,
+    "Titre": "Coin des gameurs",
+    "Catégorie": "Jeux vidéo",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2026-12-05",
+    "Date_Fin": "2026-10-24",
+    "Description": "Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "A partir de 12 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11236",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 335,
     "Titre": "Petites lectures et comptines",
     "Catégorie": "Lecture spectacle",
@@ -8175,6 +8265,36 @@
       "Olivier Nicolas"
     ],
     "Besoin_RH": 5,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 459,
+    "Titre": "1 smartphone 1 question",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2026-12-09",
+    "Date_Fin": "2026-09-09",
+    "Description": "Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? \nCe rendez-vous vous permettra de prendre en main votre écran. \nCréneau de 20 min. les mercredis matin. \nInscription obligatoire au 02 54 51 33 22 en précisant la demande.",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8560,6 +8680,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 463,
+    "Titre": "Coin des gameurs",
+    "Catégorie": "Jeux vidéo",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2026-12-19",
+    "Date_Fin": "2026-10-24",
+    "Description": "Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "A partir de 12 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11236",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 406,
     "Titre": "Création de Noël : diamonds painting",
     "Catégorie": "Atelier",
@@ -8611,6 +8761,36 @@
     "Animateurs_Biblio": [
       "L",
       "Teffe Cécile"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 460,
+    "Titre": "1 smartphone 1 question",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2026-12-23",
+    "Date_Fin": "2026-09-09",
+    "Description": "Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? \nCe rendez-vous vous permettra de prendre en main votre écran. \nCréneau de 20 min. les mercredis matin. \nInscription obligatoire au 02 54 51 33 22 en précisant la demande.",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
     ],
     "Besoin_RH": 2,
     "Section_Requise": "",
