@@ -691,100 +691,6 @@
 
             <div class="mb">
 
-                <div class="ms warm">
-                    <i class="fa fa-sun-o"></i>
-                    Horaires d'été (23 juin – 29 août)
-                </div>
-
-                <div class="tw">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Structure</th>
-                                <th>Horaires</th>
-                                <th>Fermeture annuelle</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                                <td><strong>Abbé-Grégoire</strong></td>
-                                <td>Mardi au samedi<br>10h – 15h30</td>
-                                <td>
-                                    <span class="bc">
-                                        <i class="fa fa-lock"></i> Fermé
-                                    </span>
-                                    11/08 – 15/08
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><strong>Maurice-Genevoix</strong></td>
-                                <td>
-                                    Mardi au samedi<br>
-                                    10h – 12h30 / 13h30 – 15h30
-                                </td>
-                                <td>
-                                    <span class="bc">
-                                        <i class="fa fa-lock"></i> Fermé
-                                    </span>
-                                    15/08 – 22/08
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><strong>Rose-Valland</strong></td>
-                                <td>Mercredi au samedi<br>10h – 13h00</td>
-                                <td>
-                                    <span class="bc">
-                                        <i class="fa fa-lock"></i> Fermé
-                                    </span>
-                                    11/08 – 22/08
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><strong>Fonds patrimonial</strong></td>
-                                <td>Mercredi au vendredi<br>10h – 13h</td>
-                                <td>
-                                    <span class="bc">
-                                        <i class="fa fa-lock"></i> Fermé
-                                    </span>
-                                    11/08 – 14/08
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="3" class="fp-banner-td">
-
-                                    <div class="fp-banner-title">
-                                        <i class="fa fa-info-circle"></i>
-                                        Modalités de consultation du Fonds patrimonial :
-                                    </div>
-
-                                    <ul class="fp-banner-list">
-                                        <li>Sur rendez-vous uniquement.</li>
-                                        <li>
-                                            Les demandes doivent être transmises à
-                                            <a href="mailto:bibliotheques@agglopolys.fr">
-                                                bibliotheques@agglopolys.fr
-                                            </a>
-                                            au moins 24h avant le rendez-vous.
-                                        </li>
-                                        <li>
-                                            Seuls les documents préalablement identifiés
-                                            par le demandeur seront communiqués.
-                                        </li>
-                                    </ul>
-
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-
                 <div class="ms">
                     <i class="fa fa-calendar-o"></i>
                     Horaires habituels
@@ -833,18 +739,17 @@
                             </tr>
 
                             <tr>
-                                <td><strong>Fonds patrimonial</strong></td>
-                                <td colspan="5"
-                                    style="
-                                        text-align:center;
-                                        vertical-align:middle;
-                                        font-style:italic;
-                                        background:var(--light);
-                                        color:var(--muted);
-                                    ">
-                                    <i class="fa fa-calendar-check-o"></i>
-                                    Uniquement sur rendez-vous
+                                <td>
+                                    <strong>Fonds patrimonial</strong>
+                                    <div style="font-size: 11px; color: var(--muted); font-weight: normal; margin-top: 3px;">
+                                        Consultation des documents sur rendez-vous
+                                    </div>
                                 </td>
+                                <td>Fermé</td>
+                                <td>10h – 13h / 14h – 18h</td>
+                                <td>13h – 16h</td>
+                                <td>14h – 18h</td>
+                                <td>Fermé</td>
                             </tr>
 
                         </tbody>
@@ -854,6 +759,102 @@
                 <div class="ft">
                     <i class="fa fa-info-circle"></i>
                     Fermé le dimanche et le lundi.
+                </div>
+
+                <div style="opacity: 0.6; filter: grayscale(1); margin-top: 24px;">
+                    <div class="ms warm">
+                        <i class="fa fa-sun-o"></i>
+                        Horaires d'été (23 juin – 29 août)
+                    </div>
+
+                    <div class="tw">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Structure</th>
+                                    <th>Horaires</th>
+                                    <th>Fermeture annuelle</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td><strong>Abbé-Grégoire</strong></td>
+                                    <td>Mardi au samedi<br>10h – 15h30</td>
+                                    <td>
+                                        <span class="bc">
+                                            <i class="fa fa-lock"></i> Fermé
+                                        </span>
+                                        11/08 – 15/08
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Maurice-Genevoix</strong></td>
+                                    <td>
+                                        Mardi au samedi<br>
+                                        10h – 12h30 / 13h30 – 15h30
+                                    </td>
+                                    <td>
+                                        <span class="bc">
+                                            <i class="fa fa-lock"></i> Fermé
+                                        </span>
+                                        15/08 – 22/08
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Rose-Valland</strong></td>
+                                    <td>Mercredi au samedi<br>10h – 13h00</td>
+                                    <td>
+                                        <span class="bc">
+                                            <i class="fa fa-lock"></i> Fermé
+                                        </span>
+                                        11/08 – 22/08
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Fonds patrimonial</strong></td>
+                                    <td>Mercredi au vendredi<br>10h – 13h</td>
+                                    <td>
+                                        <span class="bc">
+                                            <i class="fa fa-lock"></i> Fermé
+                                        </span>
+                                        11/08 – 14/08
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="3" class="fp-banner-td">
+
+                                        <div class="fp-banner-title">
+                                            <i class="fa fa-info-circle"></i>
+                                            Modalités de consultation du Fonds patrimonial :
+                                        </div>
+
+                                        <ul class="fp-banner-list">
+                                            <li>Sur rendez-vous uniquement.</li>
+                                            <li>
+                                                Les demandes doivent être transmises à
+                                                <a href="mailto:bibliotheques@agglopolys.fr">
+                                                    bibliotheques@agglopolys.fr
+                                                </a>
+                                                au moins 24h avant le rendez-vous.
+                                            </li>
+                                            <li>
+                                                Seuls les documents préalablement identifiés
+                                                par le demandeur seront communiqués.
+                                            </li>
+                                        </ul>
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
             </div>
