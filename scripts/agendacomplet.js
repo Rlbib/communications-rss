@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     function buildUTCDate(dateStr, heureStr) { if (!dateStr) return null; const parts = dateStr.split('-'); if (parts.length === 3) { let hours = 0, minutes = 0; if (heureStr) { const match = heureStr.match(/(\d{1,2})[h:](\d{2})?/i); if (match) { hours = parseInt(match[1], 10); minutes = match[2] ? parseInt(match[2], 10) : 0; } } return new Date(Date.UTC(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10), hours, minutes, 0, 0)); } return new Date(dateStr); }
     function formatTime(date) { if (!date || isNaN(date.getTime())) return ""; const hours = date.getUTCHours(); const minutes = date.getUTCMinutes(); if (hours === 0 && minutes === 0) return ""; return minutes === 0 ? `${hours}h` : `${hours}h${minutes.toString().padStart(2, '0')}`; }
-function formatEventDates(startDate, endDate, category) { let formattedStart = dFormatter.format(startDate); formattedStart = formattedStart.charAt(0).toUpperCase() + formattedStart.slice(1); const isMultiDay = endDate && !isNaN(endDate.getTime()) && (startDate.getUTCDate() !== endDate.getUTCDate() || startDate.getUTCMonth() !== endDate.getUTCMonth() || startDate.getUTCFullYear() !== endDate.getUTCFullYear()); if (isMultiDay) { let formattedEnd = dFormatter.format(endDate); formattedEnd = formattedEnd.charAt(0).toUpperCase() + formattedEnd.slice(1); if (startDate.getUTCFullYear() === endDate.getUTCFullYear()) { return "Du " + formattedStart.replace(new RegExp('\\s+' + startDate.getUTCFullYear() + '$'), '') + " au " + formattedEnd; } return "Du " + formattedStart + " au " + formattedEnd; } const timeStr = formatTime(startDate); return "Le " + formattedStart + (timeStr ? ` <span class="hb-time-highlight"><i class="fa fa-clock-o"></i> ${timeStr}</span>` : ""); }
+    function formatEventDates(startDate, endDate, category) { let formattedStart = dFormatter.format(startDate); formattedStart = formattedStart.charAt(0).toUpperCase() + formattedStart.slice(1); const isMultiDay = endDate && !isNaN(endDate.getTime()) && (startDate.getUTCDate() !== endDate.getUTCDate() || startDate.getUTCMonth() !== endDate.getUTCMonth() || startDate.getUTCFullYear() !== endDate.getUTCFullYear()); if (isMultiDay) { let formattedEnd = dFormatter.format(endDate); formattedEnd = formattedEnd.charAt(0).toUpperCase() + formattedEnd.slice(1); if (startDate.getUTCFullYear() === endDate.getUTCFullYear()) { return "Du " + formattedStart.replace(new RegExp('\\s+' + startDate.getUTCFullYear() + '$'), '') + " au " + formattedEnd; } return "Du " + formattedStart + " au " + formattedEnd; } const timeStr = formatTime(startDate); return "Le " + formattedStart + (timeStr ? ` <span class="hb-time-highlight"><i class="fa fa-clock-o"></i> ${timeStr}</span>` : ""); }
     function getGroupedLocation(locStr) { if (!locStr) return "Autres structures"; const lower = locStr.toLowerCase(); if (lower.includes("abbé-grégoire") || lower.includes("abbé gregoire") || lower.includes("abbé")) return "Bibliothèque Abbé-Grégoire"; if (lower.includes("maurice-genevoix") || lower.includes("genevoix")) return "Médiathèque Maurice-Genevoix"; if (lower.includes("rose-valland") || lower.includes("valland")) return "Bibliothèque Rose-Valland"; return "Autres structures"; }
 
     // =========================================================================
@@ -390,6 +390,9 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
         const cleanCat = (rawEvent.Catégorie || rawEvent.Categorie || "Animation").charAt(0).toUpperCase() + (rawEvent.Catégorie || rawEvent.Categorie || "Animation").slice(1).toLowerCase().trim();
         const dateText = formatEventDates(startDate, endDate, cleanCat); let locText = rawEvent.Localisation || "Médiathèque"; if (rawEvent.Ville) locText += `, ${rawEvent.Ville}`;
         
+        // Version texte propre de la date pour le corps et l'objet de l'e-mail
+        const plainDateText = dateText.replace(/<[^>]*>?/gm, ' ').replace(/\s+/g, ' ').trim();
+
         // --- NOTE DE RÉSOLUTION (FIX 2) : FORÇAGE HTTPS POUR L'IMAGE DE LA MODALE ---
         if (rawEvent.URL_de_l_image && modalImg) { 
             modalImg.src = rawEvent.URL_de_l_image.replace(/^http:\/\//i, 'https://'); 
@@ -409,10 +412,62 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
             return "";
         })();
 
+        // =========================================================================
+        // === MODULE DE PRÉ-INSCRIPTION (HARMONISÉ AVEC LE WIDGET ACCUEIL) ========
+        // =========================================================================
+        const isComplet = (rawEvent.Titre || "").toLowerCase().includes('[complet]');
         let reservationModalHtml = '';
-        if (rawEvent.Reservation === "TRUE") { 
-            const contact = getLibraryContactInfo(rawEvent.Localisation); 
-            reservationModalHtml = `<div class="hb-resa-box"><div class="hb-resa-title"><i class="fa fa-ticket" style="color: var(--hb-accent); font-size: 16px;"></i> Inscription Obligatoire</div><p class="hb-resa-subtitle" style="display:flex; align-items:center; flex-wrap:wrap; gap:4px;"><i class="fa fa-phone" style="color: var(--hb-muted);"></i> Appeler le <a href="tel:${contact.phone.replace(/\s/g, '')}" style="color: var(--hb-primary); font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--hb-accent);">${contact.phone}</a> ${contact.badge}</p><details class="hb-hours-details"><summary class="hb-hours-summary"><i class="fa fa-info-circle"></i> Détail des horaires d'ouverture</summary><div class="hb-hours-content">${contact.hours}</div></details><hr style="border: 0; height: 1px; background-color: #e5e7eb; margin: 15px 0;"><p class="hb-resa-subtitle"><i class="fa fa-envelope-o" style="color: var(--hb-muted);"></i> Ou préparez votre e-mail de demande :</p><div class="hb-form-grid" id="resa-email-form"><input type="text" id="r-nom" class="hb-input" placeholder="Votre Nom*" required><input type="text" id="r-prenom" class="hb-input" placeholder="Votre Prénom*" required><input type="tel" id="r-tel" class="hb-input hb-form-full" placeholder="Numéro de téléphone"><input type="email" id="r-mail" class="hb-input" placeholder="Adresse E-mail"><div class="hb-form-full" style="display:flex; align-items:center; gap:10px;"><label for="r-places" style="font-size: 13px; color: #4b5563;">Nombre de places :</label><input type="number" id="r-places" class="hb-input" style="width:80px;" min="1" value="1"></div><button type="button" id="btn-generate-mail" class="hb-btn-submit hb-form-full">Créer mon e-mail <i class="fa fa-paper-plane" style="margin-left: 8px;"></i></button></div><div id="resa-error-msg" style="color: #991b1b; font-size: 11.5px; margin-top: 8px; font-weight: bold; display: none;"><i class="fa fa-exclamation-circle"></i> Veuillez au moins remplir votre Nom et Prénom.</div></div>`; 
+        const contact = getLibraryContactInfo(rawEvent.Localisation);
+
+        if (isComplet) {
+            reservationModalHtml = `
+            <div class="hb-resa-box" style="border-left-color: #dc2626; background-color: #fef2f2;">
+                <div class="hb-resa-title" style="color: #991b1b;"><i class="fa fa-ban" style="color: #dc2626; font-size: 16px;"></i> Animation Complète</div>
+                <p style="margin: 0; color: #991b1b; font-size: 13px; font-weight: bold;">
+                    Cette animation est actuellement complète. Les réservations par e-mail sont closes.
+                </p>
+                <p style="margin: 6px 0 0 0; color: #4b5563; font-size: 12px;">
+                    Pour toute information complémentaire ou demande de désistement, vous pouvez joindre l'équipe par téléphone au <strong>${contact.phone}</strong>.
+                </p>
+            </div>`;
+        } else if (rawEvent.Reservation === "TRUE") { 
+            reservationModalHtml = `
+            <div class="hb-resa-box">
+                <div class="hb-resa-title"><i class="fa fa-ticket" style="color: var(--hb-accent); font-size: 16px;"></i> Inscription Obligatoire</div>
+
+                <p class="hb-resa-subtitle" style="display:flex; align-items:center; flex-wrap:wrap; gap:4px;">
+                    <i class="fa fa-phone" style="color: var(--hb-muted);"></i> Appeler le <a href="tel:${contact.phone.replace(/\s/g, '')}" style="color: var(--hb-primary); font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--hb-accent);">${contact.phone}</a>
+                    ${contact.badge}
+                </p>
+
+                <details class="hb-hours-details">
+                    <summary class="hb-hours-summary"><i class="fa fa-info-circle"></i> Détail des horaires d'ouverture</summary>
+                    <div class="hb-hours-content">${contact.hours}</div>
+                </details>
+
+                <hr style="border: 0; height: 1px; background-color: #e5e7eb; margin: 15px 0;">
+
+                <p class="hb-resa-subtitle"><i class="fa fa-envelope-o" style="color: var(--hb-muted);"></i> Ou préparez votre e-mail de demande :</p>
+
+                <div class="hb-form-grid" id="resa-email-form">
+                    <input type="text" id="r-nom" class="hb-input" placeholder="Votre Nom*" required>
+                    <input type="text" id="r-prenom" class="hb-input" placeholder="Votre Prénom*" required>
+                    <input type="tel" id="r-tel" class="hb-input hb-form-full" placeholder="Numéro de téléphone">
+                    <input type="email" id="r-mail" class="hb-input" placeholder="Adresse E-mail">
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <label for="r-places" style="font-size: 13px; color: #4b5563;">Places :</label>
+                        <input type="number" id="r-places" class="hb-input" style="width:70px;" min="1" value="1">
+                    </div>
+                    <input type="text" id="r-age" class="hb-input hb-form-full" placeholder="Âge de la ou des personnes inscrites*">
+
+                    <button type="button" id="btn-generate-mail" class="hb-btn-submit hb-form-full">
+                        Créer mon e-mail <i class="fa fa-paper-plane" style="margin-left: 8px;"></i>
+                    </button>
+                </div>
+                <div id="resa-error-msg" style="color: #991b1b; font-size: 11.5px; margin-top: 8px; font-weight: bold; display: none;">
+                    <i class="fa fa-exclamation-circle"></i> Veuillez remplir au moins le Nom, le Prénom et l'Âge.
+                </div>
+            </div>`; 
         } else { 
             reservationModalHtml = `<div class="hb-modal-meta-item" style="background-color: #f0fdf4; color: #166534; padding: 6px 12px; border-radius: 4px; border-left: 4px solid #4ade80; font-weight: bold; margin-top: 5px; font-size: 12px; text-transform: uppercase;"><i class="fa fa-check"></i> Entrée libre (Sans réservation)</div>`; 
         } 
@@ -449,13 +504,36 @@ function formatEventDates(startDate, endDate, category) { let formattedStart = d
                 </div>`; 
         }
         
-        if (rawEvent.Reservation === "TRUE") { 
-            document.getElementById('btn-generate-mail').addEventListener('click', () => { 
-                const nom = document.getElementById('r-nom').value.trim(); const prenom = document.getElementById('r-prenom').value.trim(); const errorMsg = document.getElementById('resa-error-msg'); 
-                if (!nom || !prenom) { errorMsg.style.display = 'block'; return; } errorMsg.style.display = 'none';
-                const tel = document.getElementById('r-tel').value.trim(); const mail = document.getElementById('r-mail').value.trim(); const places = document.getElementById('r-places').value; const contact = getLibraryContactInfo(rawEvent.Localisation); 
-                const subject = `Réservation : ${rawEvent.Titre}`; const body = `Bonjour,\nJe souhaite réserver ${places} place(s) pour l'animation "${rawEvent.Titre}".\nNom : ${nom}\nPrénom : ${prenom}\nTél : ${tel || 'Non renseigné'}\nEmail : ${mail || 'Non renseigné'}\n\nMerci.`; 
-                window.location.href = `mailto:${contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`; 
+        const btnGenerateMail = document.getElementById('btn-generate-mail');
+        if (btnGenerateMail) { 
+            btnGenerateMail.addEventListener('click', () => { 
+                const nom = document.getElementById('r-nom').value.trim(); 
+                const prenom = document.getElementById('r-prenom').value.trim(); 
+                const tel = document.getElementById('r-tel').value.trim(); 
+                const mail = document.getElementById('r-mail').value.trim(); 
+                const places = document.getElementById('r-places').value; 
+                const age = document.getElementById('r-age') ? document.getElementById('r-age').value.trim() : ''; 
+                const errorMsg = document.getElementById('resa-error-msg'); 
+
+                if (!nom || !prenom || !age) { 
+                    errorMsg.style.display = 'block'; 
+                    return; 
+                } 
+                errorMsg.style.display = 'none';
+
+                // Objet et corps avec date à côté du titre + âge des inscrits
+                const subject = `Réservation : ${rawEvent.Titre} (${plainDateText})`;
+                let body = `Bonjour,%0A%0AJe souhaite réserver ${places} place(s) pour l'animation "${rawEvent.Titre}" (${plainDateText}).%0A%0A`;
+                body += `Mes coordonnées :%0A`;
+                body += `Nom : ${nom}%0A`;
+                body += `Prénom : ${prenom}%0A`;
+                body += `Âge des personnes inscrites : ${age}%0A`;
+                if (tel) body += `Téléphone : ${tel}%0A`;
+                if (mail) body += `Email : ${mail}%0A`;
+                body += `%0AMerci d'avance.`;
+
+                // Adresse unique de destination
+                window.location.href = `mailto:bibliotheques@agglopolys.fr?subject=${encodeURIComponent(subject)}&body=${body}`;
             }); 
         } 
         
