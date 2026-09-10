@@ -1,3 +1,146 @@
+import datetime
+import json
+import os
+import dateutil.parser
+import requests
+
+# ==========================================
+# CONFIGURATION
+# ==========================================
+DOC_ID = "9yLQzULqduhD"
+TABLE_ID = "Com"
+
+# Utilisation de l'endpoint public /records de Grist
+GRIST_API_URL = (
+    f"https://grist.numerique.gouv.fr/api/docs/{DOC_ID}/tables/{TABLE_ID}/records"
+)
+
+
+# ==========================================
+
+
+def fetch_rows():
+    """Récupère publiquement les lignes du document Grist."""
+    print(f"Tentative d'accès public à l'API Grist : {GRIST_API_URL}")
+    resp = requests.get(GRIST_API_URL)
+    if resp.status_code != 200:
+        print(f"Erreur de l'API Grist ({resp.status_code}) : {resp.text}")
+        raise SystemExit(
+            f"Le serveur Grist a renvoyé une erreur. Vérifiez le TABLE_ID '{TABLE_ID}'."
+        )
+    return resp.json()
+
+
+def get_field(rec, name):
+    """Récupère proprement un champ dans l'objet de record Grist."""
+    if isinstance(rec, dict):
+        if "fields" in rec and isinstance(rec["fields"], dict):
+            return rec["fields"].get(name)
+        return rec.get(name)
+    return None
+
+
+def get_field_any(rec, possible_names):
+    """Cherche le premier champ qui existe parmi une liste de noms possibles."""
+    for n in possible_names:
+        v = get_field(rec, n)
+        if v not in (None, "", []):
+            return v
+    # fallback insensible à la casse
+    if isinstance(rec, dict):
+        fields = rec.get("fields", rec) if "fields" in rec else rec
+        if isinstance(fields, dict):
+            lower_map = {k.lower().replace("_", " ").strip(): v for k, v in fields.items()}
+            for n in possible_names:
+                clean_n = n.lower().replace("_", " ").strip()
+                if clean_n in lower_map:
+                    val = lower_map[clean_n]
+                    if val not in (None, "", []):
+                        return val
+    return None
+
+
+def is_allowed_on_portal(rec):
+    """
+    Vérifie si l'animation doit être publiée sur le portail.
+    Par défaut : OUI, sauf si expressément marqué 'Non' ou 'En Attente'.
+    """
+    val = get_field_any(
+        rec,
+        [
+            "SUR LE PORTAIL",
+            "SUR_LE_PORTAIL",
+            "Sur_le_portail",
+            "sur_le_portail",
+            "Sur_Le_Portail",
+            "Portail",
+            "PORTAIL",
+        ],
+    )
+
+    # Si la colonne n'est pas remplie, on affiche par défaut
+    if val is None or val == "" or val == []:
+        return True
+
+    # Si Grist renvoie une liste (cas ChoiceList)
+    if isinstance(val, list):
+        val_str = " ".join(str(x) for x in val).strip().lower()
+    else:
+        val_str = str(val).strip().lower()
+
+    # Si marqué explicitement Non ou En Attente -> MASQUER
+    if "non" in val_str:
+        return False
+    if "attente" in val_str:
+        return False
+
+    return True
+
+
+def get_field_list(rec, possible_names):
+    """Récupère un champ qui est une ChoiceList / liste d'agents, toujours en liste Python."""
+    val = get_field_any(rec, possible_names)
+    if val is None:
+        return []
+    if isinstance(val, list):
+        return [str(x).strip() for x in val if str(x).strip()]
+    if isinstance(val, str):
+        if "," in val:
+            return [s.strip() for s in val.split(",") if s.strip()]
+        if val.strip():
+            return [val.strip()]
+    return []
+
+
+def clean_date(val):
+    """Normalise la date de Grist pour renvoyer un format standardisé YYYY-MM-DD."""
+    if not val:
+        return ""
+    if isinstance(val, (int, float)):
+        try:
+            if val > 100000000000:
+                val = val / 1000.0
+            dt = datetime.datetime.fromtimestamp(val, datetime.timezone.utc)
+            return dt.strftime("%Y-%m-%d")
+        except Exception:
+            pass
+    val_str = str(val).strip()
+    if val_str.replace(".", "", 1).isdigit():
+        try:
+            ts = float(val_str)
+            if ts > 100000000000:
+                ts = ts / 1000.0
+            dt = datetime.datetime.fromtimestamp(ts, datetime.timezone.utc)
+            return dt.strftime("%Y-%m-%d")
+        except Exception:
+            pass
+    try:
+        dt = dateutil.parser.parse(val_str)
+        return dt.strftime("%Y-%m-%d")
+    except Exception:
+        return val_str
+
+
 def build_json_data(rows):
     """Génère la structure JSON conforme + extension RH."""
     events_list = []
@@ -10,38 +153,18 @@ def build_json_data(rows):
         print(f"Format de données inattendu reçu de Grist : {rows}")
         return []
 
+    count_masques = 0
+
     for r in candidates or []:
         if not isinstance(r, dict):
             continue
 
         # =====================================================================
-        # FILTRE DE PUBLICATION : "SUR LE PORTAIL"
+        # VÉRIFICATION DU STATUT DE VALIDATION (SUR LE PORTAIL)
         # =====================================================================
-        # Grist génère généralement les ID de colonne sans espaces ("SUR_LE_PORTAIL")
-        # On vérifie toutes les variantes possibles du nom.
-        sur_portail_val = get_field_any(
-            r,
-            [
-                "SUR LE PORTAIL",
-                "SUR_LE_PORTAIL",
-                "Sur_le_portail",
-                "sur_le_portail",
-                "Sur_Le_Portail",
-                "SUR_LE_PORTAIL_",
-            ],
-        )
-
-        statut_portail = str(sur_portail_val or "").strip().lower()
-
-        # Si le statut est expressément "non" ou "en attente", on l'exclut !
-        if statut_portail in ["non", "en attente"]:
+        if not is_allowed_on_portal(r):
+            count_masques += 1
             continue
-
-        # NB : Si la cellule est vide, vous pouvez choisir de :
-        # - L'inclure d'office (comportement par défaut "Oui") : ne rien faire de plus.
-        # - L'exclure par sécurité : décommentez les deux lignes suivantes :
-        # if statut_portail not in ["oui"]:
-        #     continue
 
         record_id = r.get("id") or 999
 
@@ -174,6 +297,7 @@ def build_json_data(rows):
             or ""
         )
 
+        # Construction de l'objet événement
         event_item = {
             "id": record_id,
             "Titre": str(titre),
@@ -189,6 +313,7 @@ def build_json_data(rows):
             "URL_de_l_image": str(image_url),
             "Lien": str(lien),
             "Reservation": str(reservation),
+            # --- EXTENSION RH POUR SIRIUS ---
             "Agents_Prevus": animateurs,
             "Animateurs_Biblio": animateurs,
             "Besoin_RH": besoin_rh,
@@ -201,4 +326,34 @@ def build_json_data(rows):
 
         events_list.append(event_item)
 
+    print(f"ℹ️ {count_masques} animations masquées (marquées 'Non' ou 'En Attente').")
     return events_list
+
+
+def main():
+    rows = fetch_rows()
+    events_json = build_json_data(rows)
+
+    # Tri par date
+    def sort_key(e):
+        try:
+            return dateutil.parser.parse(e.get("Date_Debut", ""))
+        except:
+            return datetime.datetime.max
+
+    events_json.sort(key=sort_key)
+
+    with open("agenda.json", "w", encoding="utf-8") as f:
+        json.dump(events_json, f, ensure_ascii=False, indent=2)
+
+    print(
+        f"Le fichier agenda.json a été généré avec succès ({len(events_json)} événements exportés)."
+    )
+    avec_agents = sum(1 for e in events_json if e.get("Agents_Prevus"))
+    print(
+        f"→ {avec_agents} animations avec au moins 1 animateur biblio affecté"
+    )
+
+
+if __name__ == "__main__":
+    main()
