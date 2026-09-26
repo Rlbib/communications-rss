@@ -10,24 +10,96 @@
     "items": []
   },
   "pokemon": {
-    "targetEventId": "361",
+    "targetEventId": "321",
     "tag": "📖 Sélection Thématique",
     "tagColor": "#e11d48",
     "title": "L'univers Pokémon à emprunter",
     "subtitle": "Pour prolonger la conférence et les ateliers du cycle Pokémon",
     "quote": "« Saviez-vous que le manga d'origine est bien plus mature et fidèle aux premiers jeux ? » — Sophie",
     "location": "Toutes médiathèques",
-    "items": []
+    "items": [
+      {
+        "id_notice": "527729",
+        "title": "POKÉMON POKOPIA [SWITCH2]",
+        "author": "",
+        "fmt": "Game",
+        "loc": "Disponible",
+        "img": "https://marketplace.archimed.fr/Cover/AGLO/GAME/aslExFfJ4R7CAFoy4FEFYg2/0045496313838/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fGAME_MEDIUM.png",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/527729",
+        "order": 99
+      },
+      {
+        "id_notice": "409953",
+        "title": "POKÉMON SOLEIL [3DS]",
+        "author": "Pokémon compagnie.",
+        "fmt": "Game",
+        "loc": "Disponible",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/81EWnqaxCSL._SL120_.jpg",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/409953",
+        "order": 99
+      },
+      {
+        "id_notice": "409954",
+        "title": "POKÉMON LUNE [3DS]",
+        "author": "Pokémon compagnie.",
+        "fmt": "Game",
+        "loc": "Disponible",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/81AyXAtkcFL._SL120_.jpg",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/409954",
+        "order": 99
+      },
+      {
+        "id_notice": "439839",
+        "title": "POKÉMON DÉTECTIVE PIKACHU",
+        "author": "Letterman, Rob",
+        "fmt": "Vidéo",
+        "loc": "Disponible",
+        "img": "https://www.adav-assoc.com/4DACTION/GetImage/255331",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/439839",
+        "order": 99
+      }
+    ]
   },
   "sorcellerie": {
-    "targetEventId": "322",
+    "targetEventId": "296",
     "tag": "✨ Les Incontournables",
     "tagColor": "#7c3aed",
     "title": "Magie et Sorcellerie à Poudlard",
     "subtitle": "Des romans et documents pour prolonger la lecture d'Harry Potter",
     "quote": "« De quoi réviser ses formules magiques avant la grande dictée de samedi ! »",
     "location": "Toutes médiathèques",
-    "items": []
+    "items": [
+      {
+        "id_notice": "426704",
+        "title": "LEGO : HARRY POTTER COLLECTION [PS4]",
+        "author": "Warner Bros Games",
+        "fmt": "Game",
+        "loc": "Disponible",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/71Qw+yGl+HL._SL120_.jpg",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/426704",
+        "order": 99
+      },
+      {
+        "id_notice": "495851",
+        "title": "HARRY POTTER. HARRY POTTER = HARRY POTTER AND THE CHAMBER OF SEC...",
+        "author": "Columbus, Chris",
+        "fmt": "Sans exemplaire",
+        "loc": "Disponible",
+        "img": "https://marketplace.archimed.fr/Cover/AGLO/SAXP/yeKeqIaKFptL1ntulB_H_w2/3322069866692/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fSAXP_MEDIUM.png",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/495851",
+        "order": 99
+      },
+      {
+        "id_notice": "482796",
+        "title": "HARRY POTTER.. HARRY POTTER ET LES RELIQUES DE LA MORT",
+        "author": "Rowling, Joanne K.",
+        "fmt": "Livre",
+        "loc": "Disponible",
+        "img": "https://marketplace.archimed.fr/Cover/AGLO/MONO/s65a-ASB9HLaAeWZEzCxuQ2/9782070585236/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fMONO_MEDIUM.png",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/482796",
+        "order": 99
+      }
+    ]
   },
   "Final Fantasy x Disney": {
     "targetEventId": "286",
