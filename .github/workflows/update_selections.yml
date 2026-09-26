@@ -4,10 +4,10 @@ on:
   schedule:
     # Tourne toutes les 2 heures
     - cron: '0 */2 * * *'
-  workflow_dispatch: # Permet de lancer manuellement
+  workflow_dispatch: # Déclencheur manuel
 
 permissions:
-  contents: write # Autorise le robot à enregistrer selections.json
+  contents: write
 
 jobs:
   build:
@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Récupérer le code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Installer Python
         uses: actions/setup-python@v4
@@ -29,9 +31,20 @@ jobs:
           GRIST_API_KEY: ${{ secrets.GRIST_API_KEY }}
         run: python scripts/build_selections.py
 
-      - name: Sauvegarder et publier selections.json
+      - name: Déposer selections.json sur la branche gh-pages
         run: |
-          git config --global user.name 'Robot Grist'
-          git config --global user.email 'robot@github.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Sauvegarde temporaire du fichier généré
+          cp selections.json /tmp/selections.json
+          
+          # Bascule sur la branche gh-pages
+          git checkout gh-pages
+          
+          # Rapatriement de selections.json
+          cp /tmp/selections.json ./selections.json
+          
+          # Commit et push sur gh-pages
           git add selections.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Mise à jour automatique de selections.json" && git push)
+          git diff --staged --quiet || (git commit -m "Mise à jour automatique de selections.json [skip ci]" && git push origin gh-pages)
