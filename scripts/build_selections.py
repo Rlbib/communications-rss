@@ -2,7 +2,6 @@ import os
 import json
 import requests
 
-# Configuration automatique pour votre compte
 SERVER = "https://grist.numerique.gouv.fr"
 DOC_ID = os.environ.get("GRIST_DOC_ID", "qp8t9UCuaPoo")
 API_KEY = os.environ.get("GRIST_API_KEY")
@@ -19,7 +18,7 @@ def fetch_table(table_name):
     return r.json().get("records", [])
 
 def main():
-    print(f"📥 Récupération des données depuis {SERVER} (Doc: {DOC_ID})...")
+    print(f"📥 Récupération des données depuis {SERVER}...")
     selections_records = fetch_table("Selections")
     documents_records = fetch_table("Documents")
 
@@ -32,6 +31,13 @@ def main():
             if sel_ref not in docs_by_selection_row_id:
                 docs_by_selection_row_id[sel_ref] = []
             
+            # Gestion blindée de la colonne Ordre (vide ou texte)
+            raw_order = f.get("Ordre")
+            try:
+                order_val = int(str(raw_order).strip()) if raw_order is not None and str(raw_order).strip() else 99
+            except (ValueError, TypeError):
+                order_val = 99
+
             docs_by_selection_row_id[sel_ref].append({
                 "id_notice": str(f.get("ID_Notice", "")),
                 "title": f.get("Titre", "Titre inconnu"),
@@ -40,7 +46,7 @@ def main():
                 "loc": f.get("Disponibilite", "Disponible"),
                 "img": f.get("URL_Vignette", ""),
                 "link": f.get("Lien_Notice", "https://bibliotheques.agglopolys.fr"),
-                "order": int(f.get("Ordre") or 99)
+                "order": order_val
             })
 
     # Construction du JSON final
@@ -49,7 +55,6 @@ def main():
     for sel in selections_records:
         fields = sel["fields"]
         
-        # On ne traite que les sélections actives
         if not fields.get("Actif"):
             continue
 
@@ -57,11 +62,9 @@ def main():
         if not sel_id_key:
             continue
 
-        # Récupération et tri des documents liés à cette sélection
         items = docs_by_selection_row_id.get(sel["id"], [])
         items.sort(key=lambda x: x["order"])
 
-        # Couleur de tag
         tag_color = fields.get("Couleur_Tag", "#16a34a")
 
         final_output[sel_id_key] = {
@@ -75,7 +78,6 @@ def main():
             "items": items
         }
 
-    # Sauvegarde du fichier selections.json
     output_filename = "selections.json"
     with open(output_filename, "w", encoding="utf-8") as f:
         json.dump(final_output, f, ensure_ascii=False, indent=2)
