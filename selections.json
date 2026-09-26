@@ -1,0 +1,104 @@
+{
+  "switch": {
+    "targetEventId": "445",
+    "tag": "❤️ Coup de cœur de l'équipe",
+    "tagColor": "#16a34a",
+    "title": "Pépites Nintendo Switch en rayon",
+    "subtitle": "Sélectionnées par vos bibliothécaires • Prêt gratuit 15 jours",
+    "quote": "« Deux chefs-d'œuvre récents à tester d'urgence en famille ou en solo sur vos consoles ! » — Léo",
+    "location": "Médiathèque Maurice-Genevoix",
+    "items": []
+  },
+  "pokemon": {
+    "targetEventId": "361",
+    "tag": "📖 Sélection Thématique",
+    "tagColor": "#e11d48",
+    "title": "L'univers Pokémon à emprunter",
+    "subtitle": "Pour prolonger la conférence et les ateliers du cycle Pokémon",
+    "quote": "« Saviez-vous que le manga d'origine est bien plus mature et fidèle aux premiers jeux ? » — Sophie",
+    "location": "Toutes médiathèques",
+    "items": []
+  },
+  "sorcellerie": {
+    "targetEventId": "322",
+    "tag": "✨ Les Incontournables",
+    "tagColor": "#7c3aed",
+    "title": "Magie et Sorcellerie à Poudlard",
+    "subtitle": "Des romans et documents pour prolonger la lecture d'Harry Potter",
+    "quote": "« De quoi réviser ses formules magiques avant la grande dictée de samedi ! »",
+    "location": "Toutes médiathèques",
+    "items": []
+  },
+  "Final Fantasy x Disney": {
+    "targetEventId": "286",
+    "tag": "📖 Sélection Thématique",
+    "tagColor": "#e11d48",
+    "title": "La Saga Kingdom hearts",
+    "subtitle": "Une liste des documents incontournable disponible dans vos bibliothèques ",
+    "quote": "« Des heures et des heures de bonheur »",
+    "location": "Toutes médiathèques",
+    "items": [
+      {
+        "id_notice": "430254",
+        "title": "KINGDOM HEARTS 3 [PS4]",
+        "author": "Square Enix",
+        "fmt": "Game",
+        "loc": "Disponible",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/A109Z6CfX3L._SL120_.jpg",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/430254",
+        "order": 99
+      },
+      {
+        "id_notice": "444543",
+        "title": "KINGDOM HEARTS MELODY OF MEMORY [PS4]",
+        "author": "Square Enix",
+        "fmt": "Game",
+        "loc": "Disponible",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/91-Pe0ATJLL._AC_SL1500_.jpg",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/444543",
+        "order": 99
+      },
+      {
+        "id_notice": "418713",
+        "title": "KINGDOM HEARTS HD 1.5 + 2.5 REMIX [PS4]",
+        "author": "Square Enix",
+        "fmt": "Game",
+        "loc": "Disponible",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/615AwUXx3NL.jpg",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/418713",
+        "order": 99
+      }
+    ]
+  },
+  "Poudloire": {
+    "targetEventId": "350",
+    "tag": "📖 Sélection Thématique",
+    "tagColor": "#e11d48",
+    "title": "Harry x Blois",
+    "subtitle": "Une Sélection de nos référence disponible",
+    "quote": "il y en a pour tous des romans, des documentaires, du jeu video",
+    "location": "Toutes médiathèques",
+    "items": [
+      {
+        "id_notice": "482283",
+        "title": "HARRY POTTER. HARRY POTTER ET LA COUPE DE FEU",
+        "author": "Rowling, Joanne Kathleen",
+        "fmt": "Livre",
+        "loc": "Disponible",
+        "img": "https://marketplace.archimed.fr/Cover/AGLO/MONO/jcRM8xMjhiWLu1MSKarefw2/978-2-07-061239-0/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fMONO_MEDIUM.png",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/482283",
+        "order": 99
+      },
+      {
+        "id_notice": "426704",
+        "title": "LEGO : HARRY POTTER COLLECTION [PS4]",
+        "author": "Warner Bros Games",
+        "fmt": "Game",
+        "loc": "Disponible",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/71Qw+yGl+HL._SL120_.jpg",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/426704",
+        "order": 99
+      }
+    ]
+  }
+}
