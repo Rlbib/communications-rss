@@ -35,10 +35,16 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          cp selections.json /tmp/selections.json
-          git fetch origin gh-pages
-          git checkout -B gh-pages origin/gh-pages
-          cp /tmp/selections.json ./selections.json
+          # On déplace le fichier hors du dépôt pour que Git soit totalement propre
+          mv selections.json /tmp/selections.json
           
+          # On bascule proprement sur gh-pages avec force (-f)
+          git fetch origin gh-pages
+          git checkout -f -B gh-pages origin/gh-pages
+          
+          # On remet le fichier à sa place sur gh-pages
+          mv /tmp/selections.json ./selections.json
+          
+          # Enregistrement et publication
           git add selections.json
           git diff --staged --quiet || (git commit -m "Mise à jour automatique de selections.json [skip ci]" && git push origin gh-pages)
