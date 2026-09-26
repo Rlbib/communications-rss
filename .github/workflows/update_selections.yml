@@ -2,9 +2,8 @@ name: Mettre à jour les Sélections Grist
 
 on:
   schedule:
-    # Tourne toutes les 2 heures
     - cron: '0 */2 * * *'
-  workflow_dispatch: # Déclencheur manuel
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -36,15 +35,10 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Sauvegarde temporaire du fichier généré
           cp selections.json /tmp/selections.json
-          
-          # Bascule sur la branche gh-pages
-          git checkout gh-pages
-          
-          # Rapatriement de selections.json
+          git fetch origin gh-pages
+          git checkout -B gh-pages origin/gh-pages
           cp /tmp/selections.json ./selections.json
           
-          # Commit et push sur gh-pages
           git add selections.json
           git diff --staged --quiet || (git commit -m "Mise à jour automatique de selections.json [skip ci]" && git push origin gh-pages)
