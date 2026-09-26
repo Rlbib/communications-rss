@@ -1,6 +1,6 @@
 (function() {
     // Les ID des animations à afficher
-    const TARGET_IDS = [320, 387, 395, 349];
+    const TARGET_IDS = [387, 395];
     const JSON_URL = "https://rlbib.github.io/communications-rss/agenda.json";
     const monthsShort = ["JAN", "FÉV", "MAR", "AVR", "MAI", "JUIN", "JUIL", "AOÛT", "SEPT", "OCT", "NOV", "DÉC"];
 
