@@ -78,6 +78,27 @@
     "subtitle": "Une Sélection de nos référence disponible",
     "quote": "il y en a pour tous des romans, des documentaires, du jeu video",
     "location": "Toutes médiathèques",
-    "items": []
+    "items": [
+      {
+        "id_notice": "482283",
+        "title": "HARRY POTTER. HARRY POTTER ET LA COUPE DE FEU",
+        "author": "Rowling, Joanne Kathleen",
+        "fmt": "Livre",
+        "loc": "Disponible",
+        "img": "https://marketplace.archimed.fr/Cover/AGLO/MONO/jcRM8xMjhiWLu1MSKarefw2/978-2-07-061239-0/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fMONO_MEDIUM.png",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/482283",
+        "order": 99
+      },
+      {
+        "id_notice": "426704",
+        "title": "LEGO : HARRY POTTER COLLECTION [PS4]",
+        "author": "Warner Bros Games",
+        "fmt": "Game",
+        "loc": "Disponible",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/71Qw+yGl+HL._SL120_.jpg",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/426704",
+        "order": 99
+      }
+    ]
   }
 }
