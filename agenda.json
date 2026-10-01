@@ -6677,7 +6677,7 @@
   },
   {
     "id": 354,
-    "Titre": "Just DanceSur grand écran",
+    "Titre": "Just Dance Sur grand écran",
     "Catégorie": "Jeux vidéo",
     "Localisation": "Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo",
     "Date_Debut": "2026-10-14",
@@ -7184,7 +7184,7 @@
     "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty",
     "Date_Debut": "2026-10-28",
     "Date_Fin": "2026-10-28",
-    "Description": "Pour Halloween, plongez avec nous dans l'univers magique du film \"Les animaux fantastiques\". \nL'histoire centrée sur le magizoologiste Norbert Dragonneau, auteur du livre \"Vie et habitat des animaux fantastiques\", se déroule plusieurs décennies avant les aventures de Harry Potter. \nNorbert Dragonneau fait escale à New York en 1926, où plusieurs de ses créatures magiques s'échappent accidentellement de sa valise, menaçant de révéler l'existence des sorciers aux Non-Maj'. ",
+    "Description": "Pour Halloween, plongez avec nous dans l'univers magique du film \"Les animaux fantastiques\". \nL'histoire centrée sur le magizoologiste Norbert Dragonneau, auteur du livre \"Vie et habitat des animaux fantastiques\", se déroule plusieurs décennies avant les aventures de Harry Potter. \nNorbert Dragonneau fait escale à New York en 1926, où plusieurs de ses créatures magiques s'échappent accidentellement de sa valise, menaçant de révéler l'existence des sorciers aux Non-Maj'.",
     "Heure": "15h",
     "Durée": "2h15",
     "Public_cible": "Tout public (à partir de 8 ans)",
@@ -7192,9 +7192,15 @@
     "URL_de_l_image": "https://fr.web.img3.acsta.net/pictures/16/10/11/09/32/205295.jpg",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Christele DELIOT"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Christele DELIOT"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -7868,17 +7874,13 @@
     "Reservation": "TRUE",
     "Agents_Prevus": [
       "L",
-      "Froger Matthieu",
-      "Deliot Christèle",
       "Olivier Nicolas"
     ],
     "Animateurs_Biblio": [
       "L",
-      "Froger Matthieu",
-      "Deliot Christèle",
       "Olivier Nicolas"
     ],
-    "Besoin_RH": 4,
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -7902,17 +7904,13 @@
     "Reservation": "TRUE",
     "Agents_Prevus": [
       "L",
-      "Froger Matthieu",
-      "Deliot Christèle",
-      "Olivier Nicolas"
+      "Deliot Christèle"
     ],
     "Animateurs_Biblio": [
       "L",
-      "Froger Matthieu",
-      "Deliot Christèle",
-      "Olivier Nicolas"
+      "Deliot Christèle"
     ],
-    "Besoin_RH": 4,
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8406,6 +8404,30 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 470,
+    "Titre": "Deinos Saurus : conte pour enfants",
+    "Catégorie": "Spectacle jeunesse",
+    "Localisation": "Bibliothèque Abbé-Grégoire",
+    "Date_Debut": "2026-12-12",
+    "Date_Fin": "2026-12-12",
+    "Description": "CONTE POUR ENFANTS\nDeinos Saurus\nAventure dinosauresque pour paléontologues en herbe\n \nCie Les Sans Lacets\nC’est l’histoire de 2 paléontologues... Pas de panique ! Si ce terme ne vous est pas familier, il y a de fortes chances qu’il le soit pour l’enfant que vous accompagnez. A défaut, nos 2 comparses vous l’expliqueront de manière aussi précise que ludique !\nC’est l’histoire de deux fantasques scientifiques férues de dinosaures, donc, devant une énigme : mais qu’est-ce donc que cette drôle de pierre ?! Et c’est grâce au journal de Mary Anning (pionnière de la paléontologie) qu’elles résoudront brillamment l’affaire, avec la précieuse collaboration des apprentis paléontologues du public.\nAlors, jeunes curieux, prêts à fouiller le présent avec nos deux joyeuses complices pour remonter au temps des dinosaures ?!\nOn vous attend nombreux, nom d’un diplodocus !\nwww.sanslacets.fr\nEcriture et interprétation : Justine Calais Gillot et Bérangère Hoinard\nJeune public 3-10 ans\nDurée : 45 min.",
+    "Heure": "15h",
+    "Durée": "45 min",
+    "Public_cible": "3 à 10 ans",
+    "Ville": "",
+    "URL_de_l_image": "S:\\Bibliotheques\\JEUNESSE\\BAG\\PROGRAMMATION culturelle bagjeu\\2026\\Résidence Cie Des Sans-lacets\\visuel deinos saurus",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [],
+    "Animateurs_Biblio": [],
+    "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 242,
     "Titre": "Je lis avec Plume",
     "Catégorie": "Lecture spectacle",
@@ -8446,17 +8468,13 @@
     "Reservation": "TRUE",
     "Agents_Prevus": [
       "L",
-      "Froger Matthieu",
-      "Deliot Christèle",
       "Olivier Nicolas"
     ],
     "Animateurs_Biblio": [
       "L",
-      "Froger Matthieu",
-      "Deliot Christèle",
       "Olivier Nicolas"
     ],
-    "Besoin_RH": 4,
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -9306,17 +9324,23 @@
     "Localisation": "BAG",
     "Date_Debut": "2027-03-20",
     "Date_Fin": "2027-03-20",
-    "Description": "",
+    "Description": "Cette adaptation originale de Blanche-Neige revisite le célèbre conte en s’amusant des clichés. Ici, les marionnettes qui incarnent les protagonistes se rebellent avec espièglerie : Blanche-Neige ne veut pas être une princesse soumise et se rebiffe contre les tâches ménagères. Le spectacle allie théâtre, chant lyrique et différentes techniques de marionnettes pour créer une version vivante, drôle et accessible au jeune public.",
     "Heure": "15h",
-    "Durée": "1h30",
-    "Public_cible": "",
+    "Durée": "50 min.",
+    "Public_cible": "A partir de 5 ans",
     "Ville": "",
     "URL_de_l_image": "",
     "Lien": "",
     "Reservation": "TRUE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "christine minot"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "christine minot"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
