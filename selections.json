@@ -98,6 +98,36 @@
         "img": "https://marketplace.archimed.fr/Cover/AGLO/MONO/s65a-ASB9HLaAeWZEzCxuQ2/9782070585236/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fMONO_MEDIUM.png",
         "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/482796",
         "order": 99
+      },
+      {
+        "id_notice": "453486",
+        "title": "HARRY POTTER : L'INTÉGRALE",
+        "author": "Columbus, Chris",
+        "fmt": "Vidéo",
+        "loc": "Disponible",
+        "img": "https://www.adav-assoc.com/4DACTION/GetImage/213152",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/453486",
+        "order": 99
+      },
+      {
+        "id_notice": "199538",
+        "title": "HARRY POTTER, L'ENFANT HÉROS : ESSAI SUR LA PSYCHO...",
+        "author": "Presses Universitaires de France, 2005",
+        "fmt": "Livre",
+        "loc": "Disponible",
+        "img": "https://marketplace.archimed.fr/Cover/AGLO/MONO/DqqvgKIgiFiwrLoElBOWsg2/2-13055355-9/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fMONO_MEDIUM.png",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/199538",
+        "order": 99
+      },
+      {
+        "id_notice": "480788",
+        "title": "HARRY POTTER. HARRY POTTER À L'ÉCOLE DES SORCIERS",
+        "author": "Rowling, Joanne Kathleen",
+        "fmt": "Livre",
+        "loc": "Disponible",
+        "img": "https://marketplace.archimed.fr/Cover/AGLO/MONO/TNXkVXRdJdsQ8yl-fKLSTg2/2-07-051842-6/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fMONO_MEDIUM.png",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/480788",
+        "order": 99
       }
     ]
   },
