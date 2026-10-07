@@ -9222,6 +9222,38 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 471,
+    "Titre": "New Trad Festival à Blois",
+    "Catégorie": "animation et concert",
+    "Localisation": "Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo",
+    "Date_Debut": "2027-03-06",
+    "Date_Fin": "2027-03-06",
+    "Description": "Plateau radio avec les organisateurs du festival de St Aignan et Studio ZEF\nSuivi d'un Concert en section\nPuis projection au cinéma Les Lobis\nsuivi d'un second concert à la fondation du doute",
+    "Heure": "14h",
+    "Durée": "séances individuelles de 45 minutes",
+    "Public_cible": "Tout public",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Mathias HUBERT",
+      "Froger Matthieu"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Mathias HUBERT",
+      "Froger Matthieu"
+    ],
+    "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 338,
     "Titre": "Petites lectures et comptines",
     "Catégorie": "Lecture spectacle",
