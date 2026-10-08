@@ -6835,12 +6835,12 @@
   },
   {
     "id": 468,
-    "Titre": "Exposition d'originaux et mise en scène d'après la bande dessinée \"Lina et le secret de la passerelle\"  de Julien Frey et Mathilde Domecq. Prix Ligue de l'enseignement de Loir et Cher 2025. Commissariat d'exposition Bruno Goujon et bd BOUM. En partenariat avec les Editions de la Gouttière ",
+    "Titre": "Lina - Prix ligue de l’enseignement jeune public 2025",
     "Catégorie": "Exposition",
     "Localisation": "Bibliothèque Abbé-Grégoire, espace Jeunesse",
     "Date_Debut": "2026-10-17",
     "Date_Fin": "2026-12-05",
-    "Description": "Lina a dix ans et deux maisons. Chez sa mère et chez son père. L’une de nos jours et l’autre en 1910. Elle va d’un temps à l’autre, d’une vie à l’autre grâce à une passerelle cachée en plein cœur de Paris. Un secret qui n’est pas simple à garder pour la jeune fille… Inquiète pour la librairie de son papa, menacée par la grande crue de la Seine, Lina commet plusieurs imprudences et éveille, dans le présent, les soupçons de Gus, son nouveau camarade de classe, mais aussi, dans le passé, ceux de deux malfrats.",
+    "Description": "Lina a dix ans et deux maisons. Chez sa mère et chez son père. L’une de nos jours et l’autre en 1910. Elle va d’un temps à l’autre, d’une vie à l’autre grâce à une passerelle cachée en plein cœur de Paris. Un secret qui n’est pas simple à garder pour la jeune fille… Inquiète pour la librairie de son papa, menacée par la grande crue de la Seine, Lina commet plusieurs imprudences et éveille, dans le présent, les soupçons de Gus, son nouveau camarade de classe, mais aussi, dans le passé, ceux de deux malfrats.\n\nCommissariat d'exposition Bruno Goujon et bd BOUM. En partenariat avec les Editions de la Gouttière.",
     "Heure": "",
     "Durée": "",
     "Public_cible": "",
@@ -7357,6 +7357,40 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 403,
+    "Titre": "Fabriquez la magie du réveillon !",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix",
+    "Date_Debut": "2026-11-04",
+    "Date_Fin": "2026-04-01",
+    "Description": "Chaque année, la Ville de Blois organise un réveillon solidaire pour proposer un moment convivial aux personnes isolées ou en situation de précarité. En amont de cette soirée, la médiathèque propose un atelier créatif pour fabriquer ensemble les décorations de Noël qui habilleront la salle.",
+    "Heure": "14h",
+    "Durée": "2h30",
+    "Public_cible": "Tout public",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Boulanger Mathilde",
+      "Sergent Marie Virginie",
+      "Debuire Agnès"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Boulanger Mathilde",
+      "Sergent Marie Virginie",
+      "Debuire Agnès"
+    ],
+    "Besoin_RH": 4,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -7909,6 +7943,36 @@
     "Animateurs_Biblio": [
       "L",
       "Deliot Christèle"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 405,
+    "Titre": "Cosy coloriage aux feutres à alcool",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
+    "Date_Debut": "2026-11-25",
+    "Date_Fin": "2026-11-25",
+    "Description": "Venez apprendre et expérimenter plusieurs techniques pour donner plus de vie à vos coloriages.",
+    "Heure": "14h30",
+    "Durée": "1h30",
+    "Public_cible": "A partir de 8 ans (8 places)",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Teffe Cécile"
     ],
     "Besoin_RH": 2,
     "Section_Requise": "",
