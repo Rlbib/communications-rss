@@ -7638,6 +7638,70 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 409,
+    "Titre": "L'Energie positive des dieux",
+    "Catégorie": "Projection",
+    "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium Samuel-Paty",
+    "Date_Debut": "2026-11-14",
+    "Date_Fin": "2026-11-14",
+    "Description": "Leur musique est une déferlante de rock électrique. Le collectif Astéréotypie, composé de musiciens autistes, dévoile sur scène son univers détonant. Ce documentaire émouvant et instructif révèle les coulisses d’un projet artistique ambitieux. La projection sera suivie d’un échange avec Charlotte Lacotte, art-thérapeute et Yoan Prevost, expérimentateur du sonore au profit du soin.",
+    "Heure": "15h30",
+    "Durée": "1h10",
+    "Public_cible": "Adultes (90 places)",
+    "Ville": "",
+    "URL_de_l_image": "https://fr.web.img6.acsta.net/c_310_420/pictures/22/07/19/15/08/0189968.jpg",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Hubert Mathias",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Hubert Mathias",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 410,
+    "Titre": "[KRUM]",
+    "Catégorie": "Concert",
+    "Localisation": "Bibliothèque Abbe-Grégoire, espace Adultes",
+    "Date_Debut": "2026-11-14",
+    "Date_Fin": "2026-11-14",
+    "Description": "[KRUM] est un groupe de musique expérimentale. Son nom s'écrit entre crochets, car il s'agit d'une transcription phonétique : il ne signifie rien, c'est un son. Il est à l'image de leur musique, sans texte ni indication de jeu, et sans volonté de s'inscrire dans un style esthétique.\nFormé par des professionnels et des résidents de l'EAM-MAS « Les Rêveries » (établissement d'accueil médicalisé et maison d'accueil spécialisée) à Vineuil, le groupe s'inscrit dans une démarche de création artistique inclusive et hors format.",
+    "Heure": "18h",
+    "Durée": "1h",
+    "Public_cible": "Adultes (90 places)",
+    "Ville": "",
+    "URL_de_l_image": "https://i1.sndcdn.com/artworks-cgwwU4CssiTkntXC-DXEIVA-t200x200.jpg",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Hubert Mathias",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Hubert Mathias",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 240,
     "Titre": "Je lis avec Plume",
     "Catégorie": "Lecture spectacle",
@@ -7703,6 +7767,36 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 466,
+    "Titre": "Initiez-vous à l'Art-thérapie",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
+    "Date_Debut": "2026-11-18",
+    "Date_Fin": "2026-11-18",
+    "Description": "Grâce à la relation entre la personne et le thérapeute, l’art-thérapie favorise la découverte de soi, la sérénité, la mobilisation des ressources dans un espace bienveillant. Elle s’adresse à tous même à ceux qui n’ont jamais pratiqué l’art. Participez à une séance collective en utilisant les arts plastiques dans un lieu unique propice à la créativité.",
+    "Heure": "15h",
+    "Durée": "1h",
+    "Public_cible": "Jeunesse (6-14 ans)",
+    "Ville": "",
+    "URL_de_l_image": "https://cdn.pixabay.com/photo/2020/12/10/20/40/color-5821297_1280.jpg",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8060,6 +8154,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 411,
+    "Titre": "La Rivière",
+    "Catégorie": "Projection",
+    "Localisation": "Médiathèque Maurice-Genevoix, Auditorium",
+    "Date_Debut": "2026-11-28",
+    "Date_Fin": "2026-11-28",
+    "Description": "Entre Pyrénées et Atlantique coulent des rivières puissantes qu’on appelle les gaves. L’activité humaine bouleverse le cycle de l’eau et la biodiversité de la rivière. Des hommes et des femmes tendent leur regard curieux et amoureux vers ce monde fascinant fait de beauté et de désastre.\nLa projection sera suivie d’un échange avec l’association Observatoire Loire.",
+    "Heure": "15h30",
+    "Durée": "1h44",
+    "Public_cible": "Adultes (25 places)",
+    "Ville": "",
+    "URL_de_l_image": "https://www.meteore-films.fr/ressources/imageBank/cache/7/260x-fe5e626-820-la-riviere-v8-40-60.jpeg",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 428,
     "Titre": "Aiguilles et compagnie",
     "Catégorie": "Club",
@@ -8101,6 +8225,42 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 464,
+    "Titre": "Initiez-vous à l'Art-thérapie",
+    "Catégorie": "Atelier",
+    "Localisation": "Bibliothèque Abbé-Grégoire",
+    "Date_Debut": "2026-12-02",
+    "Date_Fin": "2026-12-02",
+    "Description": "Grâce à la relation entre la personne et le thérapeute, l’art-thérapie favorise la découverte de soi, la sérénité, la mobilisation des ressources dans un espace bienveillant. Elle s’adresse à tous même à ceux qui n’ont jamais pratiqué l’art. Participez à une séance collective en utilisant les arts plastiques dans un lieu unique propice à la créativité : une bibliothèque à Blois.",
+    "Heure": "17h",
+    "Durée": "1h",
+    "Public_cible": "Adultes",
+    "Ville": "",
+    "URL_de_l_image": "https://cdn.pixabay.com/photo/2020/12/10/20/40/color-5821297_1280.jpg",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Deliot Christèle",
+      "Olivier Nicolas",
+      "Hubert Mathias",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Deliot Christèle",
+      "Olivier Nicolas",
+      "Hubert Mathias",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 5,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8546,6 +8706,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 404,
+    "Titre": "Mission Père Noël",
+    "Catégorie": "Projection",
+    "Localisation": "Médiathèque Maurice-Genevoix, Auditorium",
+    "Date_Debut": "2026-12-16",
+    "Date_Fin": "2026-12-16",
+    "Description": "Timo, un petit elfe, va accomplir son rêve : fabriquer des cadeaux dans l’atelier du Père Noël. C’est un lieu féérique où travaillait son grand-père et Timo va enfin prendre la relève. Mais une grande fabrique de cadeaux a remplacé le petit atelier et la tradition de Noël est sur le point de disparaître. Timo et son petit renne partent alors pour une grande mission : sauver la magie de Noël !",
+    "Heure": "15h30",
+    "Durée": "1h36",
+    "Public_cible": "A partir de 6 ans (25 places)",
+    "Ville": "",
+    "URL_de_l_image": "https://fr.web.img2.acsta.net/c_310_420/img/76/31/76311306ac5020224b5d787666dcaa04.jpg",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 437,
     "Titre": "Atelier loisirs créatifs",
     "Catégorie": "Atelier",
@@ -8563,6 +8753,38 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 456,
+    "Titre": "Clic, Clac, fabrique ta boîte à vœux !",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
+    "Date_Debut": "2026-12-16",
+    "Date_Fin": "2026-12-16",
+    "Description": "Rejoins-nous dans cet atelier créatif pour construire ta boîte à vœux !",
+    "Heure": "14h",
+    "Durée": "1h",
+    "Public_cible": "A partir de 7 ans (12 places)",
+    "Ville": "",
+    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/f4d4f4e9-457a-4faa-9452-06aca78758e3/20260909_182105.jpg",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Basire Céline",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Basire Céline",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8823,7 +9045,7 @@
     "Durée": "1h30",
     "Public_cible": "A partir de 8 ans (12 places)",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/09b18134-527c-4f53-8003-dad2e82a584a/diamonds_painting.png",
     "Lien": "",
     "Reservation": "TRUE",
     "Agents_Prevus": [
