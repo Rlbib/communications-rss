@@ -6905,14 +6905,18 @@
     "Agents_Prevus": [
       "L",
       "Teffe Cécile",
-      "Pinto Mylène"
+      "Pinto Mylène",
+      "Celine BASIRE",
+      "Nolwenn PETIT"
     ],
     "Animateurs_Biblio": [
       "L",
       "Teffe Cécile",
-      "Pinto Mylène"
+      "Pinto Mylène",
+      "Celine BASIRE",
+      "Nolwenn PETIT"
     ],
-    "Besoin_RH": 3,
+    "Besoin_RH": 5,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -7369,7 +7373,7 @@
     "Catégorie": "Atelier",
     "Localisation": "Médiathèque Maurice-Genevoix",
     "Date_Debut": "2026-11-04",
-    "Date_Fin": "2026-04-01",
+    "Date_Fin": "2026-11-04",
     "Description": "Chaque année, la Ville de Blois organise un réveillon solidaire pour proposer un moment convivial aux personnes isolées ou en situation de précarité. En amont de cette soirée, la médiathèque propose un atelier créatif pour fabriquer ensemble les décorations de Noël qui habilleront la salle.",
     "Heure": "14h",
     "Durée": "2h30",
@@ -9636,36 +9640,6 @@
     "Commentaire_RH": ""
   },
   {
-    "id": 469,
-    "Titre": "Blanche Neige",
-    "Catégorie": "Spectacle Classique pour enfants",
-    "Localisation": "BAG",
-    "Date_Debut": "2027-03-20",
-    "Date_Fin": "2027-03-20",
-    "Description": "Cette adaptation originale de Blanche-Neige revisite le célèbre conte en s’amusant des clichés. Ici, les marionnettes qui incarnent les protagonistes se rebellent avec espièglerie : Blanche-Neige ne veut pas être une princesse soumise et se rebiffe contre les tâches ménagères. Le spectacle allie théâtre, chant lyrique et différentes techniques de marionnettes pour créer une version vivante, drôle et accessible au jeune public.",
-    "Heure": "15h",
-    "Durée": "50 min.",
-    "Public_cible": "A partir de 5 ans",
-    "Ville": "",
-    "URL_de_l_image": "PDFque je n'arrive pas à introduire dans le grist...  Mathias",
-    "Lien": "",
-    "Reservation": "TRUE",
-    "Agents_Prevus": [
-      "L",
-      "christine minot"
-    ],
-    "Animateurs_Biblio": [
-      "L",
-      "christine minot"
-    ],
-    "Besoin_RH": 2,
-    "Section_Requise": "",
-    "Creneau_RH": "",
-    "Impact_SP": false,
-    "Statut_RH": "",
-    "Commentaire_RH": ""
-  },
-  {
     "id": 422,
     "Titre": "La CLE des mots - Le Club Ludique d'Ecriture de Veuzain",
     "Catégorie": "Club",
@@ -9731,6 +9705,36 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 469,
+    "Titre": "Blanche Neige",
+    "Catégorie": "Spectacle Classique pour enfants",
+    "Localisation": "BAG",
+    "Date_Debut": "2027-04-03",
+    "Date_Fin": "2027-04-03",
+    "Description": "Cette adaptation originale de Blanche-Neige revisite le célèbre conte en s’amusant des clichés. Ici, les marionnettes qui incarnent les protagonistes se rebellent avec espièglerie : Blanche-Neige ne veut pas être une princesse soumise et se rebiffe contre les tâches ménagères. Le spectacle allie théâtre, chant lyrique et différentes techniques de marionnettes pour créer une version vivante, drôle et accessible au jeune public.",
+    "Heure": "15h",
+    "Durée": "50 min.",
+    "Public_cible": "A partir de 5 ans",
+    "Ville": "",
+    "URL_de_l_image": "PDFque je n'arrive pas à introduire dans le grist...  Mathias",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "christine minot"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "christine minot"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
