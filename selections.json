@@ -200,6 +200,36 @@
         "img": "https://images-na.ssl-images-amazon.com/images/I/71Qw+yGl+HL._SL120_.jpg",
         "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/426704",
         "order": 99
+      },
+      {
+        "id_notice": "339970",
+        "title": "LE LOUP QUI VOULAIT FAIRE LE TOUR DU MONDE",
+        "author": "Lallemand, Orianne",
+        "fmt": "Livre",
+        "loc": "Disponible",
+        "img": "https://marketplace.archimed.fr/Cover/AGLO/MONO/-dd7dmFB1iNcp-getdMWxA2/978-2-7338-2132-9/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fMONO_MEDIUM.png",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/339970",
+        "order": 99
+      },
+      {
+        "id_notice": "528934",
+        "title": "LES GOUTTES DE DIEU. LES GOUTTES DE DIEU [37]",
+        "author": "Kibayashi, Shin",
+        "fmt": "Livre",
+        "loc": "Disponible",
+        "img": "https://marketplace.archimed.fr/Cover/AGLO/MONO/Z51vAKaJGfQ4C0oD71NjWQ2/978-2-344-00334-3/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fMONO_MEDIUM.png",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/528934",
+        "order": 99
+      },
+      {
+        "id_notice": "529212",
+        "title": "SUPER MARIO : MANGA ADVENTURES. SUPER MARIO [1] : MANGA ADVENTURES",
+        "author": "Sawada, Yukio",
+        "fmt": "Livre",
+        "loc": "Disponible",
+        "img": "https://marketplace.archimed.fr/Cover/AGLO/MONO/xE0KRgssgC3kTOLB64hEKg2/978-2-302-04335-0/MEDIUM?fallback=https%3a%2f%2fbibliotheques.agglopolys.fr%2fui%2fskins%2fdefault%2fermes-front%2fimages%2fGeneral%2fDocType%2fMONO_MEDIUM.png",
+        "link": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/doc/AGLO/529212",
+        "order": 99
       }
     ]
   }
