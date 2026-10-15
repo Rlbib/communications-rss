@@ -6271,7 +6271,7 @@
     "Catégorie": "Exposition",
     "Localisation": "Médiathèque Maurice-Genevoix",
     "Date_Debut": "2026-10-02",
-    "Date_Fin": "2026-10-30",
+    "Date_Fin": "2026-11-21",
     "Description": "Après un passage à la bibliothèque Abbé-Grégoire en mars et avril, l’exposition est désormais installée à la médiathèque Maurice-Genevoix. Profitez-en pour (re)découvrir cette exposition. \nElles accueillent nos tout-petits, les accompagnent dans leurs premières découvertes. Pourtant, le métier d’assistant maternel reste méconnu. Pour valoriser cette profession essentielle, les relais Petite Enfance de Blois ont co-réalisé cette exposition avec Quentin Tavenier.",
     "Heure": "",
     "Durée": "jusqu'au 30/10",
@@ -6829,7 +6829,7 @@
   },
   {
     "id": 371,
-    "Titre": "Pochette de livre en tissu",
+    "Titre": "[COMPLET] Pochette de livre en tissu",
     "Catégorie": "Atelier",
     "Localisation": "Médiathèque Maurice-Genevoix, espace Adultes",
     "Date_Debut": "2026-10-20",
@@ -7379,7 +7379,7 @@
     "Durée": "2h30",
     "Public_cible": "Tout public",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://images.pexels.com/photos/6072584/pexels-photo-6072584.jpeg?_gl=1*pt0ulz*_ga*MjEyMjI4NTAzMy4xNzkyMDc2NTIy*_ga_8JE65Q40S6*czE3OTIwNzY1MjIkbzEkZzEkdDE3OTIwNzY5NDIkajU5JGwwJGgw",
     "Lien": "",
     "Reservation": "FALSE",
     "Agents_Prevus": [
@@ -7395,6 +7395,36 @@
       "Debuire Agnès"
     ],
     "Besoin_RH": 4,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 454,
+    "Titre": "Regards sur la ruralité",
+    "Catégorie": "Projection",
+    "Localisation": "Médiathèque Rose-Valland",
+    "Date_Debut": "2026-11-04",
+    "Date_Fin": "2026-11-04",
+    "Description": "Au travers d'une sélection de courts métrages, le collectif Cinésia nous invite à réinventer ensemble la ruralité. La projection sera suivie d'un échange avec les membres de l'association porteuse de projets audiovisuels innovants.",
+    "Heure": "15h00",
+    "Durée": "1h30",
+    "Public_cible": "Tout public",
+    "Ville": "Veuzain-sur-Loire",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Celine ROUANNE"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Celine ROUANNE"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8097,6 +8127,36 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 452,
+    "Titre": "Le Monde est un théâtre",
+    "Catégorie": "Projection",
+    "Localisation": "Médiathèque Rose-Valland",
+    "Date_Debut": "2026-11-27",
+    "Date_Fin": "2026-11-27",
+    "Description": "Dans la Compagnie de l'Oiseau-Mouche, à Roubaix, les comédiens ont un petit truc en plus. Anouk Burel, journaliste et réalisatrice indépendante, se rapproche des comédiens de cette troupe atypique et les accompagne pendant la création de l’une de leurs pièces.",
+    "Heure": "17h30",
+    "Durée": "52 min",
+    "Public_cible": "Tout public (à partir de 8 ans)",
+    "Ville": "Veuzain-sur-Loire",
+    "URL_de_l_image": "https://www.lesyeuxdoc.fr/img/thumbnail/ce5564bd-7ec1-45a6-a56a-b79eb8b21762/front_slider.jpg",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Celine ROUANNE"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Celine ROUANNE"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
