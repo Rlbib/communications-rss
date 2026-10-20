@@ -6759,14 +6759,16 @@
     "Agents_Prevus": [
       "L",
       "Teffe Cécile",
-      "Debuire Agnès"
+      "Debuire Agnès",
+      "Vermeille Jérôme"
     ],
     "Animateurs_Biblio": [
       "L",
       "Teffe Cécile",
-      "Debuire Agnès"
+      "Debuire Agnès",
+      "Vermeille Jérôme"
     ],
-    "Besoin_RH": 3,
+    "Besoin_RH": 4,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
