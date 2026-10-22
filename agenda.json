@@ -9362,6 +9362,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 486,
+    "Titre": "1 smartphone 1 question",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2027-01-06",
+    "Date_Fin": "2027-01-06",
+    "Description": "Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? \nCe rendez-vous vous permettra de prendre en main votre écran. \nCréneau de 20 min. les mercredis matin. \nInscription obligatoire au 02 54 51 33 22 en précisant la demande.",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 417,
     "Titre": "La CLE des mots - Le Club Ludique d'Ecriture de Veuzain",
     "Catégorie": "Club",
@@ -9458,6 +9488,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 481,
+    "Titre": "Coin des gameurs",
+    "Catégorie": "Jeux",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2027-01-16",
+    "Date_Fin": "2027-01-16",
+    "Description": "Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "A partir de 12 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8087",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 438,
     "Titre": "Atelier loisirs créatifs",
     "Catégorie": "Atelier",
@@ -9523,6 +9583,66 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 482,
+    "Titre": "Coin des gameurs",
+    "Catégorie": "Jeux",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2027-01-30",
+    "Date_Fin": "2027-01-30",
+    "Description": "Fan de culture gaming ou de tournoi e-sport, envie de découvrir de nouveaux jeux ou de nouvelles consoles, viens relever le défi et affronter d'autres joueurs au Coin des gameurs !",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "A partir de 12 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8087",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 487,
+    "Titre": "1 smartphone 1 question",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2027-01-30",
+    "Date_Fin": "2027-01-30",
+    "Description": "Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? \nCe rendez-vous vous permettra de prendre en main votre écran. \nCréneau de 20 min. les mercredis matin. \nInscription obligatoire au 02 54 51 33 22 en précisant la demande.",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
