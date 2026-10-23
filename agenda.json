@@ -9626,6 +9626,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 497,
+    "Titre": "Spectacle de contes \"D'ici - d'ailleurs\" Swan Blachère",
+    "Catégorie": "Spectacle",
+    "Localisation": "Bibliothèque Abbé-Grégoire, Auditorium Samuel Paty",
+    "Date_Debut": "2027-01-23",
+    "Date_Fin": "2027-01-23",
+    "Description": "Ces histoires viennent de partout, d’ici ou d’ailleurs, peu importe d’ailleurs… Elles transportent un parfum « d’il y a longtemps » qui semble pourtant familier. Un peu de folie, un grain de sagesse. Ici les personnages prennent vie, les personnages s’animent sur la toile d’un souvenir imaginaire. Le rêve et l’émotion s’y invitent, comme par magie. (spectacle sous forme de \"sac à histoires\" sur le thème de l'enfance)",
+    "Heure": "18h15",
+    "Durée": "23/01/2027 à 18h15 Durée : 50 min",
+    "Public_cible": "à partir de 6 ans",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Patault Héléne"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Patault Héléne"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 430,
     "Titre": "Aiguilles et compagnie",
     "Catégorie": "Club",
