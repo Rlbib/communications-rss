@@ -8882,13 +8882,15 @@
     "Reservation": "FALSE",
     "Agents_Prevus": [
       "L",
-      "Cloux Isabelle"
+      "Cloux Isabelle",
+      "Beauchet Christele"
     ],
     "Animateurs_Biblio": [
       "L",
-      "Cloux Isabelle"
+      "Cloux Isabelle",
+      "Beauchet Christele"
     ],
-    "Besoin_RH": 2,
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
