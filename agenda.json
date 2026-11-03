@@ -9097,7 +9097,7 @@
     "Catégorie": "Rencontre",
     "Localisation": "Médiathèque Rose-Valland",
     "Date_Debut": "2026-12-16",
-    "Date_Fin": "2026-09-16",
+    "Date_Fin": "2026-12-16",
     "Description": "En attendant la venue du Papa Noël, la médiathèque se pare de rouge, d'ors et de paillettes : au fil de la journée, venez partager musique, ateliers, goûter festifs. ",
     "Heure": "",
     "Durée": "journée",
@@ -9478,6 +9478,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 494,
+    "Titre": "Atelier de conversation",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2027-01-08",
+    "Date_Fin": "2027-01-08",
+    "Description": "Vous apprenez le français ? Venez partager un moment convivial en discutant sur des sujets variés. La médiathèque Maurice-Genevoix vous propose d’améliorer votre français, de vous sentir plus à l’aise à l’oral et de découvrir ses collections ainsi que les services qu’elle propose.",
+    "Heure": "10h30",
+    "Durée": "1h30",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicfilesdownload.ashx?repositoryId=1&itemId=11249",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Laveau Catherine"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 345,
     "Titre": "Les Lectures du Samedi",
     "Catégorie": "Lecture spectacle",
@@ -9526,6 +9556,66 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 475,
+    "Titre": "Atelier bibliocréatif",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
+    "Date_Debut": "2027-01-13",
+    "Date_Fin": "2027-01-13",
+    "Description": "Un atelier créatif autour de l'album \"Roméo, le crapaud qui voulait vivre un conte de fée\".\nEt si un crapaud rêvait de devenir un prince ?\nViens écouter une histoire, laisser parler ton imagination et créer ton propre personnage royal ! Dessin et bricolage seront au rendez-vous pour donner vie à ton crapaud extraordinaire.",
+    "Heure": "14h30",
+    "Durée": "1h30",
+    "Public_cible": "Pour les 6-10 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/f192c133-7465-48fe-97f2-4180e947c85f/romeo.png",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 500,
+    "Titre": "Les Bons Clics : Les bases de la navigation sur le web",
+    "Catégorie": "Initiation numérique",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2027-01-15",
+    "Date_Fin": "2027-01-15",
+    "Description": "Cet atelier vous apprendra comment utiliser un navigateur pour explorer le web et comment sélectionner des résultats pertinents lors d'une recherche.",
+    "Heure": "15h",
+    "Durée": "2h",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/6cf0d5e1-8162-49f1-af39-cc5d21f86d79/BonsClicsJanvierGrdeTaille.jpg",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Catherine LAVEAU"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Catherine LAVEAU"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 328,
     "Titre": "Découverte des échecs avec Les Roqueurs d'Onzain",
     "Catégorie": "Club",
@@ -9543,6 +9633,38 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 477,
+    "Titre": "Thé Coups de cœur",
+    "Catégorie": "Club",
+    "Localisation": "Médiathèque Maurice-Genevoix, espace Adultes",
+    "Date_Debut": "2027-01-16",
+    "Date_Fin": "2027-01-16",
+    "Description": "Installés confortablement autour d’un café ou d’un thé, nous prendrons le temps d’échanger sur les livres qui nous ont plu. Chacun pourra repartir avec le coup de cœur d’un autre. Nous vous attendons !",
+    "Heure": "15h30",
+    "Durée": "1h30",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/3a98c6c2-e244-410b-b8e4-72fa37e10b3e/the_coups_de_coeur_2.jpeg",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Cloux Isabelle",
+      "Sergent Marie Virginie"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Cloux Isabelle",
+      "Sergent Marie Virginie"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -9628,6 +9750,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 501,
+    "Titre": "1 smartphone 1 question",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2027-01-20",
+    "Date_Fin": "2027-01-20",
+    "Description": "Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? \nCe rendez-vous vous permettra de prendre en main votre écran. \nCréneau de 20 min. les mercredis matin. \nInscription obligatoire au 02 54 51 33 22 en précisant la demande.",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 418,
     "Titre": "La CLE des mots - Le Club Ludique d'Ecriture de Veuzain",
     "Catégorie": "Club",
@@ -9645,6 +9797,62 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 502,
+    "Titre": "Nuit de la lecture",
+    "Catégorie": "Animation",
+    "Localisation": "Médiathèque Maurice-Genevoix",
+    "Date_Debut": "2027-01-22",
+    "Date_Fin": "2027-01-22",
+    "Description": "Les Nuits de la lecture reviennent et, spécialement pour l'occasion, la Médiathèque ouvre jusqu'à 21h pour une soirée festive et familiale ! Rejoignez-nous ! \nCette année, l'enfance est à l'honneur : spectacle de magie, plateau radio en partenariat avec Studio Zef, courts-métrages, découverte des boîtes à histoires, Cherche et trouve géant avec vos bibliothécaires préféré(e)s en vedette, atelier maquillage et jeux de société avec les ludothèques de la Ville de Blois. \nLa soirée se finira en beauté avec un blind test musical sur nos meilleurs souvenirs d'enfance !",
+    "Heure": "17h",
+    "Durée": "4h",
+    "Public_cible": "Tout public",
+    "Ville": "",
+    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/a332e79e-fcb5-4d5c-82a3-8e36ffda5b9f/Nuit_de_la_lecture.jpg",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Dominique SICARD",
+      "Agnes DEBUIRE",
+      "Boulanger Mathilde",
+      "Catherine LAVEAU",
+      "Cecile TEFFE",
+      "Celine BASIRE",
+      "Christel BEAUCHET",
+      "Clouet Nadine",
+      "Cloux Isabelle",
+      "Diemert Mélissa",
+      "Marie-Virginie SERGENT",
+      "Mylene PINTO",
+      "Nolwenn PETIT",
+      "Vermeille Jérôme"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Dominique SICARD",
+      "Agnes DEBUIRE",
+      "Boulanger Mathilde",
+      "Catherine LAVEAU",
+      "Cecile TEFFE",
+      "Celine BASIRE",
+      "Christel BEAUCHET",
+      "Clouet Nadine",
+      "Cloux Isabelle",
+      "Diemert Mélissa",
+      "Marie-Virginie SERGENT",
+      "Mylene PINTO",
+      "Nolwenn PETIT",
+      "Vermeille Jérôme"
+    ],
+    "Besoin_RH": 15,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -9673,6 +9881,66 @@
     "Animateurs_Biblio": [
       "L",
       "Patault Héléne"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 476,
+    "Titre": "Unlock !",
+    "Catégorie": "Jeux",
+    "Localisation": "Médiathèque Maurice-Genevoix, Salle polyvalente",
+    "Date_Debut": "2027-01-27",
+    "Date_Fin": "2027-01-27",
+    "Description": "En famille ou entre amis, venez tester vos capacités d'observation et de déduction. Fouillez les cartes, observez les détails, utilisez la tablette et résolvez les mystères avant que le chronomètre ne tombe à zéro : voilà le programme de ce défi collaboratif où chacun a un rôle à jouer.",
+    "Heure": "14h30",
+    "Durée": "1h",
+    "Public_cible": "A partir de 8 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/354e2e53-4a05-4820-8805-019a239ca486/unlock.png",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Teffe Cécile"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 503,
+    "Titre": "Laissez-vous conter spécial Graine de lecteur",
+    "Catégorie": "Lecture spectacle",
+    "Localisation": "Médiathèque Maurice-Genevoix, espace Jeunesse",
+    "Date_Debut": "2027-01-27",
+    "Date_Fin": "2027-01-27",
+    "Description": "Venez écouter des histoires pour enfants à partir de 3 ans, sur le thème des cabanes, en lien avec Graine de lecteur 2027 !",
+    "Heure": "10h30",
+    "Durée": "30 min",
+    "Public_cible": "A partir de 3 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://www.blois.fr/sites/default/files/styles/max_290/public/agenda/Gemini_Generated_Image_hk9zbshk9zbshk9z.png?itok=OqPBJh2T",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Boulanger Mathilde"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Boulanger Mathilde"
     ],
     "Besoin_RH": 2,
     "Section_Requise": "",
@@ -9720,36 +9988,6 @@
     "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8087",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [
-      "L",
-      "Diemert Mélissa"
-    ],
-    "Animateurs_Biblio": [
-      "L",
-      "Diemert Mélissa"
-    ],
-    "Besoin_RH": 2,
-    "Section_Requise": "",
-    "Creneau_RH": "",
-    "Impact_SP": false,
-    "Statut_RH": "",
-    "Commentaire_RH": ""
-  },
-  {
-    "id": 487,
-    "Titre": "1 smartphone 1 question",
-    "Catégorie": "Atelier",
-    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
-    "Date_Debut": "2027-01-30",
-    "Date_Fin": "2027-01-30",
-    "Description": "Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? \nCe rendez-vous vous permettra de prendre en main votre écran. \nCréneau de 20 min. les mercredis matin. \nInscription obligatoire au 02 54 51 33 22 en précisant la demande.",
-    "Heure": "10h",
-    "Durée": "3h",
-    "Public_cible": "Public adulte",
-    "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
-    "Lien": "",
-    "Reservation": "TRUE",
     "Agents_Prevus": [
       "L",
       "Diemert Mélissa"
