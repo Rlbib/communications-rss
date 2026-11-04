@@ -1,26 +1,26 @@
-(function() {
-    // ========================================================================
-    // 🎛️ PANNEAU DE PILOTAGE FACILE (ZONE MODIFIABLE PAR JULIEN OU L'ÉQUIPE)
-    // ========================================================================
-    const PILOTAGE = {
-        // 1. Événement à placer en 1ère position "À la une" (mettre l'ID, ou 0 pour désactiver)
-        CARTE_A_LA_UNE_ID: 468, // Expo Lina
+// ========================================================================
+// 🎛️ PANNEAU DE PILOTAGE FACILE (ZONE MODIFIABLE PAR L'ÉQUIPE)
+// ========================================================================
+const PILOTAGE = {
+    // 1. Événement à placer en 1ère position "À la une" (mettre l'ID, ou 0 pour désactiver)
+    CARTE_A_LA_UNE_ID: 468, // Expo Lina
 
-        // 2. Afficher la carte récapitulative des expos vers la fin du carrousel ? (true / false)
-        CARTE_EXPOS_ACTIVE: true,
+    // 2. Afficher la carte récapitulative des expos vers la fin du carrousel ? (true / false)
+    CARTE_EXPOS_ACTIVE: true,
 
-        // 3. Boutons événementiels personnalisés dans les filtres
-        BOUTONS_SPECIAUX: [
-            {
-                titre: "Mois du Doc",
-                icone: "fa-film",
-                couleur: "#e07548", // Orange Mois du Doc
-                ids: [390, 409, 410, 391, 394, 392, 452, 411, 466, 464]
-            }
-        ]
-    };
-    // ========================================================================
+    // 3. Boutons événementiels personnalisés dans les filtres
+    BOUTONS_SPECIAUX: [
+        {
+            titre: "Mois du Doc",
+            icone: "fa-film",
+            couleur: "#e07548", // Orange Mois du Doc
+            ids: [390, 409, 410, 391, 394, 392, 452, 411, 466, 464]
+        }
+    ]
+};
+// ========================================================================
 
+function initWidgetTempsForts() {
     const FEATURED_HASHTAGS = ["Atelier", "Exposition", "Club", "Conférence", "Lecture Spectacle"];
     const MAX_CARDS_DISPLAYED = 15;
     const MAIN_AGENDA_URL = "https://bibliotheques.agglopolys.fr/EXPLOITATION/agenda2026.aspx";
@@ -87,12 +87,31 @@
         return "Le " + formattedStart + (timeStr ? ` <span class="hb-time-highlight"><i class="fa fa-clock-o"></i> ${timeStr}</span>` : "");
     }
 
+    // CALCUL DU COMPTE À REBOURS (AUJOURD'HUI / DEMAIN / DANS X J.)
+    function getRelativeDateBadge(event, nowLocal, todayStart) {
+        if (!event.date || isNaN(event.date.getTime())) return '';
+        const isExpo = event.category && event.category.toLowerCase().includes('exposition');
+        if (isExpo && event.date <= nowLocal && event.endDate >= nowLocal) {
+            return `<span class="hb-meta-pill hb-pill-countdown"><i class="fa fa-calendar-check-o"></i> En cours</span>`;
+        }
+        const eventDateOnly = new Date(event.date.getFullYear(), event.date.getMonth(), event.date.getDate(), 0, 0, 0, 0);
+        const diffDays = Math.round((eventDateOnly - todayStart) / 86400000);
+
+        if (diffDays === 0) {
+            return `<span class="hb-meta-pill hb-pill-countdown" style="background-color: #ffebeb; color: #e11d48; border: 1px solid #fecdd3;"><i class="fa fa-clock-o"></i> Aujourd'hui</span>`;
+        } else if (diffDays === 1) {
+            return `<span class="hb-meta-pill hb-pill-countdown" style="background-color: #fff7ed; color: #ea580c; border: 1px solid #ffedd5;"><i class="fa fa-calendar-o"></i> Demain</span>`;
+        } else if (diffDays > 1 && diffDays <= 30) {
+            return `<span class="hb-meta-pill hb-pill-countdown"><i class="fa fa-hourglass-start"></i> Dans ${diffDays} j.</span>`;
+        }
+        return '';
+    }
+
     function getGroupedLocation(locStr) {
         if (!locStr) return "Médiathèque";
         return locStr.split(',')[0].trim();
     }
 
-    // Gestion horaires et fermetures
     function isSummerPeriod() {
         const now = new Date();
         const m = now.getMonth();
@@ -168,16 +187,34 @@
     }
 
     async function loadAgendaData() {
+        let success = false;
+        let data = [];
         try {
             const res = await fetch(`${JSON_URL}?t=${new Date().getTime()}`);
             if (res.ok) {
-                allEvents = await res.json();
-                buildHashtags();
-                renderWidget();
+                data = await res.json();
+                success = true;
             }
-        } catch (e) {
-            grid.innerHTML = `<div style="text-align:center; padding:30px; color:#ef4444;">Échec de synchronisation.</div>`;
+        } catch (e) {}
+
+        if (!success) {
+            try {
+                const resProxy = await fetch(`https://corsproxy.io/?${encodeURIComponent(JSON_URL)}`);
+                if (resProxy.ok) {
+                    data = await resProxy.json();
+                    success = true;
+                }
+            } catch (err) {}
         }
+
+        if (!success) {
+            grid.innerHTML = `<div style="text-align:center; padding:30px; color:#ef4444;">Échec de synchronisation.</div>`;
+            return;
+        }
+
+        allEvents = data;
+        buildHashtags();
+        renderWidget();
     }
 
     function buildHashtags() {
@@ -185,14 +222,12 @@
         hashtagsWrapper.innerHTML = '';
         const todayStr = new Date().toISOString().split('T')[0];
 
-        // 1. Bouton # Tout
         const allBtn = document.createElement('button');
         allBtn.className = 'hb-hashtag-btn' + (activeCategory === 'all' ? ' hb-active' : '');
         allBtn.dataset.cat = 'all';
         allBtn.textContent = '# Tout';
         hashtagsWrapper.appendChild(allBtn);
 
-        // 2. Compteur d'expositions
         const liveExpos = allEvents.filter(item => {
             const cat = (item.Catégorie || item.Categorie || '').toLowerCase();
             return cat.includes('exposition') && (!item.Date_Fin || item.Date_Fin >= todayStr);
@@ -210,7 +245,6 @@
             hashtagsWrapper.appendChild(btn);
         });
 
-        // 3. Boutons Spéciaux (Mois du Doc, etc.)
         (PILOTAGE.BOUTONS_SPECIAUX || []).forEach(spe => {
             const count = allEvents.filter(ev => spe.ids.includes(parseInt(ev.id, 10))).length;
             const speBtn = document.createElement('button');
@@ -241,6 +275,7 @@
         grid.innerHTML = '';
         const today = new Date();
         const nowLocal = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes(), 0, 0);
+        const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 0, 0, 0, 0);
 
         let events = allEvents.map((item, index) => {
             const startDate = buildLocalDate(item.Date_Debut, item.Heure);
@@ -273,7 +308,7 @@
         if (ctaBtn) ctaBtn.innerHTML = `Voir nos ${events.length} animations <i class="fa fa-chevron-right"></i>`;
 
         if (activeCategory === 'all') {
-            // 1. CARTE SPOTLIGHT (À LA UNE)
+            // CARTE SPOTLIGHT (À LA UNE)
             let spotlightId = parseInt(PILOTAGE.CARTE_A_LA_UNE_ID, 10);
             if (!spotlightId) {
                 const autoHigh = events.find(ev => ev.highlight);
@@ -287,6 +322,8 @@
                     const sEnd = spotItem.Date_Fin ? buildLocalDate(spotItem.Date_Fin, "18h") : sStart;
                     const sDates = formatEventDates(sStart, sEnd, spotItem.Catégorie || 'Exposition');
                     const sImg = spotItem.URL_de_l_image ? spotItem.URL_de_l_image.replace(/^http:\/\//i, 'https://') : '';
+                    const spotEventMock = { date: sStart, endDate: sEnd, category: spotItem.Catégorie || 'Exposition' };
+                    const spotRelativeHtml = getRelativeDateBadge(spotEventMock, nowLocal, todayStart);
 
                     grid.insertAdjacentHTML('beforeend', `
                         <div class="agenda-card hb-card-featured-spotlight" data-id="${spotItem.id}">
@@ -298,6 +335,7 @@
                             <div class="agenda-card-details">
                                 <div class="title-wrapper"><h3 class="agenda-card-title-simple">${spotItem.Titre || ''}</h3></div>
                                 <div class="hb-card-meta-inline">
+                                    ${spotRelativeHtml}
                                     <span class="hb-meta-pill hb-pill-free"><i class="fa fa-check"></i> Entrée libre</span>
                                 </div>
                                 <div class="agenda-card-dateloc-block">
@@ -311,14 +349,14 @@
                 }
             }
 
-            // Exclure les expositions du flux courant pour laisser la priorité aux ateliers
+            // Exclure les expositions du flux normal pour laisser la priorité aux ateliers
             events = events.filter(ev => !ev.category.toLowerCase().includes('exposition') && parseInt(ev.id, 10) !== spotlightId);
             events.sort((a, b) => a.date - b.date);
 
-            // Animations classiques
-            events.slice(0, MAX_CARDS_DISPLAYED).forEach(ev => renderSingleCard(ev));
+            // Rendu des animations avec pastilles temporelles
+            events.slice(0, MAX_CARDS_DISPLAYED).forEach(ev => renderSingleCard(ev, nowLocal, todayStart));
 
-            // 2. CARTE RÉCAPITULATIF DES EXPOSITIONS (VERS LA FIN)
+            // CARTE RÉCAPITULATIF DES EXPOSITIONS
             if (PILOTAGE.CARTE_EXPOS_ACTIVE) {
                 const todayStr = new Date().toISOString().split('T')[0];
                 const activeExpos = allEvents.filter(it => {
@@ -347,7 +385,7 @@
                 }
             }
 
-            // 3. CARTE VOIR PLUS
+            // CARTE VOIR PLUS
             grid.insertAdjacentHTML('beforeend', `
                 <a class="agenda-card hb-more-cta-card" href="${MAIN_AGENDA_URL}">
                     <div class="hb-more-cta-icon-wrapper"><i class="fa fa-arrow-right"></i></div>
@@ -357,10 +395,10 @@
             `);
 
         } else {
-            // Filtrage par hashtag classique
+            // Vues filtrées par hashtag
             events = events.filter(ev => ev.category.toLowerCase().trim() === activeCategory.toLowerCase().trim());
             events.sort((a, b) => a.date - b.date);
-            events.slice(0, MAX_CARDS_DISPLAYED).forEach(ev => renderSingleCard(ev));
+            events.slice(0, MAX_CARDS_DISPLAYED).forEach(ev => renderSingleCard(ev, nowLocal, todayStart));
 
             grid.insertAdjacentHTML('beforeend', `
                 <a class="agenda-card hb-more-cta-card" href="${MAIN_AGENDA_URL}">
@@ -377,8 +415,11 @@
         setTimeout(updateScrollButtonsVisibility, 100);
     }
 
-    function renderSingleCard(event) {
+    // RENDU D'UNE CARTE AVEC LES BADGES TEMPORELS RÉINTÉGRÉS
+    function renderSingleCard(event, nowLocal, todayStart) {
         const dateText = formatEventDates(event.date, event.endDate, event.category);
+        const relativeDateHtml = getRelativeDateBadge(event, nowLocal, todayStart);
+
         const isEventComplet = event.title.toLowerCase().includes('[complet]');
         let resHtml = isEventComplet
             ? `<span class="hb-meta-pill" style="background:#fee2e2; color:#991b1b;"><i class="fa fa-times-circle"></i> Complet</span>`
@@ -394,7 +435,7 @@
                 </div>
                 <div class="agenda-card-details">
                     <div class="title-wrapper"><h3 class="agenda-card-title-simple">${event.title}</h3></div>
-                    <div class="hb-card-meta-inline">${resHtml}</div>
+                    <div class="hb-card-meta-inline">${relativeDateHtml} ${resHtml}</div>
                     <div class="agenda-card-dateloc-block">
                         <hr class="agenda-card-separator-custom" />
                         <p class="agenda-card-date">${dateText}</p>
@@ -415,9 +456,6 @@
     if (scrollRightBtn) scrollRightBtn.addEventListener('click', () => grid.scrollBy({ left: 315, behavior: 'smooth' }));
     if (grid) grid.addEventListener('scroll', updateScrollButtonsVisibility);
 
-    // ====================================================================
-    // MODALES : THÉMATIQUES & DÉTAILS
-    // ====================================================================
     function openSpecialModal(spe) {
         const eventsList = allEvents.filter(it => spe.ids.includes(parseInt(it.id, 10)));
         const venueGroups = {};
@@ -522,7 +560,6 @@
         modalOverlay.classList.add('hb-active');
     }
 
-    // Modale Détail standard avec formulaires et réservation
     window.openDetailsModal = function(eventId) {
         const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId);
         if (!rawEvent) return;
@@ -536,7 +573,6 @@
         const contact = getLibraryContactInfo(rawEvent.Localisation);
         const isComplet = (rawEvent.Titre || "").toLowerCase().includes('[complet]');
 
-        // Image
         if (rawEvent.URL_de_l_image && modalImg) {
             modalImg.src = rawEvent.URL_de_l_image.replace(/^http:\/\//i, 'https://');
             modalHero.style.display = 'block';
@@ -612,7 +648,6 @@
 
         modalOverlay.classList.add('hb-active');
 
-        // Partage
         const shareBtn = document.getElementById('hb-modal-share');
         const sharePanel = document.getElementById('hb-share-panel');
         if (shareBtn && sharePanel) {
@@ -629,7 +664,6 @@
             });
         }
 
-        // Formulaire mail
         const btnMail = document.getElementById('btn-generate-mail');
         if (btnMail) {
             btnMail.addEventListener('click', () => {
@@ -645,7 +679,6 @@
             });
         }
 
-        // Export ICS
         const btnIcs = document.getElementById('hb-modal-ics');
         if (btnIcs) {
             btnIcs.addEventListener('click', () => generateICS(rawEvent));
@@ -691,4 +724,11 @@
     }
 
     loadAgendaData();
-})();
+}
+
+// Lancement automatique sécurisé
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initWidgetTempsForts);
+} else {
+    initWidgetTempsForts();
+}
