@@ -87,7 +87,7 @@ function initWidgetTempsForts() {
         return "Le " + formattedStart + (timeStr ? ` <span class="hb-time-highlight"><i class="fa fa-clock-o"></i> ${timeStr}</span>` : "");
     }
 
-    // CALCUL DU COMPTE À REBOURS (AUJOURD'HUI / DEMAIN / DANS X J.)
+    // Pastilles dynamiques temporelles
     function getRelativeDateBadge(event, nowLocal, todayStart) {
         if (!event.date || isNaN(event.date.getTime())) return '';
         const isExpo = event.category && event.category.toLowerCase().includes('exposition');
@@ -165,24 +165,41 @@ function initWidgetTempsForts() {
             : `<span class="hb-status-badge hb-status-closed"><i class="fa fa-circle" style="font-size:7px;"></i> Fermé</span>`;
     }
 
+    // Contact complet avec horaires d'été et fermetures restaurés
     function getLibraryContactInfo(locationStr) {
         const loc = (locationStr || "").toLowerCase();
         let libType = "gregoire";
-        let name = "Bibliothèque Abbé-Grégoire";
-        let phone = "02 54 56 27 40";
-        let hours = "<strong>Mar, Jeu, Ven :</strong> 13h – 18h30<br><strong>Mercredi :</strong> 10h – 18h30<br><strong>Samedi :</strong> 10h – 18h";
 
-        if (loc.includes("genevoix")) {
-            libType = "genevoix";
-            name = "Médiathèque Maurice-Genevoix";
+        const hoursGregoire    = "<strong>Mar, Jeu, Ven :</strong> 13h – 18h30<br><strong>Mercredi :</strong> 10h – 18h30<br><strong>Samedi :</strong> 10h – 18h";
+        const hoursGenevoix    = "<strong>Mar, Jeu, Ven :</strong> 15h – 18h<br><strong>Mercredi & Samedi :</strong> 10h – 13h / 14h – 18h";
+        const hoursValland     = "<strong>Mercredi :</strong> 10h – 13h / 14h – 18h30<br><strong>Jeu & Ven :</strong> 15h – 18h30<br><strong>Samedi :</strong> 10h – 13h / 14h – 18h";
+
+        const summerHoursGregoire = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mardi – Samedi :</strong> 10h – 15h30";
+        const summerHoursGenevoix = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mardi – Samedi :</strong> 10h – 12h30 / 13h30 – 15h30";
+        const summerHoursValland  = "<span class=\"hb-summer-label\">Horaires d'été</span><br><strong>Mercredi – Samedi :</strong> 10h – 13h";
+
+        const exceptionGregoire = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 11 au 15 août 2026.</strong></span></div>";
+        const exceptionGenevoix = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 15 au 22 août 2026.</strong></span></div>";
+        const exceptionValland  = "<div class=\"hb-summer-exception-note\"><i class=\"fa fa-exclamation-triangle\"></i><span><strong>Fermeture exceptionnelle du 11 au 22 août 2026.</strong></span></div>";
+
+        if (loc.includes("genevoix")) libType = "genevoix";
+        else if (loc.includes("valland") || loc.includes("veuzain")) libType = "valland";
+
+        let name, phone, hours;
+        if (libType === "gregoire") {
+            name  = "Bibliothèque Abbé-Grégoire";
+            phone = "02 54 56 27 40";
+            hours = isSummerPeriod() ? summerHoursGregoire + exceptionGregoire : hoursGregoire;
+        } else if (libType === "genevoix") {
+            name  = "Médiathèque Maurice-Genevoix";
             phone = "02 54 43 31 13";
-            hours = "<strong>Mar, Jeu, Ven :</strong> 15h – 18h<br><strong>Mercredi & Samedi :</strong> 10h – 13h / 14h – 18h";
-        } else if (loc.includes("valland") || loc.includes("veuzain")) {
-            libType = "valland";
-            name = "Médiathèque Rose-Valland";
+            hours = isSummerPeriod() ? summerHoursGenevoix + exceptionGenevoix : hoursGenevoix;
+        } else {
+            name  = "Médiathèque Rose-Valland";
             phone = "02 54 20 78 00";
-            hours = "<strong>Mercredi :</strong> 10h – 13h / 14h – 18h30<br><strong>Jeu & Ven :</strong> 15h – 18h30<br><strong>Samedi :</strong> 10h – 13h / 14h – 18h";
+            hours = isSummerPeriod() ? summerHoursValland + exceptionValland : hoursValland;
         }
+
         return { name, phone, hours, badge: getLiveStatusBadge(libType) };
     }
 
@@ -292,7 +309,7 @@ function initWidgetTempsForts() {
                 location: item.Localisation || "Médiathèque",
                 description: item.Description || "",
                 imageUrl: item.URL_de_l_image ? item.URL_de_l_image.replace(/^http:\/\//i, 'https://') : null,
-                highlight: (String(item.A_la_Une || '').toUpperCase() === "TRUE"),
+                highlight: (String(item.A_la_Une || '').toUpperCase() === "TRUE" || String(item.Selection || '').toUpperCase() === "TRUE"),
                 reservation: item.Reservation === "TRUE"
             };
         }).filter(ev => {
@@ -349,11 +366,11 @@ function initWidgetTempsForts() {
                 }
             }
 
-            // Exclure les expositions du flux normal pour laisser la priorité aux ateliers
+            // Filtrage des expositions classiques pour ne pas surcharger le carrousel
             events = events.filter(ev => !ev.category.toLowerCase().includes('exposition') && parseInt(ev.id, 10) !== spotlightId);
             events.sort((a, b) => a.date - b.date);
 
-            // Rendu des animations avec pastilles temporelles
+            // Rendu des animations avec pastilles temporelles et badges
             events.slice(0, MAX_CARDS_DISPLAYED).forEach(ev => renderSingleCard(ev, nowLocal, todayStart));
 
             // CARTE RÉCAPITULATIF DES EXPOSITIONS
@@ -415,7 +432,7 @@ function initWidgetTempsForts() {
         setTimeout(updateScrollButtonsVisibility, 100);
     }
 
-    // RENDU D'UNE CARTE AVEC LES BADGES TEMPORELS RÉINTÉGRÉS
+    // CARTE NORMALE : RESTAURATION DE L'ÉTOILE ET BORDURE SI "A LA UNE"
     function renderSingleCard(event, nowLocal, todayStart) {
         const dateText = formatEventDates(event.date, event.endDate, event.category);
         const relativeDateHtml = getRelativeDateBadge(event, nowLocal, todayStart);
@@ -428,10 +445,11 @@ function initWidgetTempsForts() {
                 : `<span class="hb-meta-pill hb-pill-free"><i class="fa fa-check"></i> Entrée libre</span>`);
 
         grid.insertAdjacentHTML('beforeend', `
-            <div class="agenda-card" data-id="${event.id}">
+            <div class="agenda-card format-tempsFortsPortail ${event.highlight ? 'hb-highlighted' : ''}" data-id="${event.id}">
                 <span class="agenda-card-tag">${event.category}</span>
+                ${event.highlight ? `<span class="hb-card-star"><i class="fa fa-star"></i> À la une</span>` : ''}
                 <div class="hb-image-wrapper">
-                    ${event.imageUrl ? `<img class="agenda-card-image" src="${event.imageUrl}" alt="" />` : '<i class="fa fa-calendar hb-fallback-icon"></i>'}
+                    ${event.imageUrl ? `<img class="agenda-card-image" src="${event.imageUrl}" alt="${event.title}" />` : '<i class="fa fa-calendar hb-fallback-icon"></i>'}
                 </div>
                 <div class="agenda-card-details">
                     <div class="title-wrapper"><h3 class="agenda-card-title-simple">${event.title}</h3></div>
@@ -560,6 +578,7 @@ function initWidgetTempsForts() {
         modalOverlay.classList.add('hb-active');
     }
 
+    // MODALE DÉTAILS AVEC TOUS LES CHAMPS RESTAURÉS
     window.openDetailsModal = function(eventId) {
         const rawEvent = allEvents.find(ev => (ev.id !== undefined ? ev.id : allEvents.indexOf(ev)) === eventId);
         if (!rawEvent) return;
@@ -569,6 +588,9 @@ function initWidgetTempsForts() {
         const cleanCat = (rawEvent.Catégorie || rawEvent.Categorie || "Animation");
         const dateText = formatEventDates(startDate, endDate, cleanCat);
         const plainDateText = dateText.replace(/<[^>]*>?/gm, ' ').replace(/\s+/g, ' ').trim();
+
+        // Récupération restaurée du public cible
+        const publicCible = rawEvent.Public_cible || rawEvent.Public || rawEvent["Public cible"] || rawEvent["Public_Cible"] || "";
 
         const contact = getLibraryContactInfo(rawEvent.Localisation);
         const isComplet = (rawEvent.Titre || "").toLowerCase().includes('[complet]');
@@ -584,53 +606,65 @@ function initWidgetTempsForts() {
         if (isComplet) {
             reservationHtml = `
                 <div class="hb-resa-box" style="border-left-color: #dc2626; background:#fef2f2;">
-                    <div class="hb-resa-title" style="color:#991b1b;"><i class="fa fa-ban"></i> Animation Complète</div>
-                    <p style="margin:0; font-size:12.5px; color:#991b1b; font-weight:bold;">Les réservations par e-mail sont closes.</p>
+                    <div class="hb-resa-title" style="color:#991b1b;"><i class="fa fa-ban" style="color:#dc2626; font-size:16px;"></i> Animation Complète</div>
+                    <p style="margin:0; font-size:12.5px; color:#991b1b; font-weight:bold;">Cette animation est actuellement complète. Les réservations par e-mail sont closes.</p>
+                    <p style="margin:6px 0 0 0; color:#4b5563; font-size:12px;">Pour toute demande de désistement, contactez l'équipe au <strong>${contact.phone}</strong>.</p>
                 </div>
             `;
         } else if (rawEvent.Reservation === "TRUE") {
+            // Formulaire restauré avec compteur de places et alerte d'erreur
             reservationHtml = `
                 <div class="hb-resa-box">
                     <div class="hb-resa-title"><i class="fa fa-ticket" style="color:var(--hb-accent);"></i> Inscription Obligatoire</div>
-                    <p class="hb-resa-subtitle">
-                        <i class="fa fa-phone"></i> Appeler le <a href="tel:${contact.phone.replace(/\s/g, '')}" style="color:var(--hb-primary); font-weight:800; text-decoration:none;">${contact.phone}</a> ${contact.badge}
+                    <p class="hb-resa-subtitle" style="display:flex; align-items:center; flex-wrap:wrap; gap:4px;">
+                        <i class="fa fa-phone" style="color:var(--hb-muted);"></i> Appeler le <a href="tel:${contact.phone.replace(/\s/g, '')}" style="color:var(--hb-primary); font-weight:800; text-decoration:none; border-bottom:2px solid var(--hb-accent);">${contact.phone}</a> ${contact.badge}
                     </p>
                     <details class="hb-hours-details">
-                        <summary class="hb-hours-summary"><i class="fa fa-info-circle"></i> Horaires d'ouverture</summary>
+                        <summary class="hb-hours-summary"><i class="fa fa-info-circle"></i> Détail des horaires d'ouverture</summary>
                         <div class="hb-hours-content">${contact.hours}</div>
                     </details>
-                    <hr style="border:0; height:1px; background:#e5e7eb; margin:12px 0;">
-                    <p class="hb-resa-subtitle"><i class="fa fa-envelope-o"></i> Ou envoyez votre demande par courriel :</p>
-                    <div class="hb-form-grid">
+                    <hr style="border:0; height:1px; background:#e5e7eb; margin:15px 0;">
+                    <p class="hb-resa-subtitle"><i class="fa fa-envelope-o" style="color:var(--hb-muted);"></i> Ou préparez votre e-mail de demande :</p>
+                    <div class="hb-form-grid" id="resa-email-form">
                         <input type="text" id="r-nom" class="hb-input" placeholder="Votre Nom*" required>
                         <input type="text" id="r-prenom" class="hb-input" placeholder="Votre Prénom*" required>
                         <input type="tel" id="r-tel" class="hb-input hb-form-full" placeholder="Numéro de téléphone">
-                        <input type="text" id="r-age" class="hb-input hb-form-full" placeholder="Âge des personnes inscrites*">
+                        <input type="email" id="r-mail" class="hb-input" placeholder="Adresse E-mail">
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <label for="r-places" style="font-size:13px; color:#4b5563;">Places :</label>
+                            <input type="number" id="r-places" class="hb-input" style="width:70px;" min="1" value="1">
+                        </div>
+                        <input type="text" id="r-age" class="hb-input hb-form-full" placeholder="Âge de la ou des personnes inscrites*">
                         <button type="button" id="btn-generate-mail" class="hb-btn-submit hb-form-full">
-                            Envoyer ma demande <i class="fa fa-paper-plane" style="margin-left:6px;"></i>
+                            Créer mon e-mail <i class="fa fa-paper-plane" style="margin-left:8px;"></i>
                         </button>
+                    </div>
+                    <div id="resa-error-msg" style="color:#991b1b; font-size:11.5px; margin-top:8px; font-weight:bold; display:none;">
+                        <i class="fa fa-exclamation-circle"></i> Veuillez remplir au moins le Nom, le Prénom et l'Âge.
                     </div>
                 </div>
             `;
         } else {
             reservationHtml = `
-                <div style="background:#f0fdf4; color:#166534; padding:8px 12px; border-radius:4px; font-weight:bold; font-size:12px; margin-top:10px;">
+                <div style="background:#f0fdf4; color:#166534; padding:8px 12px; border-radius:4px; font-weight:bold; font-size:12px; margin-top:10px; border-left:4px solid #4ade80; text-transform:uppercase;">
                     <i class="fa fa-check"></i> Entrée libre (sans réservation)
                 </div>
             `;
         }
 
         const shareUrl = encodeURIComponent(rawEvent.Lien || MAIN_AGENDA_URL);
-        const shareTitle = encodeURIComponent(rawEvent.Titre || "Animation");
+        const shareTitle = encodeURIComponent(`À découvrir : ${rawEvent.Titre || "Animation"}`);
+        const shareText = encodeURIComponent(`Découvrez cette animation dans vos médiathèques : ${rawEvent.Titre || "Animation"}`);
 
         modalBodyContent.innerHTML = `
-            <span class="agenda-card-tag" style="position:static; display:inline-block; margin-bottom:10px;">${cleanCat}</span>
+            <span class="agenda-card-tag" style="position:static; display:inline-block; margin-bottom:12px;">${cleanCat}</span>
             <h3 class="hb-modal-title">${rawEvent.Titre || "Sans titre"}</h3>
             ${rawEvent.Description ? `<div class="hb-modal-desc">${rawEvent.Description}</div>` : ''}
             <div class="hb-modal-meta-list">
                 <div class="hb-modal-meta-item"><i class="fa fa-map-marker"></i> <strong>Lieu :</strong> ${rawEvent.Localisation || "Médiathèque"}</div>
                 <div class="hb-modal-meta-item"><i class="fa fa-calendar"></i> <strong>Date :</strong> ${dateText}</div>
-                ${rawEvent.Heure ? `<div class="hb-modal-meta-item"><i class="fa fa-clock-o"></i> <strong>Horaires :</strong> ${rawEvent.Heure}</div>` : ''}
+                ${publicCible ? `<div class="hb-modal-meta-item"><i class="fa fa-users"></i> <strong>Public :</strong> ${publicCible}</div>` : ''}
+                ${rawEvent.Heure ? `<div class="hb-modal-meta-item" style="background:#f3f4f6; padding:6px 12px; border-radius:4px; border-left:4px solid var(--hb-accent); margin-top:5px; font-weight:bold; color:var(--hb-primary);"><i class="fa fa-clock-o"></i> Horaires : ${rawEvent.Heure}</div>` : ''}
             </div>
             ${reservationHtml}
             <div class="hb-modal-actions">
@@ -640,14 +674,16 @@ function initWidgetTempsForts() {
             </div>
             <div id="hb-share-panel" class="hb-share-panel" style="margin-top:10px;">
                 <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="hb-social-btn hb-fb"><i class="fa fa-facebook"></i></a>
-                <a href="https://api.whatsapp.com/send?text=${shareTitle}%20${shareUrl}" target="_blank" class="hb-social-btn hb-wa"><i class="fa fa-whatsapp"></i></a>
-                <a href="mailto:?subject=${shareTitle}&body=${shareUrl}" class="hb-social-btn hb-em"><i class="fa fa-envelope"></i></a>
+                <a href="https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}" target="_blank" class="hb-social-btn hb-wa"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}" target="_blank" class="hb-social-btn hb-tw"><i class="fa fa-twitter"></i></a>
+                <a href="mailto:?subject=${shareTitle}&body=${shareText}%0A%0A${shareUrl}" class="hb-social-btn hb-em"><i class="fa fa-envelope"></i></a>
                 <button id="hb-btn-copy" class="hb-social-btn hb-cp" title="Copier le lien"><i class="fa fa-link"></i></button>
             </div>
         `;
 
         modalOverlay.classList.add('hb-active');
 
+        // Partage
         const shareBtn = document.getElementById('hb-modal-share');
         const sharePanel = document.getElementById('hb-share-panel');
         if (shareBtn && sharePanel) {
@@ -664,21 +700,39 @@ function initWidgetTempsForts() {
             });
         }
 
+        // Formulaire mail avec validation restaurée
         const btnMail = document.getElementById('btn-generate-mail');
         if (btnMail) {
             btnMail.addEventListener('click', () => {
                 const nom = document.getElementById('r-nom').value.trim();
                 const prenom = document.getElementById('r-prenom').value.trim();
                 const tel = document.getElementById('r-tel').value.trim();
-                const age = document.getElementById('r-age').value.trim();
-                if (!nom || !prenom) return alert('Veuillez indiquer au moins votre Nom et Prénom.');
+                const mail = document.getElementById('r-mail').value.trim();
+                const places = document.getElementById('r-places') ? document.getElementById('r-places').value : 1;
+                const age = document.getElementById('r-age') ? document.getElementById('r-age').value.trim() : '';
+                const errorMsg = document.getElementById('resa-error-msg');
+
+                if (!nom || !prenom || !age) {
+                    if (errorMsg) errorMsg.style.display = 'block';
+                    return;
+                }
+                if (errorMsg) errorMsg.style.display = 'none';
 
                 const subject = `Réservation : ${rawEvent.Titre} (${plainDateText})`;
-                const body = `Bonjour,%0A%0AJe souhaite réserver pour "${rawEvent.Titre}".%0A%0ACoordonnées :%0ANom : ${nom} ${prenom}%0AÂge : ${age}%0ATéléphone : ${tel}%0A%0AMerci !`;
+                let body = `Bonjour,%0A%0AJe souhaite réserver ${places} place(s) pour l'animation "${rawEvent.Titre}" (${plainDateText}).%0A%0A`;
+                body += `Mes coordonnées :%0A`;
+                body += `Nom : ${nom}%0A`;
+                body += `Prénom : ${prenom}%0A`;
+                body += `Âge des personnes inscrites : ${age}%0A`;
+                if (tel) body += `Téléphone : ${tel}%0A`;
+                if (mail) body += `Email : ${mail}%0A`;
+                body += `%0AMerci d'avance.`;
+
                 window.location.href = `mailto:bibliotheques@agglopolys.fr?subject=${encodeURIComponent(subject)}&body=${body}`;
             });
         }
 
+        // Export ICS
         const btnIcs = document.getElementById('hb-modal-ics');
         if (btnIcs) {
             btnIcs.addEventListener('click', () => generateICS(rawEvent));
@@ -717,7 +771,7 @@ function initWidgetTempsForts() {
     if (grid) {
         grid.addEventListener('click', (e) => {
             const card = e.target.closest('.agenda-card');
-            if (card && card.dataset.id && !card.classList.contains('hb-card-smart-expo')) {
+            if (card && card.dataset.id && !card.classList.contains('hb-card-smart-expo') && !card.classList.contains('hb-more-cta-card')) {
                 openDetailsModal(parseInt(card.dataset.id, 10));
             }
         });
