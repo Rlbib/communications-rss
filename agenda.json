@@ -7890,9 +7890,17 @@
     "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/cb09d2e8-fad3-4c25-a4b8-43807d5d78cb/Laissez_vous_conter.jpg",
     "Lien": "",
     "Reservation": "FALSE",
-    "Agents_Prevus": [],
-    "Animateurs_Biblio": [],
-    "Besoin_RH": 1,
+    "Agents_Prevus": [
+      "L",
+      "Clouet Nadine",
+      "Petit Nolwenn"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Clouet Nadine",
+      "Petit Nolwenn"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
@@ -8147,7 +8155,7 @@
     "Durée": "30 min.",
     "Public_cible": "à partir de 6 ans",
     "Ville": "Blois",
-    "URL_de_l_image": "https://hongfei-cultures.com/d%C3%A9tail-d-un-livre/deux-freres-en-camping",
+    "URL_de_l_image": "https://hongfei-cultures.com/files/HongFei/images/livres/_DEUX%20FRERES%20EN%20CAMPING/CAMPING_couv.jpg",
     "Lien": "",
     "Reservation": "TRUE",
     "Agents_Prevus": [],
