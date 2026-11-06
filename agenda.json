@@ -9100,6 +9100,36 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 460,
+    "Titre": "1 smartphone 1 question",
+    "Catégorie": "Atelier",
+    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
+    "Date_Debut": "2026-12-16",
+    "Date_Fin": "2026-12-16",
+    "Description": "Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? \nCe rendez-vous vous permettra de prendre en main votre écran. \nCréneau de 20 min. les mercredis matin. \nInscription obligatoire au 02 54 51 33 22 en précisant la demande.",
+    "Heure": "10h",
+    "Durée": "3h",
+    "Public_cible": "Public adulte",
+    "Ville": "",
+    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Diemert Mélissa"
+    ],
+    "Besoin_RH": 2,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 465,
     "Titre": "Noël party de la médiathèque",
     "Catégorie": "Rencontre",
@@ -9393,36 +9423,6 @@
     "Animateurs_Biblio": [
       "L",
       "Teffe Cécile"
-    ],
-    "Besoin_RH": 2,
-    "Section_Requise": "",
-    "Creneau_RH": "",
-    "Impact_SP": false,
-    "Statut_RH": "",
-    "Commentaire_RH": ""
-  },
-  {
-    "id": 460,
-    "Titre": "1 smartphone 1 question",
-    "Catégorie": "Atelier",
-    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
-    "Date_Debut": "2026-12-23",
-    "Date_Fin": "2026-09-09",
-    "Description": "Vous disposez d’un smartphone ou d’une tablette mais vous ne savez pas vraiment vous en servir ? Un point de blocage ? \nCe rendez-vous vous permettra de prendre en main votre écran. \nCréneau de 20 min. les mercredis matin. \nInscription obligatoire au 02 54 51 33 22 en précisant la demande.",
-    "Heure": "10h",
-    "Durée": "3h",
-    "Public_cible": "Public adulte",
-    "Ville": "",
-    "URL_de_l_image": "https://bibliotheques.agglopolys.fr/EXPLOITATION/Default/basicimagedownload.ashx?repositoryId=1&itemId=8196",
-    "Lien": "",
-    "Reservation": "TRUE",
-    "Agents_Prevus": [
-      "L",
-      "Diemert Mélissa"
-    ],
-    "Animateurs_Biblio": [
-      "L",
-      "Diemert Mélissa"
     ],
     "Besoin_RH": 2,
     "Section_Requise": "",
