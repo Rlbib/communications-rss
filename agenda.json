@@ -8623,9 +8623,9 @@
   },
   {
     "id": 480,
-    "Titre": "Midi Curieux",
+    "Titre": "Midis Curieux",
     "Catégorie": "Lecture",
-    "Localisation": "Bibliothèque Abbé Grégoire",
+    "Localisation": "Bibliothèque Abbé-Grégoire",
     "Date_Debut": "2026-12-04",
     "Date_Fin": "2026-12-04",
     "Description": "En parallèle des spectacles de la HAG sur les Présidents de la Ve République, nous vous proposons des portraits romancés des Présidents des grandes puissances mondiales actuelles. Leurs profils, leur soif de pouvoir et les relations internationales qui en découlent seront au cœur de notre midi curieux",
@@ -8633,7 +8633,7 @@
     "Durée": "1h30",
     "Public_cible": "Adultes",
     "Ville": "",
-    "URL_de_l_image": "",
+    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/49177700-5e43-41e0-828c-9061f8f69a7d/Midis-Curieux-President.png",
     "Lien": "",
     "Reservation": "FALSE",
     "Agents_Prevus": [
