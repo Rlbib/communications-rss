@@ -9898,6 +9898,40 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 504,
+    "Titre": "Nuits de la lecture - \"Les passeurs d'histoires\"",
+    "Catégorie": "Lecture spectacle",
+    "Localisation": "Bibliothèque Abbé-Grégoire, espace Jeunesse",
+    "Date_Debut": "2027-01-23",
+    "Date_Fin": "2027-01-23",
+    "Description": "Le temps d’un après-midi, les bibliothécaires deviennent « les porteurs d’histoires ». Leur objectif ? Partager avec vous un des coups de coeur que contient leur panier. Choisissez, installez-vous confortablement et laisser-vous porter par la magie d’une lecture offerte.",
+    "Heure": "15h",
+    "Durée": "23/01/2027 de 15h à 18h",
+    "Public_cible": "Tout public",
+    "Ville": "",
+    "URL_de_l_image": "",
+    "Lien": "",
+    "Reservation": "FALSE",
+    "Agents_Prevus": [
+      "L",
+      "Patault Héléne",
+      "Noguet Sophie-Alice",
+      "Minot Christine"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Patault Héléne",
+      "Noguet Sophie-Alice",
+      "Minot Christine"
+    ],
+    "Besoin_RH": 4,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 476,
     "Titre": "Unlock !",
     "Catégorie": "Jeux",
