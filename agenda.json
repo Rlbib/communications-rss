@@ -8930,6 +8930,38 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 402,
+    "Titre": "Marius Beck",
+    "Catégorie": "Concert",
+    "Localisation": "Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo",
+    "Date_Debut": "2026-12-12",
+    "Date_Fin": "2026-12-12",
+    "Description": "Entouré de ses machines et de son piano, Marius Beck\npropose une pop électro intime mais puissante,\nempreinte de chanson française et bien résolue à\ns’inscrire dans cette énergie de communion qui fait\nbouger les têtes, sourire les visages et chanter fort les\nrefrains. Son premier EP “Jamais Fini” est sorti le 8 octobre 2025.",
+    "Heure": "18h",
+    "Durée": "1h",
+    "Public_cible": "tout public",
+    "Ville": "",
+    "URL_de_l_image": "https://fichiers.numerique.gouv.fr/media/preview/item/a9aed335-97c9-42f1-ba03-4f100fef4306/Marius-Beck.jpg",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Froger Matthieu",
+      "Hubert Mathias"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Froger Matthieu",
+      "Hubert Mathias"
+    ],
+    "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 407,
     "Titre": "Planètes musicales",
     "Catégorie": "Club",
