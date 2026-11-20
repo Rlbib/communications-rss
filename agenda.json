@@ -9596,6 +9596,38 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 508,
+    "Titre": "Conférences Classique par Clément GUILLOT ( directeur du Conservatoire à Rayonnement Départemental de Blois/Agglopolys ).",
+    "Catégorie": "conférence Musicale",
+    "Localisation": "Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo",
+    "Date_Debut": "2027-01-15",
+    "Date_Fin": "2027-01-15",
+    "Description": "Qui n'a pas eu de sueurs froides à l'idée d'un premier concert de musique classique ? Qui ne s'est pas arrêté un instant, en entendant annoncé, l'Adagio ma non troppo, 2° mouvement, du concerto pour violoncelle et orchestre en si mineur opus 104 B. 191, sans en comprendre la signification ? Comment distinguer une cantate d'un trio avec piano, ou comprendre ce qu'est une coda ou une fugue ?\n\nEn trois conférences, Clément Guillot, directeur du Conservatoire de Blois/Agglopolys, vous propose de découvrir le vocabulaire propre à la musique classique, richement illustrées d'extraits musicaux et de vidéos musicales, permettant d'aborder un sujet sérieux avec légèreté, adapté à tous les spectateurs.",
+    "Heure": "18h30",
+    "Durée": "1h30",
+    "Public_cible": "A partir de 10 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Orchestre_symphonique_%28dessus%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=original",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Mathias HUBERT",
+      "Froger Matthieu"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Mathias HUBERT",
+      "Froger Matthieu"
+    ],
+    "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 328,
     "Titre": "Découverte des échecs avec Les Roqueurs d'Onzain",
     "Catégorie": "Club",
@@ -9808,6 +9840,38 @@
     "Commentaire_RH": ""
   },
   {
+    "id": 509,
+    "Titre": "Conférences Classique par Clément GUILLOT ( directeur du Conservatoire à Rayonnement Départemental de Blois/Agglopolys ). (copie)",
+    "Catégorie": "conférence Musicale",
+    "Localisation": "Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo",
+    "Date_Debut": "2027-01-29",
+    "Date_Fin": "2027-01-29",
+    "Description": "Qui n'a pas eu de sueurs froides à l'idée d'un premier concert de musique classique ? Qui ne s'est pas arrêté un instant, en entendant annoncé, l'Adagio ma non troppo, 2° mouvement, du concerto pour violoncelle et orchestre en si mineur opus 104 B. 191, sans en comprendre la signification ? Comment distinguer une cantate d'un trio avec piano, ou comprendre ce qu'est une coda ou une fugue ?\n\nEn trois conférences, Clément Guillot, directeur du Conservatoire de Blois/Agglopolys, vous propose de découvrir le vocabulaire propre à la musique classique, richement illustrées d'extraits musicaux et de vidéos musicales, permettant d'aborder un sujet sérieux avec légèreté, adapté à tous les spectateurs.",
+    "Heure": "18h30",
+    "Durée": "1h30",
+    "Public_cible": "A partir de 10 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Orchestre_symphonique_%28dessus%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=original",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Mathias HUBERT",
+      "Froger Matthieu"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Mathias HUBERT",
+      "Froger Matthieu"
+    ],
+    "Besoin_RH": 3,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
     "id": 430,
     "Titre": "Aiguilles et compagnie",
     "Catégorie": "Club",
@@ -10011,6 +10075,38 @@
     "Agents_Prevus": [],
     "Animateurs_Biblio": [],
     "Besoin_RH": 1,
+    "Section_Requise": "",
+    "Creneau_RH": "",
+    "Impact_SP": false,
+    "Statut_RH": "",
+    "Commentaire_RH": ""
+  },
+  {
+    "id": 510,
+    "Titre": "Conférences Classique par Clément GUILLOT ( directeur du Conservatoire à Rayonnement Départemental de Blois/Agglopolys ). (copie) (copie)",
+    "Catégorie": "conférence Musicale",
+    "Localisation": "Bibliothèque Abbé-Grégoire, espace Musique, Cinéma et Jeux vidéo",
+    "Date_Debut": "2027-02-12",
+    "Date_Fin": "2027-02-12",
+    "Description": "Qui n'a pas eu de sueurs froides à l'idée d'un premier concert de musique classique ? Qui ne s'est pas arrêté un instant, en entendant annoncé, l'Adagio ma non troppo, 2° mouvement, du concerto pour violoncelle et orchestre en si mineur opus 104 B. 191, sans en comprendre la signification ? Comment distinguer une cantate d'un trio avec piano, ou comprendre ce qu'est une coda ou une fugue ?\n\nEn trois conférences, Clément Guillot, directeur du Conservatoire de Blois/Agglopolys, vous propose de découvrir le vocabulaire propre à la musique classique, richement illustrées d'extraits musicaux et de vidéos musicales, permettant d'aborder un sujet sérieux avec légèreté, adapté à tous les spectateurs.",
+    "Heure": "18h30",
+    "Durée": "1h30",
+    "Public_cible": "A partir de 10 ans",
+    "Ville": "",
+    "URL_de_l_image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Orchestre_symphonique_%28dessus%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=original",
+    "Lien": "",
+    "Reservation": "TRUE",
+    "Agents_Prevus": [
+      "L",
+      "Mathias HUBERT",
+      "Froger Matthieu"
+    ],
+    "Animateurs_Biblio": [
+      "L",
+      "Mathias HUBERT",
+      "Froger Matthieu"
+    ],
+    "Besoin_RH": 3,
     "Section_Requise": "",
     "Creneau_RH": "",
     "Impact_SP": false,
