@@ -10456,36 +10456,6 @@
     "Commentaire_RH": ""
   },
   {
-    "id": 511,
-    "Titre": "Codage avec Scratch",
-    "Catégorie": "Animation",
-    "Localisation": "Médiathèque Maurice-Genevoix, ETNA",
-    "Date_Debut": "2027-02-25",
-    "Date_Fin": "2027-02-25",
-    "Description": "",
-    "Heure": "15h",
-    "Durée": "2h",
-    "Public_cible": "De 8 à 12 ans",
-    "Ville": "",
-    "URL_de_l_image": "",
-    "Lien": "",
-    "Reservation": "TRUE",
-    "Agents_Prevus": [
-      "L",
-      "Diemert Mélissa"
-    ],
-    "Animateurs_Biblio": [
-      "L",
-      "Diemert Mélissa"
-    ],
-    "Besoin_RH": 2,
-    "Section_Requise": "",
-    "Creneau_RH": "",
-    "Impact_SP": false,
-    "Statut_RH": "",
-    "Commentaire_RH": ""
-  },
-  {
     "id": 534,
     "Titre": "Ateliers numériques avec le CRIA 41",
     "Catégorie": "Initiation informatique",
